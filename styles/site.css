@@ -71,3 +71,11 @@ span.tag{
 article .details{
 	text-align: center;
 }
+
+.link.forward::before{
+    content: 'click to read next';
+}
+
+.link.backward::before{
+    content: 'go back to';
+}
