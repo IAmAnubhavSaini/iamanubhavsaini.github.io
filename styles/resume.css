@@ -13,15 +13,27 @@
 }
 
 .skill.c {
-    width: 250px;
+    width: 220px;
 }
 
 .skill.csharp {
     width: 250px;
 }
 
+.skill.html5 {
+    width: 300px;
+}
+
+.skill.css {
+    width: 350px;
+}
+
 .skill.js {
-    width: 250px;
+    width: 225px;
+}
+
+.skill.d3js {
+    width: 50px;
 }
 
 .skill.git {
@@ -38,13 +50,11 @@
     width: 124px;
     display: inline-block;
     margin-bottom: 7px;
-    
 }
 
 .skill.beginner {
     background-color: red;
 }
-
 
 .skill.intermediate {
     background-color: orange;
@@ -52,4 +62,12 @@
 
 .skill.expert {
     background-color: green;
+}
+
+.skill.cleancode {
+    width: 200px;
+}
+
+.skill.refactoring {
+    width: 200px;
 }

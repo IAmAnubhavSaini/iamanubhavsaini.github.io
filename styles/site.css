@@ -79,3 +79,12 @@ article .details{
 .link.backward::before{
     content: 'go back to';
 }
+
+.sidebar{
+    width: 300px;
+    float:right;
+}
+
+.sidebar::after;{
+    clear: both;
+}
