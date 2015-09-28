@@ -1,8 +1,8 @@
 body {
     padding: 0;
     margin: 0;
-    background-color: #666;
-    color: #eee;
+    background-color: #eee;
+    color: #333;
     font-size: 20px;
     line-height: 24px;
     font-family: sans-serif;
@@ -45,6 +45,7 @@ h1 {
 .summary {
     padding: 20px;
     background-color: green;
+    color: white;
 }
 
 .summary span {
