@@ -14,8 +14,6 @@ header {
 }
 
 section {
-    width: 50%;
-    margin: auto 20%;
     padding: 5%;
 }
 
@@ -62,29 +60,36 @@ article p {
     color: white;
 }
 
-span.tag{
-	padding: 2px 7px;
-	margin: 2px;
-	color: #000;
+span.tag {
+    padding: 2px 7px;
+    margin: 2px;
+    color: #000;
 }
 
-article .details{
-	text-align: center;
+article .details {
+    text-align: center;
 }
 
-.link.forward::before{
+.link.forward::before {
     content: 'click to read next';
 }
 
-.link.backward::before{
+.link.backward::before {
     content: 'go back to';
 }
 
-.sidebar{
+.sidebar {
     width: 300px;
-    float:right;
+    float: right;
 }
 
-.sidebar::after;{
+.sidebar::after;
+{
     clear: both;
+}
+
+@media screen and (min-width: 1200) {
+    img {
+        max-width: 900px;
+    }
 }
