@@ -3,6 +3,10 @@ layout: post
 title:  "Aces in CS:GO!"
 date:   2015-10-07 2:55:59
 categories: blog csgo
+tags:
+- csgo
+- aces
+- bots
 ---
 I usually spend one hour daily playing Counter Strike : Global Offensive. It's a good game. But I do not have a very high speed internet, or a reliable one. So I play offline.  
 
@@ -14,10 +18,10 @@ Now before you judge me, this is what my `botprofile.db` file looks like.
         ReactionTime = 0.01
         Teamwork = 100
         AttackDelay = 0
-        AimFocusInitial = 0.001			// initial focus spread in degrees (from desired center)
-        AimFocusDecay = 0.9				// how much focus shrinks per second (.25 = 25% of size after 1 sec)
-        AimFocusOffsetScale = 0		// controls accuracy when tracking to target (0 == perfect, should always be < 1)
-        AimfocusInterval = 0			// how often focus is adjusted (smaller intervals means better movement tracking)
+        AimFocusInitial = 0.001			
+        AimFocusDecay = 0.9		
+        AimFocusOffsetScale = 0		
+        AimfocusInterval = 0		
         WeaponPreference = none
         Difficulty = NORMAL
         VoicePitch = 70
