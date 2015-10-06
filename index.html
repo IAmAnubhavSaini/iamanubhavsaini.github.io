@@ -1,39 +1,24 @@
-<!DOCTYPE html>
-<html>
+---
+layout: default
+title: Anubhav Saini
+---
 
-<head>
-    <meta charset="utf-8" />
-    <title>Anubhav Saini's home page.</title>
-    <link rel="stylesheet" type="text/css" href="./styles/site.css" />
-</head>
+<div class="home">
 
-<body>
-    <header>
-        <h3>AnubhavSaini</h3>
-        <ul>
-            <li><a href="http://anubhavsaini.com">Home - AnubhavSaini.com</a></li>
-            <li><a href="./Articles/index.html">Articles</a></li>
-            <li><a href="./Resume/index.html">Resume</a></li>
-            <li><a href="./Blog/csgo/index.html">Blog - CS:GO</a></li>
-        </ul>
-    </header>
-    <aside class="sidebar">
-        <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/iamanubhavsaini" data-widget-id="648393618177159168">Tweets by @iamanubhavsaini</a>
-        <script>
-        ! function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0],
-                p = /^http:/.test(d.location) ? 'http' : 'https';
-            if (!d.getElementById(id)) {
-                js = d.createElement(s);
-                js.id = id;
-                js.src = p + "://platform.twitter.com/widgets.js";
-                fjs.parentNode.insertBefore(js, fjs);
-            }
-        }(document, "script", "twitter-wjs");
-        </script>
-    </aside>
-    <section>
-    </section>
-</body>
+  <h1 class="page-heading">Posts</h1>
 
-</html>
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
