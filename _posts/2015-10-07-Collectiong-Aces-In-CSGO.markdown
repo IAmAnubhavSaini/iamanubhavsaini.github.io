@@ -7,6 +7,8 @@ tags:
 - csgo
 - aces
 - bots
+author: "Major"
+summary: "I like to play offline with advanced bots; here are some aces I've collected so far."
 ---
 I usually spend one hour daily playing Counter Strike : Global Offensive. It's a good game. But I do not have a very high speed internet, or a reliable one. So I play offline.  
 
