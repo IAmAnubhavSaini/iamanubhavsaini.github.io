@@ -4,7 +4,7 @@ email: iamanubhavsaini@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   This site belongs to Anubhav Saini. A polyglot programmer, who likes law, science, movies, technology, software...
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://anubhavsaini.com/" # the base hostname & protocol for your site
+url: "http://iamanubhavsaini.github.io/" # the base hostname & protocol for your site
 twitter_username: iamanubhavsaini
 github_username:  iamanubhavsaini
 
