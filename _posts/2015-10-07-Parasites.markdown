@@ -77,3 +77,32 @@ Based on from where humans can catch parasites.
 - Fly
 - Mosquito
 - Sex
+
+
+>In a nutshell, anywhere in/on humans, from anyplace, via foods or drinks, parasites can attack, live, conquer humans. They do it everyday; successfully.
+
+---
+
+&nbsp;
+
+Hyper...Parasitism
+-
+
+`When parasites become hosts.`
+
+Jonathan Swift wrote a poem about it:
+
+    So nat'ralists observe, a flea  
+    Hath smaller fleas that on him prey;  
+    And these have smaller fleas to bite 'em.  
+    And so proceeds Ad infinitum.  
+
+&nbsp;
+
+This means parasitism is more like universal thing than anthropomorphic.
+---
+
+
+&nbsp;
+
+
