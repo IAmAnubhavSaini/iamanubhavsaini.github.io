@@ -6,9 +6,141 @@
 </description>
     <link>http://iamanubhavsaini.github.io//</link>
     <atom:link href="http://iamanubhavsaini.github.io//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 10 Oct 2015 23:01:58 +0530</pubDate>
-    <lastBuildDate>Sat, 10 Oct 2015 23:01:58 +0530</lastBuildDate>
+    <pubDate>Sun, 11 Oct 2015 00:25:46 +0530</pubDate>
+    <lastBuildDate>Sun, 11 Oct 2015 00:25:46 +0530</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Lemon Programming.</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/images/lemon/TheBrilliantLemonFruit.png&quot; title=&quot;The brilliant lemon fruit.&quot; /&gt;
+&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;so-you-want-to-program-like-a-lemon&quot;&gt;So you want to program like a lemon.&lt;/h2&gt;
+
+&lt;p&gt;You first need to learn what lemon programming is about.&lt;/p&gt;
+
+&lt;p&gt;Check out the list below.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;You need to make sure that switch works. Really works.&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt;  switch(number){  
+  case 0:  
+      if(number != 0){ abort(); }  
+      else /* do something */  
+  }  
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;You need to mix spaces with tabs.&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt;  void main () {  
+      int i = 0;  
+      if( !i ){  
+        /* do this */  
+      }  
+      else  
+          /* do that */  
+    return 0;  
+  }  
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;You need to mix {} with (lack of {})&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt;  if( number == 0){
+      number = 1;
+  }
+  else
+      number = 0;
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;You need to save bytes where possible. So use &lt;code&gt;=&lt;/code&gt; instead of &lt;code&gt;==&lt;/code&gt; and &lt;code&gt;==&lt;/code&gt; instead of &lt;code&gt;===&lt;/code&gt;&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt;  if( number = 0){
+      number = 1;
+  }
+  else
+      number = 0;
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;You need to implement cache first and when it hurts, refactor it.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;If it still hurts, remove the cache implemented sofar and start from scratch.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;You need to grow a pair of oo and tell yout team that you will test your code at run time. Who needs pesky test cases anyway: only lame programmers. Not you!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;You need to refactor the code every other day. It doesn’t matter if it is already optimized. Make it better. Make it better.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;want-to-work-at-a-lemon-software-that-is-oh-so-open-sourced-too&quot;&gt;Want to work at a lemon software that is oh so open sourced too?&lt;/h2&gt;
+
+&lt;p&gt;Visit &lt;a href=&quot;https://github.com/iamanubhavsaini/lemon&quot;&gt;lemon - a browser that doesn’t browse&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 11 Oct 2015 05:29:59 +0530</pubDate>
+        <link>http://iamanubhavsaini.github.io//lemon/2015/10/11/Lemon-Programming.html</link>
+        <guid isPermaLink="true">http://iamanubhavsaini.github.io//lemon/2015/10/11/Lemon-Programming.html</guid>
+        
+        <category>lemon</category>
+        
+        <category>programming</category>
+        
+        
+        <category>lemon</category>
+        
+      </item>
     
       <item>
         <title>Time it takes to.</title>
@@ -339,115 +471,6 @@ And so proceeds Ad infinitum.
         <category>blog</category>
         
         <category>lifelong-learning</category>
-        
-      </item>
-    
-      <item>
-        <title>Aces in CS:GO!</title>
-        <description>&lt;p&gt;I usually spend one hour daily playing Counter Strike : Global Offensive. It’s a good game. But I do not have a very high speed internet, or a reliable one. So I play offline.&lt;/p&gt;
-
-&lt;p&gt;Now before you judge me, this is what my &lt;code&gt;botprofile.db&lt;/code&gt; file looks like.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;Default
-    Skill = 100
-    Aggression = 50
-    ReactionTime = 0.01
-    Teamwork = 100
-    AttackDelay = 0
-    AimFocusInitial = 0.001			
-    AimFocusDecay = 0.9		
-    AimFocusOffsetScale = 0		
-    AimfocusInterval = 0		
-    WeaponPreference = none
-    Difficulty = NORMAL
-    VoicePitch = 70
-    Skin = 0
-    LookAngleMaxAccelNormal = 2000.0
-    LookAngleStiffnessNormal = 100.0
-    LookAngleDampingNormal = 25.0
-    LookAngleMaxAccelAttacking = 3000.0
-    LookAngleStiffnessAttacking = 150.0
-    LookAngleDampingAttacking = 30.0
-End
-
-...
-
-Template Gunners
-    WeaponPreference = m4a1
-    WeaponPreference = ak47
-    WeaponPreference = aug
-    WeaponPreference = sg556
-    WeaponPreference = awp
-    WeaponPreference = p90
-End
-
-...
-
-Template GIJOE
-    Skill = 100
-    Rank = 1800
-    Aggression = 50
-    ReactionTime = 0.01
-    Difficulty = EXPERT
-    VoicePitch = 75
-    AimFocusInitial = 0.1
-    AimFocusDecay = 0.01
-    AimFocusOffsetScale = 0.01
-    AimfocusInterval = 0.01
-    Teamwork = 100
-End
-
-...
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;I know that there are some discrepancies, but I am working on them. Anyway, after that, it’s really awesome to play with expert bots. Due to reduced aggression, they actually wait instead of just mindlessly going forward.&lt;/p&gt;
-
-&lt;p&gt;Here are a few shots of aces.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/csgo/aces/1.jpg&quot; alt=&quot;Ace 1&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/csgo/aces/2.jpg&quot; alt=&quot;Ace 2&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/csgo/aces/3.jpg&quot; alt=&quot;Ace 3&quot; /&gt;&lt;br /&gt;
-I like sniping. Though to be fair, sniping bots is relatively easy. They are mindless drones.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/csgo/aces/4.jpg&quot; alt=&quot;Ace 4&quot; /&gt;&lt;br /&gt;
-One of my favorite weapons these days: Deagle. But only offline.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/csgo/aces/5.jpg&quot; alt=&quot;Ace 5&quot; /&gt;&lt;br /&gt;
-Yup! I have a death rattle.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/csgo/aces/6.jpg&quot; alt=&quot;Ace 6&quot; /&gt;&lt;br /&gt;
-When I am online, USP-S is my weapon of choice.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/csgo/aces/7.jpg&quot; alt=&quot;Ace 7&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/csgo/aces/8.jpg&quot; alt=&quot;Ace 8&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/csgo/aces/9.jpg&quot; alt=&quot;Ace 9&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/csgo/aces/10.jpg&quot; alt=&quot;Ace 10&quot; /&gt;&lt;br /&gt;
-Okay, this one was awesome. It was achieved using smoke, flashes and deagle. Believe me, best way to kill unsuspecting bots is making them pass through smoke.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/csgo/aces/11.jpg&quot; alt=&quot;Ace 11&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;If you notice, most of the aces are using hand guns only. I am working on better aim and slow fire rate; with deagle and usp-s, I try not to fire twice. Just hide somewhere, aim and headshots. Next I will try to put some headshots on, but cannot guarantee. There are a lot of funny moments that I want to share. These are mostly bots dying and their bodies lying unexpectedly. Till then, bye bye.&lt;/p&gt;
-
-</description>
-        <pubDate>Wed, 07 Oct 2015 08:25:59 +0530</pubDate>
-        <link>http://iamanubhavsaini.github.io//blog/csgo/2015/10/07/Collectiong-Aces-In-CSGO.html</link>
-        <guid isPermaLink="true">http://iamanubhavsaini.github.io//blog/csgo/2015/10/07/Collectiong-Aces-In-CSGO.html</guid>
-        
-        <category>csgo</category>
-        
-        <category>aces</category>
-        
-        <category>bots</category>
-        
-        
-        <category>blog</category>
-        
-        <category>csgo</category>
         
       </item>
     
