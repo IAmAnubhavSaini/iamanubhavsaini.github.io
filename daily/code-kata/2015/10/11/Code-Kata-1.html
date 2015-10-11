@@ -6,12 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Posts tagged - feel-useless</title>
-  <meta name="description" content="This site belongs to Anubhav Saini. A polyglot programmer, who likes law, science, movies, technology, software...
-">
+  <title>Code Kata for the day - 11th Oct, 2015.</title>
+  <meta name="description" content="I am going to start with Supermarket Pricing. Problem is very simple: pricing goods at supermarkets.">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://iamanubhavsaini.github.io//tags/feel-useless/">
+  <link rel="canonical" href="http://iamanubhavsaini.github.io//daily/code-kata/2015/10/11/Code-Kata-1.html">
   <link rel="alternate" type="application/rss+xml" title="AnubhavSaini" href="http://iamanubhavsaini.github.io//feed.xml" />
 </head>
 
@@ -45,150 +44,133 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <h2 class="post_title">Posts tagged - feel-useless</h2>
-<div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-    <br /><hr /><br />
-	<div>
-        <a href='/comic/2015/10/08/Feel-useless.html'>Feel useless.</a>
-        <div>
-			
-			<span><a href="/tags/comics">[comics]</a></span>
-			
-			<span><a href="/tags/learn">[learn]</a></span>
-			
-			<span><a href="/tags/work">[work]</a></span>
-			
-			<span><a href="/tags/read">[read]</a></span>
-			
-			<span><a href="/tags/feel-useless">[feel-useless]</a></span>
-			 | <time datetime='October  8, 2015'>October  8, 2015</time>
-		</div>
-		
-        <br />
-        <p>Insatiable learning mind makes me feel useless at dusk.</p>
-		
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Code Kata for the day - 11th Oct, 2015.</h1>
+      <p class="post-meta">October 11, 2015 • 
+
+<a href="/tags/programming">[programming]</a> • 
+
+<a href="/tags/code">[code]</a> • 
+
+<a href="/tags/kata">[kata]</a> • 
+
+<a href="/tags/daily">[daily]</a> • 
+
+ Anubhav Saini</p>
+  </header>
+
+  <article class="post-content">
+    <p>I am going to start with <code>Supermarket Pricing</code>. Problem is very simple: pricing goods at supermarkets.</p>
+
+<h2 id="problem">Problem</h2>
+
+<ul>
+  <li>Items can have price per unit. For example: INR 20 per packet of bread.</li>
+  <li>Items can have price per weight-unit. For example: INR 40 per kilogram of sugar.</li>
+  <li>Items can have price that is discounted.</li>
+  <li>Discounts may apply on certain items.</li>
+  <li>Discounts may apply on bill per certain rules.</li>
+  <li>People can pay with vouchers, IOUs etc.</li>
+  <li>People can get discount if they show up with advertisement.</li>
+  <li>People can get discount if they buy stuff in groups.</li>
+  <li>People can buy stuff in groups.</li>
+  <li>Items can have incremental or consumption based discount.</li>
+  <li>Items can have multiple selling prices depending upon the inventory.</li>
+  <li>People can return items.</li>
+  <li>People can return discounted items.</li>
+  <li>People may not have change on them.</li>
+  <li>People may want to pay with cash and cards.</li>
+  <li>Same type of item can cost different based on it’s attributes. For example: old and new clothes, food etc.</li>
+  <li>Store wants to keep track of the money it has in it’s cash registers.</li>
+  <li>Store wants to keep track of inventory currently in the store.</li>
+  <li>Store wants to replenish items as soon as they deplete from the shelves.</li>
+  <li>Store might levy return charges on items.</li>
+  <li>Store might allow to remove an item from purchase after it has been billed but before bill has been finalized and paid.</li>
+  <li>Store might want to discount items based on days.</li>
+  <li>Store might want to have discount-run based on dates.</li>
+</ul>
+
+<p> </p>
+
+<hr />
+
+<p> </p>
+
+<h2 id="solution">Solution</h2>
+
+<ul>
+  <li>
+    <p>Items can have price per unit.</p>
+
+    <ul>
+      <li>
+        <p>We would need a type that tells what the item is.</p>
+      </li>
+      <li>
+        <p>We would need a price services that tells us what the current price of the item is.</p>
+      </li>
+      <li>
+        <p>We would need a discount service that price service calls to find discount on the item.</p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>Items can have price per weight-unit.</p>
+
+    <ul>
+      <li>
+        <p>We would need to have items as item for store inventory keeping.</p>
+      </li>
+      <li>
+        <p>We would need to have items as identifier and associated features for customers.</p>
+
+        <ul>
+          <li>Customer might want to know color, weight and other things.<br />
+ </li>
+        </ul>
+      </li>
+      <li>
+        <p>We would need to have items as identifier + associated features for price calculating service.</p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p>  </p>
+
+<hr />
+
+<p> </p>
+
+<blockquote>
+  <p>At this point I am thinking that I can literally convert this problem into my own code kata. I can practically carve out at least 5 small programming exercises out of it.</p>
+</blockquote>
+
+<p>  </p>
+
+<hr />
+
+<p> 
+ </p>
+
+<ul>
+  <li>
+    <p>Items can have price that is discounted.</p>
+
+    <ul>
+      <li>A discount service will keep track of discount.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Will update soon.</p>
+
+  </article>
+
 </div>
+
       </div>
     </div>
 
