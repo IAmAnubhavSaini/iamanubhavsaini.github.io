@@ -6,12 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Posts tagged - kata</title>
-  <meta name="description" content="This site belongs to Anubhav Saini. A polyglot programmer, who likes law, science, movies, technology, software...
-">
+  <title>Passing pointers as argument doesn't mean pass by reference in C.</title>
+  <meta name="description" content="Here’s the code where though we do pass a pointer, we are actually not passing by reference.">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://iamanubhavsaini.github.io//tags/kata/">
+  <link rel="canonical" href="http://iamanubhavsaini.github.io//blog/programming/c/2015/10/13/Passing-By-Pointer-In-C-DoesNot-Mean-Pass-By-Reference.html">
   <link rel="alternate" type="application/rss+xml" title="AnubhavSaini" href="http://iamanubhavsaini.github.io//feed.xml" />
 </head>
 
@@ -45,214 +44,68 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <h2 class="post_title">Posts tagged - kata</h2>
-<div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-    <br /><hr /><br />
-	<div>
-        <a href='/daily/code-kata/2015/10/12/Code-Kata-1.html'>Code Kata for the day - 12th Oct, 2015.</a>
-        <div>
-			
-			<span><a href="/tags/programming">[programming]</a></span>
-			
-			<span><a href="/tags/code">[code]</a></span>
-			
-			<span><a href="/tags/kata">[kata]</a></span>
-			
-			<span><a href="/tags/daily">[daily]</a></span>
-			 | <time datetime='October 12, 2015'>October 12, 2015</time>
-		</div>
-		
-        <br />
-        <p>Code kata `#1 - Supermarket pricing` for the day.</p>
-		
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-    <br /><hr /><br />
-	<div>
-        <a href='/daily/code-kata/2015/10/11/Code-Kata-1.html'>Code Kata for the day - 11th Oct, 2015.</a>
-        <div>
-			
-			<span><a href="/tags/programming">[programming]</a></span>
-			
-			<span><a href="/tags/code">[code]</a></span>
-			
-			<span><a href="/tags/kata">[kata]</a></span>
-			
-			<span><a href="/tags/daily">[daily]</a></span>
-			 | <time datetime='October 11, 2015'>October 11, 2015</time>
-		</div>
-		
-        <br />
-        <p>Code kata `#1 - Supermarket pricing` for the day.</p>
-		
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Passing pointers as argument doesn't mean pass by reference in C.</h1>
+      <p class="post-meta">October 13, 2015 • 
+
+<a href="/tags/programming">[programming]</a> • 
+
+<a href="/tags/code">[code]</a> • 
+
+<a href="/tags/c">[c]</a> • 
+
+<a href="/tags/blog">[blog]</a> • 
+
+ Anubhav Saini</p>
+  </header>
+
+  <article class="post-content">
+    <h2 id="heres-the-code-where-though-we-do-pass-a-pointer-we-are-actually-not-passing-by-reference">Here’s the code where though we do pass a pointer, we are actually not passing by reference.</h2>
+
+<pre><code>    #include &lt;stdio.h&gt;
+
+    struct node{
+        int data;
+        struct node * next;
+    };
+
+    void PrintCurrent(struct node * current){
+        if(current != NULL){
+            printf("%d\n", current -&gt; data);
+            current = current -&gt; next;
+        }
+    }
+
+    int main(void) {
+        struct node * head = (struct node *)malloc(sizeof(struct node));
+        head -&gt; data = 10;
+        head -&gt; next = (struct node *)malloc(sizeof(struct node));
+        head -&gt; next -&gt; data = 11;
+        head -&gt; next -&gt; next = NULL;
+        PrintCurrent(head);
+        printf("%d\n", head -&gt; data);
+        PrintCurrent(head);
+        printf("%d\n", head -&gt; data);
+        return 0;
+    }
+</code></pre>
+
+<p>For those who understand this code, its trivial. But for a new comer it is mind bending.</p>
+
+<p>This example is exactly where students make mistake in concepts.</p>
+
+<h2 id="concept">Concept.</h2>
+
+<p>Pass by value occurs whenever you copy value of variable onto called function’s stack. Pass by reference occurs when you copy the address of the variable on the stack of the called function.</p>
+
+<p><a href="http://ideone.com/TJPAp4">http://ideone.com/TJPAp4</a></p>
+
+  </article>
+
 </div>
+
       </div>
     </div>
 

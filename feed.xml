@@ -6,9 +6,117 @@
 </description>
     <link>http://iamanubhavsaini.github.io//</link>
     <atom:link href="http://iamanubhavsaini.github.io//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 12 Oct 2015 12:22:53 +0530</pubDate>
-    <lastBuildDate>Mon, 12 Oct 2015 12:22:53 +0530</lastBuildDate>
+    <pubDate>Tue, 13 Oct 2015 02:01:37 +0530</pubDate>
+    <lastBuildDate>Tue, 13 Oct 2015 02:01:37 +0530</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Printing a linked list in reverse using recursion.</title>
+        <description>&lt;pre&gt;&lt;code&gt;    void ReversePrint(Node *head)
+    {
+        if(head == NULL)
+            return;
+        ReversePrint(head-&amp;gt;next);
+        printf(&quot;%d\n&quot;, head -&amp;gt; data);
+    }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;where &lt;code&gt;Node&lt;/code&gt; is &lt;code&gt;typedef struct Node Node;&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    struct Node
+    {
+     int data;
+     struct Node *next;
+    }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;That’s it.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 13 Oct 2015 05:48:36 +0530</pubDate>
+        <link>http://iamanubhavsaini.github.io//blog/programming/c/2015/10/13/How-To-Print-A-LinkedList-In-Reverse.html</link>
+        <guid isPermaLink="true">http://iamanubhavsaini.github.io//blog/programming/c/2015/10/13/How-To-Print-A-LinkedList-In-Reverse.html</guid>
+        
+        <category>programming</category>
+        
+        <category>code</category>
+        
+        <category>c</category>
+        
+        <category>blog</category>
+        
+        <category>recursion</category>
+        
+        
+        <category>blog</category>
+        
+        <category>programming</category>
+        
+        <category>c</category>
+        
+      </item>
+    
+      <item>
+        <title>Passing pointers as argument doesn&#39;t mean pass by reference in C.</title>
+        <description>&lt;h2 id=&quot;heres-the-code-where-though-we-do-pass-a-pointer-we-are-actually-not-passing-by-reference&quot;&gt;Here’s the code where though we do pass a pointer, we are actually not passing by reference.&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;    #include &amp;lt;stdio.h&amp;gt;
+
+    struct node{
+        int data;
+        struct node * next;
+    };
+
+    void PrintCurrent(struct node * current){
+        if(current != NULL){
+            printf(&quot;%d\n&quot;, current -&amp;gt; data);
+            current = current -&amp;gt; next;
+        }
+    }
+
+    int main(void) {
+        struct node * head = (struct node *)malloc(sizeof(struct node));
+        head -&amp;gt; data = 10;
+        head -&amp;gt; next = (struct node *)malloc(sizeof(struct node));
+        head -&amp;gt; next -&amp;gt; data = 11;
+        head -&amp;gt; next -&amp;gt; next = NULL;
+        PrintCurrent(head);
+        printf(&quot;%d\n&quot;, head -&amp;gt; data);
+        PrintCurrent(head);
+        printf(&quot;%d\n&quot;, head -&amp;gt; data);
+        return 0;
+    }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;For those who understand this code, its trivial. But for a new comer it is mind bending.&lt;/p&gt;
+
+&lt;p&gt;This example is exactly where students make mistake in concepts.&lt;/p&gt;
+
+&lt;h2 id=&quot;concept&quot;&gt;Concept.&lt;/h2&gt;
+
+&lt;p&gt;Pass by value occurs whenever you copy value of variable onto called function’s stack. Pass by reference occurs when you copy the address of the variable on the stack of the called function.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://ideone.com/TJPAp4&quot;&gt;http://ideone.com/TJPAp4&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 13 Oct 2015 05:02:23 +0530</pubDate>
+        <link>http://iamanubhavsaini.github.io//blog/programming/c/2015/10/13/Passing-By-Pointer-In-C-DoesNot-Mean-Pass-By-Reference.html</link>
+        <guid isPermaLink="true">http://iamanubhavsaini.github.io//blog/programming/c/2015/10/13/Passing-By-Pointer-In-C-DoesNot-Mean-Pass-By-Reference.html</guid>
+        
+        <category>programming</category>
+        
+        <category>code</category>
+        
+        <category>c</category>
+        
+        <category>blog</category>
+        
+        
+        <category>blog</category>
+        
+        <category>programming</category>
+        
+        <category>c</category>
+        
+      </item>
     
       <item>
         <title>Feedback message for online course out there.</title>
@@ -416,28 +524,6 @@
     
       <item>
         <title>Things people are doing.</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/images/comic/Things-people-are-doing-2.PNG&quot; title=&quot;Things people are doing with their lives; and things I am doing, in contrast - Part Deux.&quot; /&gt;
-&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://iamanubhavsaini.github.io/comic/2015/10/08/Things-people-are-doing.html&quot;&gt;Have you seen part one? Click me I am a link.&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Thu, 08 Oct 2015 01:25:44 +0530</pubDate>
-        <link>http://iamanubhavsaini.github.io//comic/2015/10/08/Things-people-are-doing.html</link>
-        <guid isPermaLink="true">http://iamanubhavsaini.github.io//comic/2015/10/08/Things-people-are-doing.html</guid>
-        
-        <category>comics</category>
-        
-        <category>doing</category>
-        
-        <category>life</category>
-        
-        
-        <category>comic</category>
-        
-      </item>
-    
-      <item>
-        <title>Things people are doing.</title>
         <description>&lt;p&gt;&lt;img src=&quot;/images/comic/Things-people-are-doing.PNG&quot; title=&quot;Things people are doing with their lives; and things I am doing, in contrast.&quot; /&gt;
 &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 </description>
@@ -457,47 +543,21 @@
       </item>
     
       <item>
-        <title>I cannot figure out relationship between age, money and happyness.</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/images/comic/I-cannot-figure-this-out.PNG&quot; title=&quot;I cannot figure out relationship between age, money and happyness.&quot; /&gt;
+        <title>Things people are doing.</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/images/comic/Things-people-are-doing-2.PNG&quot; title=&quot;Things people are doing with their lives; and things I am doing, in contrast - Part Deux.&quot; /&gt;
 &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://iamanubhavsaini.github.io/comic/2015/10/08/Things-people-are-doing.html&quot;&gt;Have you seen part one? Click me I am a link.&lt;/a&gt;&lt;/p&gt;
 </description>
-        <pubDate>Thu, 08 Oct 2015 01:19:59 +0530</pubDate>
-        <link>http://iamanubhavsaini.github.io//comic/2015/10/08/I-cannot-figure-out-money-age-happyness.html</link>
-        <guid isPermaLink="true">http://iamanubhavsaini.github.io//comic/2015/10/08/I-cannot-figure-out-money-age-happyness.html</guid>
+        <pubDate>Thu, 08 Oct 2015 01:25:44 +0530</pubDate>
+        <link>http://iamanubhavsaini.github.io//comic/2015/10/08/Things-people-are-doing.html</link>
+        <guid isPermaLink="true">http://iamanubhavsaini.github.io//comic/2015/10/08/Things-people-are-doing.html</guid>
         
         <category>comics</category>
         
-        <category>happyness</category>
+        <category>doing</category>
         
-        <category>work</category>
-        
-        <category>money</category>
-        
-        <category>age</category>
-        
-        
-        <category>comic</category>
-        
-      </item>
-    
-      <item>
-        <title>Feel useless.</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/images/comic/Feel-useless.PNG&quot; title=&quot;Insatiable learning mind makes me feel useless at dusk.&quot; /&gt;
-&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Thu, 08 Oct 2015 01:12:53 +0530</pubDate>
-        <link>http://iamanubhavsaini.github.io//comic/2015/10/08/Feel-useless.html</link>
-        <guid isPermaLink="true">http://iamanubhavsaini.github.io//comic/2015/10/08/Feel-useless.html</guid>
-        
-        <category>comics</category>
-        
-        <category>learn</category>
-        
-        <category>work</category>
-        
-        <category>read</category>
-        
-        <category>feel-useless</category>
+        <category>life</category>
         
         
         <category>comic</category>
