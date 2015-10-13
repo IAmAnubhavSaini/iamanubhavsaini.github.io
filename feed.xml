@@ -6,9 +6,116 @@
 </description>
     <link>http://iamanubhavsaini.github.io//</link>
     <atom:link href="http://iamanubhavsaini.github.io//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 13 Oct 2015 18:00:53 +0530</pubDate>
-    <lastBuildDate>Tue, 13 Oct 2015 18:00:53 +0530</lastBuildDate>
+    <pubDate>Tue, 13 Oct 2015 19:21:23 +0530</pubDate>
+    <lastBuildDate>Tue, 13 Oct 2015 19:21:23 +0530</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Code Kata - 100 door/bulb problem.</title>
+        <description>&lt;p&gt;As I was typing, &lt;code&gt;door&lt;/code&gt; doesn’t sound like &lt;code&gt;doar&lt;/code&gt;. Hmm weird English language.&lt;/p&gt;
+
+&lt;p&gt;Anyway, The problem is very simple as described here.&lt;/p&gt;
+
+&lt;p&gt;You are given a 100 (say) of doors or bulbs and you have to toggle them, iteratively. You will iterate through them 100 (usually) times and toggle their state. If closed/off, open/on them and vice versa.&lt;/p&gt;
+
+&lt;p&gt;This is basicall a mathematical problem that can be solved without getting into mathematics behind it.&lt;/p&gt;
+
+&lt;p&gt;In the end you will need to tell what is the state of the a given door or all of the doors or count of closed or open ones. (I dropped bulb from statement and we will concentrate on doors in this post moving on)&lt;/p&gt;
+
+&lt;h2 id=&quot;official-problem-statementhttprosettacodeorgwiki100doors&quot;&gt;&lt;a href=&quot;http://rosettacode.org/wiki/100_doors&quot;&gt;Official problem statement&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;Problem: You have 100 doors in a row that are all initially closed. You make 100 passes by the doors. The first time through, you visit every door and toggle the door (if the door is closed, you open it; if it is open, you close it). The second time you only visit every 2nd door (door #2, #4, #6, …). The third time, every 3rd door (door #3, #6, #9, …), -etc, until you only visit the 100th door.&lt;/p&gt;
+
+&lt;p&gt;Question: What state are the doors in after the last pass? Which are open, which are closed?&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;solution-statement&quot;&gt;Solution statement&lt;/h2&gt;
+
+&lt;p&gt;As I said, this is a mathematical problem, but we will refrain from it initially. One easy way to solve is as follows:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    for iteration = 1; iteration &amp;lt;= Doors.Count; iteration += 1
+        for skip = iteration - 1, curr = skip; curr &amp;lt; Doors.Count; curr += skip
+            Doors[curr] ^= 1
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Where &lt;code&gt;^&lt;/code&gt; indicates a XOR operation, so the whole line becomes a toggling function. What we do basically is that, for 100 iterations, we decide which door to start from and then based on the iteration number, we decide which doors to toggle.&lt;/p&gt;
+
+&lt;p&gt;I have made a mistake in logic above. What will happen is that above logic will sit in a forever loop.&lt;/p&gt;
+
+&lt;p&gt;Here’s the updated version:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    for iteration = 1; iteration &amp;lt;= Doors.Count; iteration += 1
+        for skip = iteration, curr = skip-1; curr &amp;lt; Doors.Count; curr += skip
+            Doors[curr] ^= 1
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Let’s see the code in C# first.&lt;/p&gt;
+
+&lt;h1 id=&quot;c&quot;&gt;C#&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code&gt;    using System;
+
+    public class Test
+    {
+        public static void Main()
+        {
+            bool[] Doors = new bool[100];
+            for(int iteration = 1; iteration &amp;lt;= Doors.Length; iteration += 1){
+                for(int skip = iteration, currDoor = skip-1; currDoor &amp;lt; Doors.Length; currDoor += skip){
+                    Doors[currDoor] ^= true;
+                }
+            }
+            int i = 0;
+            foreach(var door in Doors){
+                i++;
+                Console.WriteLine(&quot;{0} - {1}&quot;, door ? &quot;Open&quot; : &quot;Closed&quot;, i);
+            }
+        }
+    }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&quot;ruby&quot;&gt;Ruby&lt;/h1&gt;
+
+&lt;p&gt;I do not know ruby. Not even the hello world level. So, it’s live for me right now. I dare myself to code this problem in ruby.&lt;/p&gt;
+
+&lt;p&gt;Meh, what I came up with wasn’t working, but here it is anyway.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    Doors = Array[100]
+
+    Doors.length.times { |x| Doors[x] = false }
+
+    Doors.length.times { |i| 
+        i-1.step(Doors.length, i) { |currDoor| Doors[currDoor] ^= true }
+    }
+
+    Doors.length.times { |i| puts Doors[i] == true ? &quot;Open&quot; : &quot;Closed&quot; }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Problem is with step; it throws warning that it cannot be zero.&lt;/p&gt;
+
+&lt;p&gt;You can head to rosettacode and find out ruby implementation.&lt;/p&gt;
+
+&lt;p&gt;Anyway, problem has been solved, but not in TDD way; which I will do tomorrow.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 13 Oct 2015 23:55:50 +0530</pubDate>
+        <link>http://iamanubhavsaini.github.io//daily/code-kata/2015/10/13/Code-Kata-100-door-bulb-problem.html</link>
+        <guid isPermaLink="true">http://iamanubhavsaini.github.io//daily/code-kata/2015/10/13/Code-Kata-100-door-bulb-problem.html</guid>
+        
+        <category>programming</category>
+        
+        <category>code</category>
+        
+        <category>kata</category>
+        
+        <category>problem-solving</category>
+        
+        
+        <category>daily</category>
+        
+        <category>code-kata</category>
+        
+      </item>
     
       <item>
         <title>First five octave graphs.</title>
@@ -679,22 +786,6 @@
         
         
         <category>lemon</category>
-        
-      </item>
-    
-      <item>
-        <title>Time it takes to.</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/images/blog/Time-it-takes-me-to.PNG&quot; title=&quot;Time it takes me to do some stuff.&quot; /&gt;
-&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Thu, 08 Oct 2015 16:36:12 +0530</pubDate>
-        <link>http://iamanubhavsaini.github.io//blog/2015/10/08/Time-it-takes-to.html</link>
-        <guid isPermaLink="true">http://iamanubhavsaini.github.io//blog/2015/10/08/Time-it-takes-to.html</guid>
-        
-        <category>time</category>
-        
-        
-        <category>blog</category>
         
       </item>
     
