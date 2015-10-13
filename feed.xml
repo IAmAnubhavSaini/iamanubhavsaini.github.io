@@ -6,9 +6,75 @@
 </description>
     <link>http://iamanubhavsaini.github.io//</link>
     <atom:link href="http://iamanubhavsaini.github.io//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 13 Oct 2015 11:08:58 +0530</pubDate>
-    <lastBuildDate>Tue, 13 Oct 2015 11:08:58 +0530</lastBuildDate>
+    <pubDate>Tue, 13 Oct 2015 11:33:09 +0530</pubDate>
+    <lastBuildDate>Tue, 13 Oct 2015 11:33:09 +0530</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>First five octave graphs.</title>
+        <description>&lt;h1 id=&quot;straight-line-y--x&quot;&gt;Straight line, y = x&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blog/octave/1-y-eq-x.png&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;h1 id=&quot;straight-line-y--2x-even-numbers&quot;&gt;Straight line, y = 2x, Even numbers&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blog/octave/2-y-eq-2x.png&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;h1 id=&quot;straight-line-y--2x--1-odd-numbers&quot;&gt;Straight line, y = 2x + 1, Odd numbers&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blog/octave/3-y-eq-2xplus1.png&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;h1 id=&quot;fibonacci-numbers-y--fibx&quot;&gt;Fibonacci numbers, y = fib(x)&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blog/octave/4-fibonacci.png&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;h1 id=&quot;prime-numbers-y--primex&quot;&gt;Prime numbers, y = prime(x)&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blog/octave/5-prime-numbers.png&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;h1 id=&quot;all-together&quot;&gt;All together&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&quot;/images/blog/octave/6-all-together.png&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 13 Oct 2015 16:51:59 +0530</pubDate>
+        <link>http://iamanubhavsaini.github.io//blog/programming/octave/2015/10/13/A-Few-Simple-Octave-Graphs-For-Beginners.html</link>
+        <guid isPermaLink="true">http://iamanubhavsaini.github.io//blog/programming/octave/2015/10/13/A-Few-Simple-Octave-Graphs-For-Beginners.html</guid>
+        
+        <category>programming</category>
+        
+        <category>code</category>
+        
+        <category>octave</category>
+        
+        <category>blog</category>
+        
+        
+        <category>blog</category>
+        
+        <category>programming</category>
+        
+        <category>octave</category>
+        
+      </item>
     
       <item>
         <title>Quote of the day.</title>
@@ -544,26 +610,6 @@
         
         
         <category>blog</category>
-        
-      </item>
-    
-      <item>
-        <title>Things people are doing.</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/images/comic/Things-people-are-doing.PNG&quot; title=&quot;Things people are doing with their lives; and things I am doing, in contrast.&quot; /&gt;
-&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Thu, 08 Oct 2015 01:25:44 +0530</pubDate>
-        <link>http://iamanubhavsaini.github.io//comic/2015/10/08/Things-people-are-doing.html</link>
-        <guid isPermaLink="true">http://iamanubhavsaini.github.io//comic/2015/10/08/Things-people-are-doing.html</guid>
-        
-        <category>comics</category>
-        
-        <category>doing</category>
-        
-        <category>life</category>
-        
-        
-        <category>comic</category>
         
       </item>
     
