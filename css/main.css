@@ -142,6 +142,15 @@ pre {
   .icon > svg path {
     fill: #828282; }
 
+.QuoteContainer .Quote {
+  font-size: 5em;
+  line-height: 1.1em; }
+.QuoteContainer .Quoter {
+  font-size: 1.1em;
+  text-align: right; }
+.QuoteContainer .Quoter::before {
+  content: '- '; }
+
 /**
  * Site header
  */
