@@ -6,9 +6,243 @@
 </description>
     <link>http://iamanubhavsaini.github.io//</link>
     <atom:link href="http://iamanubhavsaini.github.io//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 13 Oct 2015 19:21:23 +0530</pubDate>
-    <lastBuildDate>Tue, 13 Oct 2015 19:21:23 +0530</lastBuildDate>
+    <pubDate>Wed, 14 Oct 2015 10:51:42 +0530</pubDate>
+    <lastBuildDate>Wed, 14 Oct 2015 10:51:42 +0530</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Advice to Young Programmers and starters.</title>
+        <description>&lt;h2 id=&quot;advice-to-people-who-are-in-despair&quot;&gt;Advice to people who are in despair.&lt;/h2&gt;
+
+&lt;h1 id=&quot;keep-going&quot;&gt;Keep going.&lt;/h1&gt;
+
+&lt;p&gt;I know it’s hard to go on. You cannot see a definite future and are always concerned with it; then you start to blame yourself and things around you. You start to self-doubt. Don’t.&lt;/p&gt;
+
+&lt;p&gt;Whatever it is that you are doing, keep going.&lt;/p&gt;
+
+&lt;h1 id=&quot;everything-is-possible-once-you-put-your-mind-to-it&quot;&gt;Everything is possible, once you put your mind to it.&lt;/h1&gt;
+
+&lt;p&gt;Think only one thing. Do only one thing. There is nothing else for you in the world. You do not need holidays. You need to spend time with your craft. You need to be better. You need to evolve. Be one with the goal. Eat, drink, dream just one thing. Whatever your goal, move towards it, inch by inch. Keep going. Concentrate.&lt;/p&gt;
+
+&lt;h1 id=&quot;you-got-it-tough&quot;&gt;You got it tough.&lt;/h1&gt;
+
+&lt;p&gt;You think what you are doing is tough? Read about people who had it tougher than you. Nelson Mandela spent more years in jail than you have spent upon your craft, your work, your knowledge, your learning. There are people who do not have hands but they draw, paint and write - with their feet. There are people who do not have feet but still have climbed more mountains than you; ride better than you; program better than you; participate in marathons and have a life.&lt;/p&gt;
+
+&lt;p&gt;There are people who didn’t have computers of today. What did Dennis Ritchie had when he created C and what did Linus had when he wrote Linux’s first version? What did Stallman had when he envisioned free software? You have i7, 8 GiB RAM, in your laptop and Quad-core, 3GiB RAM in your phone. You have it easy. They worked in MHz and in Kilo-Bytes. Your sense of entitlement and ego cannot fit into Kilo-Bytes these days.&lt;/p&gt;
+
+&lt;p&gt;You want to be a writer, but do not have right tools? Don’t know where to start? Tell me this then, what tools Shakespear had, or Milton, or Ved Vyas or Panini or Khwarizmi or Kalidas?&lt;/p&gt;
+
+&lt;p&gt;You want to be an artist? What tools did Michaelangelo had? Picasso, Nek Chand, Leonardo DaVinci didn’t have 3D printers or CAD software. They did. They spent thier life learning to do what they do better.&lt;/p&gt;
+
+&lt;p&gt;You want to be a programmer? What did Bill Gates had when he started coding? Ada Lovelace - she didn’t even had a machine to code against. Linus didn’t have a GNU/Linux OS. Stallmand didn’t have a GNU Hurd. (Actually, he still doesn’t. so…)&lt;/p&gt;
+
+&lt;p&gt;You have it easy. You are lazy. You think you are entitled to have better than what you have.&lt;/p&gt;
+
+&lt;h2 id=&quot;advice-to-those-who-are-starting-to-program&quot;&gt;Advice to those who are starting to program.&lt;/h2&gt;
+
+&lt;h1 id=&quot;think-first&quot;&gt;Think first.&lt;/h1&gt;
+
+&lt;p&gt;Just because you have computer available to you and IDE too, doesn’t mean that you jump into the code. Think what you are going to do.&lt;/p&gt;
+
+&lt;p&gt;Say you are going to create a linked list in C. Think what do you know about pointers.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;What do pointers point to?&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Where do they point?&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;What about pointers in argument list; where is the storage then?&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;If two pointers point to same thing, what happens when one vanishes? What happens when one changes the memory storage?&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Who makes pointers feasible?&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;In a linked list, do you want to store integers or strings or both?&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;How about storing a &lt;code&gt;void *&lt;/code&gt; object?&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Do you have tests ready to check if you have implemented linked list correctly?&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Do you use git or svn to incrementally lock your progress so that you can have a backup of code and know how you get where you are?&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;So, think first. Get a pen and paper or better, glass and temp-marker; scribble away. Think what you are going to do.&lt;/p&gt;
+
+&lt;h1 id=&quot;stick-to-it&quot;&gt;Stick to it.&lt;/h1&gt;
+
+&lt;p&gt;Pick a programming language and stick to it. Write software in it. Multiple times. Multiple software. You can write a text editor, a code editor, a shell, a paint application etc.&lt;/p&gt;
+
+&lt;p&gt;Do not pick the new-fancy language just because it’s new or fancy. Any Turing-Complete language can do everything what other T-C languages do.&lt;/p&gt;
+
+&lt;p&gt;Stick to a language until you can speak it fluently. Stick to it until you can write code to solve same problems at least three different ways. Make use of stacks, lists and library available.&lt;/p&gt;
+
+&lt;p&gt;Write language’s library yourself.&lt;/p&gt;
+
+&lt;h1 id=&quot;write-tests-and-use-cases-before-you-code&quot;&gt;Write tests and use cases before you code.&lt;/h1&gt;
+
+&lt;p&gt;Before you write code, write tests. Your code shold be able to handle every corner case one can throw at it.&lt;/p&gt;
+
+&lt;h1 id=&quot;show-your-code-to-others-and-ask-for-feedback&quot;&gt;Show your code to others and ask for feedback.&lt;/h1&gt;
+
+&lt;p&gt;You wrote your code, you learned one way to write code. Someone else saw your code, you learned what’s wrong with it.&lt;/p&gt;
+
+&lt;h1 id=&quot;read-others-code&quot;&gt;Read other’s code.&lt;/h1&gt;
+
+&lt;p&gt;You wrote your code, you learned one way to write code. You read other’s code, possibilities are endless.&lt;/p&gt;
+
+&lt;h1 id=&quot;be-optimist-first-critical-later&quot;&gt;Be optimist first, critical later.&lt;/h1&gt;
+
+&lt;p&gt;You do not know how you will solve a problem you’re facing. Self-doubt doesn’t help much, does it? Better is to believe that you will eventually find the solution and go at it. Keep fighting with your problem and approach to solutions until you see a right path. Walk on it.&lt;/p&gt;
+
+&lt;p&gt;Now, be critical. Think:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Why couldn’t you do this before?&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;What made you take so long?&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Why this approach worked?&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Can there be more solutions for the same problem?&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;What will happen if I change this parameter here? or that one?&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;How long does it compute? How long does it take to produce result?&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Can it be improved?&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;always-start-with-what-you-know&quot;&gt;Always start with what you know.&lt;/h1&gt;
+
+&lt;p&gt;You and anyone else, do not know everything about anything. If you are strating chances are you do not know enough about anything. So when starting to solve problem, start with what you know. Then think what problem is asking. Relate your learnings with problem.&lt;/p&gt;
+
+&lt;p&gt;Learn what you think will help you solve the problem. If it didn’t help, learn another thing. Repeat until solved.&lt;/p&gt;
+
+&lt;h1 id=&quot;break-problem-in-smaller-problems&quot;&gt;Break problem in smaller problems.&lt;/h1&gt;
+
+&lt;p&gt;Do not try to solve a given problem thinking that it should be solved at one place, in it’s entirety. Sometimes, it is much better to break problem in multitude of smaller problems. Solve the little ones and build upon them.&lt;/p&gt;
+
+&lt;h1 id=&quot;solve-problems&quot;&gt;Solve problems.&lt;/h1&gt;
+
+&lt;p&gt;Learning doesn’t mean anything, until you solve problem. Problems are what people pay to solve. Learning to solve problems yours first and then other’s will help you earn money too. Though, that’s a later part.&lt;/p&gt;
+
+&lt;p&gt;Problem solving is a good skill. Life itself is a big bundle of small problems that come one after the another or together some unfortunate time. Solve each one by one. Learn to solve problems. Do it daily.&lt;/p&gt;
+
+&lt;h1 id=&quot;learn-to-communicate&quot;&gt;Learn to communicate.&lt;/h1&gt;
+
+&lt;p&gt;Learn English. Learn to write it well, speak it well. Do not throw English words together at someone. Learn to make sense of what you are going to say and say it. Communication is one thing that will differentiate you from the rest. Can you tell other person what problems you are facing. By doing just that, half your problems are solved.&lt;/p&gt;
+
+&lt;p&gt;Can you understand what others are saying? Listen and you might make someone’s life easy. Learn to communicate better than you did yesterday.&lt;/p&gt;
+
+&lt;h1 id=&quot;learn-english&quot;&gt;Learn English.&lt;/h1&gt;
+
+&lt;p&gt;Given that you probably love your mothertongue if it’s not English, unfortunately English is the language of web and programming. Writing proper English can help you communicate better. Learn it, even if your parents don’t like it.&lt;/p&gt;
+
+&lt;h1 id=&quot;learn-multiple-languages&quot;&gt;Learn multiple languages.&lt;/h1&gt;
+
+&lt;p&gt;You should probably be better off if you know multiple languages, programmatic or otherwise.&lt;/p&gt;
+
+&lt;h2 id=&quot;general-language-descriptions&quot;&gt;General Language-Descriptions&lt;/h2&gt;
+
+&lt;h1 id=&quot;c&quot;&gt;C&lt;/h1&gt;
+
+&lt;p&gt;For low-level programming; think os kernel level or driver level programming. Takes time to learn and very complex. Programs written in it may execute very fast. You can shoot your self in your foot if careless and loose a toe.&lt;/p&gt;
+
+&lt;h1 id=&quot;c-1&quot;&gt;C++&lt;/h1&gt;
+
+&lt;p&gt;For writing other languages, compilers, IDEs, tools etc. Very powerful. Supports procedural programming, Object oriented programming. Takes a lot of time to learn and very very complex.&lt;/p&gt;
+
+&lt;p&gt;You can shoot yourself in both the feet, legs, thighs, both hands, upper body and head with one shot. You will survive the shot, but your soul might die after debugging for 3 days straight. (That’s just a joke, take it like that.)&lt;/p&gt;
+
+&lt;p&gt;Expert level language.&lt;/p&gt;
+
+&lt;h1 id=&quot;python&quot;&gt;Python&lt;/h1&gt;
+
+&lt;p&gt;Every programmer should be fluent in python.&lt;/p&gt;
+
+&lt;h1 id=&quot;lisp&quot;&gt;Lisp&lt;/h1&gt;
+
+&lt;p&gt;Growth harmone for programming brain.&lt;/p&gt;
+
+&lt;h1 id=&quot;ruby&quot;&gt;Ruby&lt;/h1&gt;
+
+&lt;p&gt;Teaches you to write code in simplest form. Clean and clear. Provides clarity to programming mind.&lt;/p&gt;
+
+&lt;h1 id=&quot;javascript&quot;&gt;JavaScript&lt;/h1&gt;
+
+&lt;p&gt;To code everything in between and including browsers and servers. Takes time to learn. Weird language (before &lt;code&gt;use strict;&lt;/code&gt; and ES6).&lt;/p&gt;
+
+&lt;p&gt;Every programmer should konw JavaScript.&lt;/p&gt;
+
+&lt;h1 id=&quot;htmlcss&quot;&gt;HTML/CSS&lt;/h1&gt;
+
+&lt;p&gt;Every programmer should know these two.&lt;/p&gt;
+
+&lt;h1 id=&quot;erlang&quot;&gt;Erlang&lt;/h1&gt;
+
+&lt;p&gt;For those who don’t like procedures. Advanced.&lt;/p&gt;
+
+&lt;h1 id=&quot;haskell--scala--f&quot;&gt;Haskell / Scala / F#&lt;/h1&gt;
+
+&lt;p&gt;Functional. Powerful. Advanced.&lt;/p&gt;
+
+&lt;p&gt;Well, I intend to add more to this post. So stay tuned. Let me know what you think.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 14 Oct 2015 15:09:59 +0530</pubDate>
+        <link>http://iamanubhavsaini.github.io//blog/2015/10/14/Advice-To-Young-Programmers.html</link>
+        <guid isPermaLink="true">http://iamanubhavsaini.github.io//blog/2015/10/14/Advice-To-Young-Programmers.html</guid>
+        
+        <category>advice</category>
+        
+        <category>motivational</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Quote of the day.</title>
+        <description>&lt;div class=&quot;QuoteContainer&quot;&gt;
+&lt;div class=&quot;Quote&quot;&gt;The biggest challenge you have is to challenge your own self-doubt and your laziness. It is your self-doubt and your laziness that define and limit who you are. If you want to change what you are you must take on your self-doubt and your laziness.
+&lt;/div&gt;
+&lt;div class=&quot;Quoter&quot;&gt;Robert Kiyosaki&lt;/div&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Wed, 14 Oct 2015 15:07:59 +0530</pubDate>
+        <link>http://iamanubhavsaini.github.io//daily/quotes/2015/10/14/Quote-Of-The-Day.html</link>
+        <guid isPermaLink="true">http://iamanubhavsaini.github.io//daily/quotes/2015/10/14/Quote-Of-The-Day.html</guid>
+        
+        <category>daily</category>
+        
+        <category>quotes</category>
+        
+        <category>motivational</category>
+        
+        
+        <category>daily</category>
+        
+        <category>quotes</category>
+        
+      </item>
     
       <item>
         <title>Code Kata - 100 door/bulb problem.</title>
@@ -536,256 +770,6 @@
         <category>daily</category>
         
         <category>code-kata</category>
-        
-      </item>
-    
-      <item>
-        <title>Questions for the day - 11th Oct, 2015.</title>
-        <description>&lt;h2 id=&quot;questions-are&quot;&gt;10 Questions are:&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Why do humans crave for sugar?&lt;/li&gt;
-  &lt;li&gt;What does sugar do to our innards?&lt;/li&gt;
-  &lt;li&gt;Is sugar acidic or basic?&lt;/li&gt;
-  &lt;li&gt;How much can wooden doors expand or shrink?&lt;/li&gt;
-  &lt;li&gt;What natural wood is impervious to water and wood-destroying insects?&lt;/li&gt;
-  &lt;li&gt;How much can our intestines expand?&lt;/li&gt;
-  &lt;li&gt;What is pH level of our intestines?&lt;/li&gt;
-  &lt;li&gt;What is pH?&lt;/li&gt;
-  &lt;li&gt;Does pure water harms us?&lt;/li&gt;
-  &lt;li&gt;How long can a person sustain without solid food? Only water and juices are allowed. Juices can be of anything, but have to have density and viscosity of water.&lt;/li&gt;
-&lt;/ul&gt;
-
-</description>
-        <pubDate>Sun, 11 Oct 2015 14:12:59 +0530</pubDate>
-        <link>http://iamanubhavsaini.github.io//daily/questions/2015/10/11/Questions-1.html</link>
-        <guid isPermaLink="true">http://iamanubhavsaini.github.io//daily/questions/2015/10/11/Questions-1.html</guid>
-        
-        <category>questions</category>
-        
-        <category>daily</category>
-        
-        
-        <category>daily</category>
-        
-        <category>questions</category>
-        
-      </item>
-    
-      <item>
-        <title>Lemon Programming.</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/images/lemon/TheBrilliantLemonFruit.png&quot; title=&quot;The brilliant lemon fruit.&quot; /&gt;
-&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;so-you-want-to-program-like-a-lemon&quot;&gt;So you want to program like a lemon.&lt;/h2&gt;
-
-&lt;p&gt;You first need to learn what lemon programming is about.&lt;/p&gt;
-
-&lt;p&gt;Check out the list below.&lt;/p&gt;
-
-&lt;h2 id=&quot;basic-constructs&quot;&gt;Basic Constructs&lt;/h2&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;You need to make sure that switch works. Really works.&lt;/p&gt;
-
-    &lt;pre&gt;&lt;code&gt;  switch(number){  
-  case 0:  
-      if(number != 0){ abort(); }  
-      else /* do something */  
-  }  
-&lt;/code&gt;&lt;/pre&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;You need to mix spaces with tabs.&lt;/p&gt;
-
-    &lt;pre&gt;&lt;code&gt;  void main () {  
-      int i = 0;  
-      if( !i ){  
-        /* do this */  
-      }  
-      else  
-          /* do that */  
-    return 0;  
-  }  
-&lt;/code&gt;&lt;/pre&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;You need to mix {} with (lack of {})&lt;/p&gt;
-
-    &lt;pre&gt;&lt;code&gt;  if( number == 0){
-      number = 1;
-  }
-  else
-      number = 0;
-&lt;/code&gt;&lt;/pre&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;You need to save bytes where possible. So use &lt;code&gt;=&lt;/code&gt; instead of &lt;code&gt;==&lt;/code&gt; and &lt;code&gt;==&lt;/code&gt; instead of &lt;code&gt;===&lt;/code&gt;&lt;/p&gt;
-
-    &lt;pre&gt;&lt;code&gt;  if( number = 0){
-      number = 1;
-  }
-  else
-      number = 0;
-&lt;/code&gt;&lt;/pre&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;You need to implement cache first and when it hurts, refactor it.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;If it still hurts, remove the cache implemented sofar and start from scratch.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;You need to grow a pair of oo and tell yout team that you will test your code at run time. Who needs pesky test cases anyway: only lame programmers. Not you!&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;You need to refactor the code every other day. It doesn’t matter if it is already optimized. Make it better. Make it better.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;lemon-programming-naming-conventions&quot;&gt;Lemon Programming Naming Conventions&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Use emotion revealing names&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;If code is lucidly telling it’s function and reason of existence upon first reading then use ambiguous variable names.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Use Alpha-Numeric names.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;To make variable names searchable use hungarian notation.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Prefix names with class-name-identifier or short-class-name; which can be obtained by removing vowels most of the time.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Prefix Interfaces with I, Classes with K, Functions with F, Variables with V, Constants with C.&lt;/p&gt;
-
-    &lt;pre&gt;&lt;code&gt;  interface IRobot {
-      FTalk();
-  }
-  class KRobot : IRobot {
-      const CID {public get; set;}
-      void FTalk(){
-          /* do something */
-      }
-  }
-&lt;/code&gt;&lt;/pre&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;See how clear IRobot, KRobot, CID and FTalk are; one look and you know what each of them stands for.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Keep variable names as short as possible.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Be creative with the names.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;want-to-work-at-a-lemon-software-that-is-oh-so-open-sourced-too&quot;&gt;Want to work at a lemon software that is oh so open sourced too?&lt;/h2&gt;
-
-&lt;p&gt;Visit &lt;a href=&quot;https://github.com/iamanubhavsaini/lemon&quot;&gt;lemon - a browser that doesn’t browse&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Sun, 11 Oct 2015 05:29:59 +0530</pubDate>
-        <link>http://iamanubhavsaini.github.io//lemon/2015/10/11/Lemon-Programming.html</link>
-        <guid isPermaLink="true">http://iamanubhavsaini.github.io//lemon/2015/10/11/Lemon-Programming.html</guid>
-        
-        <category>lemon</category>
-        
-        <category>programming</category>
-        
-        
-        <category>lemon</category>
         
       </item>
     
