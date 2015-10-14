@@ -145,6 +145,11 @@ pre {
 .QuoteContainer .Quote {
   font-size: 5em;
   line-height: 1.1em; }
+  .QuoteContainer .Quote .emphasis {
+    border: 1px solid #e8e8e8;
+    border-radius: 3px;
+    background-color: #eef;
+    padding: 5px 10px; }
 .QuoteContainer .Quoter {
   font-size: 1.1em;
   text-align: right; }
