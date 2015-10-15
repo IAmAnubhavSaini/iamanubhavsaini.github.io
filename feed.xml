@@ -6,9 +6,35 @@
 </description>
     <link>http://iamanubhavsaini.github.io//</link>
     <atom:link href="http://iamanubhavsaini.github.io//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 14 Oct 2015 11:02:41 +0530</pubDate>
-    <lastBuildDate>Wed, 14 Oct 2015 11:02:41 +0530</lastBuildDate>
+    <pubDate>Thu, 15 Oct 2015 10:19:37 +0530</pubDate>
+    <lastBuildDate>Thu, 15 Oct 2015 10:19:37 +0530</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Quote of the day.</title>
+        <description>&lt;div class=&quot;QuoteContainer&quot;&gt;
+&lt;div class=&quot;Quote&quot;&gt;
+The more a person seeks &lt;span class=&quot;emphasis&quot;&gt;security&lt;/span&gt;, the more that person gives up &lt;span class=&quot;emphasis&quot;&gt;control&lt;/span&gt; over their life.
+&lt;/div&gt;
+&lt;div class=&quot;Quoter&quot;&gt;Robert Kiyosaki&lt;/div&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Thu, 15 Oct 2015 15:40:10 +0530</pubDate>
+        <link>http://iamanubhavsaini.github.io//daily/quotes/2015/10/15/Quote-Of-The-Day.html</link>
+        <guid isPermaLink="true">http://iamanubhavsaini.github.io//daily/quotes/2015/10/15/Quote-Of-The-Day.html</guid>
+        
+        <category>daily</category>
+        
+        <category>quotes</category>
+        
+        <category>motivational</category>
+        
+        
+        <category>daily</category>
+        
+        <category>quotes</category>
+        
+      </item>
     
       <item>
         <title>Advice to Young Programmers and starters.</title>
@@ -39,6 +65,14 @@
 &lt;p&gt;You have it easy. You are lazy. You think you are entitled to have better than what you have.&lt;/p&gt;
 
 &lt;h2 id=&quot;advice-to-those-who-are-starting-to-program&quot;&gt;Advice to those who are starting to program.&lt;/h2&gt;
+
+&lt;h1 id=&quot;run-away-from-spoon-feeders&quot;&gt;Run away from Spoon Feeders.&lt;/h1&gt;
+
+&lt;p&gt;If someone is teaching you exactly what you need to solve a problem, then run away, faster. Every time you want to learn how to solve a problem, ask yourself about the concept. What is it that you are missing? Ask others what should you read or how you should tackle. If you know the concept you will be able to solve the problem yourself.&lt;/p&gt;
+
+&lt;p&gt;Remember, you learn when you face the problem and solve it yourself. If someone else solves that problem for you, you might have a solution but you still won’t be able to solve that problem next time. What’s the guarantee that this person will be there to solve your problem again?&lt;/p&gt;
+
+&lt;p&gt;So, run away from spoon feeders, be it your teachers, friends or anyone else.&lt;/p&gt;
 
 &lt;h1 id=&quot;think-first&quot;&gt;Think first.&lt;/h1&gt;
 
@@ -630,136 +664,6 @@ The &lt;span class=&quot;emphasis&quot;&gt;biggest challenge&lt;/span&gt; you ha
         <pubDate>Mon, 12 Oct 2015 15:09:59 +0530</pubDate>
         <link>http://iamanubhavsaini.github.io//daily/code-kata/2015/10/12/Code-Kata-1.html</link>
         <guid isPermaLink="true">http://iamanubhavsaini.github.io//daily/code-kata/2015/10/12/Code-Kata-1.html</guid>
-        
-        <category>programming</category>
-        
-        <category>code</category>
-        
-        <category>kata</category>
-        
-        <category>daily</category>
-        
-        
-        <category>daily</category>
-        
-        <category>code-kata</category>
-        
-      </item>
-    
-      <item>
-        <title>Code Kata for the day - 11th Oct, 2015.</title>
-        <description>&lt;p&gt;I am going to start with &lt;code&gt;Supermarket Pricing&lt;/code&gt;. Problem is very simple: pricing goods at supermarkets.&lt;/p&gt;
-
-&lt;h2 id=&quot;problem&quot;&gt;Problem&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Items can have price per unit. For example: INR 20 per packet of bread.&lt;/li&gt;
-  &lt;li&gt;Items can have price per weight-unit. For example: INR 40 per kilogram of sugar.&lt;/li&gt;
-  &lt;li&gt;Items can have price that is discounted.&lt;/li&gt;
-  &lt;li&gt;Discounts may apply on certain items.&lt;/li&gt;
-  &lt;li&gt;Discounts may apply on bill per certain rules.&lt;/li&gt;
-  &lt;li&gt;People can pay with vouchers, IOUs etc.&lt;/li&gt;
-  &lt;li&gt;People can get discount if they show up with advertisement.&lt;/li&gt;
-  &lt;li&gt;People can get discount if they buy stuff in groups.&lt;/li&gt;
-  &lt;li&gt;People can buy stuff in groups.&lt;/li&gt;
-  &lt;li&gt;Items can have incremental or consumption based discount.&lt;/li&gt;
-  &lt;li&gt;Items can have multiple selling prices depending upon the inventory.&lt;/li&gt;
-  &lt;li&gt;People can return items.&lt;/li&gt;
-  &lt;li&gt;People can return discounted items.&lt;/li&gt;
-  &lt;li&gt;People may not have change on them.&lt;/li&gt;
-  &lt;li&gt;People may want to pay with cash and cards.&lt;/li&gt;
-  &lt;li&gt;Same type of item can cost different based on it’s attributes. For example: old and new clothes, food etc.&lt;/li&gt;
-  &lt;li&gt;Store wants to keep track of the money it has in it’s cash registers.&lt;/li&gt;
-  &lt;li&gt;Store wants to keep track of inventory currently in the store.&lt;/li&gt;
-  &lt;li&gt;Store wants to replenish items as soon as they deplete from the shelves.&lt;/li&gt;
-  &lt;li&gt;Store might levy return charges on items.&lt;/li&gt;
-  &lt;li&gt;Store might allow to remove an item from purchase after it has been billed but before bill has been finalized and paid.&lt;/li&gt;
-  &lt;li&gt;Store might want to discount items based on days.&lt;/li&gt;
-  &lt;li&gt;Store might want to have discount-run based on dates.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt; &lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt; &lt;/p&gt;
-
-&lt;h2 id=&quot;solution&quot;&gt;Solution&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Items can have price per unit.&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;p&gt;We would need a type that tells what the item is.&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;We would need a price services that tells us what the current price of the item is.&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;We would need a discount service that price service calls to find discount on the item.&lt;/p&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Items can have price per weight-unit.&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;p&gt;We would need to have items as item for store inventory keeping.&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;We would need to have items as identifier and associated features for customers.&lt;/p&gt;
-
-        &lt;ul&gt;
-          &lt;li&gt;Customer might want to know color, weight and other things.&lt;br /&gt;
- &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;We would need to have items as identifier + associated features for price calculating service.&lt;/p&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;  &lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt; &lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;At this point I am thinking that I can literally convert this problem into my own code kata. I can practically carve out at least 5 small programming exercises out of it.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;  &lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt; 
- &lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Items can have price that is discounted.&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;A discount service will keep track of discount.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Will update soon.&lt;/p&gt;
-
-&lt;p&gt;Update: Nope didn’t have time.&lt;/p&gt;
-
-&lt;p&gt;You might want to check &lt;a href=&quot;/daily/code-kata/2015/10/12/Code-Kata-1.html&quot;&gt;next day’s kata&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Sun, 11 Oct 2015 14:21:59 +0530</pubDate>
-        <link>http://iamanubhavsaini.github.io//daily/code-kata/2015/10/11/Code-Kata-1.html</link>
-        <guid isPermaLink="true">http://iamanubhavsaini.github.io//daily/code-kata/2015/10/11/Code-Kata-1.html</guid>
         
         <category>programming</category>
         
