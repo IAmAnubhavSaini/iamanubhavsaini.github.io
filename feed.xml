@@ -6,9 +6,53 @@
 </description>
     <link>http://iamanubhavsaini.github.io//</link>
     <atom:link href="http://iamanubhavsaini.github.io//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 15 Oct 2015 13:51:17 +0530</pubDate>
-    <lastBuildDate>Thu, 15 Oct 2015 13:51:17 +0530</lastBuildDate>
+    <pubDate>Thu, 15 Oct 2015 19:24:47 +0530</pubDate>
+    <lastBuildDate>Thu, 15 Oct 2015 19:24:47 +0530</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Solar system.</title>
+        <description>&lt;div class=&quot;SolarSystem&quot;&gt;
+    &lt;img id=&quot;sun&quot; src=&quot;/images/blog/solar-system/sun.png&quot; /&gt;
+    &lt;div id=&quot;mercury-orbit&quot; title=&quot;Mercury&quot;&gt;
+        &lt;div id=&quot;mercury&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;venus-orbit&quot; title=&quot;Venus&quot;&gt;
+        &lt;div id=&quot;venus&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;earth-orbit&quot; title=&quot;Earth&quot;&gt;
+        &lt;img id=&quot;earth&quot; src=&quot;/images/blog/solar-system/earth.png&quot; /&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Fri, 16 Oct 2015 00:08:58 +0530</pubDate>
+        <link>http://iamanubhavsaini.github.io//blog/programming/web/2015/10/16/Solar-System.html</link>
+        <guid isPermaLink="true">http://iamanubhavsaini.github.io//blog/programming/web/2015/10/16/Solar-System.html</guid>
+        
+        <category>blog</category>
+        
+        <category>programming</category>
+        
+        <category>web</category>
+        
+        <category>HTML</category>
+        
+        <category>CSS</category>
+        
+        <category>css-animations</category>
+        
+        <category>solar-system</category>
+        
+        <category>code</category>
+        
+        
+        <category>blog</category>
+        
+        <category>programming</category>
+        
+        <category>web</category>
+        
+      </item>
     
       <item>
         <title>Attempted - octave graphs for assignment 1.</title>
@@ -643,43 +687,6 @@ The &lt;span class=&quot;emphasis&quot;&gt;biggest challenge&lt;/span&gt; you ha
         <category>programming</category>
         
         <category>c</category>
-        
-      </item>
-    
-      <item>
-        <title>Feedback message for online course out there.</title>
-        <description>&lt;p&gt;Following is the advice I gave.&lt;/p&gt;
-
-&lt;p&gt;There should be more multiple choice questions; 20+ instead of just 5 questions.&lt;/p&gt;
-
-&lt;p&gt;There should be more MCQ tests. 5+ instead of just one.&lt;/p&gt;
-
-&lt;p&gt;There should be more assignments. 3+ instead of just one. Make it one easy, one medium and one hard.&lt;/p&gt;
-
-&lt;p&gt;There should be more optional assignments. 5+ instead of just one.&lt;/p&gt;
-
-&lt;p&gt;I know you guys are working hard as it is, but we learn by doing, not by listening or watching. Just food of thought.&lt;/p&gt;
-
-&lt;p&gt;Then I thought I should make a post about it and make my point clearly.&lt;/p&gt;
-
-&lt;p&gt;I found out that I learn by doing. Doing not the large problems or a huge task, but by doing small tasks that are inter-related. I learn what I do and when I get feedback quickly, I learn better. It’s like testing-development loop, where I learn by making incremental changes to my knowledge and by making incremental changes to my work and voila, I learn.&lt;/p&gt;
-
-&lt;p&gt;Here’s one such loop.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/blog/How-I-learn.PNG&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;If you notice, there’s no stopping to learning. That’s by design.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 12 Oct 2015 16:42:13 +0530</pubDate>
-        <link>http://iamanubhavsaini.github.io//blog/2015/10/12/Message-for-every-online-course.html</link>
-        <guid isPermaLink="true">http://iamanubhavsaini.github.io//blog/2015/10/12/Message-for-every-online-course.html</guid>
-        
-        <category>online-courses</category>
-        
-        <category>coursera</category>
-        
-        
-        <category>blog</category>
         
       </item>
     
