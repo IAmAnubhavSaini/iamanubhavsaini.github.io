@@ -6,31 +6,195 @@
 </description>
     <link>http://iamanubhavsaini.github.io//</link>
     <atom:link href="http://iamanubhavsaini.github.io//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 18 Oct 2015 04:30:16 +0530</pubDate>
-    <lastBuildDate>Sun, 18 Oct 2015 04:30:16 +0530</lastBuildDate>
-    <generator>Jekyll v2.5.3</generator>
+    <pubDate>Mon, 19 Oct 2015 15:44:33 +0530</pubDate>
+    <lastBuildDate>Mon, 19 Oct 2015 15:44:33 +0530</lastBuildDate>
+    <generator>Jekyll v2.2.0</generator>
+    
+      <item>
+        <title>Things I am already hating about rust.</title>
+        <description>&lt;p&gt;I like a different programming languages because they can do different things and things differently. So, when I look at rust, it looks like same old C language with some C++ code thrown in it. I do not like this language based on it’s looks. What it does is matter of gaining some knowledge in it, which will come later and with time.  &lt;/p&gt;
+
+&lt;p&gt;So here’s the list of things I hate about &lt;code&gt;rust&lt;/code&gt;.  &lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Use of &lt;code&gt;::&lt;/code&gt;.  &lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Use of &lt;code&gt;println&lt;/code&gt;.  &lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;if you are outputting something to standard output, please call it &lt;code&gt;stdout()&lt;/code&gt; instead of &lt;code&gt;println()&lt;/code&gt; or use &lt;code&gt;out(std, &quot;&quot;)&lt;/code&gt;. You might not be printing. &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Use of main() as entry for program.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;What year is this? Let functions be functions and allow function writer to choose if the current function should be a entry point or not. Example follows.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code&gt;fn first_function() {
+	possible_entry(&quot;default&quot;, &quot;ff&quot;, &quot;first_function&quot;);
+	out(std, &quot;Hello, World!&quot;);
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+</description>
+        <pubDate>Mon, 19 Oct 2015 15:03:03 +0530</pubDate>
+        <link>http://iamanubhavsaini.github.io//blog/programming/rust/2015/10/19/Things-I-alread-dislike-about-rust.html</link>
+        <guid isPermaLink="true">http://iamanubhavsaini.github.io//blog/programming/rust/2015/10/19/Things-I-alread-dislike-about-rust.html</guid>
+        
+        <category>programming</category>
+        
+        <category>code</category>
+        
+        <category>rust</category>
+        
+        <category>blog</category>
+        
+        
+        <category>blog</category>
+        
+        <category>programming</category>
+        
+        <category>rust</category>
+        
+      </item>
+    
+      <item>
+        <title>First rust program and comparison with C.</title>
+        <description>&lt;p&gt;We are going to say hello, world! in rust too. In C this is very simple and throughly known.  &lt;/p&gt;
+
+&lt;h1 id=&quot;c&quot;&gt;C&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code&gt;#include &amp;lt;stdio.h&amp;gt;  
+
+void main() {  
+	printf(&quot;Hello, World!&quot;);  
+}  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&quot;rust&quot;&gt;Rust&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code&gt;fn main() {  
+	println!(&quot;Hello, World!&quot;);  
+}  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&quot;how-to-build-binary&quot;&gt;How to build binary?&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Save file as &lt;code&gt;file_name.rs&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;run &lt;code&gt;rustc file_name.rs&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;run &lt;code&gt;file_name.exe&lt;/code&gt; or &lt;code&gt;./file_name&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;example-build&quot;&gt;Example build&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blog/2015-10-19-Rust-Program-1.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;Well that’s odd. It’s exactly the same. I mean look-wise. Let’s find the similarities first and then differences.  &lt;/p&gt;
+
+&lt;h1 id=&quot;similarities&quot;&gt;Similarities&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Both take a string inside double quotes.  &lt;/li&gt;
+  &lt;li&gt;Both have main() as their starting function.  &lt;/li&gt;
+  &lt;li&gt;Both use parenthesis { and } for block delineation.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;differences&quot;&gt;Differences&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code&gt;fn&lt;/code&gt; marks a function in rust.  &lt;/li&gt;
+  &lt;li&gt;If returning nothing, we do not need to specify it in rust.  &lt;/li&gt;
+  &lt;li&gt;In rust, we do not need to include a file for something as trivial as printing to screen.  &lt;/li&gt;
+  &lt;li&gt;In rust, println is a macro whereas in c it is a function.  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;As always, if you find a mistake, please let me know so that I can correct it.  &lt;/p&gt;
+</description>
+        <pubDate>Mon, 19 Oct 2015 14:52:54 +0530</pubDate>
+        <link>http://iamanubhavsaini.github.io//blog/programming/rust/2015/10/19/First-Rust-Program.html</link>
+        <guid isPermaLink="true">http://iamanubhavsaini.github.io//blog/programming/rust/2015/10/19/First-Rust-Program.html</guid>
+        
+        <category>programming</category>
+        
+        <category>code</category>
+        
+        <category>rust</category>
+        
+        <category>c</category>
+        
+        <category>blog</category>
+        
+        
+        <category>blog</category>
+        
+        <category>programming</category>
+        
+        <category>rust</category>
+        
+      </item>
+    
+      <item>
+        <title>Quote of the day.</title>
+        <description>&lt;div class=&quot;QuoteContainer&quot;&gt;
+&lt;div class=&quot;Quote&quot;&gt;
+Winners don&#39;t do different things, they do things differently.&lt;/div&gt;
+&lt;div class=&quot;Quoter&quot;&gt;Shiv Khera&lt;/div&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Mon, 19 Oct 2015 14:50:59 +0530</pubDate>
+        <link>http://iamanubhavsaini.github.io//daily/quotes/2015/10/19/Quote-Of-The-Day.html</link>
+        <guid isPermaLink="true">http://iamanubhavsaini.github.io//daily/quotes/2015/10/19/Quote-Of-The-Day.html</guid>
+        
+        <category>daily</category>
+        
+        <category>quotes</category>
+        
+        <category>motivational</category>
+        
+        
+        <category>daily</category>
+        
+        <category>quotes</category>
+        
+      </item>
     
       <item>
         <title>Anti Pattern - Analysis Paralysis.</title>
         <description>&lt;h2 id=&quot;a-state-of-over-thinking-a-situation&quot;&gt;A state of over-thinking a situation.&lt;/h2&gt;
 
-&lt;p&gt;Programmers do it. Software Managers do it. Chess robots do it. Teenage girls do it. Recently turned vampires do it. Human rights advocate do it. Procrastinators do it. Mothers do it.&lt;/p&gt;
+&lt;p&gt;Programmers do it. Software Managers do it. Chess robots do it. Teenage girls do it. Recently turned vampires do it. Human rights advocate do it. Procrastinators do it. Mothers do it.  &lt;/p&gt;
 
 &lt;h1 id=&quot;decision-makers-do-not-do-it&quot;&gt;Decision makers do not do it.&lt;/h1&gt;
 
-&lt;p&gt;It’s very simple and wide-spread phenomenon. You have to make a decision; but you have a lot of data or information; before you could make a decision, you want more time to process or more information to aid you in making that decision. It takes so much time that it feels to others that you have got paralysis. That’s what analysis paralysis or paralysis by analysis is all about.&lt;/p&gt;
+&lt;p&gt;It’s very simple and wide-spread phenomenon. You have to make a decision; but you have a lot of data or information; before you could make a decision, you want more time to process or more information to aid you in making that decision. It takes so much time that it feels to others that you have got paralysis. That’s what analysis paralysis or paralysis by analysis is all about.  &lt;/p&gt;
 
-&lt;p&gt;Usually we want to make good decisions. But, when fear creeps in, we sort of want to defer the decision making; as if you will be able to find better solution, perhaps the best one.&lt;/p&gt;
+&lt;p&gt;Usually we want to make good decisions. But, when fear creeps in, we sort of want to defer the decision making; as if you will be able to find better solution, perhaps the best one.  &lt;/p&gt;
 
-&lt;p&gt;When problem stays intact and we have consumed a lot of time in making a decision, we have got paralysis by analysis.&lt;/p&gt;
+&lt;p&gt;When problem stays intact and we have consumed a lot of time in making a decision, we have got paralysis by analysis.  &lt;/p&gt;
 
-&lt;p&gt;In software development this happens almost everytime management wants to design best product. This usually results in long design phases, planning phases, requirement gathering phase and research phase. When bureaucracy creeps in and wants to work as to please the above sitting manager and top management, the analysis phase can go very long as to justify for the future product. Such a product, even before getting started to be built, builds up a huge baggage that can bog down the entire project.&lt;/p&gt;
+&lt;p&gt;In software development this happens almost everytime management wants to design best product. This usually results in long design phases, planning phases, requirement gathering phase and research phase. When bureaucracy creeps in and wants to work as to please the above sitting manager and top management, the analysis phase can go very long as to justify for the future product. Such a product, even before getting started to be built, builds up a huge baggage that can bog down the entire project.  &lt;/p&gt;
 
 &lt;h1 id=&quot;why-an-anti-pattern-though&quot;&gt;Why an anti-pattern though?&lt;/h1&gt;
 
-&lt;p&gt;It is called an anti-pattern because it is a pattern and it is anti progress. Anytime you see talk and no walk, think paralysis by analysis.&lt;/p&gt;
+&lt;p&gt;It is called an anti-pattern because it is a pattern and it is anti progress. Anytime you see talk and no walk, think paralysis by analysis.  &lt;/p&gt;
 
-&lt;p&gt;Any debate, discussion, argument over an upcoming controversial policy is analysis paralysis. What should be done is debates, discussions and arguments constructed against or in favor of current/acting/active policies. Then, anybody can see the outcome and tweak the policy and thus output.&lt;/p&gt;
+&lt;p&gt;Any debate, discussion, argument over an upcoming controversial policy is analysis paralysis. What should be done is debates, discussions and arguments constructed against or in favor of current/acting/active policies. Then, anybody can see the outcome and tweak the policy and thus output.  &lt;/p&gt;
 
 &lt;p&gt;Such policies are:&lt;/p&gt;
 
@@ -41,64 +205,64 @@
   &lt;li&gt;Patent control&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;et cetra.&lt;/p&gt;
+&lt;p&gt;et cetra.  &lt;/p&gt;
 
-&lt;p&gt;What should be understood already is that all policies are flawed and thus everyone should be working to improve the current policies. Also, no policy should be set in stone. That’s just stupid.&lt;/p&gt;
+&lt;p&gt;What should be understood already is that all policies are flawed and thus everyone should be working to improve the current policies. Also, no policy should be set in stone. That’s just stupid.  &lt;/p&gt;
 
-&lt;p&gt;Paralysis by analysis can be discouraged by keeping an eye on the goal and current work. Ask yourself, repeatedly, is what you are doing getting you near your goal? If answer is not yes, don’t panic. It might take you there in the longer run; kind of like you have to pull an arrow back to make it hit the target. You get the gist.&lt;/p&gt;
+&lt;p&gt;Paralysis by analysis can be discouraged by keeping an eye on the goal and current work. Ask yourself, repeatedly, is what you are doing getting you near your goal? If answer is not yes, don’t panic. It might take you there in the longer run; kind of like you have to pull an arrow back to make it hit the target. You get the gist.  &lt;/p&gt;
 
 &lt;h1 id=&quot;ask-yourself---is-what-you-are-doing-helping-you-solve-the-problem-you-are-trying-to-solve-can-it-help-in-longer-run-to-solve-that-problem&quot;&gt;Ask yourself - Is what you are doing helping you solve the problem you are trying to solve? Can it help in longer run to solve that problem?&lt;/h1&gt;
 
-&lt;p&gt;So, do work emails help you out in working work? The answer is probably no. Aren’t those just memes most of the time or spam?&lt;/p&gt;
+&lt;p&gt;So, do work emails help you out in working work? The answer is probably no. Aren’t those just memes most of the time or spam?  &lt;/p&gt;
 
-&lt;p&gt;Does taking naps in afternoon post-lunch help you work better? The answer is probably yes.&lt;/p&gt;
+&lt;p&gt;Does taking naps in afternoon post-lunch help you work better? The answer is probably yes.  &lt;/p&gt;
 
-&lt;p&gt;So if a management forces you to read spam emails, and doesn’t let you nap, is it worth working for? The answer is probably what you know.&lt;/p&gt;
+&lt;p&gt;So if a management forces you to read spam emails, and doesn’t let you nap, is it worth working for? The answer is probably what you know.  &lt;/p&gt;
 
 &lt;h2 id=&quot;the-solution&quot;&gt;The solution&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
-    &lt;p&gt;Do not over think. Break problem in smaller pieces, and start working on one of them. String together all such pieces and you would have solved your problem.&lt;/p&gt;
+    &lt;p&gt;Do not over think. Break problem in smaller pieces, and start working on one of them. String together all such pieces and you would have solved your problem.  &lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Choose your goals. Once picked, do not alter them.&lt;/p&gt;
+    &lt;p&gt;Choose your goals. Once picked, do not alter them.  &lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Reduce your options drastically. Do not even think about trying everything.&lt;/p&gt;
+    &lt;p&gt;Reduce your options drastically. Do not even think about trying everything.  &lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Believe that whatever you pick will be a wrong choice, and you’d have to work with it.&lt;/p&gt;
+    &lt;p&gt;Believe that whatever you pick will be a wrong choice, and you’d have to work with it.  &lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Get other’s help. Do not hesistate to ask a person sitting right next to you. Even if someone doesn’t know the context of your problem, they might be able to help you out.&lt;/p&gt;
+    &lt;p&gt;Get other’s help. Do not hesistate to ask a person sitting right next to you. Even if someone doesn’t know the context of your problem, they might be able to help you out.  &lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Think, not obsess.&lt;/p&gt;
+    &lt;p&gt;Think, not obsess.  &lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Allocate time for the thinking process.&lt;/p&gt;
+    &lt;p&gt;Allocate time for the thinking process.  &lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Gather data, not obsessive amount of it.&lt;/p&gt;
+    &lt;p&gt;Gather data, not obsessive amount of it.  &lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Pick quickly; leave smartness for phones.&lt;/p&gt;
+    &lt;p&gt;Pick quickly; leave smartness for phones.  &lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Be ready for life; deal with problems as they appear. Trying to solve problems when they are not even there is a can of worms, best not opened.&lt;/p&gt;
+    &lt;p&gt;Be ready for life; deal with problems as they appear. Trying to solve problems when they are not even there is a can of worms, best not opened.  &lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Be curious, but not too much. Remember, curiosity killed the cat.&lt;/p&gt;
+    &lt;p&gt;Be curious, but not too much. Remember, curiosity killed the cat.  &lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Don’t be a perfectionist. You can perfect yourself, but only in one thing per life.&lt;/p&gt;
+    &lt;p&gt;Don’t be a perfectionist. You can perfect yourself, but only in one thing per life.  &lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Make a rule book of rules that you do not want to break through out your life. Do not like pasta, don’t have to; do not think over it while ordering italian. Do not like stripes; do not stay in section that hangs stripes. Go to rules for decision making and follow them.&lt;/p&gt;
+    &lt;p&gt;Make a rule book of rules that you do not want to break through out your life. Do not like pasta, don’t have to; do not think over it while ordering italian. Do not like stripes; do not stay in section that hangs stripes. Go to rules for decision making and follow them.  &lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Do not buy costly stuff that you really don’t need. An SSD for browsing internet, stupid. A MS SQL Serer instance when SQLite will do, stupid. A 56 inch plasma TV when 32 inch one will do, stupid and regretful.&lt;/p&gt;
+    &lt;p&gt;Do not buy costly stuff that you really don’t need. An SSD for browsing internet, stupid. A MS SQL Serer instance when SQLite will do, stupid. A 56 inch plasma TV when 32 inch one will do, stupid and regretful.  &lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
@@ -107,9 +271,9 @@
 &lt;h1 id=&quot;references&quot;&gt;References&lt;/h1&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Analysis_paralysis&quot;&gt;https://en.wikipedia.org/wiki/Analysis_paralysis&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Curiosity_killed_the_cat&quot;&gt;For curiosity killed the cat&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/The_Paradox_of_Choice:_Why_More_Is_Less&quot;&gt;https://en.wikipedia.org/wiki/The_Paradox_of_Choice:_Why_More_Is_Less&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Analysis_paralysis&quot;&gt;https://en.wikipedia.org/wiki/Analysis_paralysis&lt;/a&gt;  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Curiosity_killed_the_cat&quot;&gt;For curiosity killed the cat&lt;/a&gt;  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/The_Paradox_of_Choice:_Why_More_Is_Less&quot;&gt;https://en.wikipedia.org/wiki/The_Paradox_of_Choice:_Why_More_Is_Less&lt;/a&gt;  &lt;/li&gt;
 &lt;/ul&gt;
 
 </description>
@@ -166,83 +330,83 @@ One of the huge mistakes people make is that they try to force an interest on th
         <title>I Am Dying.</title>
         <description>&lt;p&gt;I’m dying, so is everybody else. People die. Organic matter decays. There’s science behind it. But I might be dying faster. That warrants some worries.&lt;/p&gt;
 
-&lt;p&gt;Hi I am Anubhav Saini - a human being who was given name Anubhav by his parents; Saini being the name of the clan.&lt;/p&gt;
+&lt;p&gt;Hi I am Anubhav Saini - a human being who was given name Anubhav by his parents; Saini being the name of the clan.  &lt;/p&gt;
 
-&lt;p&gt;It was a name given to an object that had consciousness. I was even when born felt my surroundings, thus the name given. People give name to consciousness. They do not go on to name rocks. That’s just stupid.&lt;/p&gt;
+&lt;p&gt;It was a name given to an object that had consciousness. I was even when born felt my surroundings, thus the name given. People give name to consciousness. They do not go on to name rocks. That’s just stupid.  &lt;/p&gt;
 
-&lt;p&gt;Yes yes, people have given names to Planets, Rivers and Mountains and ships and what not. But that’s because of Anthropomorphicisation of these objects.&lt;/p&gt;
+&lt;p&gt;Yes yes, people have given names to Planets, Rivers and Mountains and ships and what not. But that’s because of Anthropomorphicisation of these objects.  &lt;/p&gt;
 
-&lt;p&gt;People feel familiarity if name is given; associate things with it; associate feelings with it. That’s why no one names their kid ‘Pran’ or ‘Ravan’ any more. But there are about 10 million Ram running around.&lt;/p&gt;
+&lt;p&gt;People feel familiarity if name is given; associate things with it; associate feelings with it. That’s why no one names their kid ‘Pran’ or ‘Ravan’ any more. But there are about 10 million Ram running around.  &lt;/p&gt;
 
-&lt;p&gt;Anyway my reproducers gave me an identity for the world to differentiate me from others. Well, that has worked one sided and wonderfully. I on the other hand have failed to utilize this single opportunity and differentiate myself from world myself. I have failed in that contest.&lt;/p&gt;
+&lt;p&gt;Anyway my reproducers gave me an identity for the world to differentiate me from others. Well, that has worked one sided and wonderfully. I on the other hand have failed to utilize this single opportunity and differentiate myself from world myself. I have failed in that contest.  &lt;/p&gt;
 
 &lt;p&gt;But why?&lt;/p&gt;
 
-&lt;p&gt;Was I stupid? Am I stupid? People will answer yes and no depending upon who you ask. I’d say, I am not stupid. I just do not have control over my mind.&lt;/p&gt;
+&lt;p&gt;Was I stupid? Am I stupid? People will answer yes and no depending upon who you ask. I’d say, I am not stupid. I just do not have control over my mind.  &lt;/p&gt;
 
-&lt;p&gt;Hmm, I do not have control over mind. Who does? Think about mind as a parasite that forced humanoids to have bigger upward pump than available so that it can work better. Mind sucks so much nutrients and energy that if provided it can generate enough wealth for you so that you can feed it with more nutrients and energy.&lt;/p&gt;
+&lt;p&gt;Hmm, I do not have control over mind. Who does? Think about mind as a parasite that forced humanoids to have bigger upward pump than available so that it can work better. Mind sucks so much nutrients and energy that if provided it can generate enough wealth for you so that you can feed it with more nutrients and energy.  &lt;/p&gt;
 
-&lt;p&gt;It’s a perfect symbiotic relationship. Mine is just screwed up. I do not want more energy, more nutrients and more money. I just want peace. But that’s not going to happen.&lt;/p&gt;
+&lt;p&gt;It’s a perfect symbiotic relationship. Mine is just screwed up. I do not want more energy, more nutrients and more money. I just want peace. But that’s not going to happen.  &lt;/p&gt;
 
-&lt;p&gt;See, I have fungal sinusitis - my doctors told me 5 years ago that. Then they operated on me. I stayed 2 and half years good and then one day my room mate lit a cigarrette and I started dying again. It clogged my sinuses very fast. I am not sure If I can sue him. I could if I was in US or UK, but in India it will take aweful lot of years to wind up.&lt;/p&gt;
+&lt;p&gt;See, I have fungal sinusitis - my doctors told me 5 years ago that. Then they operated on me. I stayed 2 and half years good and then one day my room mate lit a cigarrette and I started dying again. It clogged my sinuses very fast. I am not sure If I can sue him. I could if I was in US or UK, but in India it will take aweful lot of years to wind up.  &lt;/p&gt;
 
-&lt;p&gt;Then I got a job and cold, AC made me shiver. I had to quit from that job. Then I had to take another job. I was feeling good again. My life was not a ridiculous waste of time anymore. I had purpose to get up in the moring and take a bath. I have always had a purpose to get up and work, it’s bath that I had no reason before to take. Anyway, I learned that when under pressure, if I sleep on my left side, my eye, left one, will fill up with blood. I went to doctors, in a big hospital near diamond district. They wouldn’t listen to me. I told them that I was dying. They wouldn’t listen. I told them that blood in eye + vomiting makes a good reason to be tested. They wouldn’t listen. I wanted them to test me, not treat me for what I thought what was wrong with me; just test me and figure out from there. Anyway, they didn’t perform any tests on me. I was fired from that job for under-performing after a while.&lt;/p&gt;
+&lt;p&gt;Then I got a job and cold, AC made me shiver. I had to quit from that job. Then I had to take another job. I was feeling good again. My life was not a ridiculous waste of time anymore. I had purpose to get up in the moring and take a bath. I have always had a purpose to get up and work, it’s bath that I had no reason before to take. Anyway, I learned that when under pressure, if I sleep on my left side, my eye, left one, will fill up with blood. I went to doctors, in a big hospital near diamond district. They wouldn’t listen to me. I told them that I was dying. They wouldn’t listen. I told them that blood in eye + vomiting makes a good reason to be tested. They wouldn’t listen. I wanted them to test me, not treat me for what I thought what was wrong with me; just test me and figure out from there. Anyway, they didn’t perform any tests on me. I was fired from that job for under-performing after a while.  &lt;/p&gt;
 
-&lt;p&gt;I think I should sue that hospital, but then, years it would take…&lt;/p&gt;
+&lt;p&gt;I think I should sue that hospital, but then, years it would take…  &lt;/p&gt;
 
-&lt;p&gt;I got to realize that my problems are here to stay forever and I will be an under performer forever. I can live with that. But then, I was stung by an insect, it was not a bee or other familiar stinging insect, it was green and was crushed into a plop rather than it’s exosceleton being crushed. What happens when you get bit by an insect and run to a doctor? You get sleep-inducing but anti-allergy medicine. You take it. It hurts a lot. So you take more of these.&lt;/p&gt;
+&lt;p&gt;I got to realize that my problems are here to stay forever and I will be an under performer forever. I can live with that. But then, I was stung by an insect, it was not a bee or other familiar stinging insect, it was green and was crushed into a plop rather than it’s exosceleton being crushed. What happens when you get bit by an insect and run to a doctor? You get sleep-inducing but anti-allergy medicine. You take it. It hurts a lot. So you take more of these.  &lt;/p&gt;
 
-&lt;p&gt;What happens when you take a lot of such medicine and while cleaning your nose with Jal-Neti?&lt;/p&gt;
+&lt;p&gt;What happens when you take a lot of such medicine and while cleaning your nose with Jal-Neti?  &lt;/p&gt;
 
-&lt;p&gt;Yes, huge chunks of collected, dried out nasal mucousa (sounds like furiosa’s brother) comes out. I mean huge. I mean multiple chunks.&lt;/p&gt;
+&lt;p&gt;Yes, huge chunks of collected, dried out nasal mucousa (sounds like furiosa’s brother) comes out. I mean huge. I mean multiple chunks.  &lt;/p&gt;
 
-&lt;p&gt;But after a few days of spraying small chunks in nose-blow, it stopped. My sinusitis was gone. I could blow my nose clear and breathe properly.&lt;/p&gt;
+&lt;p&gt;But after a few days of spraying small chunks in nose-blow, it stopped. My sinusitis was gone. I could blow my nose clear and breathe properly.  &lt;/p&gt;
 
-&lt;p&gt;All was well, until yesterday. My nose clogged at once. Couldn’t breathe anymore from nose. My head started hurting. I took one dose that was lying around. After 4 hours another huge chunk came out of it.&lt;/p&gt;
+&lt;p&gt;All was well, until yesterday. My nose clogged at once. Couldn’t breathe anymore from nose. My head started hurting. I took one dose that was lying around. After 4 hours another huge chunk came out of it.  &lt;/p&gt;
 
-&lt;p&gt;It should have been relief but what happens when you take anti-allergy medicine that has drowsyness as one of it’s side effects?&lt;/p&gt;
+&lt;p&gt;It should have been relief but what happens when you take anti-allergy medicine that has drowsyness as one of it’s side effects?  &lt;/p&gt;
 
-&lt;p&gt;Well, you sleep. A lot.&lt;/p&gt;
+&lt;p&gt;Well, you sleep. A lot.  &lt;/p&gt;
 
-&lt;p&gt;I wanted to wake up and do stuff. I do not work, because I cannot but boy do I keep myself busy!&lt;/p&gt;
+&lt;p&gt;I wanted to wake up and do stuff. I do not work, because I cannot but boy do I keep myself busy!  &lt;/p&gt;
 
-&lt;p&gt;I do.&lt;/p&gt;
+&lt;p&gt;I do.  &lt;/p&gt;
 
-&lt;p&gt;Various coursera courses keep me busy.&lt;/p&gt;
+&lt;p&gt;Various coursera courses keep me busy.  &lt;/p&gt;
 
-&lt;p&gt;My mind told me that I cannot continue working and have to sleep. I am a consciousness that has it’s own identity. I am not my mind but a chosen subset of it. My mind knows that there are infinite roles I can take. I can be a murderer, a suicider, or a suicide bomber - the last one combines the first two. My mind knows that I can become a doctor or a surgeon or an engineer - actually I am. My mind knows that it can handle complex tasks as writing and book keeping pretty well. But, I on the other hand am a subset of my mind. I do not confirm what my mind knows. My mind can know anything, but I as a conscience inside my mind, have to refrain from becoming anything.&lt;/p&gt;
+&lt;p&gt;My mind told me that I cannot continue working and have to sleep. I am a consciousness that has it’s own identity. I am not my mind but a chosen subset of it. My mind knows that there are infinite roles I can take. I can be a murderer, a suicider, or a suicide bomber - the last one combines the first two. My mind knows that I can become a doctor or a surgeon or an engineer - actually I am. My mind knows that it can handle complex tasks as writing and book keeping pretty well. But, I on the other hand am a subset of my mind. I do not confirm what my mind knows. My mind can know anything, but I as a conscience inside my mind, have to refrain from becoming anything.  &lt;/p&gt;
 
-&lt;p&gt;I am Anubhav Saini. I am dying. So, are you. I want to tell world what I am and not what it sees as what I am. I am better than what I have let world see. But I have physical boundaries. So, does everyone else. Mine are shrinking pretty fast. I am sitting and watching as my degenerative brain degenerates; I can comprehend it. It’s not enough for people around me to recognise it. I have strong will to not let that happen. But, it’s bothering me. Keeping me from actively doing what I can do.&lt;/p&gt;
+&lt;p&gt;I am Anubhav Saini. I am dying. So, are you. I want to tell world what I am and not what it sees as what I am. I am better than what I have let world see. But I have physical boundaries. So, does everyone else. Mine are shrinking pretty fast. I am sitting and watching as my degenerative brain degenerates; I can comprehend it. It’s not enough for people around me to recognise it. I have strong will to not let that happen. But, it’s bothering me. Keeping me from actively doing what I can do.  &lt;/p&gt;
 
-&lt;p&gt;I am Anubhav Saini and I am dying; whether you care or not. I want to act as a sane person does. But is there any sanity in the world?&lt;/p&gt;
+&lt;p&gt;I am Anubhav Saini and I am dying; whether you care or not. I want to act as a sane person does. But is there any sanity in the world?  &lt;/p&gt;
 
-&lt;p&gt;People think that they are in control. Are they?&lt;/p&gt;
+&lt;p&gt;People think that they are in control. Are they?  &lt;/p&gt;
 
-&lt;p&gt;Has anyone been in control? Ever? What does that feel like? Have they controlled other human beings? What does that feel like?&lt;/p&gt;
+&lt;p&gt;Has anyone been in control? Ever? What does that feel like? Have they controlled other human beings? What does that feel like?  &lt;/p&gt;
 
-&lt;p&gt;Has anyone recovered from what I am facing? A severe pain in head that feels like a cluster-headache - it runs for days and hurts like hell. What sort of life do I have? Is it what I was given? Bad genes and bad environment. Did I do this to me?&lt;/p&gt;
+&lt;p&gt;Has anyone recovered from what I am facing? A severe pain in head that feels like a cluster-headache - it runs for days and hurts like hell. What sort of life do I have? Is it what I was given? Bad genes and bad environment. Did I do this to me?  &lt;/p&gt;
 
-&lt;p&gt;Are my habits bad that they stop me from doing what matters. I do not like to work for stupid people. But aren’t people sitting on top are all stupid. They are so far from reality of low level that their decisions make no sense. Am I not stupid for not working for money?&lt;/p&gt;
+&lt;p&gt;Are my habits bad that they stop me from doing what matters. I do not like to work for stupid people. But aren’t people sitting on top are all stupid. They are so far from reality of low level that their decisions make no sense. Am I not stupid for not working for money?  &lt;/p&gt;
 
-&lt;p&gt;Am I crazy?&lt;/p&gt;
+&lt;p&gt;Am I crazy?  &lt;/p&gt;
 
-&lt;p&gt;Does anyone has any clue what they are? I am a chemical bag that has a neural network sitting at top, puppeteering small puppets in the bag. It’s like a musical device: Drink coffee, a different tempo; eat butter a different tempo; eat sleep-inducing anti-allergy medicines - a different tempo. Is the spelling of tempo right?&lt;/p&gt;
+&lt;p&gt;Does anyone has any clue what they are? I am a chemical bag that has a neural network sitting at top, puppeteering small puppets in the bag. It’s like a musical device: Drink coffee, a different tempo; eat butter a different tempo; eat sleep-inducing anti-allergy medicines - a different tempo. Is the spelling of tempo right?  &lt;/p&gt;
 
-&lt;p&gt;What we put in our body goes to work, some times early, some times late. Chemicals have a profound affect on our bodies. I can drink H2O but not H2O2. The difference is very small in both. One is practically water, other is. One has only one Oxygen and other has two of them. More is not better in this case. Less is more.&lt;/p&gt;
+&lt;p&gt;What we put in our body goes to work, some times early, some times late. Chemicals have a profound affect on our bodies. I can drink H2O but not H2O2. The difference is very small in both. One is practically water, other is. One has only one Oxygen and other has two of them. More is not better in this case. Less is more.  &lt;/p&gt;
 
-&lt;p&gt;I want to scream that I do not like to put chemicals in my body. My DNA, flawed wants them. My flawed genes require outside help. I cannot continue with stupid morbid gene-pool.&lt;/p&gt;
+&lt;p&gt;I want to scream that I do not like to put chemicals in my body. My DNA, flawed wants them. My flawed genes require outside help. I cannot continue with stupid morbid gene-pool.  &lt;/p&gt;
 
-&lt;p&gt;Now I think about it, I am the first child of my parents. My parents that comprise a female and a male, otherwise lovingly called mother and father. My mother’s side have this bad genetic disorder that affects brain. I think it skips some, but it is there. For example, one of the brothers of my mother’s father was a lunatic. He had degenerated brain disease. My mother’s brother’s son has is a bad egg too. He has a degenerated brain. Impaired learning and bad cognitive skills. I do not have have learning disability but I cannot know that for sure. I am me. Someone who knows more about learning has to tell. I can tell you that new information hurts my head. That’s why I do not like surprises well. That’s why learning new stuff makes my head hurt and I sort of refrain from it. That’s why I am a slow implementer. That’s why…&lt;/p&gt;
+&lt;p&gt;Now I think about it, I am the first child of my parents. My parents that comprise a female and a male, otherwise lovingly called mother and father. My mother’s side have this bad genetic disorder that affects brain. I think it skips some, but it is there. For example, one of the brothers of my mother’s father was a lunatic. He had degenerated brain disease. My mother’s brother’s son has is a bad egg too. He has a degenerated brain. Impaired learning and bad cognitive skills. I do not have have learning disability but I cannot know that for sure. I am me. Someone who knows more about learning has to tell. I can tell you that new information hurts my head. That’s why I do not like surprises well. That’s why learning new stuff makes my head hurt and I sort of refrain from it. That’s why I am a slow implementer. That’s why…  &lt;/p&gt;
 
-&lt;p&gt;Wait a minute, I and my cousin are both the first child. I do not know if the degenerate grand-father (brother of grandfather), was first child or not. I am leaving space for this information for updation purposes. (Space that will be updated if he was first child or not)&lt;/p&gt;
+&lt;p&gt;Wait a minute, I and my cousin are both the first child. I do not know if the degenerate grand-father (brother of grandfather), was first child or not. I am leaving space for this information for updation purposes. (Space that will be updated if he was first child or not)  &lt;/p&gt;
 
-&lt;p&gt;Can there be a disease that affects only the first kid?&lt;/p&gt;
+&lt;p&gt;Can there be a disease that affects only the first kid?  &lt;/p&gt;
 
-&lt;p&gt;With skipping and gene variation, it might have small affect on me. Undetectably small perhaps. Small enough to write-up as personality (or personality disorder) by anyone who comes in my contact. But what if it is really a genetic disorder?&lt;/p&gt;
+&lt;p&gt;With skipping and gene variation, it might have small affect on me. Undetectably small perhaps. Small enough to write-up as personality (or personality disorder) by anyone who comes in my contact. But what if it is really a genetic disorder?   &lt;/p&gt;
 
-&lt;p&gt;Well, that’s life.&lt;/p&gt;
+&lt;p&gt;Well, that’s life.  &lt;/p&gt;
 
-&lt;p&gt;I am Anubhav Saini. I am dying. I hope to write more about it before I kick the bucket though.&lt;/p&gt;
+&lt;p&gt;I am Anubhav Saini. I am dying. I hope to write more about it before I kick the bucket though.  &lt;/p&gt;
 
 &lt;p&gt;For now, bye bye. Come back for more real-life-tragedy-description, later.&lt;/p&gt;
 </description>
@@ -266,14 +430,14 @@ One of the huge mistakes people make is that they try to force an interest on th
       <item>
         <title>Welcome to life!</title>
         <description>&lt;ol&gt;
-  &lt;li&gt;Pipes are clogged again, call a plumber.&lt;/li&gt;
+  &lt;li&gt;Pipes are clogged again, call a plumber.  &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;So, after a few weeks of clear sinuses, I got the bad news yesterday - It’s clogged again.&lt;/p&gt;
+&lt;p&gt;So, after a few weeks of clear sinuses, I got the bad news yesterday - It’s clogged again.  &lt;/p&gt;
 
-&lt;p&gt;Though I am going back to sleeping a lot - a side-effect of anti-histamine drugs that I am about to begin taking again, and running salty water through nose - jal neti procedure. I think I’d be just fine, sleepy, slept, sleepy still, but just fine.&lt;/p&gt;
+&lt;p&gt;Though I am going back to sleeping a lot - a side-effect of anti-histamine drugs that I am about to begin taking again, and running salty water through nose - jal neti procedure. I think I’d be just fine, sleepy, slept, sleepy still, but just fine.  &lt;/p&gt;
 
-&lt;p&gt;Thanks fungal-sinusitis. I really deserve a kick in head so often.&lt;/p&gt;
+&lt;p&gt;Thanks fungal-sinusitis. I really deserve a kick in head so often.  &lt;/p&gt;
 
 &lt;p&gt;[crying face]&lt;/p&gt;
 
@@ -385,308 +549,6 @@ A &lt;span class=&quot;emphasis&quot;&gt;good plan violently executed now&lt;/sp
         <category>programming</category>
         
         <category>web</category>
-        
-      </item>
-    
-      <item>
-        <title>Attempted - octave graphs for assignment 1.</title>
-        <description>&lt;h1 id=&quot;attempt-1&quot;&gt;Attempt 1&lt;/h1&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/blog/octave/stanford-ml-ang-octave-chart-1-attempt-1.png&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/blog/octave/stanford-ml-ang-octave-chart-2-attempt-1.png&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/blog/octave/stanford-ml-ang-octave-chart-3-attempt-1.png&quot; /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;attempt-2&quot;&gt;Attempt 2&lt;/h1&gt;
-
-&lt;p&gt;This attempt is brought to you by N = 15 in linspace.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/blog/octave/stanford-ml-ang-octave-chart-1-attempt-2.png.&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/blog/octave/stanford-ml-ang-octave-chart-2-attempt-2.png&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/blog/octave/stanford-ml-ang-octave-chart-3-attempt-2.png&quot; /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;attempt-3&quot;&gt;Attempt 3&lt;/h1&gt;
-
-&lt;p&gt;computeCost / 100.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/blog/octave/stanford-ml-ang-octave-chart-2-attempt-3.png&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/blog/octave/stanford-ml-ang-octave-chart-3-attempt-3.png&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;But I did solve it, partially.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/blog/octave/stanford-ml-ang-octave-submit-1-attempt-3.png&quot; /&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Though I have failed the assignment. I will try again tomorrow.&lt;/p&gt;
-</description>
-        <pubDate>Thu, 15 Oct 2015 16:13:59 +0530</pubDate>
-        <link>http://iamanubhavsaini.github.io//blog/programming/ml/2015/10/15/Octave-Charts-First-Attempt-Assignment-1-Stanford-Machine-Learning.html</link>
-        <guid isPermaLink="true">http://iamanubhavsaini.github.io//blog/programming/ml/2015/10/15/Octave-Charts-First-Attempt-Assignment-1-Stanford-Machine-Learning.html</guid>
-        
-        <category>programming</category>
-        
-        <category>code</category>
-        
-        <category>octave</category>
-        
-        <category>blog</category>
-        
-        <category>Machine-Learning</category>
-        
-        
-        <category>blog</category>
-        
-        <category>programming</category>
-        
-        <category>ml</category>
-        
-      </item>
-    
-      <item>
-        <title>Quote of the day.</title>
-        <description>&lt;div class=&quot;QuoteContainer&quot;&gt;
-&lt;div class=&quot;Quote&quot;&gt;
-The more a person seeks &lt;span class=&quot;emphasis&quot;&gt;security&lt;/span&gt;, the more that person gives up &lt;span class=&quot;emphasis&quot;&gt;control&lt;/span&gt; over their life.
-&lt;/div&gt;
-&lt;div class=&quot;Quoter&quot;&gt;Robert Kiyosaki&lt;/div&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Thu, 15 Oct 2015 15:40:10 +0530</pubDate>
-        <link>http://iamanubhavsaini.github.io//daily/quotes/2015/10/15/Quote-Of-The-Day.html</link>
-        <guid isPermaLink="true">http://iamanubhavsaini.github.io//daily/quotes/2015/10/15/Quote-Of-The-Day.html</guid>
-        
-        <category>daily</category>
-        
-        <category>quotes</category>
-        
-        <category>motivational</category>
-        
-        
-        <category>daily</category>
-        
-        <category>quotes</category>
-        
-      </item>
-    
-      <item>
-        <title>Advice to Young Programmers and starters.</title>
-        <description>&lt;h2 id=&quot;advice-to-people-who-are-in-despair&quot;&gt;Advice to people who are in despair.&lt;/h2&gt;
-
-&lt;h1 id=&quot;keep-going&quot;&gt;Keep going.&lt;/h1&gt;
-
-&lt;p&gt;I know it’s hard to go on. You cannot see a definite future and are always concerned with it; then you start to blame yourself and things around you. You start to self-doubt. Don’t.&lt;/p&gt;
-
-&lt;p&gt;Whatever it is that you are doing, keep going.&lt;/p&gt;
-
-&lt;h1 id=&quot;everything-is-possible-once-you-put-your-mind-to-it&quot;&gt;Everything is possible, once you put your mind to it.&lt;/h1&gt;
-
-&lt;p&gt;Think only one thing. Do only one thing. There is nothing else for you in the world. You do not need holidays. You need to spend time with your craft. You need to be better. You need to evolve. Be one with the goal. Eat, drink, dream just one thing. Whatever your goal, move towards it, inch by inch. Keep going. Concentrate.&lt;/p&gt;
-
-&lt;h1 id=&quot;you-got-it-tough&quot;&gt;You got it tough.&lt;/h1&gt;
-
-&lt;p&gt;You think what you are doing is tough? Read about people who had it tougher than you. Nelson Mandela spent more years in jail than you have spent upon your craft, your work, your knowledge, your learning. There are people who do not have hands but they draw, paint and write - with their feet. There are people who do not have feet but still have climbed more mountains than you; ride better than you; program better than you; participate in marathons and have a life.&lt;/p&gt;
-
-&lt;p&gt;There are people who didn’t have computers of today. What did Dennis Ritchie had when he created C and what did Linus had when he wrote Linux’s first version? What did Stallman had when he envisioned free software? You have i7, 8 GiB RAM, in your laptop and Quad-core, 3GiB RAM in your phone. You have it easy. They worked in MHz and in Kilo-Bytes. Your sense of entitlement and ego cannot fit into Kilo-Bytes these days.&lt;/p&gt;
-
-&lt;p&gt;You want to be a writer, but do not have right tools? Don’t know where to start? Tell me this then, what tools Shakespear had, or Milton, or Ved Vyas or Panini or Khwarizmi or Kalidas?&lt;/p&gt;
-
-&lt;p&gt;You want to be an artist? What tools did Michaelangelo had? Picasso, Nek Chand, Leonardo DaVinci didn’t have 3D printers or CAD software. They did. They spent thier life learning to do what they do better.&lt;/p&gt;
-
-&lt;p&gt;You want to be a programmer? What did Bill Gates had when he started coding? Ada Lovelace - she didn’t even had a machine to code against. Linus didn’t have a GNU/Linux OS. Stallmand didn’t have a GNU Hurd. (Actually, he still doesn’t. so…)&lt;/p&gt;
-
-&lt;p&gt;You have it easy. You are lazy. You think you are entitled to have better than what you have.&lt;/p&gt;
-
-&lt;h2 id=&quot;advice-to-those-who-are-starting-to-program&quot;&gt;Advice to those who are starting to program.&lt;/h2&gt;
-
-&lt;h1 id=&quot;run-away-from-spoon-feeders&quot;&gt;Run away from Spoon Feeders.&lt;/h1&gt;
-
-&lt;p&gt;If someone is teaching you exactly what you need to solve a problem, then run away, faster. Every time you want to learn how to solve a problem, ask yourself about the concept. What is it that you are missing? Ask others what should you read or how you should tackle. If you know the concept you will be able to solve the problem yourself.&lt;/p&gt;
-
-&lt;p&gt;Remember, you learn when you face the problem and solve it yourself. If someone else solves that problem for you, you might have a solution but you still won’t be able to solve that problem next time. What’s the guarantee that this person will be there to solve your problem again?&lt;/p&gt;
-
-&lt;p&gt;So, run away from spoon feeders, be it your teachers, friends or anyone else.&lt;/p&gt;
-
-&lt;h1 id=&quot;think-first&quot;&gt;Think first.&lt;/h1&gt;
-
-&lt;p&gt;Just because you have computer available to you and IDE too, doesn’t mean that you jump into the code. Think what you are going to do.&lt;/p&gt;
-
-&lt;p&gt;Say you are going to create a linked list in C. Think what do you know about pointers.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;What do pointers point to?&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Where do they point?&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;What about pointers in argument list; where is the storage then?&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;If two pointers point to same thing, what happens when one vanishes? What happens when one changes the memory storage?&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Who makes pointers feasible?&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;In a linked list, do you want to store integers or strings or both?&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;How about storing a &lt;code&gt;void *&lt;/code&gt; object?&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Do you have tests ready to check if you have implemented linked list correctly?&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Do you use git or svn to incrementally lock your progress so that you can have a backup of code and know how you get where you are?&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;So, think first. Get a pen and paper or better, glass and temp-marker; scribble away. Think what you are going to do.&lt;/p&gt;
-
-&lt;h1 id=&quot;stick-to-it&quot;&gt;Stick to it.&lt;/h1&gt;
-
-&lt;p&gt;Pick a programming language and stick to it. Write software in it. Multiple times. Multiple software. You can write a text editor, a code editor, a shell, a paint application etc.&lt;/p&gt;
-
-&lt;p&gt;Do not pick the new-fancy language just because it’s new or fancy. Any Turing-Complete language can do everything what other T-C languages do.&lt;/p&gt;
-
-&lt;p&gt;Stick to a language until you can speak it fluently. Stick to it until you can write code to solve same problems at least three different ways. Make use of stacks, lists and library available.&lt;/p&gt;
-
-&lt;p&gt;Write language’s library yourself.&lt;/p&gt;
-
-&lt;h1 id=&quot;write-tests-and-use-cases-before-you-code&quot;&gt;Write tests and use cases before you code.&lt;/h1&gt;
-
-&lt;p&gt;Before you write code, write tests. Your code shold be able to handle every corner case one can throw at it.&lt;/p&gt;
-
-&lt;h1 id=&quot;show-your-code-to-others-and-ask-for-feedback&quot;&gt;Show your code to others and ask for feedback.&lt;/h1&gt;
-
-&lt;p&gt;You wrote your code, you learned one way to write code. Someone else saw your code, you learned what’s wrong with it.&lt;/p&gt;
-
-&lt;h1 id=&quot;read-others-code&quot;&gt;Read other’s code.&lt;/h1&gt;
-
-&lt;p&gt;You wrote your code, you learned one way to write code. You read other’s code, possibilities are endless.&lt;/p&gt;
-
-&lt;h1 id=&quot;be-optimist-first-critical-later&quot;&gt;Be optimist first, critical later.&lt;/h1&gt;
-
-&lt;p&gt;You do not know how you will solve a problem you’re facing. Self-doubt doesn’t help much, does it? Better is to believe that you will eventually find the solution and go at it. Keep fighting with your problem and approach to solutions until you see a right path. Walk on it.&lt;/p&gt;
-
-&lt;p&gt;Now, be critical. Think:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Why couldn’t you do this before?&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;What made you take so long?&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Why this approach worked?&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Can there be more solutions for the same problem?&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;What will happen if I change this parameter here? or that one?&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;How long does it compute? How long does it take to produce result?&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Can it be improved?&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;always-start-with-what-you-know&quot;&gt;Always start with what you know.&lt;/h1&gt;
-
-&lt;p&gt;You and anyone else, do not know everything about anything. If you are strating chances are you do not know enough about anything. So when starting to solve problem, start with what you know. Then think what problem is asking. Relate your learnings with problem.&lt;/p&gt;
-
-&lt;p&gt;Learn what you think will help you solve the problem. If it didn’t help, learn another thing. Repeat until solved.&lt;/p&gt;
-
-&lt;h1 id=&quot;break-problem-in-smaller-problems&quot;&gt;Break problem in smaller problems.&lt;/h1&gt;
-
-&lt;p&gt;Do not try to solve a given problem thinking that it should be solved at one place, in it’s entirety. Sometimes, it is much better to break problem in multitude of smaller problems. Solve the little ones and build upon them.&lt;/p&gt;
-
-&lt;h1 id=&quot;solve-problems&quot;&gt;Solve problems.&lt;/h1&gt;
-
-&lt;p&gt;Learning doesn’t mean anything, until you solve problem. Problems are what people pay to solve. Learning to solve problems yours first and then other’s will help you earn money too. Though, that’s a later part.&lt;/p&gt;
-
-&lt;p&gt;Problem solving is a good skill. Life itself is a big bundle of small problems that come one after the another or together some unfortunate time. Solve each one by one. Learn to solve problems. Do it daily.&lt;/p&gt;
-
-&lt;h1 id=&quot;learn-to-communicate&quot;&gt;Learn to communicate.&lt;/h1&gt;
-
-&lt;p&gt;Learn English. Learn to write it well, speak it well. Do not throw English words together at someone. Learn to make sense of what you are going to say and say it. Communication is one thing that will differentiate you from the rest. Can you tell other person what problems you are facing. By doing just that, half your problems are solved.&lt;/p&gt;
-
-&lt;p&gt;Can you understand what others are saying? Listen and you might make someone’s life easy. Learn to communicate better than you did yesterday.&lt;/p&gt;
-
-&lt;h1 id=&quot;learn-english&quot;&gt;Learn English.&lt;/h1&gt;
-
-&lt;p&gt;Given that you probably love your mothertongue if it’s not English, unfortunately English is the language of web and programming. Writing proper English can help you communicate better. Learn it, even if your parents don’t like it.&lt;/p&gt;
-
-&lt;h1 id=&quot;learn-multiple-languages&quot;&gt;Learn multiple languages.&lt;/h1&gt;
-
-&lt;p&gt;You should probably be better off if you know multiple languages, programmatic or otherwise.&lt;/p&gt;
-
-&lt;h2 id=&quot;general-language-descriptions&quot;&gt;General Language-Descriptions&lt;/h2&gt;
-
-&lt;h1 id=&quot;c&quot;&gt;C&lt;/h1&gt;
-
-&lt;p&gt;For low-level programming; think os kernel level or driver level programming. Takes time to learn and very complex. Programs written in it may execute very fast. You can shoot your self in your foot if careless and loose a toe.&lt;/p&gt;
-
-&lt;h1 id=&quot;c-1&quot;&gt;C++&lt;/h1&gt;
-
-&lt;p&gt;For writing other languages, compilers, IDEs, tools etc. Very powerful. Supports procedural programming, Object oriented programming. Takes a lot of time to learn and very very complex.&lt;/p&gt;
-
-&lt;p&gt;You can shoot yourself in both the feet, legs, thighs, both hands, upper body and head with one shot. You will survive the shot, but your soul might die after debugging for 3 days straight. (That’s just a joke, take it like that.)&lt;/p&gt;
-
-&lt;p&gt;Expert level language.&lt;/p&gt;
-
-&lt;h1 id=&quot;python&quot;&gt;Python&lt;/h1&gt;
-
-&lt;p&gt;Every programmer should be fluent in python.&lt;/p&gt;
-
-&lt;h1 id=&quot;lisp&quot;&gt;Lisp&lt;/h1&gt;
-
-&lt;p&gt;Growth harmone for programming brain.&lt;/p&gt;
-
-&lt;h1 id=&quot;ruby&quot;&gt;Ruby&lt;/h1&gt;
-
-&lt;p&gt;Teaches you to write code in simplest form. Clean and clear. Provides clarity to programming mind.&lt;/p&gt;
-
-&lt;h1 id=&quot;javascript&quot;&gt;JavaScript&lt;/h1&gt;
-
-&lt;p&gt;To code everything in between and including browsers and servers. Takes time to learn. Weird language (before &lt;code&gt;use strict;&lt;/code&gt; and ES6).&lt;/p&gt;
-
-&lt;p&gt;Every programmer should konw JavaScript.&lt;/p&gt;
-
-&lt;h1 id=&quot;htmlcss&quot;&gt;HTML/CSS&lt;/h1&gt;
-
-&lt;p&gt;Every programmer should know these two.&lt;/p&gt;
-
-&lt;h1 id=&quot;erlang&quot;&gt;Erlang&lt;/h1&gt;
-
-&lt;p&gt;For those who don’t like procedures. Advanced.&lt;/p&gt;
-
-&lt;h1 id=&quot;haskell--scala--f&quot;&gt;Haskell / Scala / F#&lt;/h1&gt;
-
-&lt;p&gt;Functional. Powerful. Advanced.&lt;/p&gt;
-
-&lt;p&gt;Well, I intend to add more to this post. So stay tuned. Let me know what you think.&lt;/p&gt;
-</description>
-        <pubDate>Wed, 14 Oct 2015 15:09:59 +0530</pubDate>
-        <link>http://iamanubhavsaini.github.io//blog/2015/10/14/Advice-To-Young-Programmers.html</link>
-        <guid isPermaLink="true">http://iamanubhavsaini.github.io//blog/2015/10/14/Advice-To-Young-Programmers.html</guid>
-        
-        <category>advice</category>
-        
-        <category>motivational</category>
-        
-        
-        <category>blog</category>
         
       </item>
     
