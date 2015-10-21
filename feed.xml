@@ -6,15 +6,15 @@
 </description>
     <link>http://iamanubhavsaini.github.io//</link>
     <atom:link href="http://iamanubhavsaini.github.io//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 22 Oct 2015 00:25:59 +0530</pubDate>
-    <lastBuildDate>Thu, 22 Oct 2015 00:25:59 +0530</lastBuildDate>
+    <pubDate>Thu, 22 Oct 2015 01:01:02 +0530</pubDate>
+    <lastBuildDate>Thu, 22 Oct 2015 01:01:02 +0530</lastBuildDate>
     <generator>Jekyll v2.2.0</generator>
     
       <item>
         <title>Quote of the day.</title>
         <description>&lt;div class=&quot;QuoteContainer&quot;&gt;
 &lt;div class=&quot;Quote&quot;&gt;
-Freddy, as a younger man, I was a sculptor, a painter, and a musician. There was just one problem: I wasn’t very good. As a matter of fact, I was dreadful. I finally came to the frustrating conclusion that I had taste and style, but not talent. I knew my limitations. We all have our limitations, Freddy. Fortunately, I discovered that taste and style were commodities that people desired. Freddy, what I am saying is: know your limitations. You are a moron.
+Freddy, as a younger man, I was a sculptor, a painter, and a musician. There was just one problem: I wasn’t very good. As a matter of fact, I was dreadful. I finally came to the frustrating conclusion that I had taste and style, but not talent. I knew my limitations. &lt;span class=&quot;emphasis&quot;&gt;We all have our limitations&lt;/span&gt;, Freddy. Fortunately, I discovered that taste and style were commodities that &lt;span class=&quot;emphasis&quot;&gt;people desired&lt;/span&gt;. Freddy, what I am saying is: &lt;span class=&quot;emphasis&quot;&gt;know your limitations. You are a moron.&lt;/span&gt;
 &lt;/div&gt;
 &lt;div class=&quot;Quoter&quot;&gt;Lawrence Jamieson, Dirty Rotten Scoundrels (1988)&lt;/div&gt;
 &lt;/div&gt;
@@ -93,6 +93,167 @@ Make a decision today to not stay mediocre. Make a decision today to excel at so
         <category>daily</category>
         
         <category>quotes</category>
+        
+      </item>
+    
+      <item>
+        <title>Being Agile.</title>
+        <description>&lt;h2 id=&quot;all-about-being-agile&quot;&gt;All about Being Agile.&lt;/h2&gt;
+
+&lt;h1 id=&quot;agile-practices&quot;&gt;Agile practices&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Acceptance Testing  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The customer writes acceptance tests. The tests demonstrate that the story is complete. The programmers and the customer automate acceptance tests. Programmers run the tests multiple times per day.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Coding Standards  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The code needs to have a common style to facilitate communication between programmers. The team owns the code; the team owns the coding style.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Collective Ownership  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The team owns the code. Programmer pairs modify any piece of code they need to. Extensive unit tests help protect the team from coding mistakes.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Continuous Integration&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Programmers integrate and test the software many times a day. Big code branches and merges are avoided.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Customer Team Member&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Teams have someone (or a group of people) representing the interests of the customer. They decide what is in the product and what is not in the product.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Metaphor or Vision&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The system metaphor provides an idea or a model for the system. It provides a context for naming things in the software, making the software communicate to the programmers.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Open Workspace&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;To facilitate communications the team works in an open workspace with all the people and equipment easily accessible.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Pair Programming&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Two programmers collaborate to solve one problem. Programming is not a spectator sport.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Planning Game&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;XP is an iterative development process. In the planning game, the customer and the programmers determine the scope of the next release. Programmers estimating the feature costs. Customers select features and package the development of those features into small iterations (typically 2 weeks). Iterations are combined into meaningful end user releases.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Refactoring&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;As programmers add new features to the project, the design may start to get messy. If this continues, the design will deteriorate. Refactoring is the process of keeping the design clean incrementally.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Simple Design&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The design in XP is kept as simple as possible for the current set of implemented stories. Programmers don’t build frameworks and infrastructure for the features that might be coming.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Small Releases&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Programmers build the system in small releases defined. An iteration is typically two weeks. A release is a group of iterations that provide valuable features to the users of the system.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Sustainable Pace&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The team needs to stay fresh to effectively produce software. One way to make sure the team makes many mistakes is to have them work a lot of overtime.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Test Driven Design&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Programmers write software in very small verifiable steps. First, we write a small test. Then we write enough code to satisfy the test. Then another test is written, and so on.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;User Story&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;A User Story represents a feature of the system. The customer writes the story on a note card. Stories are small. The estimate to complete a story is limited to no greater than what one person could complete within a single iteration.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;   &lt;/p&gt;
+
+&lt;h1 id=&quot;references&quot;&gt;References&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.objectmentor.com&quot;&gt;OBJECT MENTOR&lt;/a&gt;  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;[More will follow.]&lt;/p&gt;
+</description>
+        <pubDate>Thu, 22 Oct 2015 12:33:33 +0530</pubDate>
+        <link>http://iamanubhavsaini.github.io//blog/agile/2015/10/22/Agile-Practices.html</link>
+        <guid isPermaLink="true">http://iamanubhavsaini.github.io//blog/agile/2015/10/22/Agile-Practices.html</guid>
+        
+        <category>programming</category>
+        
+        <category>agile</category>
+        
+        <category>software-development-methodology</category>
+        
+        <category>blog</category>
+        
+        
+        <category>blog</category>
+        
+        <category>agile</category>
         
       </item>
     
@@ -439,32 +600,6 @@ Winners don&#39;t do different things, they do things differently.&lt;/div&gt;
         <category>patterns</category>
         
         <category>anti-pattern</category>
-        
-      </item>
-    
-      <item>
-        <title>Quote of the day.</title>
-        <description>&lt;div class=&quot;QuoteContainer&quot;&gt;
-&lt;div class=&quot;Quote&quot;&gt;
-One of the huge mistakes people make is that they try to force an interest on themselves. You don’t choose your passions; your passions choose you.
-&lt;/div&gt;
-&lt;div class=&quot;Quoter&quot;&gt;Jeff Bezos&lt;/div&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Sun, 18 Oct 2015 02:30:59 +0530</pubDate>
-        <link>http://iamanubhavsaini.github.io//daily/quotes/2015/10/18/Quote-Of-The-Day.html</link>
-        <guid isPermaLink="true">http://iamanubhavsaini.github.io//daily/quotes/2015/10/18/Quote-Of-The-Day.html</guid>
-        
-        <category>daily</category>
-        
-        <category>quotes</category>
-        
-        <category>motivational</category>
-        
-        
-        <category>daily</category>
-        
-        <category>quotes</category>
         
       </item>
     
