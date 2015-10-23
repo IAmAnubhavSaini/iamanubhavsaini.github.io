@@ -6,8 +6,8 @@
 </description>
     <link>http://iamanubhavsaini.github.io//</link>
     <atom:link href="http://iamanubhavsaini.github.io//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 22 Oct 2015 01:01:02 +0530</pubDate>
-    <lastBuildDate>Thu, 22 Oct 2015 01:01:02 +0530</lastBuildDate>
+    <pubDate>Sat, 24 Oct 2015 00:40:19 +0530</pubDate>
+    <lastBuildDate>Sat, 24 Oct 2015 00:40:19 +0530</lastBuildDate>
     <generator>Jekyll v2.2.0</generator>
     
       <item>
@@ -37,6 +37,60 @@ Freddy, as a younger man, I was a sculptor, a painter, and a musician. There was
         <category>daily</category>
         
         <category>quotes</category>
+        
+      </item>
+    
+      <item>
+        <title>A Self-Replicating JavaScript Button.</title>
+        <description>&lt;p&gt;A Self-Replicating JavaScript Button is the name of the challenge I am throwing to myself. This should be by far the easiest way to create self-replicating computer code.&lt;/p&gt;
+
+&lt;p&gt;So a button looks like:&lt;/p&gt;
+
+&lt;p&gt;&lt;input type=&quot;button&quot; value=&quot;a button&quot; onclick=&quot;alert(&#39;I do nothing&#39;);&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;If you go to &lt;a href=&quot;https://github.com/IAmAnubhavSaini/a-self-replicating-button&quot;&gt;https://github.com/IAmAnubhavSaini/a-self-replicating-button&lt;/a&gt; then you can find the button with code around it.  &lt;/p&gt;
+
+&lt;p&gt;Download it and click it. See what happens.&lt;/p&gt;
+
+&lt;p&gt;You can test the same thing here though.  &lt;/p&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+  var selfReplicate = function () {
+    var button = document.createElement(&#39;input&#39;);
+    button.type=&quot;button&quot;;
+    button.value = &quot;a self replicating button&quot;;
+    button.onclick = selfReplicate;
+    document.getElementById(&#39;srbs&#39;).appendChild(button);
+  }
+&lt;/script&gt;
+
+&lt;div id=&quot;srbs&quot;&gt;
+  &lt;input type=&quot;button&quot; value=&quot;a self replicating button&quot; onclick=&quot;selfReplicate();&quot; /&gt;
+
+
+&amp;nbsp;
+
+---
+
+&amp;nbsp;
+
+A few new problems emerged though: How to test DOM? What good is Jasmine for?
+&lt;/div&gt;
+</description>
+        <pubDate>Fri, 23 Oct 2015 23:55:56 +0530</pubDate>
+        <link>http://iamanubhavsaini.github.io//blog/javascript/2015/10/23/A-self-replicating-javascript-button.html</link>
+        <guid isPermaLink="true">http://iamanubhavsaini.github.io//blog/javascript/2015/10/23/A-self-replicating-javascript-button.html</guid>
+        
+        <category>programming</category>
+        
+        <category>JavaScript</category>
+        
+        <category>blog</category>
+        
+        
+        <category>blog</category>
+        
+        <category>javascript</category>
         
       </item>
     
@@ -474,132 +528,6 @@ Winners don&#39;t do different things, they do things differently.&lt;/div&gt;
         <category>daily</category>
         
         <category>quotes</category>
-        
-      </item>
-    
-      <item>
-        <title>Anti Pattern - Analysis Paralysis.</title>
-        <description>&lt;h2 id=&quot;a-state-of-over-thinking-a-situation&quot;&gt;A state of over-thinking a situation.&lt;/h2&gt;
-
-&lt;p&gt;Programmers do it. Software Managers do it. Chess robots do it. Teenage girls do it. Recently turned vampires do it. Human rights advocate do it. Procrastinators do it. Mothers do it.  &lt;/p&gt;
-
-&lt;h1 id=&quot;decision-makers-do-not-do-it&quot;&gt;Decision makers do not do it.&lt;/h1&gt;
-
-&lt;p&gt;It’s very simple and wide-spread phenomenon. You have to make a decision; but you have a lot of data or information; before you could make a decision, you want more time to process or more information to aid you in making that decision. It takes so much time that it feels to others that you have got paralysis. That’s what analysis paralysis or paralysis by analysis is all about.  &lt;/p&gt;
-
-&lt;p&gt;Usually we want to make good decisions. But, when fear creeps in, we sort of want to defer the decision making; as if you will be able to find better solution, perhaps the best one.  &lt;/p&gt;
-
-&lt;p&gt;When problem stays intact and we have consumed a lot of time in making a decision, we have got paralysis by analysis.  &lt;/p&gt;
-
-&lt;p&gt;In software development this happens almost everytime management wants to design best product. This usually results in long design phases, planning phases, requirement gathering phase and research phase. When bureaucracy creeps in and wants to work as to please the above sitting manager and top management, the analysis phase can go very long as to justify for the future product. Such a product, even before getting started to be built, builds up a huge baggage that can bog down the entire project.  &lt;/p&gt;
-
-&lt;h1 id=&quot;why-an-anti-pattern-though&quot;&gt;Why an anti-pattern though?&lt;/h1&gt;
-
-&lt;p&gt;It is called an anti-pattern because it is a pattern and it is anti progress. Anytime you see talk and no walk, think paralysis by analysis.  &lt;/p&gt;
-
-&lt;p&gt;Any debate, discussion, argument over an upcoming controversial policy is analysis paralysis. What should be done is debates, discussions and arguments constructed against or in favor of current/acting/active policies. Then, anybody can see the outcome and tweak the policy and thus output.  &lt;/p&gt;
-
-&lt;p&gt;Such policies are:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Abortion&lt;/li&gt;
-  &lt;li&gt;Population Control&lt;/li&gt;
-  &lt;li&gt;Drug control&lt;/li&gt;
-  &lt;li&gt;Patent control&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;et cetra.  &lt;/p&gt;
-
-&lt;p&gt;What should be understood already is that all policies are flawed and thus everyone should be working to improve the current policies. Also, no policy should be set in stone. That’s just stupid.  &lt;/p&gt;
-
-&lt;p&gt;Paralysis by analysis can be discouraged by keeping an eye on the goal and current work. Ask yourself, repeatedly, is what you are doing getting you near your goal? If answer is not yes, don’t panic. It might take you there in the longer run; kind of like you have to pull an arrow back to make it hit the target. You get the gist.  &lt;/p&gt;
-
-&lt;h1 id=&quot;ask-yourself---is-what-you-are-doing-helping-you-solve-the-problem-you-are-trying-to-solve-can-it-help-in-longer-run-to-solve-that-problem&quot;&gt;Ask yourself - Is what you are doing helping you solve the problem you are trying to solve? Can it help in longer run to solve that problem?&lt;/h1&gt;
-
-&lt;p&gt;So, do work emails help you out in working work? The answer is probably no. Aren’t those just memes most of the time or spam?  &lt;/p&gt;
-
-&lt;p&gt;Does taking naps in afternoon post-lunch help you work better? The answer is probably yes.  &lt;/p&gt;
-
-&lt;p&gt;So if a management forces you to read spam emails, and doesn’t let you nap, is it worth working for? The answer is probably what you know.  &lt;/p&gt;
-
-&lt;h2 id=&quot;the-solution&quot;&gt;The solution&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Do not over think. Break problem in smaller pieces, and start working on one of them. String together all such pieces and you would have solved your problem.  &lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Choose your goals. Once picked, do not alter them.  &lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Reduce your options drastically. Do not even think about trying everything.  &lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Believe that whatever you pick will be a wrong choice, and you’d have to work with it.  &lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Get other’s help. Do not hesistate to ask a person sitting right next to you. Even if someone doesn’t know the context of your problem, they might be able to help you out.  &lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Think, not obsess.  &lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Allocate time for the thinking process.  &lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Gather data, not obsessive amount of it.  &lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Pick quickly; leave smartness for phones.  &lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Be ready for life; deal with problems as they appear. Trying to solve problems when they are not even there is a can of worms, best not opened.  &lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Be curious, but not too much. Remember, curiosity killed the cat.  &lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Don’t be a perfectionist. You can perfect yourself, but only in one thing per life.  &lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Make a rule book of rules that you do not want to break through out your life. Do not like pasta, don’t have to; do not think over it while ordering italian. Do not like stripes; do not stay in section that hangs stripes. Go to rules for decision making and follow them.  &lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Do not buy costly stuff that you really don’t need. An SSD for browsing internet, stupid. A MS SQL Serer instance when SQLite will do, stupid. A 56 inch plasma TV when 32 inch one will do, stupid and regretful.  &lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The End.&lt;/p&gt;
-
-&lt;h1 id=&quot;references&quot;&gt;References&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Analysis_paralysis&quot;&gt;https://en.wikipedia.org/wiki/Analysis_paralysis&lt;/a&gt;  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Curiosity_killed_the_cat&quot;&gt;For curiosity killed the cat&lt;/a&gt;  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/The_Paradox_of_Choice:_Why_More_Is_Less&quot;&gt;https://en.wikipedia.org/wiki/The_Paradox_of_Choice:_Why_More_Is_Less&lt;/a&gt;  &lt;/li&gt;
-&lt;/ul&gt;
-
-</description>
-        <pubDate>Sun, 18 Oct 2015 02:40:59 +0530</pubDate>
-        <link>http://iamanubhavsaini.github.io//blog/patterns/anti-pattern/2015/10/18/Anti-Pattern-1.html</link>
-        <guid isPermaLink="true">http://iamanubhavsaini.github.io//blog/patterns/anti-pattern/2015/10/18/Anti-Pattern-1.html</guid>
-        
-        <category>blog</category>
-        
-        <category>patterns</category>
-        
-        <category>anti-pattern</category>
-        
-        <category>programming</category>
-        
-        <category>analysis</category>
-        
-        
-        <category>blog</category>
-        
-        <category>patterns</category>
-        
-        <category>anti-pattern</category>
         
       </item>
     
