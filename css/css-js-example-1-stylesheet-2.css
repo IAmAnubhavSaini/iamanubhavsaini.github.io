@@ -1,0 +1,28 @@
+#header {
+  border: none;
+  position: relative;
+}
+
+#header #top {
+  height: 150px;
+}
+
+#header #bottom {
+  height: 150px;
+}
+
+#me {
+  position: absolute;
+  top: 30%;
+  left:5%;
+  background-color: red;
+}
+
+#name {
+  position: absolute;
+  background-color: rgba(0,0,0,0.3);
+  color: white;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}

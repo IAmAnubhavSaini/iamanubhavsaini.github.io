@@ -6,9 +6,43 @@
 </description>
     <link>http://iamanubhavsaini.github.io//</link>
     <atom:link href="http://iamanubhavsaini.github.io//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 24 Oct 2015 00:40:19 +0530</pubDate>
-    <lastBuildDate>Sat, 24 Oct 2015 00:40:19 +0530</lastBuildDate>
+    <pubDate>Tue, 27 Oct 2015 16:38:45 +0530</pubDate>
+    <lastBuildDate>Tue, 27 Oct 2015 16:38:45 +0530</lastBuildDate>
     <generator>Jekyll v2.2.0</generator>
+    
+      <item>
+        <title>Suggestion 1 for Windows-Next.</title>
+        <description>&lt;p&gt;So Windows installs itself in C drive. Users can put all sorts of crap in C drive. Well, I want to suggest windows that:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Carve out a 20 GiB drive named C in hard-disk.  &lt;/li&gt;
+  &lt;li&gt;Install Windows in C drive.  &lt;/li&gt;
+  &lt;li&gt;Make C drive unaccessible to users.  &lt;/li&gt;
+  &lt;li&gt;Every software installed other than Windows will go to a different drive.  &lt;/li&gt;
+  &lt;li&gt;Every document, download, picture, configuration etc will go to different drive.  &lt;/li&gt;
+  &lt;li&gt;Whatever you do, do not relinquish hold on C drive. Make it immutable for everything other than Windows update.   Make it invisible for users: developers and end-users alike.  &lt;/li&gt;
+  &lt;li&gt;Put all the cache for Windows in C drive including page-files. Cache and page-files for other drives will live somewhere else.  &lt;/li&gt;
+  &lt;li&gt;Put all the settings and configurations outside C drive.  &lt;/li&gt;
+  &lt;li&gt;Make sure that you and user understand that OS drive exists only to provide users a platform.  &lt;/li&gt;
+  &lt;li&gt;In a multi processor architecture, assign a processor permanently to windows. Do not let user-space see it. They will loose a processor but gain stability.  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Well by doing this, OS will become unhackable by exernal programs. Windows will not be able to crash because of user space viruses. Backup will be a breeze etc.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 27 Oct 2015 16:27:27 +0530</pubDate>
+        <link>http://iamanubhavsaini.github.io//blog/2015/10/27/Windows-Next-Upgrade-Suggestion-1.html</link>
+        <guid isPermaLink="true">http://iamanubhavsaini.github.io//blog/2015/10/27/Windows-Next-Upgrade-Suggestion-1.html</guid>
+        
+        <category>blog</category>
+        
+        <category>post</category>
+        
+        <category>windows</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
     
       <item>
         <title>Quote of the day.</title>
@@ -37,6 +71,58 @@ Freddy, as a younger man, I was a sculptor, a painter, and a musician. There was
         <category>daily</category>
         
         <category>quotes</category>
+        
+      </item>
+    
+      <item>
+        <title>CSS-JS Example 1.</title>
+        <description>&lt;div id=&quot;header&quot;&gt;
+  &lt;div id=&quot;top&quot;&gt;&lt;/div&gt;
+  &lt;div id=&quot;bottom&quot;&gt;&lt;/div&gt;
+  &lt;div id=&quot;me&quot;&gt;&lt;div id=&quot;name&quot;&gt;Anubhav Saini&lt;/div&gt;&lt;/div&gt;
+  &lt;div id=&quot;nav&quot;&gt;
+    &lt;a href=&quot;/about&quot;&gt;about&lt;/a&gt;
+    &lt;a href=&quot;/index.html&quot;&gt;home&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+  var changeStyleSheet = function (newLinkHref) {
+    var links = document.getElementsByTagName(&#39;link&#39;);
+    var oldLink = links[links.length-1];
+    var newLink = document.createElement(&#39;link&#39;);
+    newLink.setAttribute(&#39;type&#39;, &#39;text/css&#39;);
+    newLink.setAttribute(&#39;rel&#39;, &#39;stylesheet&#39;);
+    newLink.setAttribute(&#39;href&#39;, newLinkHref);
+    document.getElementsByTagName(&#39;head&#39;)[0].replaceChild(newLink, oldLink);
+  }
+&lt;/script&gt;
+
+&lt;hr /&gt;
+
+&lt;div id=&quot;buttons&quot;&gt;
+  &lt;input type=&quot;button&quot; onclick=&quot;changeStyleSheet(&amp;quot;/css/css-js-example-1-stylesheet-1.css&amp;quot;);&quot; value=&quot;style #1&quot; /&gt;
+  &lt;input type=&quot;button&quot; onclick=&quot;changeStyleSheet(&amp;quot;/css/css-js-example-1-stylesheet-2.css&amp;quot;);&quot; value=&quot;style #2&quot; /&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Sat, 24 Oct 2015 16:22:44 +0530</pubDate>
+        <link>http://iamanubhavsaini.github.io//daily/the-example-project/2015/10/24/First-Example.html</link>
+        <guid isPermaLink="true">http://iamanubhavsaini.github.io//daily/the-example-project/2015/10/24/First-Example.html</guid>
+        
+        <category>daily</category>
+        
+        <category>css-js-example</category>
+        
+        <category>the-example-project</category>
+        
+        <category>css</category>
+        
+        <category>javascript</category>
+        
+        
+        <category>daily</category>
+        
+        <category>the-example-project</category>
         
       </item>
     
@@ -419,115 +505,6 @@ You are and only you are responsible for your life.&lt;/div&gt;
         <category>programming</category>
         
         <category>rust</category>
-        
-      </item>
-    
-      <item>
-        <title>First rust program and comparison with C.</title>
-        <description>&lt;p&gt;We are going to say hello, world! in rust too. In C this is very simple and throughly known.  &lt;/p&gt;
-
-&lt;h1 id=&quot;c&quot;&gt;C&lt;/h1&gt;
-
-&lt;pre&gt;&lt;code&gt;#include &amp;lt;stdio.h&amp;gt;  
-
-void main() {  
-	printf(&quot;Hello, World!&quot;);  
-}  
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h1 id=&quot;rust&quot;&gt;Rust&lt;/h1&gt;
-
-&lt;pre&gt;&lt;code&gt;fn main() {  
-	println!(&quot;Hello, World!&quot;);  
-}  
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h1 id=&quot;how-to-build-binary&quot;&gt;How to build binary?&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Save file as &lt;code&gt;file_name.rs&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;run &lt;code&gt;rustc file_name.rs&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;run &lt;code&gt;file_name.exe&lt;/code&gt; or &lt;code&gt;./file_name&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;example-build&quot;&gt;Example build&lt;/h1&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/blog/2015-10-19-Rust-Program-1.png&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt; &lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt; &lt;/p&gt;
-
-&lt;p&gt;Well that’s odd. It’s exactly the same. I mean look-wise. Let’s find the similarities first and then differences.  &lt;/p&gt;
-
-&lt;h1 id=&quot;similarities&quot;&gt;Similarities&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Both take a string inside double quotes.  &lt;/li&gt;
-  &lt;li&gt;Both have main() as their starting function.  &lt;/li&gt;
-  &lt;li&gt;Both use parenthesis { and } for block delineation.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;differences&quot;&gt;Differences&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code&gt;fn&lt;/code&gt; marks a function in rust.  &lt;/li&gt;
-  &lt;li&gt;If returning nothing, we do not need to specify it in rust.  &lt;/li&gt;
-  &lt;li&gt;In rust, we do not need to include a file for something as trivial as printing to screen.  &lt;/li&gt;
-  &lt;li&gt;In rust, println is a macro whereas in c it is a function.  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt; &lt;/p&gt;
-
-&lt;p&gt;As always, if you find a mistake, please let me know so that I can correct it.  &lt;/p&gt;
-</description>
-        <pubDate>Mon, 19 Oct 2015 14:52:54 +0530</pubDate>
-        <link>http://iamanubhavsaini.github.io//blog/programming/rust/2015/10/19/First-Rust-Program.html</link>
-        <guid isPermaLink="true">http://iamanubhavsaini.github.io//blog/programming/rust/2015/10/19/First-Rust-Program.html</guid>
-        
-        <category>programming</category>
-        
-        <category>code</category>
-        
-        <category>rust</category>
-        
-        <category>c</category>
-        
-        <category>blog</category>
-        
-        
-        <category>blog</category>
-        
-        <category>programming</category>
-        
-        <category>rust</category>
-        
-      </item>
-    
-      <item>
-        <title>Quote of the day.</title>
-        <description>&lt;div class=&quot;QuoteContainer&quot;&gt;
-&lt;div class=&quot;Quote&quot;&gt;
-Winners don&#39;t do different things, they do things differently.&lt;/div&gt;
-&lt;div class=&quot;Quoter&quot;&gt;Shiv Khera&lt;/div&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Mon, 19 Oct 2015 14:50:59 +0530</pubDate>
-        <link>http://iamanubhavsaini.github.io//daily/quotes/2015/10/19/Quote-Of-The-Day.html</link>
-        <guid isPermaLink="true">http://iamanubhavsaini.github.io//daily/quotes/2015/10/19/Quote-Of-The-Day.html</guid>
-        
-        <category>daily</category>
-        
-        <category>quotes</category>
-        
-        <category>motivational</category>
-        
-        
-        <category>daily</category>
-        
-        <category>quotes</category>
         
       </item>
     
