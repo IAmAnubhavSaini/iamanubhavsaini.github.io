@@ -6,9 +6,192 @@
 </description>
     <link>http://iamanubhavsaini.github.io//</link>
     <atom:link href="http://iamanubhavsaini.github.io//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 27 Oct 2015 16:40:38 +0530</pubDate>
-    <lastBuildDate>Tue, 27 Oct 2015 16:40:38 +0530</lastBuildDate>
+    <pubDate>Tue, 27 Oct 2015 21:29:54 +0530</pubDate>
+    <lastBuildDate>Tue, 27 Oct 2015 21:29:54 +0530</lastBuildDate>
     <generator>Jekyll v2.2.0</generator>
+    
+      <item>
+        <title>JavaScript - 3 - JavaScript 5 has functional scope.</title>
+        <description>&lt;p&gt;JavaScript #3 - JavaScript 5 has functional scope.&lt;/p&gt;
+
+&lt;p&gt;At least up to ES5, JS has functional scope.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    function f(){
+        var a = 10;
+        // a belongs to function f.
+
+        for(var i = 0; i &amp;lt; a; i++){
+            // do something with i;
+        }
+
+        console.log(i);
+        // i could be undefined,
+        // as i is scoped for only for loop (in other languages).
+        // But not in JS. i is alive-and-kicking.
+
+        console.log(a);
+
+        function g(){
+        // yes function inside function check JavaScript #4
+
+            i = 100;
+            // this refers to f()&#39;s i.
+
+            var j = 10;
+            // g()&#39;s j.
+
+            console.log(i);
+            console.log(j);
+        }
+        g(); // 100 and 10
+
+        console.log(i); // 100
+
+        console.log(j);
+        // error if no j is defined outside function f().
+    }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Well, functions in JavaScript, are the only scope containers. For loop, { } that constitute blocks are not scope containers.&lt;/p&gt;
+
+&lt;p&gt;ES6 has added extra functionality to have block level scopes.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 27 Oct 2015 17:03:27 +0530</pubDate>
+        <link>http://iamanubhavsaini.github.io//blog/javascript/2015/10/27/JavaScript-3.html</link>
+        <guid isPermaLink="true">http://iamanubhavsaini.github.io//blog/javascript/2015/10/27/JavaScript-3.html</guid>
+        
+        <category>blog</category>
+        
+        <category>post</category>
+        
+        <category>javascript</category>
+        
+        
+        <category>blog</category>
+        
+        <category>javascript</category>
+        
+      </item>
+    
+      <item>
+        <title>JavaScript - 1 - JavaScript has floating point numbers.</title>
+        <description>&lt;p&gt;Javascript #1 - JavaScript has floating point numbers, so don’t compare them.&lt;/p&gt;
+
+&lt;p&gt;JavaScript has IEEE 754 standard for representing numbers.&lt;/p&gt;
+
+&lt;p&gt;Comparing them (the decimal ones) creates problems.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    0.1 + 0.2 === 0.3
+    false
+
+    a = 0.1
+    0.1
+    b = 0.2
+    0.2
+    c = 0.3
+    0.3
+    a + b === c
+    false
+
+    d = a + b
+    0.30000000000000004
+    a + b === d
+    true
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;However, integers are perfectly fine.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    1 + 2 === 3
+    true
+
+    a = 1
+    1
+    b = 2
+    2
+    c = 3
+    3
+    a + b === c
+    true
+
+    d = a + b
+    3
+    a + b === d
+    true
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;There you go.&lt;/p&gt;
+
+&lt;h1 id=&quot;references-for-more-reading&quot;&gt;References for more reading.&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/IEEE_754-1985&quot;&gt;https://en.wikipedia.org/wiki/IEEE_754-1985&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;http://stackoverflow.com/a/17849204&quot;&gt;http://stackoverflow.com/a/17849204&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://docs.python.org/2/tutorial/floatingpoint.html#representation-error&quot;&gt;https://docs.python.org/2/tutorial/floatingpoint.html#representation-error&lt;/a&gt;  &lt;/p&gt;
+</description>
+        <pubDate>Tue, 27 Oct 2015 16:57:27 +0530</pubDate>
+        <link>http://iamanubhavsaini.github.io//blog/javascript/2015/10/27/JavaScript-1.html</link>
+        <guid isPermaLink="true">http://iamanubhavsaini.github.io//blog/javascript/2015/10/27/JavaScript-1.html</guid>
+        
+        <category>blog</category>
+        
+        <category>post</category>
+        
+        <category>javascript</category>
+        
+        
+        <category>blog</category>
+        
+        <category>javascript</category>
+        
+      </item>
+    
+      <item>
+        <title>JavaScript - 2 - Numbers can be concatenated to form strings sometimes.</title>
+        <description>&lt;p&gt;JavaScript #2 - Numbers can be concatenated to form strings sometimes.&lt;/p&gt;
+
+&lt;p&gt;Consider following piece of code.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    i = 10;
+    10
+    j = 20;
+    20
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Printing i + j is not an issue as it still will be a number.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    console.log(i + j)
+    30
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;But putting a string on the same line as number addition turns on the concatenation:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    console.log(&#39;i + j = &#39; + i + j)
+    i + j = 1020
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Such concatenation can be prevented using parenthesis:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    console.log(&#39;i + j = &#39; + (i + j))
+    i + j = 30
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;So, beware of numbers that are added to strings. + looks like a friend, but in reality it’s frenemy.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 27 Oct 2015 16:53:27 +0530</pubDate>
+        <link>http://iamanubhavsaini.github.io//blog/javascript/2015/10/27/JavaScript-2.html</link>
+        <guid isPermaLink="true">http://iamanubhavsaini.github.io//blog/javascript/2015/10/27/JavaScript-2.html</guid>
+        
+        <category>blog</category>
+        
+        <category>post</category>
+        
+        <category>javascript</category>
+        
+        
+        <category>blog</category>
+        
+        <category>javascript</category>
+        
+      </item>
     
       <item>
         <title>Suggestion 1 for Windows-Next.</title>
@@ -394,117 +577,6 @@ Make a decision today to not stay mediocre. Make a decision today to excel at so
         <category>blog</category>
         
         <category>agile</category>
-        
-      </item>
-    
-      <item>
-        <title>Quote of the day.</title>
-        <description>&lt;div class=&quot;QuoteContainer&quot;&gt;
-&lt;div class=&quot;Quote&quot;&gt;
-You had a choice, you have a choice, you will have a choice. So choose and get to make it work.
-&lt;/div&gt;
-&lt;div class=&quot;Quoter&quot;&gt;Anubhav Saini&lt;/div&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Wed, 21 Oct 2015 23:24:59 +0530</pubDate>
-        <link>http://iamanubhavsaini.github.io//daily/quotes/2015/10/21/Quote-Of-The-Day.html</link>
-        <guid isPermaLink="true">http://iamanubhavsaini.github.io//daily/quotes/2015/10/21/Quote-Of-The-Day.html</guid>
-        
-        <category>daily</category>
-        
-        <category>quotes</category>
-        
-        <category>motivational</category>
-        
-        <category>QoD</category>
-        
-        
-        <category>daily</category>
-        
-        <category>quotes</category>
-        
-      </item>
-    
-      <item>
-        <title>Quote of the day.</title>
-        <description>&lt;div class=&quot;QuoteContainer&quot;&gt;
-&lt;div class=&quot;Quote&quot;&gt;
-You are and only you are responsible for your life.&lt;/div&gt;
-&lt;div class=&quot;Quoter&quot;&gt;Anubhav Saini&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;you had a choice, you have a choice, you will have a choice;&lt;/p&gt;
-</description>
-        <pubDate>Tue, 20 Oct 2015 23:24:59 +0530</pubDate>
-        <link>http://iamanubhavsaini.github.io//daily/quotes/2015/10/20/Quote-Of-The-Day.html</link>
-        <guid isPermaLink="true">http://iamanubhavsaini.github.io//daily/quotes/2015/10/20/Quote-Of-The-Day.html</guid>
-        
-        <category>daily</category>
-        
-        <category>quotes</category>
-        
-        <category>motivational</category>
-        
-        <category>QoD</category>
-        
-        
-        <category>daily</category>
-        
-        <category>quotes</category>
-        
-      </item>
-    
-      <item>
-        <title>Things I am already hating about rust.</title>
-        <description>&lt;p&gt;I like a different programming languages because they can do different things and things differently. So, when I look at rust, it looks like same old C language with some C++ code thrown in it. I do not like this language based on it’s looks. What it does is matter of gaining some knowledge in it, which will come later and with time.  &lt;/p&gt;
-
-&lt;p&gt;So here’s the list of things I hate about &lt;code&gt;rust&lt;/code&gt;.  &lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Use of &lt;code&gt;::&lt;/code&gt;.  &lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Use of &lt;code&gt;println&lt;/code&gt;.  &lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;if you are outputting something to standard output, please call it &lt;code&gt;stdout()&lt;/code&gt; instead of &lt;code&gt;println()&lt;/code&gt; or use &lt;code&gt;out(std, &quot;&quot;)&lt;/code&gt;. You might not be printing. &lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Use of main() as entry for program.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;What year is this? Let functions be functions and allow function writer to choose if the current function should be a entry point or not. Example follows.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;pre&gt;&lt;code&gt;fn first_function() {
-	possible_entry(&quot;default&quot;, &quot;ff&quot;, &quot;first_function&quot;);
-	out(std, &quot;Hello, World!&quot;);
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-</description>
-        <pubDate>Mon, 19 Oct 2015 15:03:03 +0530</pubDate>
-        <link>http://iamanubhavsaini.github.io//blog/programming/rust/2015/10/19/Things-I-alread-dislike-about-rust.html</link>
-        <guid isPermaLink="true">http://iamanubhavsaini.github.io//blog/programming/rust/2015/10/19/Things-I-alread-dislike-about-rust.html</guid>
-        
-        <category>programming</category>
-        
-        <category>code</category>
-        
-        <category>rust</category>
-        
-        <category>blog</category>
-        
-        
-        <category>blog</category>
-        
-        <category>programming</category>
-        
-        <category>rust</category>
         
       </item>
     

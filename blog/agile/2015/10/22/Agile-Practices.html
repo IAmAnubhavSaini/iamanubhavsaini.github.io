@@ -12,7 +12,9 @@
   <link rel="stylesheet" href="/css/main.css">
   <link rel="canonical" href="http://iamanubhavsaini.github.io//blog/agile/2015/10/22/Agile-Practices.html">
   <link rel="alternate" type="application/rss+xml" title="AnubhavSaini" href="http://iamanubhavsaini.github.io//feed.xml" />
-    
+  <script src="/scripts/jquery-2.1.4.min.js" type="text/javascript"></script>
+  <div class="site-footer-scripts"></div>
+  
 
 </head>
 
@@ -41,7 +43,37 @@
 
   </div>
 
-    <img src="/images/site/banner-1-blur.jpeg" onmouseover="this.src='/images/site/banner-1.jpeg';" onmouseout="this.src='/images/site/banner-1-blur.jpeg';"/>
+  <div id="site-banner" class="site-banner">
+    <img id="site-banner-image" class="site-banner-image" src="/images/site/banner-1-blur.jpeg" onmouseover="this.src='/images/site/banner-1.jpeg';" onmouseout="this.src='/images/site/banner-1-blur.jpeg';"/>
+    <div id="site-banner-image-toggler" class="site-banner-image-toggler">toggle banner image</div>
+    <script type="text/javascript">
+      $(function(){
+        var toggleBannerImage = function(){
+          $('#site-banner-image').toggle();
+        };
+        var bannerInitialState = function () {
+          if(localStorage.getItem('image-state') === "hidden"){
+            toggleBannerImage();
+            $('.site-banner-image-toggler').toggleClass('hide');
+            localStorage.setItem('image-state', 'hidden');
+          }
+        };
+        var toggleBannerState = function () {
+          if(localStorage.getItem('image-state') === "hidden")
+            localStorage.setItem('image-state', 'not-hidden');
+          else
+            localStorage.setItem('image-state', 'hidden');
+        };
+        bannerInitialState();
+        $('#site-banner-image-toggler').on('click', function(){
+          toggleBannerImage();
+          toggleBannerState();
+          $(this).toggleClass('hide');
+        });
+      });
+    </script>
+  </div>
+
 </header>
 
 
@@ -230,6 +262,7 @@
 
     <footer class="site-footer">
 
+  <div class="site-footer-scripts"></div>
   <div class="wrapper">
 
     <h2 class="footer-heading">AnubhavSaini</h2>

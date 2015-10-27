@@ -156,6 +156,23 @@ pre {
 .QuoteContainer .Quoter::before {
   content: '- '; }
 
+.site-banner {
+  position: relative;
+  min-height: 2em; }
+
+.site-banner-image-toggler {
+  cursor: pointer;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  text-align: center;
+  background-color: rgba(240, 240, 240, 0.4);
+  bottom: 0; }
+
+.site-banner-image-toggler.hide {
+  background-color: none;
+  color: rgba(32, 32, 32, 0.4); }
+
 /**
  * Site header
  */

@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Quote of the day.</title>
-  <meta name="description" content="">
+  <title>JavaScript - 3 - JavaScript 5 has functional scope.</title>
+  <meta name="description" content="JavaScript #3 - JavaScript 5 has functional scope.">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://iamanubhavsaini.github.io//daily/quotes/2015/10/14/Quote-Of-The-Day.html">
+  <link rel="canonical" href="http://iamanubhavsaini.github.io//blog/javascript/2015/10/27/JavaScript-3.html">
   <link rel="alternate" type="application/rss+xml" title="AnubhavSaini" href="http://iamanubhavsaini.github.io//feed.xml" />
   <script src="/scripts/jquery-2.1.4.min.js" type="text/javascript"></script>
   <div class="site-footer-scripts"></div>
@@ -82,27 +82,62 @@
         <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Quote of the day.</h1>
-      <p class="post-meta">October 14, 2015 • 
+    <h1 class="post-title">JavaScript - 3 - JavaScript 5 has functional scope.</h1>
+      <p class="post-meta">October 27, 2015 • 
 
-<a href="/tags/daily">[daily]</a> • 
+<a href="/tags/blog">[blog]</a> • 
 
-<a href="/tags/quotes">[quotes]</a> • 
+<a href="/tags/post">[post]</a> • 
 
-<a href="/tags/motivational">[motivational]</a> • 
+<a href="/tags/javascript">[javascript]</a> • 
 
  Anubhav Saini</p>
   </header>
 
   <article class="post-content">
-    <div class="QuoteContainer">
-<div class="Quote">
+    <p>JavaScript #3 - JavaScript 5 has functional scope.</p>
 
-The <span class="emphasis">biggest challenge</span> you have is to challenge your own <span class="emphasis">self-doubt</span> and your <span class="emphasis">laziness</span>. It is your self-doubt and your laziness that <span class="emphasis">define and limit who you are</span>. If you want to change what you are <span class="emphasis">you must take on</span> your self-doubt and your laziness.
+<p>At least up to ES5, JS has functional scope.</p>
 
-</div>
-<div class="Quoter">Robert Kiyosaki</div>
-</div>
+<pre><code>    function f(){
+        var a = 10;
+        // a belongs to function f.
+
+        for(var i = 0; i &lt; a; i++){
+            // do something with i;
+        }
+
+        console.log(i);
+        // i could be undefined,
+        // as i is scoped for only for loop (in other languages).
+        // But not in JS. i is alive-and-kicking.
+
+        console.log(a);
+
+        function g(){
+        // yes function inside function check JavaScript #4
+
+            i = 100;
+            // this refers to f()'s i.
+
+            var j = 10;
+            // g()'s j.
+
+            console.log(i);
+            console.log(j);
+        }
+        g(); // 100 and 10
+
+        console.log(i); // 100
+
+        console.log(j);
+        // error if no j is defined outside function f().
+    }
+</code></pre>
+
+<p>Well, functions in JavaScript, are the only scope containers. For loop, { } that constitute blocks are not scope containers.</p>
+
+<p>ES6 has added extra functionality to have block level scopes.</p>
 
   </article>
 
