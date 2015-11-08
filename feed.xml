@@ -6,9 +6,37 @@
 </description>
     <link>http://iamanubhavsaini.github.io//</link>
     <atom:link href="http://iamanubhavsaini.github.io//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 28 Oct 2015 01:58:38 +0530</pubDate>
-    <lastBuildDate>Wed, 28 Oct 2015 01:58:38 +0530</lastBuildDate>
+    <pubDate>Mon, 09 Nov 2015 00:26:25 +0530</pubDate>
+    <lastBuildDate>Mon, 09 Nov 2015 00:26:25 +0530</lastBuildDate>
     <generator>Jekyll v2.2.0</generator>
+    
+      <item>
+        <title>Cleaning Laptop</title>
+        <description>&lt;p&gt;I like to clean my laptop and mobile by opening them up. I did this exercise about 5 months back. It was tense. You loose one screw or yank something a little too forcefully, and it dies on you. Believe me when I say this: A $1000 laptop can die because you handled it just a little casually. Anyway, I take such calculated risks.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blog/laptop-cleanup/20151106_183545.jpg&quot; alt=&quot;&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;/images/blog/laptop-cleanup/20151106_184820.jpg&quot; alt=&quot;&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;/images/blog/laptop-cleanup/20151106_184849.jpg&quot; alt=&quot;&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;/images/blog/laptop-cleanup/20151106_190010.jpg&quot; alt=&quot;&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;/images/blog/laptop-cleanup/20151106_192729.jpg&quot; alt=&quot;&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;/images/blog/laptop-cleanup/20151106_193041.jpg&quot; alt=&quot;&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;/images/blog/laptop-cleanup/20151106_193049.jpg&quot; alt=&quot;&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;/images/blog/laptop-cleanup/20151106_193059.jpg&quot; alt=&quot;&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;/images/blog/laptop-cleanup/20151106_193827.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 06 Nov 2015 20:00:02 +0530</pubDate>
+        <link>http://iamanubhavsaini.github.io//blog/2015/11/06/Cleaning-laptop.html</link>
+        <guid isPermaLink="true">http://iamanubhavsaini.github.io//blog/2015/11/06/Cleaning-laptop.html</guid>
+        
+        <category>cleanup</category>
+        
+        <category>hardware</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
     
       <item>
         <title>JavaScript - 3 - JavaScript 5 has functional scope.</title>
@@ -125,7 +153,7 @@
 
 &lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/IEEE_754-1985&quot;&gt;https://en.wikipedia.org/wiki/IEEE_754-1985&lt;/a&gt;&lt;br /&gt;
 &lt;a href=&quot;http://stackoverflow.com/a/17849204&quot;&gt;http://stackoverflow.com/a/17849204&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&quot;https://docs.python.org/2/tutorial/floatingpoint.html#representation-error&quot;&gt;https://docs.python.org/2/tutorial/floatingpoint.html#representation-error&lt;/a&gt;  &lt;/p&gt;
+&lt;a href=&quot;https://docs.python.org/2/tutorial/floatingpoint.html#representation-error&quot;&gt;https://docs.python.org/2/tutorial/floatingpoint.html#representation-error&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Tue, 27 Oct 2015 16:57:27 +0530</pubDate>
         <link>http://iamanubhavsaini.github.io//blog/javascript/2015/10/27/JavaScript-1.html</link>
@@ -198,16 +226,16 @@
         <description>&lt;p&gt;So Windows installs itself in C drive. Users can put all sorts of crap in C drive. Well, I want to suggest windows that:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Carve out a 20 GiB drive named C in hard-disk.  &lt;/li&gt;
-  &lt;li&gt;Install Windows in C drive.  &lt;/li&gt;
-  &lt;li&gt;Make C drive unaccessible to users.  &lt;/li&gt;
-  &lt;li&gt;Every software installed other than Windows will go to a different drive.  &lt;/li&gt;
-  &lt;li&gt;Every document, download, picture, configuration etc will go to different drive.  &lt;/li&gt;
-  &lt;li&gt;Whatever you do, do not relinquish hold on C drive. Make it immutable for everything other than Windows update.   Make it invisible for users: developers and end-users alike.  &lt;/li&gt;
-  &lt;li&gt;Put all the cache for Windows in C drive including page-files. Cache and page-files for other drives will live somewhere else.  &lt;/li&gt;
-  &lt;li&gt;Put all the settings and configurations outside C drive.  &lt;/li&gt;
-  &lt;li&gt;Make sure that you and user understand that OS drive exists only to provide users a platform.  &lt;/li&gt;
-  &lt;li&gt;In a multi processor architecture, assign a processor permanently to windows. Do not let user-space see it. They will loose a processor but gain stability.  &lt;/li&gt;
+  &lt;li&gt;Carve out a 20 GiB drive named C in hard-disk.&lt;/li&gt;
+  &lt;li&gt;Install Windows in C drive.&lt;/li&gt;
+  &lt;li&gt;Make C drive unaccessible to users.&lt;/li&gt;
+  &lt;li&gt;Every software installed other than Windows will go to a different drive.&lt;/li&gt;
+  &lt;li&gt;Every document, download, picture, configuration etc will go to different drive.&lt;/li&gt;
+  &lt;li&gt;Whatever you do, do not relinquish hold on C drive. Make it immutable for everything other than Windows update.   Make it invisible for users: developers and end-users alike.&lt;/li&gt;
+  &lt;li&gt;Put all the cache for Windows in C drive including page-files. Cache and page-files for other drives will live somewhere else.&lt;/li&gt;
+  &lt;li&gt;Put all the settings and configurations outside C drive.&lt;/li&gt;
+  &lt;li&gt;Make sure that you and user understand that OS drive exists only to provide users a platform.&lt;/li&gt;
+  &lt;li&gt;In a multi processor architecture, assign a processor permanently to windows. Do not let user-space see it. They will loose a processor but gain stability.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Well by doing this, OS will become unhackable by exernal programs. Windows will not be able to crash because of user space viruses. Backup will be a breeze etc.&lt;/p&gt;
@@ -317,11 +345,11 @@ Freddy, as a younger man, I was a sculptor, a painter, and a musician. There was
 
 &lt;p&gt;&lt;input type=&quot;button&quot; value=&quot;a button&quot; onclick=&quot;alert(&#39;I do nothing&#39;);&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;If you go to &lt;a href=&quot;https://github.com/IAmAnubhavSaini/a-self-replicating-button&quot;&gt;https://github.com/IAmAnubhavSaini/a-self-replicating-button&lt;/a&gt; then you can find the button with code around it.  &lt;/p&gt;
+&lt;p&gt;If you go to &lt;a href=&quot;https://github.com/IAmAnubhavSaini/a-self-replicating-button&quot;&gt;https://github.com/IAmAnubhavSaini/a-self-replicating-button&lt;/a&gt; then you can find the button with code around it.&lt;/p&gt;
 
 &lt;p&gt;Download it and click it. See what happens.&lt;/p&gt;
 
-&lt;p&gt;You can test the same thing here though.  &lt;/p&gt;
+&lt;p&gt;You can test the same thing here though.&lt;/p&gt;
 
 &lt;script type=&quot;text/javascript&quot;&gt;
   var selfReplicate = function () {
@@ -416,167 +444,6 @@ Make a decision today to not stay mediocre. Make a decision today to excel at so
         <category>daily</category>
         
         <category>quotes</category>
-        
-      </item>
-    
-      <item>
-        <title>Being Agile.</title>
-        <description>&lt;h2 id=&quot;all-about-being-agile&quot;&gt;All about Being Agile.&lt;/h2&gt;
-
-&lt;h1 id=&quot;agile-practices&quot;&gt;Agile practices&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Acceptance Testing  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;The customer writes acceptance tests. The tests demonstrate that the story is complete. The programmers and the customer automate acceptance tests. Programmers run the tests multiple times per day.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Coding Standards  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;The code needs to have a common style to facilitate communication between programmers. The team owns the code; the team owns the coding style.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Collective Ownership  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;The team owns the code. Programmer pairs modify any piece of code they need to. Extensive unit tests help protect the team from coding mistakes.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Continuous Integration&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Programmers integrate and test the software many times a day. Big code branches and merges are avoided.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Customer Team Member&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Teams have someone (or a group of people) representing the interests of the customer. They decide what is in the product and what is not in the product.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Metaphor or Vision&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;The system metaphor provides an idea or a model for the system. It provides a context for naming things in the software, making the software communicate to the programmers.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Open Workspace&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;To facilitate communications the team works in an open workspace with all the people and equipment easily accessible.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Pair Programming&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Two programmers collaborate to solve one problem. Programming is not a spectator sport.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Planning Game&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;XP is an iterative development process. In the planning game, the customer and the programmers determine the scope of the next release. Programmers estimating the feature costs. Customers select features and package the development of those features into small iterations (typically 2 weeks). Iterations are combined into meaningful end user releases.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Refactoring&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;As programmers add new features to the project, the design may start to get messy. If this continues, the design will deteriorate. Refactoring is the process of keeping the design clean incrementally.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Simple Design&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;The design in XP is kept as simple as possible for the current set of implemented stories. Programmers don’t build frameworks and infrastructure for the features that might be coming.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Small Releases&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Programmers build the system in small releases defined. An iteration is typically two weeks. A release is a group of iterations that provide valuable features to the users of the system.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Sustainable Pace&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;The team needs to stay fresh to effectively produce software. One way to make sure the team makes many mistakes is to have them work a lot of overtime.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Test Driven Design&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Programmers write software in very small verifiable steps. First, we write a small test. Then we write enough code to satisfy the test. Then another test is written, and so on.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;User Story&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;A User Story represents a feature of the system. The customer writes the story on a note card. Stories are small. The estimate to complete a story is limited to no greater than what one person could complete within a single iteration.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt; &lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;   &lt;/p&gt;
-
-&lt;h1 id=&quot;references&quot;&gt;References&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.objectmentor.com&quot;&gt;OBJECT MENTOR&lt;/a&gt;  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt; &lt;/p&gt;
-
-&lt;p&gt;[More will follow.]&lt;/p&gt;
-</description>
-        <pubDate>Thu, 22 Oct 2015 12:33:33 +0530</pubDate>
-        <link>http://iamanubhavsaini.github.io//blog/agile/2015/10/22/Agile-Practices.html</link>
-        <guid isPermaLink="true">http://iamanubhavsaini.github.io//blog/agile/2015/10/22/Agile-Practices.html</guid>
-        
-        <category>programming</category>
-        
-        <category>agile</category>
-        
-        <category>software-development-methodology</category>
-        
-        <category>blog</category>
-        
-        
-        <category>blog</category>
-        
-        <category>agile</category>
         
       </item>
     
