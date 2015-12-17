@@ -41,40 +41,7 @@
           <a class="page-link" href="/about">About</a>
       </div>
     </nav>
-
   </div>
-
-  <div id="site-banner" class="site-banner">
-    <img id="site-banner-image" class="site-banner-image" src="/images/site/banner-1-blur.jpeg" onmouseover="this.src='/images/site/banner-1.jpeg';" onmouseout="this.src='/images/site/banner-1-blur.jpeg';"/>
-    <div id="site-banner-image-toggler" class="site-banner-image-toggler">toggle banner image</div>
-    <script type="text/javascript">
-      $(function(){
-        var toggleBannerImage = function(){
-          $('#site-banner-image').toggle();
-        };
-        var bannerInitialState = function () {
-          if(localStorage.getItem('image-state') === "hidden"){
-            toggleBannerImage();
-            $('.site-banner-image-toggler').toggleClass('hide');
-            localStorage.setItem('image-state', 'hidden');
-          }
-        };
-        var toggleBannerState = function () {
-          if(localStorage.getItem('image-state') === "hidden")
-            localStorage.setItem('image-state', 'not-hidden');
-          else
-            localStorage.setItem('image-state', 'hidden');
-        };
-        bannerInitialState();
-        $('#site-banner-image-toggler').on('click', function(){
-          toggleBannerImage();
-          toggleBannerState();
-          $(this).toggleClass('hide');
-        });
-      });
-    </script>
-  </div>
-
 </header>
 
 
@@ -82,6 +49,24 @@
       <div class="wrapper">
         <div class="home">
   <ul class="post-list">
+    
+      <li>
+        <a class="post-link" href="/blog/csgo/gaming/2015/12/17/CSGO-December-2015.html">CSGO December 2015 updates - 7+ MiBs download, beware.</a>
+          
+          [<a href="tags/csgo">csgo</a>]
+          
+          [<a href="tags/gaming">gaming</a>]
+          
+      </li>
+    
+      <li>
+        <a class="post-link" href="/blog/project/2015/12/17/Mentorship-2016-project-.html">Mentorship 2016 project</a>
+          
+          [<a href="tags/project">project</a>]
+          
+          [<a href="tags/mentorship-2016">mentorship-2016</a>]
+          
+      </li>
     
       <li>
         <a class="post-link" href="/blog/2015/11/06/Cleaning-laptop.html">Cleaning Laptop</a>
@@ -653,13 +638,15 @@
       </li>
     
       <li>
-        <a class="post-link" href="/blog/csgo/2015/10/07/Collectiong-Aces-In-CSGO.html">Aces in CS:GO!</a>
+        <a class="post-link" href="/blog/csgo/gaming/2015/10/07/Collectiong-Aces-In-CSGO.html">Aces in CS:GO!</a>
           
           [<a href="tags/csgo">csgo</a>]
           
           [<a href="tags/aces">aces</a>]
           
           [<a href="tags/bots">bots</a>]
+          
+          [<a href="tags/gaming">gaming</a>]
           
       </li>
     

@@ -32,8 +32,11 @@ ul, ol, dl, figure,
  * Images
  */
 img {
-  max-width: 100%;
-  vertical-align: middle; }
+  max-width: 96%;
+  vertical-align: middle;
+  margin: 2%;
+  border: thick solid rgba(0, 0, 0, 0.3);
+  border-radius: 4%; }
 
 /**
  * Figures

@@ -41,40 +41,7 @@
           <a class="page-link" href="/about">About</a>
       </div>
     </nav>
-
   </div>
-
-  <div id="site-banner" class="site-banner">
-    <img id="site-banner-image" class="site-banner-image" src="/images/site/banner-1-blur.jpeg" onmouseover="this.src='/images/site/banner-1.jpeg';" onmouseout="this.src='/images/site/banner-1-blur.jpeg';"/>
-    <div id="site-banner-image-toggler" class="site-banner-image-toggler">toggle banner image</div>
-    <script type="text/javascript">
-      $(function(){
-        var toggleBannerImage = function(){
-          $('#site-banner-image').toggle();
-        };
-        var bannerInitialState = function () {
-          if(localStorage.getItem('image-state') === "hidden"){
-            toggleBannerImage();
-            $('.site-banner-image-toggler').toggleClass('hide');
-            localStorage.setItem('image-state', 'hidden');
-          }
-        };
-        var toggleBannerState = function () {
-          if(localStorage.getItem('image-state') === "hidden")
-            localStorage.setItem('image-state', 'not-hidden');
-          else
-            localStorage.setItem('image-state', 'hidden');
-        };
-        bannerInitialState();
-        $('#site-banner-image-toggler').on('click', function(){
-          toggleBannerImage();
-          toggleBannerState();
-          $(this).toggleClass('hide');
-        });
-      });
-    </script>
-  </div>
-
 </header>
 
 
@@ -82,6 +49,18 @@
       <div class="wrapper">
         <h2 class="post_title">Posts tagged - daily</h2>
 <div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
@@ -718,6 +697,8 @@
         <p>10 questions for the day.</p>
 		
 	</div>
+	
+	
 	
 	
 	
