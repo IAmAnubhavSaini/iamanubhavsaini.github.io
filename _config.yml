@@ -1,0 +1,13 @@
+# Site settings
+title: Here we go again!
+email: iamanubhavsaini@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  This is personal site for Anubhav Saini. It contains posts on projects, languages,
+  and much more.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://iamanubhavsaini.github.io" # the base hostname & protocol for your site
+twitter_username: iamanubhavsaini
+github_username:  iamanubhavsaini
+
+# Build settings
+markdown: kramdown
