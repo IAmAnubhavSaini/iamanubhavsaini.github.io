@@ -10,7 +10,7 @@
     padding: 10px;
   }
   .questions {
-    margin: 10px;
+    margin: 20px 0;
     border-bottom: thin solid rgba(0, 0, 0, 0.3);
   }
   .answers {
@@ -25,11 +25,12 @@
     <h1>Hi I am Anubhav Saini.</h1>
   </header>
 <script>
-const birthYear = 1989
-const getMyBirthDateTime = () => new Date(birthYear, 8, 20, 18, 40)
-const dateTimeOfAwakening = () => new Date(2017, 0, 17, 18, 53)
-const lifeExpecancyOfIndiansInYears = 66.21
-const dateTimeOfDeath = () => new Date(birthYear + lifeExpecancyOfIndiansInYears, 8, 20, 18, 40)
+const birth = { y: 1989, m: 8, d: 20, hh: 18, mm: 40 }
+const awakening = { y: 2017, m: 0, d: 17, hh: 18, mm: 53 }
+const getMyBirthDateTime = () => new Date(birth.y, birth.m, birth.d, birth.hh, birth.mm)
+const dateTimeOfAwakening = () => new Date(awakening.y, awakening.m, awakening.d, awakening.hh, awakening.mm)
+const lifeExpecancy = 66.21 // OfIndiansInYears
+const dateTimeOfDeath = () => new Date(birth.y + lifeExpecancy, birth.m, birth.d, birth.hh, birth.mm)
 
 const msLiving = () => Date.now() - getMyBirthDateTime()
 const msAwoke = () => Date.now() - dateTimeOfAwakening()
@@ -72,7 +73,11 @@ timeTaken.to.read.novel.in.ms = secsInMS(timeTaken.to.read.novel.in.s);
 const how = {
   many: {
     read: {
-      novels: () => msInSecs(msTillDeath()) / timeTaken.to.read.novel.in.s
+      novels: {
+        fromNow: () => msInSecs(msTillDeath()) / timeTaken.to.read.novel.in.s,
+        sinceAwakening: () => msInSecs(msTillDeath() + msAwoke()) / timeTaken.to.read.novel.in.s,
+        actual: 0
+      }
     }
   }
 }
@@ -80,6 +85,8 @@ const how = {
 </script>
 <div class="questions">When am I going to die? <span class="answers" id="dateTimeOfDeath"></span></div>
 <div class="questions">How many novels (continuously, one after another, 200 pages, English) I can read before I die? <span class="answers" id="howManyReadNovels"></span></div>
+<div class="questions">How many novels could I have read since awakening? <span class="answers" id="howManyReadNovelsSinceAwakening"></span></div>
+<div class="questions">How many have I read till now? <span class="answers" id="novelsActuallyRead"></span></div>
 <script>
   ;(() => {
     ;(function fillDateTimeOfDeathSpan () {
@@ -89,7 +96,17 @@ const how = {
 
     ;(function fillHowManyReadNovelsSpan () {
       const span = document.getElementById('howManyReadNovels')
-      setInterval(() => { span.innerHTML = Number(how.many.read.novels()).toFixed(4) }, 1000)
+      setInterval(() => { span.innerHTML = Number(how.many.read.novels.fromNow()).toFixed(8) }, 1000)
+    })()
+
+    ;(function fillHowManyReadNovelsSinceAwakeningSpan () {
+      const span = document.getElementById('howManyReadNovelsSinceAwakening')
+      span.innerHTML = Number(how.many.read.novels.sinceAwakening()).toFixed(8)
+    })()
+
+    ;(function fillnovelsActuallyReadSpan () {
+      const span = document.getElementById('novelsActuallyRead')
+      span.innerHTML = Number(how.many.read.novels.actual)
     })()
   })()
 </script>
