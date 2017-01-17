@@ -25,9 +25,11 @@
     <h1>Hi I am Anubhav Saini.</h1>
   </header>
 <script>
-const getMyBirthDateTime = () => new Date(1989, 8, 20, 18, 40)
+const birthYear = 1989
+const getMyBirthDateTime = () => new Date(birthYear, 8, 20, 18, 40)
 const dateTimeOfAwakening = () => new Date(2017, 0, 17, 18, 53)
-const dateTimeOfDeath = () => new Date(2055, 8, 20, 18, 40)
+const lifeExpecancyOfIndiansInYears = 66.21
+const dateTimeOfDeath = () => new Date(birthYear + lifeExpecancyOfIndiansInYears, 8, 20, 18, 40)
 
 const msLiving = () => Date.now() - getMyBirthDateTime()
 const msAwoke = () => Date.now() - dateTimeOfAwakening()
