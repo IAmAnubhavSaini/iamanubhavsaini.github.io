@@ -1,0 +1,115 @@
+<!DOCTYPE html><html><head>
+<meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anubhav says not today death.</title><meta name="description" content="This is personal site for Anubhav Saini."><link rel="canonical" href="http://iamanubhavsaini.github.io/">
+<style type="text/css">
+  body, html {
+    margin: auto;
+    padding: 0;
+  }
+  body {
+    width: 80%;
+    padding: 10px;
+  }
+  .questions {
+    margin: 20px 0;
+    border-bottom: thin solid rgba(0, 0, 0, 0.3);
+  }
+  .answers {
+    font-weight: bold;
+    font-size: 1.42em;
+    color: rgb(32, 32, 192);
+  }
+</style>
+</head>
+<body>
+  <header>
+    <p>This is inspired by death and average human life expectancy in India</p>
+  </header>
+<script>
+const birth = { y: 1989, m: 8, d: 20, hh: 18, mm: 40 }
+const awakening = { y: 2017, m: 0, d: 17, hh: 18, mm: 53 }
+const getMyBirthDateTime = () => new Date(birth.y, birth.m, birth.d, birth.hh, birth.mm)
+const dateTimeOfAwakening = () => new Date(awakening.y, awakening.m, awakening.d, awakening.hh, awakening.mm)
+const lifeExpecancy = 66.21 // OfIndiansInYears
+const dateTimeOfDeath = () => new Date(birth.y + lifeExpecancy, birth.m, birth.d, birth.hh, birth.mm)
+
+const msLiving = () => Date.now() - getMyBirthDateTime()
+const msAwoke = () => Date.now() - dateTimeOfAwakening()
+const msTillDeath = () => dateTimeOfDeath() - Date.now()
+
+const secsInHour = () => 60 * 60
+const secsInHours = (h) => h * secsInHour()
+const secsInDay = () => secsInHours(24)
+const secsInDays = (d) => d * secsInHours(24)
+const day = {
+  hour: {
+    full: 24,
+    half: 12,
+    quarter: 6
+  }
+}
+const leapSeconds = () => secsInHours(day.hour.quarter)
+const year = { days: 365.25 }
+const secsInYear = () => Number(secsInDays(year.days))
+const secsInYears = (y) => y * secsInYear()
+const secsInMS = (s) => s * 1000
+
+const msInSecs = (ms) => ms / 1000
+
+const timeTaken = {
+  to: {
+    read: {
+      novel: {
+        in: {
+          h: 5
+        }
+      }
+    }
+  }
+}
+
+timeTaken.to.read.novel.in.s = secsInHours(timeTaken.to.read.novel.in.h);
+timeTaken.to.read.novel.in.ms = secsInMS(timeTaken.to.read.novel.in.s);
+
+const how = {
+  many: {
+    read: {
+      novels: {
+        fromNow: () => msInSecs(msTillDeath()) / timeTaken.to.read.novel.in.s,
+        sinceAwakening: () => msInSecs(msTillDeath() + msAwoke()) / timeTaken.to.read.novel.in.s,
+        actual: 0
+      }
+    }
+  }
+}
+
+</script>
+<div class="questions">When am I going to die? <span class="answers" id="dateTimeOfDeath"></span></div>
+<div class="questions">How many novels (continuously, one after another, 200 pages, English) I can read before I die? <span class="answers" id="howManyReadNovels"></span></div>
+<div class="questions">How many novels could I have read since awakening? <span class="answers" id="howManyReadNovelsSinceAwakening"></span></div>
+<div class="questions">How many have I read till now? <span class="answers" id="novelsActuallyRead"></span></div>
+<script>
+  ;(() => {
+    ;(function fillDateTimeOfDeathSpan () {
+      const span = document.getElementById('dateTimeOfDeath')
+      span.innerHTML = dateTimeOfDeath()
+    })()
+
+    ;(function fillHowManyReadNovelsSpan () {
+      const span = document.getElementById('howManyReadNovels')
+      setInterval(() => { span.innerHTML = Number(how.many.read.novels.fromNow()).toFixed(8) }, 1000)
+    })()
+
+    ;(function fillHowManyReadNovelsSinceAwakeningSpan () {
+      const span = document.getElementById('howManyReadNovelsSinceAwakening')
+      span.innerHTML = Number(how.many.read.novels.sinceAwakening()).toFixed(8)
+    })()
+
+    ;(function fillnovelsActuallyReadSpan () {
+      const span = document.getElementById('novelsActuallyRead')
+      span.innerHTML = Number(how.many.read.novels.actual)
+    })()
+  })()
+</script>
+</body></html>
