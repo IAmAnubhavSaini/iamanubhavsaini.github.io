@@ -9,7 +9,7 @@ import {
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'react-bootstrap/dist/react-bootstrap.min';
 import './App.css';
-import {BrowserRouter as Router, Route, Switch, Redirect} from 'react-router-dom';
+import {HashRouter as Router, Route, Switch, Redirect} from 'react-router-dom';
 import {Resume} from "./Components/Resume";
 
 
@@ -17,7 +17,7 @@ function App() {
 
 
     return (
-        <Router>
+        <Router basename="/">
             <Container fluid className="App">
                 <Row>
                     <Col>
@@ -32,8 +32,8 @@ function App() {
                             <p>Welcome.</p>
 
                             <Button variant="info" className="btn btn-lg" href="/">Home</Button>
-                            <Button variant="info" className="btn btn-lg" href="/resume">Resume</Button>
-                            <Button variant="info" className="btn btn-lg" href="/blog">Blog</Button>
+                            <Button variant="info" className="btn btn-lg" href="/#/resume">Resume</Button>
+                            <Button variant="info" className="btn btn-lg" href="/#/blog">Blog</Button>
 
                         </Jumbotron>
                     </Col>
