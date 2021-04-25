@@ -1,9 +1,10 @@
-import {REPOS} from "../repos.data";
+import {REPOS} from "../data/repos.data";
 import React, {useState} from "react";
-import {PACKAGES} from "../npm.data";
+import {PACKAGES} from "../data/npm.data";
 import {Accordion, Badge, Card, Col, Container, Row, Tab, Tabs} from "react-bootstrap";
 import {GitHubRepoCards, GitHubRepoTable} from "./GitHub";
 import {PackageTable} from "./Npm";
+import Work from "./Work";
 
 export function Resume() {
     const defaultRepos = REPOS.filter((repo: any) => repo.fork === false);
@@ -115,7 +116,7 @@ export function Resume() {
                 </Accordion>
             </Tab>
             <Tab eventKey="work" title="Work">
-                Work
+                <Work/>
             </Tab>
             <Tab eventKey="education" title="Education">
                 Education

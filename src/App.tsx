@@ -33,7 +33,7 @@ function App() {
 
                             <Button variant="info" className="btn btn-lg" href="/">Home</Button>
                             <Button variant="info" className="btn btn-lg" href="/#/resume">Resume</Button>
-                            <Button variant="info" className="btn btn-lg" href="/#/blog">Blog</Button>
+                            {/*<Button variant="info" className="btn btn-lg" href="/#/blog">Blog</Button>*/}
 
                         </Jumbotron>
                     </Col>
