@@ -1,13 +1,14 @@
-import { Badge, Card, Table } from "react-bootstrap";
+import {Badge, Card, Table} from "react-bootstrap";
 import React from "react";
 
 export function GitHubRepoCards(props: any) {
     return (
-        <>
+        <div style={{textAlign: "center"}}>
             {
                 props.repos.map((repo: any, index: number) => {
                     return <Card key={"github-repo-" + index} border="success"
-                        style={{ width: '18%', display: "inline-block", margin: "1em" }} className="text-center">
+                                 style={{width: '18%', minWidth: "300px", display: "inline-block", margin: "1em"}}
+                                 className="text-center">
                         <Card.Header>{repo.name} </Card.Header>
                         <Card.Body>
                             <Card.Text>
@@ -17,19 +18,19 @@ export function GitHubRepoCards(props: any) {
                                 <small className="text-muted">{new Date(repo.created_at).toUTCString()}</small>
                             </Card.Text>
                             <Card.Text>
-                                <LinkBadges repo={repo} />
+                                <LinkBadges repo={repo}/>
                             </Card.Text>
                             <Card.Text>
-                                <MutedBadge text={repo.owner.login} />
-                                <LicenseBadge license={repo.license} />
-                                <LanguageBadge language={repo.language} />
-                                <DefaultBranchBadge branch={repo.default_branch} />
+                                <MutedBadge text={repo.owner.login}/>
+                                <LicenseBadge license={repo.license}/>
+                                <LanguageBadge language={repo.language}/>
+                                <DefaultBranchBadge branch={repo.default_branch}/>
                             </Card.Text>
                         </Card.Body>
                     </Card>;
                 })
             }
-        </>
+        </div>
     );
 }
 
@@ -37,31 +38,56 @@ export function GitHubRepoTable(props: any) {
     return (
         <Table striped bordered hover size="sm">
             <tbody>
-                {
-                    props.repos.map((repo: any, index: number) => {
-                        return <tr key={"github-repo-" + index}>
-                            <td><LinkBadges repo={repo} /></td>
-                            <td>{repo.name}
-                                <NonZeroMutedBadge text={'fork'} count={repo.forks} />
-                                <NonZeroMutedBadge text={'issue'} count={repo.issues} />
-                                <NonZeroMutedBadge text={'watcher'} count={repo.watchers} />
-                            </td>
+            {
+                props.repos.map((repo: any, index: number) => {
+                    return <tr key={"github-repo-" + index}>
+                        <td style={{
+                            whiteSpace: "nowrap",
+                            overflow: "hidden",
+                            textOverflow: "ellipsis",
+                            maxWidth: "400px"
+                        }}><LinkBadges repo={repo}/></td>
+                        <td style={{
+                            whiteSpace: "nowrap",
+                            overflow: "hidden",
+                            textOverflow: "ellipsis",
+                            maxWidth: "400px"
+                        }}>{repo.name}
+                            <NonZeroMutedBadge text={'fork'} count={repo.forks}/>
+                            <NonZeroMutedBadge text={'issue'} count={repo.issues}/>
+                            <NonZeroMutedBadge text={'watcher'} count={repo.watchers}/>
+                        </td>
 
-                            <td>
-                                {repo.description}
-                            </td>
-                            <td>
-                                <small className="text-muted">{new Date(repo.created_at).toUTCString()}</small>
-                            </td>
-                            <td>
-                                <MutedBadge text={repo.owner.login} />
-                                <LicenseBadge license={repo.license} />
-                                <LanguageBadge language={repo.language} />
-                                <DefaultBranchBadge branch={repo.default_branch} />
-                            </td>
-                        </tr>;
-                    })
-                }
+                        <td style={{
+                            whiteSpace: "nowrap",
+                            overflow: "hidden",
+                            textOverflow: "ellipsis",
+                            maxWidth: "400px"
+                        }}>
+                            {repo.description}
+                        </td>
+                        <td style={{
+                            whiteSpace: "nowrap",
+                            overflow: "hidden",
+                            textOverflow: "ellipsis",
+                            maxWidth: "400px"
+                        }}>
+                            <small className="text-muted">{new Date(repo.created_at).toUTCString()}</small>
+                        </td>
+                        <td style={{
+                            whiteSpace: "nowrap",
+                            overflow: "hidden",
+                            textOverflow: "ellipsis",
+                            maxWidth: "400px"
+                        }}>
+                            <MutedBadge text={repo.owner.login}/>
+                            <LicenseBadge license={repo.license}/>
+                            <LanguageBadge language={repo.language}/>
+                            <DefaultBranchBadge branch={repo.default_branch}/>
+                        </td>
+                    </tr>;
+                })
+            }
             </tbody>
         </Table>
     );
@@ -103,7 +129,7 @@ export function LanguageBadge(props: any) {
 
 export function NonZeroMutedBadge(props: any) {
     const text = props.count > 1 ? props.text + "s" : props.text;
-    const rendered = props.count > 0 ? (<MutedBadge text={props.count + " " + text} />) : (<></>);
+    const rendered = props.count > 0 ? (<MutedBadge text={props.count + " " + text}/>) : (<></>);
     return (
         <>
             {rendered}
@@ -113,6 +139,6 @@ export function NonZeroMutedBadge(props: any) {
 
 export function DefaultBranchBadge(props: any) {
     const branch = props.branch;
-    const rendered = branch === 'master' ? (<></>) : (<MutedBadge text={"branch: " + branch} />);
+    const rendered = branch === 'master' ? (<></>) : (<MutedBadge text={"branch: " + branch}/>);
     return rendered;
 }

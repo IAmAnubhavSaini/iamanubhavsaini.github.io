@@ -19,7 +19,7 @@ function App() {
 
     return (
         <Router basename="/">
-            <Container fluid className="App">
+            <Container fluid className="App" style={{minWidth: "600px"}}>
                 <Row>
                     <Col>
 

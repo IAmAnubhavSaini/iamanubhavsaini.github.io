@@ -25,11 +25,17 @@ export default Work;
 
 export function WorkCards(props: any) {
     return (
-        <>
+        <div style={{margin: "auto", textAlign: "center"}}>
             {
                 props.work.map((w: any, index: number) => {
                     return <Card key={"w-" + index} border="success"
-                                 style={{width: '30%', display: "inline-block", margin: "1em"}} className="text-center">
+                                 style={{
+                                     width: '30%',
+                                     minWidth: "400px",
+                                     display: "inline-block",
+                                     margin: "1em"
+                                 }}
+                                 className="text-center">
                         <Card.Header>
                             <Badge variant="danger">{w.position}</Badge>
                             <hr/>
@@ -44,7 +50,7 @@ export function WorkCards(props: any) {
                             <Card.Text>
                                 <Projects projects={w.projects}/>
                             </Card.Text>
-                            
+
                             <Card.Text>
                                 <LanguageBadges languages={w.skills.lang}/>
                                 <ToolBadges tools={w.skills.tool}/>
@@ -55,17 +61,17 @@ export function WorkCards(props: any) {
                     </Card>;
                 })
             }
-        </>
+        </div>
     );
 }
 
 export function WorkTable(props: any) {
     return (
-        <Table striped hover>
+        <Table striped hover size={"lg"}>
             <tbody>
             {
                 props.work.map((w: any, index: number) => {
-                    return <tr key={"w-" + index}>
+                    return <tr key={"w-" + index} style={{minWidth: "600px"}}>
                         <td>
                             <Badge variant="danger">{w.position}</Badge>
                             <hr/>
