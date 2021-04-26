@@ -5,6 +5,7 @@ import goepub from '../data/books/Data Structures, Algorithms, and Functions in 
 import gopdf from '../data/books/Data Structures, Algorithms, and Functions in Go.pdf';
 import jsepub from '../data/books/Data Structures, Algorithms, and Functions in JavaScript.epub';
 import jspdf from '../data/books/Data Structures, Algorithms, and Functions in JavaScript.pdf';
+import es from '../data/books/ecmascript.pdf';
 
 function Books() {
 
@@ -92,5 +93,7 @@ function bookSelector(href: string) {
             return jspdf;
         case '../data/books/Data Structures, Algorithms, and Functions in JavaScript.epub':
             return jsepub;
+        case '../data/books/ecmascript.pdf':
+            return es;
     }
 }

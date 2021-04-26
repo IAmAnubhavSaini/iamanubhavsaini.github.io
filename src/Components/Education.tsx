@@ -16,11 +16,12 @@ function Education() {
                                     {`${edu.started.year}/${edu.started.month} - ${edu.stopped.year}/${edu.stopped.month}`}
                                 </small>
                             </td>
-                            <td>{edu.certificate}</td>
+                            <td><h2>{edu.certificate}</h2></td>
                             <td>
                                 {edu.subjects.map((sub: string, i: number) => {
                                     return (
-                                        <Badge variant={"success"}>{sub}</Badge>
+                                        <Badge style={{margin: ".2em", padding: ".4em"}}
+                                               variant={"success"}>{sub}</Badge>
                                     );
                                 })}
                             </td>

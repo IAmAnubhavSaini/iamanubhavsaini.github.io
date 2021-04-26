@@ -6,5 +6,9 @@ export const BOOKS = [
     {
         name: "Data Structures, Algorithms, and Functions in Go",
         types: ["pdf", "epub"]
+    },
+    {
+        name: "ecmascript",
+        types: ["pdf"]
     }
-]
+];

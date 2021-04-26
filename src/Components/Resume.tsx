@@ -47,7 +47,7 @@ export function Resume() {
     return (
         <Tabs defaultActiveKey="projects">
             <Tab eventKey="projects" title="Projects">
-                <Accordion defaultActiveKey="0">
+                <Accordion defaultActiveKey="1">
                     <Card>
                         <Accordion.Toggle as={Card.Header} eventKey="0">
                             GitHub

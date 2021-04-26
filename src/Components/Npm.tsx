@@ -9,6 +9,7 @@ export function PackageTable(props: any) {
                 return (
                     <tr key={"npm-package" + index}>
                         <td>{npm}</td>
+                        <td><a href={"https://www.npmjs.com/package/" + npm}>npm</a></td>
                     </tr>
                 );
             })}
