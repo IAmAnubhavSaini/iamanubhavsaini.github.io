@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.599b69d1.chunk.css",
-    "main.js": "/static/js/main.adfded8f.chunk.js",
-    "main.js.map": "/static/js/main.adfded8f.chunk.js.map",
+    "main.js": "/static/js/main.ca566b57.chunk.js",
+    "main.js.map": "/static/js/main.ca566b57.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.393f4a4e.js",
     "runtime-main.js.map": "/static/js/runtime-main.393f4a4e.js.map",
     "static/css/2.150d169a.chunk.css": "/static/css/2.150d169a.chunk.css",
@@ -17,13 +17,14 @@
     "static/media/Data Structures, Algorithms, and Functions in Go.3505eafd.epub": "/static/media/Data Structures, Algorithms, and Functions in Go.3505eafd.epub",
     "static/media/Data Structures, Algorithms, and Functions in Go.bbad18dc.pdf": "/static/media/Data Structures, Algorithms, and Functions in Go.bbad18dc.pdf",
     "static/media/Data Structures, Algorithms, and Functions in JavaScript.5e15d889.epub": "/static/media/Data Structures, Algorithms, and Functions in JavaScript.5e15d889.epub",
-    "static/media/Data Structures, Algorithms, and Functions in JavaScript.5e708099.pdf": "/static/media/Data Structures, Algorithms, and Functions in JavaScript.5e708099.pdf"
+    "static/media/Data Structures, Algorithms, and Functions in JavaScript.5e708099.pdf": "/static/media/Data Structures, Algorithms, and Functions in JavaScript.5e708099.pdf",
+    "static/media/ecmascript.6db52967.pdf": "/static/media/ecmascript.6db52967.pdf"
   },
   "entrypoints": [
     "static/js/runtime-main.393f4a4e.js",
     "static/css/2.150d169a.chunk.css",
     "static/js/2.ba31bca8.chunk.js",
     "static/css/main.599b69d1.chunk.css",
-    "static/js/main.adfded8f.chunk.js"
+    "static/js/main.ca566b57.chunk.js"
   ]
 }
