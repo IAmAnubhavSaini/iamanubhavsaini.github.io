@@ -11,7 +11,7 @@ import 'react-bootstrap/dist/react-bootstrap.min';
 import './App.css';
 import {HashRouter as Router, Route, Switch, Redirect} from 'react-router-dom';
 import {Resume} from "./Components/Resume";
-
+import Books from './Components/Books';
 
 function App() {
 
@@ -33,7 +33,7 @@ function App() {
 
                             <Button variant="info" className="btn btn-lg" href="/">Home</Button>
                             <Button variant="info" className="btn btn-lg" href="/#/resume">Resume</Button>
-                            {/*<Button variant="info" className="btn btn-lg" href="/#/blog">Blog</Button>*/}
+                            <Button variant="info" className="btn btn-lg" href="/#/books">Books</Button>
 
                         </Jumbotron>
                     </Col>
@@ -43,6 +43,7 @@ function App() {
                         <Switch>
                             <Route exact path="/"></Route>
                             <Route path="/resume" component={Resume}/>
+                            <Route path="/books" component={Books}/>
                             <Redirect to="/"/>
                         </Switch>
                     </Col>
@@ -53,4 +54,3 @@ function App() {
 }
 
 export default App;
-

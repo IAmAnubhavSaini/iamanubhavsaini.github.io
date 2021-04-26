@@ -5,6 +5,7 @@ import {Accordion, Badge, Card, Col, Container, Row, Tab, Tabs} from "react-boot
 import {GitHubRepoCards, GitHubRepoTable} from "./GitHub";
 import {PackageTable} from "./Npm";
 import Work from "./Work";
+import Education from "./Education";
 
 export function Resume() {
     const defaultRepos = REPOS.filter((repo: any) => repo.fork === false);
@@ -119,7 +120,7 @@ export function Resume() {
                 <Work/>
             </Tab>
             <Tab eventKey="education" title="Education">
-                Education
+                <Education/>
             </Tab>
         </Tabs>
     );
