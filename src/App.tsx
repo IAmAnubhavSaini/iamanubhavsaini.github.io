@@ -13,10 +13,9 @@ import {HashRouter as Router, Route, Switch, Redirect} from 'react-router-dom';
 import {Resume} from "./Components/Resume";
 import Books from './Components/Books';
 import Skills from "./Components/Skills";
+import Blog from "./Components/Blog";
 
 function App() {
-
-
     return (
         <Router basename="/">
             <Container fluid className="App" style={{minWidth: "600px"}}>
@@ -34,6 +33,7 @@ function App() {
                             <Button variant="info" className="btn btn-lg" href="/">Home</Button>
                             <Button variant="info" className="btn btn-lg" href="/#/resume">Resume</Button>
                             <Button variant="info" className="btn btn-lg" href="/#/books">Books</Button>
+                            <Button variant="info" className="btn btn-lg" href="/#/blog">Blog</Button>
                         </Jumbotron>
                     </Col>
                 </Row>
@@ -43,6 +43,7 @@ function App() {
                             <Route exact path="/" render={Skills}></Route>
                             <Route path="/resume" component={Resume}/>
                             <Route path="/books" component={Books}/>
+                            <Route path="/blog" component={Blog}/>
                             <Redirect to="/"/>
                         </Switch>
                     </Col>
