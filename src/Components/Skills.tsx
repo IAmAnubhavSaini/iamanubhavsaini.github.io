@@ -47,10 +47,16 @@ const SVGMap: any = {
 function Skills() {
     return (
         <>
+            <h3>Skills</h3>
+            <p>Experience in years</p>
+
             {
                 SKILLS.map((skill: SkillType, index: number) => {
                     return (
-                        <Card style={{padding: ".5em", display: 'inline-block', minWidth: "20%", margin: ".5em"}}
+                        <Card style={{
+                            padding: ".5em", display: 'inline-block', minWidth: "10%", margin: ".5em",
+                            textAlign: "center"
+                        }}
                               key={'skills-card-' + index}>
                             <ColoredBadge skill={skill} index={index}/>
                             <SkillLogo skill={skill}/>
@@ -89,13 +95,13 @@ function getSVG(iconPath: string): any {
 function variantCalculator(type: string) {
     switch (type) {
         case 'pl':
-            return 'success';
+            return 'warning';
         case 'fw':
             return 'danger';
         case 'os':
             return 'dark';
         case 'lib':
-            return 'warning';
+            return 'success';
         case 'tool':
             return 'primary';
         default:

@@ -29,7 +29,6 @@ function App() {
                     <Col>
                         <Jumbotron className="landing-area">
                             <h1>Hi. I am Anubhav.</h1>
-                            <p>Welcome.</p>
                             <Button variant="info" className="btn btn-lg" href="/">Home</Button>
                             <Button variant="info" className="btn btn-lg" href="/#/resume">Resume</Button>
                             <Button variant="info" className="btn btn-lg" href="/#/books">Books</Button>
