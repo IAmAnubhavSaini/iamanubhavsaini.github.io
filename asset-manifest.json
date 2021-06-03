@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.818e2dd9.chunk.css",
-    "main.js": "/static/js/main.735e8974.chunk.js",
-    "main.js.map": "/static/js/main.735e8974.chunk.js.map",
+    "main.css": "/static/css/main.73db537d.chunk.css",
+    "main.js": "/static/js/main.22faf4d4.chunk.js",
+    "main.js.map": "/static/js/main.22faf4d4.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.3fd67a43.js",
     "runtime-main.js.map": "/static/js/runtime-main.3fd67a43.js.map",
     "static/css/2.150d169a.chunk.css": "/static/css/2.150d169a.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.c3b19a0d.chunk.js.map": "/static/js/3.c3b19a0d.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.150d169a.chunk.css.map": "/static/css/2.150d169a.chunk.css.map",
-    "static/css/main.818e2dd9.chunk.css.map": "/static/css/main.818e2dd9.chunk.css.map",
+    "static/css/main.73db537d.chunk.css.map": "/static/css/main.73db537d.chunk.css.map",
     "static/js/2.d919f6a8.chunk.js.LICENSE.txt": "/static/js/2.d919f6a8.chunk.js.LICENSE.txt",
     "static/media/Data Structures, Algorithms, and Functions in Go.3505eafd.epub": "/static/media/Data Structures, Algorithms, and Functions in Go.3505eafd.epub",
     "static/media/Data Structures, Algorithms, and Functions in Go.bbad18dc.pdf": "/static/media/Data Structures, Algorithms, and Functions in Go.bbad18dc.pdf",
@@ -45,7 +45,7 @@
     "static/js/runtime-main.3fd67a43.js",
     "static/css/2.150d169a.chunk.css",
     "static/js/2.d919f6a8.chunk.js",
-    "static/css/main.818e2dd9.chunk.css",
-    "static/js/main.735e8974.chunk.js"
+    "static/css/main.73db537d.chunk.css",
+    "static/js/main.22faf4d4.chunk.js"
   ]
 }
