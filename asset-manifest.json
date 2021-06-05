@@ -1,24 +1,23 @@
 {
   "files": {
     "main.css": "/static/css/main.58693ecc.chunk.css",
-    "main.js": "/static/js/main.bfe1e666.chunk.js",
-    "main.js.map": "/static/js/main.bfe1e666.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.76d01661.js",
-    "runtime-main.js.map": "/static/js/runtime-main.76d01661.js.map",
+    "main.js": "/static/js/main.21eb8808.chunk.js",
+    "main.js.map": "/static/js/main.21eb8808.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.c9342b60.js",
+    "runtime-main.js.map": "/static/js/runtime-main.c9342b60.js.map",
     "static/css/2.4c97ca4f.chunk.css": "/static/css/2.4c97ca4f.chunk.css",
-    "static/js/2.6f7d64eb.chunk.js": "/static/js/2.6f7d64eb.chunk.js",
-    "static/js/2.6f7d64eb.chunk.js.map": "/static/js/2.6f7d64eb.chunk.js.map",
-    "static/js/3.b6afb967.chunk.js": "/static/js/3.b6afb967.chunk.js",
-    "static/js/3.b6afb967.chunk.js.map": "/static/js/3.b6afb967.chunk.js.map",
+    "static/js/2.950c56a6.chunk.js": "/static/js/2.950c56a6.chunk.js",
+    "static/js/2.950c56a6.chunk.js.map": "/static/js/2.950c56a6.chunk.js.map",
+    "static/js/3.052699af.chunk.js": "/static/js/3.052699af.chunk.js",
+    "static/js/3.052699af.chunk.js.map": "/static/js/3.052699af.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.4c97ca4f.chunk.css.map": "/static/css/2.4c97ca4f.chunk.css.map",
     "static/css/main.58693ecc.chunk.css.map": "/static/css/main.58693ecc.chunk.css.map",
-    "static/js/2.6f7d64eb.chunk.js.LICENSE.txt": "/static/js/2.6f7d64eb.chunk.js.LICENSE.txt",
+    "static/js/2.950c56a6.chunk.js.LICENSE.txt": "/static/js/2.950c56a6.chunk.js.LICENSE.txt",
     "static/media/Data Structures, Algorithms, and Functions in Go.3505eafd.epub": "/static/media/Data Structures, Algorithms, and Functions in Go.3505eafd.epub",
     "static/media/Data Structures, Algorithms, and Functions in Go.bbad18dc.pdf": "/static/media/Data Structures, Algorithms, and Functions in Go.bbad18dc.pdf",
     "static/media/Data Structures, Algorithms, and Functions in JavaScript.5e15d889.epub": "/static/media/Data Structures, Algorithms, and Functions in JavaScript.5e15d889.epub",
     "static/media/Data Structures, Algorithms, and Functions in JavaScript.5e708099.pdf": "/static/media/Data Structures, Algorithms, and Functions in JavaScript.5e708099.pdf",
-    "static/media/Schrödinger-equation.29951b0d.svg": "/static/media/Schrödinger-equation.29951b0d.svg",
     "static/media/babel.svg": "/static/media/babel.88772600.svg",
     "static/media/backbone.svg": "/static/media/backbone.1ffc4a62.svg",
     "static/media/bash.svg": "/static/media/bash.740b5227.svg",
@@ -55,10 +54,10 @@
     "static/media/webstorm.svg": "/static/media/webstorm.6cac5400.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.76d01661.js",
+    "static/js/runtime-main.c9342b60.js",
     "static/css/2.4c97ca4f.chunk.css",
-    "static/js/2.6f7d64eb.chunk.js",
+    "static/js/2.950c56a6.chunk.js",
     "static/css/main.58693ecc.chunk.css",
-    "static/js/main.bfe1e666.chunk.js"
+    "static/js/main.21eb8808.chunk.js"
   ]
 }
