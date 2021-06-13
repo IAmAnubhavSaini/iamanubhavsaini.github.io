@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.f7c13b1f.chunk.css",
-    "main.js": "/static/js/main.079d3cb0.chunk.js",
-    "main.js.map": "/static/js/main.079d3cb0.chunk.js.map",
+    "main.js": "/static/js/main.aa0a8f65.chunk.js",
+    "main.js.map": "/static/js/main.aa0a8f65.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.3086480f.js",
     "runtime-main.js.map": "/static/js/runtime-main.3086480f.js.map",
     "static/css/2.4c97ca4f.chunk.css": "/static/css/2.4c97ca4f.chunk.css",
@@ -17,8 +17,8 @@
     "static/media/1-div-wonder.79afd6c3.pdf": "/static/media/1-div-wonder.79afd6c3.pdf",
     "static/media/Data Structures, Algorithms, and Functions in GO.a9214265.epub": "/static/media/Data Structures, Algorithms, and Functions in GO.a9214265.epub",
     "static/media/Data Structures, Algorithms, and Functions in GO.bed11324.pdf": "/static/media/Data Structures, Algorithms, and Functions in GO.bed11324.pdf",
-    "static/media/Data Structures, Algorithms, and Functions in JavaScript.03be298c.epub": "/static/media/Data Structures, Algorithms, and Functions in JavaScript.03be298c.epub",
-    "static/media/Data Structures, Algorithms, and Functions in JavaScript.cb510a3b.pdf": "/static/media/Data Structures, Algorithms, and Functions in JavaScript.cb510a3b.pdf",
+    "static/media/Data Structures, Algorithms, and Functions in JavaScript.4c145ebb.epub": "/static/media/Data Structures, Algorithms, and Functions in JavaScript.4c145ebb.epub",
+    "static/media/Data Structures, Algorithms, and Functions in JavaScript.f4b0fd6e.pdf": "/static/media/Data Structures, Algorithms, and Functions in JavaScript.f4b0fd6e.pdf",
     "static/media/Programming in C.3398e278.epub": "/static/media/Programming in C.3398e278.epub",
     "static/media/Programming in C.e1cdfdbc.pdf": "/static/media/Programming in C.e1cdfdbc.pdf",
     "static/media/babel.svg": "/static/media/babel.88772600.svg",
@@ -63,6 +63,6 @@
     "static/css/2.4c97ca4f.chunk.css",
     "static/js/2.ca11d44f.chunk.js",
     "static/css/main.f7c13b1f.chunk.css",
-    "static/js/main.079d3cb0.chunk.js"
+    "static/js/main.aa0a8f65.chunk.js"
   ]
 }
