@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.2f3ee5da.chunk.css",
-    "main.js": "/static/js/main.6c2013fa.chunk.js",
-    "main.js.map": "/static/js/main.6c2013fa.chunk.js.map",
+    "main.css": "/static/css/main.b7c48b89.chunk.css",
+    "main.js": "/static/js/main.9d7dd7e5.chunk.js",
+    "main.js.map": "/static/js/main.9d7dd7e5.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.3086480f.js",
     "runtime-main.js.map": "/static/js/runtime-main.3086480f.js.map",
     "static/css/2.4c97ca4f.chunk.css": "/static/css/2.4c97ca4f.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.5d1c4ffa.chunk.js.map": "/static/js/3.5d1c4ffa.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.4c97ca4f.chunk.css.map": "/static/css/2.4c97ca4f.chunk.css.map",
-    "static/css/main.2f3ee5da.chunk.css.map": "/static/css/main.2f3ee5da.chunk.css.map",
+    "static/css/main.b7c48b89.chunk.css.map": "/static/css/main.b7c48b89.chunk.css.map",
     "static/js/2.2b9a218c.chunk.js.LICENSE.txt": "/static/js/2.2b9a218c.chunk.js.LICENSE.txt",
     "static/media/1-div-wonder.79afd6c3.pdf": "/static/media/1-div-wonder.79afd6c3.pdf",
     "static/media/Data Structures, Algorithms, and Functions in GO.a9214265.epub": "/static/media/Data Structures, Algorithms, and Functions in GO.a9214265.epub",
@@ -63,7 +63,7 @@
     "static/js/runtime-main.3086480f.js",
     "static/css/2.4c97ca4f.chunk.css",
     "static/js/2.2b9a218c.chunk.js",
-    "static/css/main.2f3ee5da.chunk.css",
-    "static/js/main.6c2013fa.chunk.js"
+    "static/css/main.b7c48b89.chunk.css",
+    "static/js/main.9d7dd7e5.chunk.js"
   ]
 }
