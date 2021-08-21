@@ -1,36 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.8c3a649a.chunk.css",
-    "main.js": "/static/js/main.f0239bc0.chunk.js",
-    "main.js.map": "/static/js/main.f0239bc0.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.265dbbe0.js",
-    "runtime-main.js.map": "/static/js/runtime-main.265dbbe0.js.map",
-    "static/css/2.4c97ca4f.chunk.css": "/static/css/2.4c97ca4f.chunk.css",
-    "static/js/2.77b433a3.chunk.js": "/static/js/2.77b433a3.chunk.js",
-    "static/js/2.77b433a3.chunk.js.map": "/static/js/2.77b433a3.chunk.js.map",
-    "static/js/3.655285d8.chunk.js": "/static/js/3.655285d8.chunk.js",
-    "static/js/3.655285d8.chunk.js.map": "/static/js/3.655285d8.chunk.js.map",
+    "main.css": "/static/css/main.0ecd898a.chunk.css",
+    "main.js": "/static/js/main.9e130524.chunk.js",
+    "main.js.map": "/static/js/main.9e130524.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.afcdd07d.js",
+    "runtime-main.js.map": "/static/js/runtime-main.afcdd07d.js.map",
+    "static/js/2.9a55a9a6.chunk.js": "/static/js/2.9a55a9a6.chunk.js",
+    "static/js/2.9a55a9a6.chunk.js.map": "/static/js/2.9a55a9a6.chunk.js.map",
+    "static/js/3.dcdcae3c.chunk.js": "/static/js/3.dcdcae3c.chunk.js",
+    "static/js/3.dcdcae3c.chunk.js.map": "/static/js/3.dcdcae3c.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/2.4c97ca4f.chunk.css.map": "/static/css/2.4c97ca4f.chunk.css.map",
-    "static/css/main.8c3a649a.chunk.css.map": "/static/css/main.8c3a649a.chunk.css.map",
-    "static/js/2.77b433a3.chunk.js.LICENSE.txt": "/static/js/2.77b433a3.chunk.js.LICENSE.txt",
-    "static/media/1-div-wonder.79afd6c3.pdf": "/static/media/1-div-wonder.79afd6c3.pdf",
-    "static/media/Data Structures, Algorithms, and Functions in GO.a9214265.epub": "/static/media/Data Structures, Algorithms, and Functions in GO.a9214265.epub",
-    "static/media/Data Structures, Algorithms, and Functions in GO.bed11324.pdf": "/static/media/Data Structures, Algorithms, and Functions in GO.bed11324.pdf",
-    "static/media/Data Structures, Algorithms, and Functions in JavaScript.3cd42f3b.epub": "/static/media/Data Structures, Algorithms, and Functions in JavaScript.3cd42f3b.epub",
-    "static/media/Data Structures, Algorithms, and Functions in JavaScript.4036c8de.pdf": "/static/media/Data Structures, Algorithms, and Functions in JavaScript.4036c8de.pdf",
-    "static/media/Programming in C.3398e278.epub": "/static/media/Programming in C.3398e278.epub",
-    "static/media/Programming in C.e1cdfdbc.pdf": "/static/media/Programming in C.e1cdfdbc.pdf",
-    "static/media/ecmascript.6db52967.pdf": "/static/media/ecmascript.6db52967.pdf",
-    "static/media/logo.817095f2.png": "/static/media/logo.817095f2.png",
-    "static/media/index.css": "/static/media/tools.47c1e996.jpg",
-    "static/media/resume.18c88bc5.pdf": "/static/media/resume.18c88bc5.pdf"
+    "static/css/main.0ecd898a.chunk.css.map": "/static/css/main.0ecd898a.chunk.css.map",
+    "static/js/2.9a55a9a6.chunk.js.LICENSE.txt": "/static/js/2.9a55a9a6.chunk.js.LICENSE.txt",
+    "static/media/logo.817095f2.png": "/static/media/logo.817095f2.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.265dbbe0.js",
-    "static/css/2.4c97ca4f.chunk.css",
-    "static/js/2.77b433a3.chunk.js",
-    "static/css/main.8c3a649a.chunk.css",
-    "static/js/main.f0239bc0.chunk.js"
+    "static/js/runtime-main.afcdd07d.js",
+    "static/js/2.9a55a9a6.chunk.js",
+    "static/css/main.0ecd898a.chunk.css",
+    "static/js/main.9e130524.chunk.js"
   ]
 }
