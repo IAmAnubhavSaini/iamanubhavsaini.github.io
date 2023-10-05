@@ -1,30 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: monospace;
-    font-size: 13px;
+    font-size: 14px;
+    margin: 0 auto;
+    width: 98vw;
+    min-width: 900px;
+
+}
+
+li {
+
+    line-height: 1.5em;
 }
 
 h1, h2, h3 {
     margin: 0;
 }
 
+ol {
+    width: max-content;
+}
+
+.container > legend {
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+}
+
 fieldset {
-    padding: 1em;
-    margin: 1em;
-    width: fit-content;
-    /*min-width: 200px;*/
-    height: fit-content;
-    display: flex;
-    flex: 1 1;
+    /*margin: 10px;*/
+    /*padding: 10px;*/
+    display: grid;
+    grid: auto-flow dense / repeat(5, 1fr);
+    grid-gap: 1vh 1vw;
+    /*height: fit-content;*/
+    /*width: fit-content;*/
 
 }
 
 fieldset legend {
+    margin: 10px;
+    padding: 10px;
     background-color: black;
     color: white;
     text-shadow: 1px 1px 1px black;
-    width: 50%;
     text-align: center;
-    padding: 4px;
     display: block;
     min-width: 200px;
+}
+
+li {
+    list-style-position: outside;
 }
