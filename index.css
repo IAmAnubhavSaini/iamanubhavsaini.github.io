@@ -1,29 +1,30 @@
-*, *::before, *::after {
-    box-sizing: border-box;
-}
-
 body {
     font-family: monospace;
     font-size: 13px;
 }
 
-ol {
-    margin: 0 1em;
-    padding: 0 1em;
+h1, h2, h3 {
+    margin: 0;
 }
 
-ol a {
-    margin: 3px 0;
-    display: inline-block;
-}
-
-main, section.projects, section.skills {
+fieldset {
+    padding: 1em;
+    margin: 1em;
+    width: fit-content;
+    /*min-width: 200px;*/
+    height: fit-content;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex: 1 1;
+
 }
 
-section.projects .project-list,
-section.skills .skill-list {
-    margin: 0 10px;
+fieldset legend {
+    background-color: black;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    width: 50%;
+    text-align: center;
+    padding: 4px;
+    display: block;
+    min-width: 200px;
 }
