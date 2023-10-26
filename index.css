@@ -10,13 +10,9 @@ body {
     font-family: monospace;
     font-size: 14px;
     margin: 0 auto;
-    width: 98vw;
-    min-width: 900px;
-
 }
 
 li {
-
     line-height: 1.5em;
 }
 
@@ -35,14 +31,9 @@ ol {
 }
 
 fieldset {
-    /*margin: 10px;*/
-    /*padding: 10px;*/
     display: grid;
     grid: auto-flow dense / repeat(5, 1fr);
     grid-gap: 1vh 1vw;
-    /*height: fit-content;*/
-    /*width: fit-content;*/
-
 }
 
 fieldset legend {
@@ -58,4 +49,28 @@ fieldset legend {
 
 li {
     list-style-position: outside;
+}
+
+@media (max-width: 1000px) {
+    fieldset {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 3vh 3vw;
+    }
+    fieldset legend {
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 600px) {
+    fieldset {
+        grid-template-columns: 1fr;
+        grid-gap: 3vh 3vw;
+    }
+    fieldset legend {
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+    }
 }
