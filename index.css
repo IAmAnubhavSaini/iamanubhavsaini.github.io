@@ -32,6 +32,10 @@ fieldset.container {
     grid-gap: 1vh 1vw;
 }
 
+fieldset fieldset {
+    border-width: 1px;
+}
+
 fieldset legend {
     margin: 10px;
     padding: 10px;
@@ -41,6 +45,7 @@ fieldset legend {
     text-align: center;
     display: block;
     min-width: 200px;
+    border-width: 1px;
 }
 
 li {
@@ -59,20 +64,79 @@ fieldset.projects fieldset {
     padding: 1vh 1vw;
 }
 
+span.tiny {
+    margin-left: 10px;
+    font-size: 8px;
+}
+
+fieldset fieldset:hover {
+    animation: rainbow 7s infinite ease-in-out;
+}
+
+fieldset fieldset:hover legend {
+    animation: rainbow 7s infinite ease-in-out;
+}
+
+@keyframes rainbow {
+    0% {
+        border: 1px solid red;
+    }
+    8% {
+        border: 1px solid orange;
+    }
+    16% {
+        border: 1px solid yellow;
+    }
+    25% {
+        border: 1px solid green;
+    }
+    33% {
+        border: 1px solid blue;
+    }
+    41% {
+        border: 1px solid indigo;
+    }
+    50% {
+        border: 1px solid violet;
+    }
+    58% {
+        border: 1px solid violet;
+    }
+    66% {
+        border: 1px solid indigo;
+    }
+    75% {
+        border: 1px solid blue;
+    }
+    83% {
+        border: 1px solid green;
+    }
+    91% {
+        border: 1px solid yellow;
+    }
+    100% {
+        border: 1px solid red;
+    }
+
+}
+
 @media (max-width: 1000px) {
     fieldset.container {
         grid-template-columns: 1fr 1fr;
         grid-gap: 3vh 3vw;
     }
+
     fieldset legend {
         text-align: center;
         width: 80%;
         margin: 0 auto;
     }
+
     li {
         padding: 1vh;
         margin: 2vh 0;
     }
+
     li a {
         padding: 1vh;
     }
@@ -83,15 +147,18 @@ fieldset.projects fieldset {
         grid-template-columns: 1fr;
         grid-gap: 3vh 3vw;
     }
+
     fieldset legend {
         text-align: center;
         width: 80%;
         margin: 0 auto;
     }
+
     li {
         padding: 1vh;
         margin: 2vh 0;
     }
+
     li a {
         padding: 1vh;
     }
