@@ -163,3 +163,32 @@ fieldset fieldset:hover legend {
         padding: 1vh;
     }
 }
+
+@media print {
+
+    * {
+        padding: 1px !important;
+        margin: 1px !important;
+        text-shadow: none !important;
+    }
+
+    body {
+        font-size: 11px;
+        padding: 0;
+        margin: 0;
+    }
+
+    fieldset {
+        border: none;
+        display: block;
+    }
+
+    fieldset legend {
+        border: none;
+        text-align: left;
+    }
+
+    ul, ol {
+        list-style: none;
+    }
+}
