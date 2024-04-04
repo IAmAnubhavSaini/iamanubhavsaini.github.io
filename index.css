@@ -1,5 +1,6 @@
 :root {
     color-scheme: dark light;
+    font-size: 16px;
 }
 
 * {
@@ -8,7 +9,7 @@
 
 body {
     font-family: monospace;
-    font-size: 14px;
+    font-size: calc(1em + 0.25vw);
     margin: 0 auto;
 }
 
@@ -28,12 +29,13 @@ ol {
 
 fieldset.container {
     display: grid;
-    grid: auto-flow dense / repeat(5, 1fr);
+    grid: auto-flow dense / repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 1vh 1vw;
 }
 
 fieldset fieldset {
     border-width: 1px;
+    min-width: 300px;
 }
 
 fieldset legend {
@@ -52,12 +54,6 @@ li {
     list-style-position: outside;
     margin: 1vh 0;
     line-height: 2em;
-}
-
-fieldset.projects {
-    grid: auto-flow dense / repeat(4, 1fr);
-    grid-column: 1 / 3;
-    grid-row: 1 / 3;
 }
 
 fieldset.projects fieldset {
@@ -120,82 +116,57 @@ fieldset fieldset:hover legend {
 
 }
 
-@media (max-width: 1000px) {
-    fieldset.container {
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 3vh 3vw;
-    }
-
-    fieldset legend {
-        text-align: center;
-        width: 80%;
-        margin: 0 auto;
-    }
-
-    li {
-        padding: 1vh;
-        margin: 2vh 0;
-    }
-
-    li a {
-        padding: 1vh;
-    }
-}
-
-@media (max-width: 600px) {
-    fieldset.container {
-        grid-template-columns: 1fr;
-        grid-gap: 3vh 3vw;
-    }
-
-    fieldset legend {
-        text-align: center;
-        width: 80%;
-        margin: 0 auto;
-    }
-
-    li {
-        padding: 1vh;
-        margin: 2vh 0;
-    }
-
-    li a {
-        padding: 1vh;
-    }
-}
-
 @media print {
 
     * {
-        padding: 1px !important;
-        margin: 1px !important;
-        text-shadow: none !important;
+        box-sizing: border-box;
+        text-shadow: none;
+        text-decoration: none;
     }
 
     body {
+        width: 210mm;
+        height: 297mm;
         font-size: 11px;
         padding: 0;
         margin: 0;
     }
 
-    fieldset {
-        border: none;
+    fieldset.container {
         display: block;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        border: none;
+    }
+    fieldset fieldset {
+        min-width: 180mm;
+        width: 100%;
+        display: block;
+        border: none;
+        padding: 0;
+        margin: 10mm 0;
     }
 
     fieldset legend {
         border: none;
         text-align: left;
+        padding: 0;
+        margin: 0;
+        font-size: 2em;
     }
 
     ul, ol {
-        list-style: none;
+        padding: 0;
+        list-style-type: none;
+        display: block;
+    }
+
+    li {
+        display: block;
+    }
+
+    a::after {
+        content: " (" attr(href) ")";
     }
 }
-
-/*.fixed-size {*/
-/*    min-width: 140px;*/
-/*    min-height: 140px;*/
-/*    font-size: 1.4em;*/
-/*    margin: 0 auto;*/
-/*}*/
