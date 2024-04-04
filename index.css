@@ -1,6 +1,7 @@
 :root {
     color-scheme: dark light;
-    font-size: 16px;
+    --base-font-size: 16px;
+    font-size: calc(var(--base-font-size) * 1);
 }
 
 * {
@@ -13,7 +14,7 @@ body {
     margin: 0 auto;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
@@ -29,13 +30,20 @@ ol {
 
 fieldset.container {
     display: grid;
-    grid: auto-flow dense / repeat(auto-fit, minmax(300px, 1fr));
+    grid: auto-flow dense / repeat(auto-fit, minmax(400px, 1fr));
     grid-gap: 1vh 1vw;
 }
 
 fieldset fieldset {
     border-width: 1px;
-    min-width: 300px;
+    min-width: 350px;
+    max-height: 500px;
+    overflow: clip;
+    padding: 1vh 1vw;
+}
+
+fieldset fieldset:hover {
+    overflow: auto;
 }
 
 fieldset legend {
@@ -48,6 +56,11 @@ fieldset legend {
     display: block;
     min-width: 200px;
     border: 1px solid black;
+}
+
+fieldset legend h6 {
+    font-size: .7rem;
+    margin: 1vh 0 0 0;
 }
 
 li {
@@ -127,7 +140,7 @@ fieldset fieldset:hover legend {
     body {
         width: 210mm;
         height: 297mm;
-        font-size: 11px;
+        font-size: 16px;
         padding: 0;
         margin: 0;
     }
