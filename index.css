@@ -1,6 +1,6 @@
 :root {
     color-scheme: dark light;
-    --base-font-size: 16px;
+    --base-font-size: 10px;
     font-size: calc(var(--base-font-size) * 1);
 }
 
@@ -14,7 +14,12 @@ body {
     margin: 0 auto;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0;
 }
 
@@ -34,11 +39,14 @@ fieldset.container {
     grid-gap: 1vh 1vw;
 }
 
+fieldset.container fieldset.container {
+    grid-column: span 2;
+}
+
 fieldset fieldset {
     border-width: 1px;
-    min-width: 350px;
     height: 100%;
-    max-height: 550px;
+    max-height: 400px;
     overflow: clip;
     padding: 1vh 1vw;
     align-self: start;
@@ -80,7 +88,7 @@ fieldset fieldset:hover {
 }
 
 fieldset fieldset:hover legend {
-    animation: rainbow 7s infinite ease-in-out;
+    animation: rainbow 6s infinite ease-in-out;
 }
 
 @keyframes rainbow {
@@ -123,11 +131,9 @@ fieldset fieldset:hover legend {
     100% {
         border: 1px solid red;
     }
-
 }
 
 @media print {
-
     * {
         box-sizing: border-box;
         text-shadow: none;
@@ -166,7 +172,8 @@ fieldset fieldset:hover legend {
         font-size: 2em;
     }
 
-    ul, ol {
+    ul,
+    ol {
         padding: 0;
         list-style-type: none;
         display: block;
