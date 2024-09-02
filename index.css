@@ -1,11 +1,13 @@
 :root {
     color-scheme: dark light;
-    --base-font-size: 10px;
+    --base-font-size: 16px;
     font-size: calc(var(--base-font-size) * 1);
 }
 
 * {
     box-sizing: border-box;
+    margin: 10px;
+    background-color: transparent;
 }
 
 body {
@@ -28,15 +30,15 @@ ol {
 }
 
 .container > legend {
-    font-size: 24px;
+    font-size: 48px;
     font-weight: bold;
-    text-shadow: 1px 1px 1px black;
 }
 
 fieldset.container {
     display: grid;
     grid: auto-flow dense / repeat(auto-fit, minmax(400px, 1fr));
     grid-gap: 1vh 1vw;
+    border: none;
 }
 
 fieldset.container fieldset.container {
@@ -44,9 +46,9 @@ fieldset.container fieldset.container {
 }
 
 fieldset fieldset {
-    border-width: 1px;
+    border: none;
     height: 100%;
-    max-height: 400px;
+    min-height: 500px;
     overflow: clip;
     padding: 1vh 1vw;
     align-self: start;
@@ -57,15 +59,17 @@ fieldset fieldset:hover {
 }
 
 fieldset legend {
-    margin: 10px;
-    padding: 10px;
+    margin: 10px 0;
     background-color: black;
     color: white;
     text-shadow: 1px 1px 1px black;
     text-align: center;
     display: block;
     min-width: 200px;
-    border: 1px solid black;
+    border: none;
+    width: 100%;
+    height: 10vh;
+    line-height: 10vh;
 }
 
 li {
@@ -80,16 +84,16 @@ fieldset.projects fieldset {
 
 span.tiny {
     margin-left: 10px;
-    font-size: 8px;
+    font-size: 12px;
 }
 
-fieldset fieldset:hover {
+/* fieldset fieldset:hover {
     animation: rainbow 7s infinite ease-in-out;
 }
 
 fieldset fieldset:hover legend {
     animation: rainbow 6s infinite ease-in-out;
-}
+} */
 
 @keyframes rainbow {
     0% {
