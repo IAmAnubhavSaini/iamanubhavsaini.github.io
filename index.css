@@ -1,6 +1,6 @@
 :root {
     color-scheme: dark light;
-    --base-font-size: 16px;
+    --base-font-size: 10px;
     font-size: calc(var(--base-font-size) * 1);
 }
 
@@ -22,141 +22,55 @@
 
 * {
     box-sizing: border-box;
-    margin: 10px;
+    padding: 0;
+    margin: 0;
     background-color: transparent;
 }
 
 body {
     font-family: monospace;
-    font-size: calc(1em + 0.25vw);
-    margin: 0 auto;
+    font-size: calc(1em + 0.25rem);
     color: var(--primary-color-text);
     background-color: var(--primary-color-background);
-}
+    width: clamp(400px, 100%, 900px);
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin: 0;
-    background-color: var(--primary-color-heading-background);
-}
-
-ol {
-    width: max-content;
-}
-
-.container > legend {
-    font-size: 48px;
-    font-weight: bold;
-}
-
-fieldset.container {
-    display: grid;
-    grid: auto-flow dense / repeat(auto-fit, minmax(400px, 1fr));
-    grid-gap: 1vh 1vw;
-    border: none;
-}
-
-fieldset.container fieldset.container {
-    grid-column: span 2;
-}
-
-fieldset fieldset {
-    border: none;
-    height: 100%;
-    min-height: 500px;
-    overflow: clip;
-    padding: 1vh 1vw;
-    align-self: start;
-}
-
-fieldset fieldset:hover {
-    overflow: auto;
-}
-
-fieldset legend {
-    margin: 10px 0;
-    background-color: black;
-    color: white;
-    text-shadow: 1px 1px 1px var(--primary-color-text);
-    text-align: center;
-    display: block;
-    min-width: 200px;
-    border: none;
-    width: 100%;
-    height: 10vh;
-    line-height: 10vh;
-}
-
-li {
-    list-style-position: outside;
-    margin: 1vh 0;
-    line-height: 2em;
-}
-
-fieldset.projects fieldset {
-    padding: 1vh 1vw;
-}
-
-span.tiny {
-    margin-left: 10px;
-    font-size: 12px;
-}
-
-@media print {
-    * {
-        box-sizing: border-box;
-        text-shadow: none;
-        text-decoration: none;
-    }
-
-    body {
-        width: 210mm;
-        height: 297mm;
-        font-size: 16px;
-        padding: 0;
-        margin: 0;
-    }
-
-    fieldset.container {
-        display: block;
-        width: 100%;
-        padding: 0;
-        margin: 0;
-        border: none;
-    }
-    fieldset fieldset {
-        min-width: 180mm;
-        width: 100%;
-        display: block;
-        border: none;
-        padding: 0;
-        margin: 10mm 0;
-    }
-
-    fieldset legend {
-        border: none;
-        text-align: left;
-        padding: 0;
-        margin: 0;
-        font-size: 2em;
-    }
-
-    ul,
-    ol {
-        padding: 0;
-        list-style-type: none;
+    & * {
         display: block;
     }
 
-    li {
-        display: block;
+    & div.container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 2rem;
+
     }
 
-    a::after {
-        content: " (" attr(href) ")";
+}
+
+fieldset {
+    width: clamp(300px, 100%, 800px);
+    padding: 2rem;
+    margin: 2rem 0;
+
+    & & {
+        width: clamp(250px, 100%, 700px);
+        margin: 2rem auto;
     }
+}
+
+a {
+    padding: 1rem;
+
+    &:hover {
+        background-color: #000;
+        color: white;
+    }
+}
+
+@media (max-width: 600px) {
+    a {
+        background-color: #000;
+        color: white;
+    }
+
 }
