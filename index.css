@@ -28,13 +28,15 @@
 }
 
 body {
+    margin: auto;
     font-family: monospace;
     font-size: calc(1em + 0.25rem);
     color: var(--primary-color-text);
     background-color: var(--primary-color-background);
     width: clamp(400px, 100%, 900px);
 
-    & * {
+    & div,
+    & section {
         display: block;
     }
 
