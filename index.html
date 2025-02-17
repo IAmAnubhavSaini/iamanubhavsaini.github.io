@@ -225,36 +225,22 @@
         const hoursDiv = document.querySelector('section.clock div.hours');
         const minutesDiv = document.querySelector('section.clock div.minutes');
         const secondsDiv = document.querySelector('section.clock div.seconds');
-        let hoursAngle = new Date().getHours() * 30;
-        let minutesAngle = new Date().getMinutes() * 6;
-        let secondsAngle = new Date().getSeconds() * 6;
+
         const fromColor = "black";
         const toColor = "silver";
-        secondsDiv.style.background = `conic-gradient(from ${secondsAngle}deg, ${fromColor}, ${toColor})`;
-        minutesDiv.style.background = `conic-gradient(from ${minutesAngle}deg, ${fromColor}, ${toColor})`;
-        hoursDiv.style.background = `conic-gradient(from ${hoursAngle}deg, ${fromColor}, ${toColor})`;
 
-        function onsecond() {
-            secondsAngle += 6
-            secondsAngle %= 360
+        function everysecond() {
+            let hoursAngle = new Date().getHours() * 30;
+            let minutesAngle = new Date().getMinutes() * 6;
+            let secondsAngle = new Date().getSeconds() * 6;
+
             secondsDiv.style.background = `conic-gradient(from ${secondsAngle}deg, ${fromColor}, ${toColor})`;
-        }
-
-        function onminute() {
-            minutesAngle += 6
-            minutesAngle %= 360
             minutesDiv.style.background = `conic-gradient(from ${minutesAngle}deg, ${fromColor}, ${toColor})`;
-        }
-
-        function onhour() {
-            hourAngle += 30;
-            hourAngle %= 360;
             hoursDiv.style.background = `conic-gradient(from ${hoursAngle}deg, ${fromColor}, ${toColor})`;
         }
 
-        setInterval(onsecond, 1000);
-        setInterval(onminute, 60 * 1000);
-        setInterval(onhour, 60 * 60 * 1000);
+        setInterval(everysecond, 1000);
+
 
     </script>
 </body>
