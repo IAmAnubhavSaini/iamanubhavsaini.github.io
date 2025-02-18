@@ -29,19 +29,19 @@ function Clock() {
         <div className="flex clock">
 
             <div
-                className="analog hours moving-border"
+                className="analog hours"
                 title="hours"
                 style={{ background: background(hoursAngle) }}
             ></div>
 
             <div
-                className="analog minutes moving-border"
+                className="analog minutes"
                 title="minutes"
                 style={{ background: background(minutesAngle) }}
             ></div>
 
             <div
-                className="analog seconds moving-border"
+                className="analog seconds"
                 title="seconds"
                 style={{ background: background(secondsAngle) }}
             ></div>

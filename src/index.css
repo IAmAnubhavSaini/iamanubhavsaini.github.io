@@ -74,6 +74,25 @@ body {
         }
     }
 
+    button {
+        cursor: pointer;
+        padding: 4px;
+    }
+
+    a {
+        text-shadow: 0 0 1px var(--color-black);
+        font-weight: 500;
+        padding: 1rem;
+        transition: all 0.3s ease-in-out;
+        text-decoration: none;
+
+        &:hover {
+            background-color: var(--primary-color-background);
+            color: var(--primary-color-text);
+            text-decoration: wavy;
+        }
+    }
+
 }
 
 fieldset {
@@ -87,35 +106,12 @@ fieldset {
     }
 }
 
-button {
-    cursor: pointer;
-    padding: 4px;
-}
 
-a {
-    padding: 1rem;
-    transition: all 0.3s ease-in-out;
-    text-decoration: none;
-
-    &:hover {
-        background-color: var(--primary-color-background);
-        color: var(--primary-color-text);
-        text-decoration: wavy;
-    }
-}
-
-@media (max-width: 600px) {
-    a {
-        background-color: var(--primary-color-background);
-        color: var(--primary-color-text);
-        text-decoration: wavy;
-    }
-
-}
 
 .flex {
     display: flex;
     gap: 1vh 2vw;
+    flex-wrap: wrap;
 
     &.vflex {
         flex-direction: column;
@@ -125,10 +121,38 @@ a {
 .grid {
     display: grid;
     gap: 1vh 2vw;
+
+    &.grid2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 .lists {
     .list-item {
-        min-width: 250px;
+        min-width: 300px;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        max-width: 60mm;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+
+        .grid2 {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    .flex {
+        flex-direction: column;
+    }
+
+    a {
+        background-color: var(--primary-color-background);
+        color: var(--primary-color-text);
+        text-decoration: underline;
     }
 }
