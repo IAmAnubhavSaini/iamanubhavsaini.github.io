@@ -2,6 +2,9 @@
     color-scheme: dark light;
     --base-font-size: 10px;
     font-size: calc(var(--base-font-size) * 1);
+    --primary-color-accent: orange;
+    --color-black: #000;
+    --color-white: #fff;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -56,6 +59,21 @@ body {
         text-align: center;
     }
 
+    ul {
+        list-style: none;
+
+        li {
+            border-left: 2px solid transparent;
+            border-radius: 0;
+            padding: 4px 8px;
+
+
+            &:hover {
+                border-left: 2px solid var(--primary-color-accent);
+            }
+        }
+    }
+
 }
 
 fieldset {
@@ -76,42 +94,41 @@ button {
 
 a {
     padding: 1rem;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
 
     &:hover {
-        background-color: #000;
-        color: white;
+        background-color: var(--primary-color-background);
+        color: var(--primary-color-text);
+        text-decoration: wavy;
     }
 }
 
 @media (max-width: 600px) {
     a {
-        background-color: #000;
-        color: white;
+        background-color: var(--primary-color-background);
+        color: var(--primary-color-text);
+        text-decoration: wavy;
     }
 
 }
 
-/* clock */
-section.flex.clock {
+.flex {
     display: flex;
-    gap: 10px;
+    gap: 1vh 2vw;
 
-    div {
-        height: 50px;
-        width: 50px;
-        border: 1px solid black;
-        /* border-radius: 50%; */
-
-        background-color: transparent;
+    &.vflex {
+        flex-direction: column;
     }
+}
 
-    div.hours,
-    div.minutes,
-    div.seconds {
-        filter: contrast(1);
-        transform: scale(1);
-        background: conic-gradient(from 0deg,
-                rgb(53, 47, 68),
-                rgb(0, 0, 0));
+.grid {
+    display: grid;
+    gap: 1vh 2vw;
+}
+
+.lists {
+    .list-item {
+        min-width: 250px;
     }
 }
