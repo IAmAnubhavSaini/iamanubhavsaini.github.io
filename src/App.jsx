@@ -1,17 +1,8 @@
-
-import "./App.css"
+import "./App.css";
 import Clock from "./components/Clock";
-import { List, ListOLink } from "./components/List"
+import { List, ListOLink } from "./components/List";
 
-const companies = [
-    "Ackret Solutions",
-    "Appsmith",
-    "PayPal",
-    "Experis",
-    "Altimetrik",
-    "ThoghtWorks",
-    "eKasba"
-];
+const companies = ["Ackret Solutions", "Appsmith", "PayPal", "Experis", "Altimetrik", "ThoghtWorks", "eKasba"];
 
 const currentTechstack = [
     "javascript + typescript + bash",
@@ -21,27 +12,27 @@ const currentTechstack = [
     "docker",
     "debian",
     "git",
-    "vscode"
-]
+    "vscode",
+];
 
 const webapps = [
-    { url: "https://iamanubhavsaini.github.io/strings-app/", title: "strings" },
     { url: "https://iamanubhavsaini.github.io/jspaint/index.html", title: "jspaint" },
-    { url: "https://iamanubhavsaini.github.io/json-visualiser", title: "json visualiser" },
-    { url: "https://iamanubhavsaini.github.io/infinite-scroll", title: "infinite-scroll" },
-    { url: "https://iamanubhavsaini.github.io/TopGit/topgit.html", title: "top git" },
     { url: "https://iamanubhavsaini.github.io/ShowCase-Hotel/", title: "hotel" },
-    { url: "https://iamanubhavsaini.github.io/showcase-countries-react/index.html", title: " countries " },
-    { url: "https://iamanubhavsaini.github.io/random-quotes/", title: "quotes" },
-    { url: "https://iamanubhavsaini.github.io/showcase-stopwatches-react/index.html", title: "stopwatch" },
-    { url: "https://iamanubhavsaini.github.io/showcase-sort-react/index.html", title: " sorting " },
-    { url: "https://iamanubhavsaini.github.io/traffule/signs", title: "traffule" },
-    { url: "https://iamanubhavsaini.github.io/simple-web-design-system/", title: "design" },
-    { url: "https://iamanubhavsaini.github.io/browser-debug/index.html", title: " browser-debug " },
-    { url: "https://iamanubhavsaini.github.io/slickr", title: "slickr" },
-    { url: "https://iamanubhavsaini.github.io/ransom", title: "ransom" },
-    { url: "https://f0c1s.github.io/todos-with-animation/", title: "todos with animation" },
+    { url: "https://iamanubhavsaini.github.io/infinite-scroll", title: "infinite-scroll" },
     { url: "https://f0c1s.github.io/tic-tac-toe-in-react/", title: "ticTacToe in react" },
+    { url: "https://iamanubhavsaini.github.io/strings-app/", title: "strings" },
+    { url: "https://iamanubhavsaini.github.io/json-visualiser", title: "json visualiser" },
+    { url: "https://iamanubhavsaini.github.io/TopGit/topgit.html", title: "top git" },
+    { url: "https://iamanubhavsaini.github.io/showcase-countries-react/index.html", title: " countries " },
+    { url: "https://iamanubhavsaini.github.io/showcase-sort-react/index.html", title: " sorting " },
+    { url: "https://iamanubhavsaini.github.io/browser-debug/index.html", title: " browser-debug " },
+    { url: "https://iamanubhavsaini.github.io/simple-web-design-system/", title: "design" },
+    { url: "https://iamanubhavsaini.github.io/traffule/signs", title: "traffule" },
+    { url: "https://iamanubhavsaini.github.io/showcase-stopwatches-react/index.html", title: "stopwatch" },
+    { url: "https://iamanubhavsaini.github.io/slickr", title: "slickr" },
+    { url: "https://f0c1s.github.io/todos-with-animation/", title: "todos with animation" },
+    { url: "https://iamanubhavsaini.github.io/random-quotes/", title: "quotes" },
+    { url: "https://iamanubhavsaini.github.io/ransom", title: "ransom" },
 ];
 
 const cliapps = [
@@ -72,10 +63,9 @@ const libraries = [
     { url: "https://github.com/IAmAnubhavSaini/cpu.info.node.lib", title: "cpu info" },
     { url: "https://github.com/f0c1s/node-pad.lib", title: "string padding" },
     { url: "https://github.com/f0c1s/node-escape-html.lib", title: "html escape" },
-]
+];
 
 function App() {
-
     return (
         <>
             <h1>Anubhav Saini</h1>
@@ -85,7 +75,6 @@ function App() {
             <section className="grid grid2 lists">
                 <List title="Companies" values={companies} />
                 <List title="Stack" values={currentTechstack} />
-
             </section>
             <section className="grid grid2 lists">
                 <ListOLink title="Web apps" values={webapps} />
@@ -93,8 +82,25 @@ function App() {
                 <ListOLink title="services" values={services} />
                 <ListOLink title="libraries" values={libraries} />
             </section>
+            <div>
+                <div>Old projects (2006-2015)</div>
+                <ul>
+                    <li>2048: A 2048 clone written in C</li>
+                    <li>Traffoon: A web application for traffic road signs, markings, and rules education.</li>
+                    <li>BlogRocker: A minimal blogging engine.</li>
+                    <li>ShareWatch: A desktop application for tracking and analysis of stocks and commodity prices.</li>
+                    <li>Contactr: A windows desktop application for managing contacts.</li>
+                    <li>Imagr: A windows desktop application for editing images.</li>
+                    <li>Mailr: A windows desktop application for emailing.</li>
+                    <li>
+                        Platform For Organized Student Activities & Communication: A college degree project web
+                        application.
+                    </li>
+                    <li>SocialClone: A clone of facebook in lamp stack.</li>
+                </ul>
+            </div>
         </>
-    )
+    );
 }
 
-export default App
+export default App;
