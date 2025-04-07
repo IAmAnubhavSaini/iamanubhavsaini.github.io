@@ -1,4 +1,5 @@
 import "./App.css";
+import { Card } from "./components/Card";
 import Clock from "./components/Clock";
 import { List, ListOLink } from "./components/List";
 
@@ -68,36 +69,71 @@ const libraries = [
 function App() {
     return (
         <>
-            <h1>Anubhav Saini</h1>
-            <section>
-                <Clock />
-            </section>
-            <section className="grid grid2 lists">
-                <List title="Companies" values={companies} />
-                <List title="Stack" values={currentTechstack} />
-            </section>
-            <section className="grid grid2 lists">
-                <ListOLink title="Web apps" values={webapps} />
-                <ListOLink title="cli apps" values={cliapps} />
-                <ListOLink title="services" values={services} />
-                <ListOLink title="libraries" values={libraries} />
-            </section>
-            <div>
-                <div>Old projects (2006-2015)</div>
-                <ul>
-                    <li>2048: A 2048 clone written in C</li>
-                    <li>Traffoon: A web application for traffic road signs, markings, and rules education.</li>
-                    <li>BlogRocker: A minimal blogging engine.</li>
-                    <li>ShareWatch: A desktop application for tracking and analysis of stocks and commodity prices.</li>
-                    <li>Contactr: A windows desktop application for managing contacts.</li>
-                    <li>Imagr: A windows desktop application for editing images.</li>
-                    <li>Mailr: A windows desktop application for emailing.</li>
-                    <li>
-                        Platform For Organized Student Activities & Communication: A college degree project web
-                        application.
-                    </li>
-                    <li>SocialClone: A clone of facebook in lamp stack.</li>
-                </ul>
+            <div className="container">
+                <div className="container-item">
+                    <div className="heading">Anubhav Saini</div>
+                </div>
+            </div>
+            <div className="container">
+                <div className="container-item">
+                    <Card>
+                        <Clock />
+                    </Card>
+                </div>
+            </div>
+            <div className="container">
+                <div className="container-item">
+                    <List title="Companies" values={companies} />
+                </div>
+            </div>
+            <div className="container">
+                <div className="container-item">
+                    <List title="Stack" values={currentTechstack} />
+                </div>
+            </div>
+            <div className="container">
+                <div className="container-item">
+                    <ListOLink title="Web apps" values={webapps} />
+                </div>
+            </div>
+            <div className="container">
+                <div className="container-item">
+                    <ListOLink title="cli apps" values={cliapps} />
+                </div>
+            </div>
+            <div className="container">
+                <div className="container-item">
+                    <ListOLink title="services" values={services} />
+                </div>
+            </div>
+            <div className="container">
+                <div className="container-item">
+                    <ListOLink title="libraries" values={libraries} />
+                </div>
+            </div>
+            <div className="container">
+                <div className="container-item">
+                    <div>
+                        <div>Old projects (2006-2015)</div>
+                        <ul>
+                            <li>2048: A 2048 clone written in C</li>
+                            <li>Traffoon: A web application for traffic road signs, markings, and rules education.</li>
+                            <li>BlogRocker: A minimal blogging engine.</li>
+                            <li>
+                                ShareWatch: A desktop application for tracking and analysis of stocks and commodity
+                                prices.
+                            </li>
+                            <li>Contactr: A windows desktop application for managing contacts.</li>
+                            <li>Imagr: A windows desktop application for editing images.</li>
+                            <li>Mailr: A windows desktop application for emailing.</li>
+                            <li>
+                                Platform For Organized Student Activities & Communication: A college degree project web
+                                application.
+                            </li>
+                            <li>SocialClone: A clone of facebook in lamp stack.</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </>
     );

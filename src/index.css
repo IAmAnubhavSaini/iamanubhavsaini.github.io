@@ -5,6 +5,7 @@
     --primary-color-accent: orange;
     --color-black: #000;
     --color-white: #fff;
+    --color-border: hsl(240 5.9% 70%);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -25,37 +26,46 @@
 
 * {
     box-sizing: border-box;
-    padding: 4px 0;
-    margin: 4px 0;
+    padding: 0;
+    margin: 0;
     background-color: transparent;
-    border-radius: 4px;
 }
 
 body {
+    padding: 1rem 0;
     margin: auto;
     font-family: monospace;
-    font-size: calc(1em + 0.25rem);
+    font-size: 1.2em;
     color: var(--primary-color-text);
     background-color: var(--primary-color-background);
-    width: 210mm;
+
+    .container {
+        border-top: 1px dotted var(--color-border);
+        border-bottom: 1px dotted var(--color-border);
+        width: 100%;
+
+        .container-item {
+            padding: 4rem 1rem;
+            margin: -1rem;
+            margin-right: auto;
+            margin-left: auto;
+            width: 100%;
+            max-width: 1200px;
+            border-left: 1px dotted var(--color-border);
+            border-right: 1px dotted var(--color-border);
+        }
+    }
 
     & div,
     & section {
         display: block;
     }
 
-    & div.container {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-        gap: 2rem;
-    }
-
-    h1 {
+    .heading {
         background-color: var(--primary-color-heading-background);
         color: var(--primary-color-text);
         padding: 1rem;
-        border-radius: 4px;
-        margin-bottom: 2rem;
+        font-size: 3rem;
         text-align: center;
     }
 
@@ -64,9 +74,8 @@ body {
 
         li {
             border-left: 2px solid transparent;
-            border-radius: 0;
-            padding: 4px 8px;
 
+            padding: 4px 8px;
 
             &:hover {
                 border-left: 2px solid var(--primary-color-accent);
@@ -92,7 +101,6 @@ body {
             text-decoration: wavy;
         }
     }
-
 }
 
 fieldset {
@@ -105,8 +113,6 @@ fieldset {
         margin: 2rem auto;
     }
 }
-
-
 
 .flex {
     display: flex;
