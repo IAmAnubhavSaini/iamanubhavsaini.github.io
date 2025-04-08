@@ -1,12 +1,10 @@
 /* clock */
 .clock {
-    & .analog {
-        height: 50px;
-        width: 50px;
-        /* border: 1px solid black; */
-        /* border-radius: 50%; */
+    justify-content: center;
 
-        background-color: transparent;
+    & .analog {
+        height: 70px;
+        width: 150px;
     }
 
     .analog.hours,
@@ -14,7 +12,6 @@
     .analog.seconds {
         filter: contrast(1);
         transform: scale(1);
-        background: conic-gradient(from 0deg, var(--primary-color-text), 360deg, var(--primary-color-accent));
+        background: conic-gradient(from 0deg, var(--color-black), 360deg, var(--color-white));
     }
-
 }

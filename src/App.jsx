@@ -1,6 +1,7 @@
 import "./App.css";
 import { Card } from "./components/Card";
 import Clock from "./components/Clock";
+import { Company } from "./components/Company";
 import { List, ListOLink } from "./components/List";
 
 const companies = ["Ackret Solutions", "Appsmith", "PayPal", "Experis", "Altimetrik", "ThoghtWorks", "eKasba"];
@@ -76,14 +77,14 @@ function App() {
             </div>
             <div className="container">
                 <div className="container-item">
-                    <Card>
-                        <Clock />
-                    </Card>
+                    <Clock />
                 </div>
             </div>
             <div className="container">
-                <div className="container-item">
-                    <List title="Companies" values={companies} />
+                <div className="container-item flex">
+                    {companies.map((co, index) => (
+                        <Company key={`company-${index}-${co.split(" ")[0]}`} name={co} />
+                    ))}
                 </div>
             </div>
             <div className="container">

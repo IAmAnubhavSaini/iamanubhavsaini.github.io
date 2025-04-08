@@ -6,6 +6,7 @@
     --color-black: #000;
     --color-white: #fff;
     --color-border: hsl(240 5.9% 70%);
+    --color-gray: grey;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -64,7 +65,8 @@ body {
     .heading {
         background-color: var(--primary-color-heading-background);
         color: var(--primary-color-text);
-        padding: 1rem;
+        padding: 3rem;
+        margin: -3rem -1rem;
         font-size: 3rem;
         text-align: center;
     }

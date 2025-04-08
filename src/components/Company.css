@@ -1,0 +1,24 @@
+.company {
+    width: 140px;
+    height: 100px;
+    padding: 1rem;
+    /* text-align: center; */
+    font-size: 1.4rem;
+    font-weight: bold;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    border-radius: 4px;
+
+    flex: 1 0 auto;
+
+    @media (prefers-color-scheme: dark) {
+        background-color: #00000013;
+        /* color: var(--color-black); */
+    }
+
+    @media (prefers-color-scheme: light) {
+        background-color: #00000013;
+        /* color: var(--color-black); */
+    }
+}
