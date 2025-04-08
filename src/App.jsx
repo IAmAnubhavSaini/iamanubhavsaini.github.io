@@ -1,30 +1,36 @@
 import "./App.css";
 import { Card } from "./components/Card";
 import Clock from "./components/Clock";
-import { Company } from "./components/Company";
+import { Box } from "./components/Box";
 import { List, ListOLink } from "./components/List";
+import { Stack } from "./components/Stack";
 
 const companies = ["Ackret Solutions", "Appsmith", "PayPal", "Experis", "Altimetrik", "ThoghtWorks", "eKasba"];
 
-const currentTechstack = [
-    "javascript + typescript + bash",
-    "react + html + dom + css",
-    "nodejs + express",
-    "postgres",
-    "docker",
-    "debian",
-    "git",
-    "vscode",
+const techStack = [
+    ["react", "redux"],
+    ["javascript", "typescript"],
+    ["html", "dom", "css"],
+    ["nodejs", "expressjs"],
+    ["postgres", "mongodb", "sqlite"],
+];
+
+const toolStack = [
+    ["docker", "virtualbox"],
+    ["vim", "git", "curl", "nmap"],
+    ["bash", "zsh"],
+    ["obsidian", "vscodium"],
+    ["debian", "kali", "kde5"],
 ];
 
 const webapps = [
     { url: "https://iamanubhavsaini.github.io/jspaint/index.html", title: "jspaint" },
+    { url: "https://iamanubhavsaini.github.io/TopGit/topgit.html", title: "top git" },
     { url: "https://iamanubhavsaini.github.io/ShowCase-Hotel/", title: "hotel" },
     { url: "https://iamanubhavsaini.github.io/infinite-scroll", title: "infinite-scroll" },
-    { url: "https://f0c1s.github.io/tic-tac-toe-in-react/", title: "ticTacToe in react" },
+    { url: "https://f0c1s.github.io/tic-tac-toe-in-react/", title: "ticTacToe" },
     { url: "https://iamanubhavsaini.github.io/strings-app/", title: "strings" },
     { url: "https://iamanubhavsaini.github.io/json-visualiser", title: "json visualiser" },
-    { url: "https://iamanubhavsaini.github.io/TopGit/topgit.html", title: "top git" },
     { url: "https://iamanubhavsaini.github.io/showcase-countries-react/index.html", title: " countries " },
     { url: "https://iamanubhavsaini.github.io/showcase-sort-react/index.html", title: " sorting " },
     { url: "https://iamanubhavsaini.github.io/browser-debug/index.html", title: " browser-debug " },
@@ -32,7 +38,6 @@ const webapps = [
     { url: "https://iamanubhavsaini.github.io/traffule/signs", title: "traffule" },
     { url: "https://iamanubhavsaini.github.io/showcase-stopwatches-react/index.html", title: "stopwatch" },
     { url: "https://iamanubhavsaini.github.io/slickr", title: "slickr" },
-    { url: "https://f0c1s.github.io/todos-with-animation/", title: "todos with animation" },
     { url: "https://iamanubhavsaini.github.io/random-quotes/", title: "quotes" },
     { url: "https://iamanubhavsaini.github.io/ransom", title: "ransom" },
 ];
@@ -81,41 +86,81 @@ function App() {
                 </div>
             </div>
             <div className="container">
-                <div className="container-item flex">
-                    {companies.map((co, index) => (
-                        <Company key={`company-${index}-${co.split(" ")[0]}`} name={co} />
-                    ))}
+                <div className="container-item">
+                    <div className="subheading">Companies</div>
+                    <div className="flex">
+                        {companies.map((co, index) => (
+                            <Box key={`company-${index}-${co.split(" ")[0]}`} name={co} klass="medium" />
+                        ))}
+                    </div>
                 </div>
             </div>
             <div className="container">
                 <div className="container-item">
-                    <List title="Stack" values={currentTechstack} />
+                    <div className="subheading">Stacks</div>
+                    <div className="flex">
+                        <Stack name="tech" stack={techStack} />
+                        <Stack name="tool" stack={toolStack} />
+                    </div>
                 </div>
             </div>
             <div className="container">
                 <div className="container-item">
-                    <ListOLink title="Web apps" values={webapps} />
+                    <div className="subheading">Web Applications</div>
+                    <div className="near-heading">2010-current</div>
+                    <div className="flex">
+                        {webapps.map((app, index) => (
+                            <a href={app.url} key={`webapp-${index}`} target="_blank" rel="nofollow">
+                                <Box klass={"thin wide light"} name={app.title} />
+                            </a>
+                        ))}
+                    </div>
                 </div>
             </div>
             <div className="container">
                 <div className="container-item">
-                    <ListOLink title="cli apps" values={cliapps} />
+                    <div className="subheading">CLI Applications</div>
+                    <div className="near-heading">2014-current</div>
+                    <div className="flex">
+                        {cliapps.map((app, index) => (
+                            <a href={app.url} key={`cliapp-${index}`} target="_blank" rel="nofollow">
+                                <Box klass={"thin light"} name={app.title} />
+                            </a>
+                        ))}
+                    </div>
                 </div>
             </div>
             <div className="container">
                 <div className="container-item">
-                    <ListOLink title="services" values={services} />
+                    <div className="subheading">Services</div>
+                    <div className="near-heading">2016-current</div>
+                    <div className="flex">
+                        {services.map((app, index) => (
+                            <a href={app.url} key={`service-${index}`} target="_blank" rel="nofollow">
+                                <Box klass={"thin light"} name={app.title} />
+                            </a>
+                        ))}
+                    </div>
                 </div>
             </div>
             <div className="container">
                 <div className="container-item">
-                    <ListOLink title="libraries" values={libraries} />
+                    <div className="subheading">Libraries</div>
+                    <div className="near-heading">2020-current</div>
+                    <div className="flex">
+                        {libraries.map((app, index) => (
+                            <a href={app.url} key={`library-${index}`} target="_blank" rel="nofollow">
+                                <Box klass={"thin wide light"} name={app.title} />
+                            </a>
+                        ))}
+                    </div>
                 </div>
             </div>
             <div className="container">
                 <div className="container-item">
                     <div>
-                        <div>Old projects (2006-2015)</div>
+                        <div className="subheading">Old projects</div>
+                        <div className="near-heading">2006-2015</div>
                         <ul>
                             <li>2048: A 2048 clone written in C</li>
                             <li>Traffoon: A web application for traffic road signs, markings, and rules education.</li>

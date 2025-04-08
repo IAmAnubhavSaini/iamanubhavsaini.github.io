@@ -1,8 +1,26 @@
-.company {
-    width: 140px;
-    height: 100px;
+.box {
+    width: 100px;
+    height: 80px;
+
+    &.medium {
+        width: 140px;
+        height: 140px;
+    }
+
+    &.thin {
+        height: 40px;
+    }
+
+    &.light {
+        font-weight: normal;
+        font-size: 1rem;
+    }
+
+    &.wide {
+        width: 160px;
+    }
+
     padding: 1rem;
-    /* text-align: center; */
     font-size: 1.4rem;
     font-weight: bold;
     display: flex;

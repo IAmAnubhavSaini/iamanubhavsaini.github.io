@@ -14,4 +14,10 @@
         transform: scale(1);
         background: conic-gradient(from 0deg, var(--color-black), 360deg, var(--color-white));
     }
+
+    @media (max-width: 600px) {
+        & .analog {
+            width: 100%;
+        }
+    }
 }

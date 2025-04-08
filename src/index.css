@@ -71,6 +71,36 @@ body {
         text-align: center;
     }
 
+    .subheading {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 2rem;
+        padding: 1rem 0;
+
+        @media (prefers-color-scheme: dark) {
+            & {
+                text-shadow: 1px 1px 1px var(--color-black);
+            }
+        }
+    }
+
+    .minorheading {
+        text-transform: uppercase;
+        padding: 0.5rem 0;
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    .near-heading {
+        position: relative;
+        top: -1rem;
+        color: silver;
+
+        @media (prefers-color-scheme: light) {
+            color: #333;
+        }
+    }
+
     ul {
         list-style: none;
 

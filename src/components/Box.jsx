@@ -1,8 +1,8 @@
-import "./Company.css";
+import "./Box.css";
 
-function Company({ name, logo }) {
+function Box({name, logo, klass }) {
     return (
-        <div className="company">
+        <div className={`box ${klass}`}>
             {logo && (
                 <div>
                     <img src={logo} alt={name} />
@@ -13,4 +13,4 @@ function Company({ name, logo }) {
     );
 }
 
-export { Company };
+export { Box };
