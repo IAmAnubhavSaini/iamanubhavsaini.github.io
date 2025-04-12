@@ -1,9 +1,9 @@
 .box {
-    width: 100px;
-    height: 80px;
+    width: 120px;
+    height: 100px;
 
     &.medium {
-        width: 140px;
+        width: 180px;
         height: 140px;
     }
 
@@ -13,22 +13,47 @@
 
     &.light {
         font-weight: normal;
-        font-size: 1rem;
     }
 
     &.wide {
-        width: 160px;
+        width: 250px;
     }
 
-    padding: 1rem;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: bold;
+    text-align: center;
     display: flex;
-    align-items: end;
+    align-items: center;
     justify-content: center;
-    border-radius: 4px;
+
 
     flex: 1 0 auto;
+
+    &.company:first-child,
+    &.highlight,
+    &.highlight * {
+        background-color: var(--color-accent-1);
+        color: var(--color-black);
+
+        &.highlight-1,
+        &.highlight-1 * {
+            background-color: var(--color-accent-1);
+        }
+        &.highlight-2,
+        &.highlight-2 * {
+            background-color: var(--color-accent-2);
+        }
+        &.highlight-3,
+        &.highlight-3 * {
+            background-color: var(--color-accent-3);
+        }
+        &.highlight-4,
+        &.highlight-4 * {
+            background-color: var(--color-accent-4);
+        }
+    }
+
+
 
     @media (prefers-color-scheme: dark) {
         background-color: #00000013;
