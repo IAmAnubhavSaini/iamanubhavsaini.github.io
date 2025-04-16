@@ -222,6 +222,10 @@ fieldset {
         align-content: flex-start;
         justify-content: flex-start;
     }
+
+    &.f\:shrink {
+        flex-shrink: 1;
+    }
 }
 
 .lists {

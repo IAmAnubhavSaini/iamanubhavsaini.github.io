@@ -36,8 +36,13 @@ const toolStack = [
 //  * @var { name: String, data: Array<{ name: String, value: Array<string> }} tableData
 //  */
 const tableData = [
-    { name: "web", value: ["html", "css", "javascript", "dom", "react", "redux", "typescript", "vite"] },
-    { name: "os", value: ["debian", "kali", "ubuntu", "raspbian", "windows 11 pro", "mac"] },
+    { name: "web", value: ["html", "css", "dom", "react", "redux", "vite", "solidjs"] },
+    { name: "operating systems", value: ["debian", "kali", "ubuntu", "raspbian", "windows 11 pro", "mac"] },
+    { name: "editors", value: ["vs code", "vscodium", "webstorm", "goland", "rust rover"] },
+    { name: "languages", value: ["JS", "TS", "Go", "bash"] },
+    { name: "database", value: ["postgres", "mongodb", "sqlite"] },
+    { name: "virtualization", value: ["docker", "virtualbox"] },
+
 ]
 
 const webapps = [
@@ -162,19 +167,25 @@ const librariesList = [
         url: {
             github: "https://github.com/IAmAnubhavSaini/node-common-log-lib",
             npm: "https://www.npmjs.com/package/@f0c1s/node-common-log-lib"
-        }, title: "logging", klass: "thin", tags: ["node"]
+        }, title: "logging", klass: "thin", tags: ["node", "npm", "logging"]
     },
     {
         url: {
             github: "https://www.npmjs.com/package/@ackret/js.lib",
             npm: "https://www.npmjs.com/package/@ackret/js.lib"
-        }, title: "@ackret/js.lib", tags: ["node"]
+        }, title: "@ackret/js.lib", tags: ["node", "npm", "data-structures"]
     },
     {
         url: {
             github: "https://github.com/IAmAnubhavSaini/otoa",
             npm: "https://www.npmjs.com/package/otoa"
         }, title: "objectToArray", tags: ["node", "npm"]
+    },
+    {
+        url: {
+            github: "https://github.com/IAmAnubhavSaini/atoo",
+            npm: "https://www.npmjs.com/package/atoo"
+        }, title: "arrayToObject", tags: ["node", "npm"]
     },
 
 ];
@@ -214,11 +225,10 @@ function App() {
             <div className="container">
                 <div className="container-item">
                     <div className="subheading">Tech stack</div>
-                    <div className="flex">
-                        <NamedRowTable name="tech" data={tableData} />
-                    </div>
+                    <NamedRowTable name="tech" data={tableData} />
+
                 </div>
-            </div>
+            </div >
             <div className="container">
                 <div className="container-item">
                     <div>

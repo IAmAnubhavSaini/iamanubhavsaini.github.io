@@ -11,8 +11,8 @@ function NamedRowTable({ name, data }) {
         {
             data.map((datum, index) => {
                 return <div key={`nmr-row-${index}`} className="row flex">
-                    <Box name={datum.name} key="name0" klass="col name t:dim tt:u ta:l" />
-                    <div className="flex f:ac:l">
+                    <Box name={datum.name} key={`nmr-row-${index}-name-0`} klass="col name t:dim tt:u ta:l" />
+                    <div className="flex f:ac:l f:shrink">
                         {
                             datum.value.map((item, itemIndex) =>
                                 <Box name={item} key={`nmr-col-${itemIndex}`} klass="col :hc:accent" />
