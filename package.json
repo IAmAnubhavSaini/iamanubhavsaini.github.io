@@ -12,6 +12,7 @@
     "deploy": "./node_modules/.bin/gh-pages -d dist"
   },
   "dependencies": {
+    "otoa": "^2026.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },

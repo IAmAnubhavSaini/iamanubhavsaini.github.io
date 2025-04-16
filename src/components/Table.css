@@ -1,0 +1,5 @@
+.nmr {
+    .row>.col:first-child {
+        flex-grow: 0;
+    }
+}

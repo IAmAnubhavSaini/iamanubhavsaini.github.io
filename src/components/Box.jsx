@@ -1,6 +1,6 @@
 import "./Box.css";
 
-function Box({name, logo, klass }) {
+function Box({ name, logo, klass, children }) {
     return (
         <div className={`box ${klass}`}>
             {logo && (
@@ -9,6 +9,7 @@ function Box({name, logo, klass }) {
                 </div>
             )}
             <div>{name}</div>
+            {children}
         </div>
     );
 }
