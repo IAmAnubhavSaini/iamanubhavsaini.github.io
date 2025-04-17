@@ -256,8 +256,8 @@ function App() {
                     <div className="vspacer"></div>
                     <div className="flex vflex">
                         {webappsList.map((app, index) => (
-                            <div key={`webapp-list-${index}`} className="flex list">
-                                <div className="ta:r">{app.title}</div>
+                            <div key={`webapp-list-${index}`} className="flex vflex list">
+                                <div >{app.title}</div>
                                 <div><a href={app.url} target="_blank" rel="nofollow">{app.url}</a></div>
                                 <div>
                                     {
@@ -296,8 +296,8 @@ function App() {
                     <div className="vspacer"></div>
                     <div className="flex vflex">
                         {cliappsList.map((app, index) => (
-                            <div key={`cliapps-list-${index}`} className="flex list">
-                                <div className="ta:r">{app.title}</div>
+                            <div key={`cliapps-list-${index}`} className="vflex list">
+                                <div >{app.title}</div>
                                 <div><a href={app.url} target="_blank" rel="nofollow">{app.url}</a></div>
                                 <div>
                                     {
@@ -336,8 +336,8 @@ function App() {
                     <div className="vspacer"></div>
                     <div className="flex vflex">
                         {servicesList.map((app, index) => (
-                            <div key={`service-list-${index}`} className="flex list">
-                                <div className="ta:r">{app.title}</div>
+                            <div key={`service-list-${index}`} className="vflex list">
+                                <div >{app.title}</div>
                                 <div><a href={app.url} target="_blank" rel="nofollow">{app.url}</a></div>
                                 <div>
                                     {
@@ -392,7 +392,7 @@ function App() {
                     <div className="flex vflex gap:2">
                         {librariesList.map((app, index) => (
                             <div key={`library-list-${index}`} className="grid list gap:2">
-                                <div className="ta:r">{app.title}</div>
+                                <div >{app.title}</div>
                                 <div className="flex vflex gap:1 urls">
                                     {
                                         o2kva(app.url)

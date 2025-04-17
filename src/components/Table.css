@@ -7,4 +7,19 @@
         width: 10rem;
         max-width: 200px;
     }
+
+    @media (max-width:600px) {
+
+        .row {
+            margin: 2rem 0;
+        }
+
+        .col {
+            width: 100%;
+            height: 50%;
+            max-width: unset;
+        }
+    }
+
+
 }
