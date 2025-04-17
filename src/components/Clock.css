@@ -1,9 +1,11 @@
 .clock {
     & .analog {
-        height: 50px;
-        width: 50px;
+        height: 5rem;
+        width: 5rem;
         border-radius: 10px;
-        box-shadow: 1px 1px 11px var(--color-accent-2);
+        box-shadow: 1px 1px 11px var(--color-black);
+        padding: 1rem;
+        margin: 1rem 0;
     }
 
     .analog.hours,
@@ -12,6 +14,12 @@
         filter: contrast(1);
         transform: scale(1);
         background: conic-gradient(from 0deg, var(--color-black), 360deg, var(--color-white));
+    }
+
+    @media (prefers-color-scheme: light) {
+        & .analog {
+            box-shadow: 1px 1px 1px var(--color-black);
+        }
     }
 
     @media (max-width: 600px) {

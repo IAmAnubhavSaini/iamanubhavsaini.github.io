@@ -65,11 +65,19 @@
 
     @media (prefers-color-scheme: dark) {
         background-color: #00000013;
-        /* color: var(--color-black); */
     }
 
     @media (prefers-color-scheme: light) {
         background-color: #00000013;
-        /* color: var(--color-black); */
+    }
+
+    @media (max-width: 600px) {
+
+        &,
+        &.medium,
+        &.wide,
+        &.thin {
+            width: 100%;
+        }
     }
 }
