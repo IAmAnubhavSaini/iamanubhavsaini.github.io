@@ -50,16 +50,16 @@ const webapps = [
         url: "https://iamanubhavsaini.github.io/jspaint/index.html",
         title: "jspaint",
         highlight: 1,
-        tags: ["jquery", "canvas"],
+        tags: ["jquery", "canvas", "2015"],
     },
     {
         url: "https://iamanubhavsaini.github.io/TopGit/topgit.html",
         title: "top git",
         highlight: 0,
-        tags: ["github", "api"],
+        tags: ["github", "api", "2016"],
     },
-    { url: "https://iamanubhavsaini.github.io/ShowCase-Hotel/", title: "hotel", highlight: 4 },
-    { url: "https://iamanubhavsaini.github.io/infinite-scroll", title: "infinite-scroll", highlight: 0, tags: ["flickr", "api"] },
+    { url: "https://iamanubhavsaini.github.io/ShowCase-Hotel/", title: "hotel", highlight: 4, tags: ["2015"] },
+    { url: "https://iamanubhavsaini.github.io/infinite-scroll", title: "infinite-scroll", highlight: 0, tags: ["flickr", "api", "2021"] },
     { url: "https://f0c1s.github.io/tic-tac-toe-in-react/", title: "TicTacToe", highlight: 0, tags: ["game"] },
 
 
@@ -88,23 +88,25 @@ const webappsList = [
 ]
 
 const cliapps = [
-    { url: "https://github.com/IAmAnubhavSaini/c_2048", title: "2048 game", tags: ["c"] },
+    { url: "https://github.com/IAmAnubhavSaini/c_2048", title: "2048 game", tags: ["c", "game", "2014"] },
     {
         url: "https://github.com/IAmAnubhavSaini/todo",
         title: "todo app",
-        tags: ["node", "go", "c"],
+        tags: ["node", "go", "c", "2023"],
         highlight: 4,
         klass: "medium",
     },
-    { url: "https://github.com/IAmAnubhavSaini/cdb", title: "database", tags: ["c"] },
-    { url: "https://github.com/m1yh3m/cpu.info.node.sh", title: "cpu info", tags: ["node"], highlight: 2 },
-    { url: "https://github.com/m1yh3m/worldclock.node.sh", title: "world clock", tags: ["node"] }
+    { url: "https://github.com/IAmAnubhavSaini/cdb", title: "database", tags: ["c", "database", "2023"] },
+    { url: "https://github.com/m1yh3m/cpu.info.node.sh", title: "cpu info", tags: ["node", "2019"], highlight: 2 },
+    { url: "https://github.com/m1yh3m/worldclock.node.sh", title: "world clock", tags: ["node", "2020"] }
 ];
 
 const cliappsList = [
-    { url: "https://github.com/IAmAnubhavSaini/node-security-rot.sh", title: "ROT cipher", tags: ["node"] },
-    { url: "https://github.com/m1yh3m/columns.node.sh", title: "columns", tags: ["node"] },
-    { url: "https://github.com/IAmAnubhavSaini/node-command-info.nix.sh", title: " command info", tags: ["node"] },
+    { url: "https://github.com/IAmAnubhavSaini/rock-paper-scissors-c", "title": "rock-paper-scissors", tags: ["c", "game", "2013"] },
+    { url: "https://github.com/IAmAnubhavSaini/tic-tac-toe", "title": "Tic Tac Toe", tags: ["c", "game", "2013"] },
+    { url: "https://github.com/IAmAnubhavSaini/node-security-rot.sh", title: "ROT cipher", tags: ["node", "2021"] },
+    { url: "https://github.com/m1yh3m/columns.node.sh", title: "columns", tags: ["node", "2020"] },
+    { url: "https://github.com/IAmAnubhavSaini/node-command-info.nix.sh", title: " command info", tags: ["node", "2021"] },
 ];
 const services = [];
 
@@ -128,7 +130,7 @@ const libraries = [
         url: {
             github: "https://github.com/IAmAnubhavSaini/pkgs",
             npm: "https://www.npmjs.com/package/@f0c1s/pkgs"
-        }, title: "pkgs", tags: ["node"], highlight: 1
+        }, title: "pkgs", tags: ["node", "2025"], highlight: 1
     },
 ];
 
@@ -137,55 +139,55 @@ const librariesList = [
         url: {
             github: "https://github.com/IAmAnubhavSaini/canvas-js",
             npm: "https://www.npmjs.com/package/canvas-js"
-        }, title: "canvas-js", tags: ["node"]
+        }, title: "canvas-js", tags: ["npm", "canvas", "2016"]
     },
     {
         url: {
             github: "https://github.com/IAmAnubhavSaini/node.nato-phonetics.lib",
             npm: "https://www.npmjs.com/package/node.nato-phonetics.lib"
-        }, title: " nato-phonetics", tags: ["node"]
+        }, title: " nato-phonetics", tags: ["node", "2021"]
     },
     {
         url: {
             github: "https://github.com/IAmAnubhavSaini/cpu.info.node.lib",
             npm: "https://www.npmjs.com/package/@f0c1s/cpu.info.node.lib"
-        }, title: "cpu info", tags: ["node"]
+        }, title: "cpu info", tags: ["node", "2021"]
     },
     {
         url: {
             github: "https://github.com/f0c1s/node-pad.lib",
             npm: "https://www.npmjs.com/package/@f0c1s/pad"
-        }, title: "string padding", tags: ["node"]
+        }, title: "string padding", tags: ["node", "2021"]
     },
     {
         url: {
             github: "https://github.com/f0c1s/node-escape-html.lib",
             npm: "https://www.npmjs.com/package/@f0c1s/escape-html"
-        }, title: "html escape", tags: ["node"]
+        }, title: "html escape", tags: ["node", "2021"]
     },
     {
         url: {
             github: "https://github.com/IAmAnubhavSaini/node-common-log-lib",
             npm: "https://www.npmjs.com/package/@f0c1s/node-common-log-lib"
-        }, title: "logging", klass: "thin", tags: ["node", "npm", "logging"]
+        }, title: "logging", klass: "thin", tags: ["node", "npm", "logging", "2021"]
     },
     {
         url: {
-            github: "https://www.npmjs.com/package/@ackret/js.lib",
+            github: "https://github.com/ackret/js.lib",
             npm: "https://www.npmjs.com/package/@ackret/js.lib"
-        }, title: "@ackret/js.lib", tags: ["node", "npm", "data-structures"]
+        }, title: "@ackret/js.lib", tags: ["node", "npm", "data-structures", "2024"]
     },
     {
         url: {
             github: "https://github.com/IAmAnubhavSaini/otoa",
             npm: "https://www.npmjs.com/package/otoa"
-        }, title: "objectToArray", tags: ["node", "npm"]
+        }, title: "objectToArray", tags: ["node", "npm", "2016"]
     },
     {
         url: {
             github: "https://github.com/IAmAnubhavSaini/atoo",
             npm: "https://www.npmjs.com/package/atoo"
-        }, title: "arrayToObject", tags: ["node", "npm"]
+        }, title: "arrayToObject", tags: ["node", "npm", "2016"]
     },
 
 ];
@@ -235,7 +237,7 @@ function App() {
                         <div className="subheading">Web Applications</div>
                         <div className="near-heading">2010-current</div>
                     </div>
-                    <div className="flex">
+                    <div className="flex f:reverse">
                         {webapps.map((app, index) => (
                             <a href={app.url} key={`webapp-${index}`} target="_blank" rel="nofollow">
                                 <Box
@@ -273,9 +275,10 @@ function App() {
                 <div className="container-item">
                     <div>
                         <div className="subheading">CLI Applications</div>
-                        <div className="near-heading">2014-current</div>
+                        <div className="near-heading">2013-current</div>
                     </div>
-                    <div className="flex">
+
+                    <div className="flex f:reverse ">
                         {cliapps.map((app, index) => (
                             <a href={app.url} key={`cliapp-${index}`} target="_blank" rel="nofollow">
                                 <Box
@@ -307,6 +310,7 @@ function App() {
                             </div>
                         ))}
                     </div>
+
                 </div>
             </div>
             <div className="container">

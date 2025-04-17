@@ -222,6 +222,22 @@ fieldset {
     &.f\:shrink {
         flex-shrink: 1;
     }
+
+    &.f\:reverse {
+        flex-direction: row-reverse;
+    }
+
+    &.f\:v {
+        flex-direction: column;
+
+        &.f\:reverse {
+            flex-direction: column-reverse;
+        }
+    }
+
+    &.f\:sb {
+        justify-content: space-between;
+    }
 }
 
 .lists {
