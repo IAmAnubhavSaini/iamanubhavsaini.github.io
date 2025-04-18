@@ -1,5 +1,9 @@
 .list {
-    /* display: grid; */
     grid-template-columns: minmax(15rem, 1fr) 4fr 1fr;
 
+    @media (max-width:600px) {
+        & {
+            grid-template-columns: 1fr;
+        }
+    }
 }

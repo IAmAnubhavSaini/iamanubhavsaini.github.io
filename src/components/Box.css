@@ -32,31 +32,29 @@
     justify-content: center;
     padding: 1rem;
 
-    flex: 1 0 auto;
-
     &.company:first-child,
     &.highlight,
     &.highlight * {
         background-color: var(--color-accent-1);
         color: var(--color-black);
 
-        &.highlight-1,
-        &.highlight-1 * {
+        &.h\:1,
+        &.h\:1 * {
             background-color: var(--color-accent-1);
         }
 
-        &.highlight-2,
-        &.highlight-2 * {
+        &.h\:2,
+        &.h\:2 * {
             background-color: var(--color-accent-2);
         }
 
-        &.highlight-3,
-        &.highlight-3 * {
+        &.h\:3,
+        &.h\:3 * {
             background-color: var(--color-accent-3);
         }
 
-        &.highlight-4,
-        &.highlight-4 * {
+        &.h\:4,
+        &.h\:4 * {
             background-color: var(--color-accent-4);
         }
     }

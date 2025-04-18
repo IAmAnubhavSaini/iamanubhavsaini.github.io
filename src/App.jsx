@@ -67,7 +67,7 @@ function App() {
                         {webapps.map((app, index) => (
                             <a href={app.url} key={`webapp-${index}`} target="_blank" rel="nofollow">
                                 <Box
-                                    klass={`wide light ${app.highlight ? "highlight highlight-" + app.highlight : ""} ${app.klass ? app.klass : ""
+                                    klass={`wide light ${app.highlight ? "highlight h:" + app.highlight : ""} ${app.klass ? app.klass : ""
                                         }`}
                                     name={app.title}
                                 />
@@ -108,7 +108,7 @@ function App() {
                         {cliapps.map((app, index) => (
                             <a href={app.url} key={`cliapp-${index}`} target="_blank" rel="nofollow">
                                 <Box
-                                    klass={`light ${app.highlight ? "highlight highlight-" + app.highlight : ""
+                                    klass={`light ${app.highlight ? "highlight h:" + app.highlight : ""
                                         } ${app.klass ? app.klass : ""}`}
                                     name={app.title}
                                 />
@@ -149,7 +149,7 @@ function App() {
                         {services.map((app, index) => (
                             <a href={app.url} key={`service-${index}`} target="_blank" rel="nofollow">
                                 <Box
-                                    klass={`thin wide ${app.highlight ? "highlight highlight-" + app.highlight : ""} ${app.klass ? app.klass : ""
+                                    klass={`thin wide ${app.highlight ? "highlight h:" + app.highlight : ""} ${app.klass ? app.klass : ""
                                         }`}
                                     name={app.title}
                                 />
@@ -185,11 +185,11 @@ function App() {
                         <div className="subheading">Libraries</div>
                         <div className="near-heading">2020-current</div>
                     </div>
-                    <div className="">
+                    <div className="flex">
                         {libraries.map((app, index) => (
                             <Box
                                 key={`library-${index}`}
-                                klass={`flex vflex large light ${app.highlight ? "highlight highlight-" + app.highlight : ""} ${app.klass ? app.klass : ""
+                                klass={`flex vflex large light ${app.highlight ? "highlight h:" + app.highlight : ""} ${app.klass ? app.klass : ""
                                     }`}
                                 name={app.title}
                             >
@@ -221,8 +221,8 @@ function App() {
                     <div className="vspacer"></div>
                     <div className="flex vflex gap:2">
                         {librariesList.map((app, index) => (
-                            <div key={`library-list-${index}`} className="grid list gap:2">
-                                <div >{app.title}</div>
+                            <div key={`library-list-${index}`} className="grid list gap:2  m:v:2">
+                                <div className="minorheading">{app.title}</div>
                                 <div className="flex vflex gap:1 urls">
                                     {
                                         o2kva(app.url)

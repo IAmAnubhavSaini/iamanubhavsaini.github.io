@@ -91,7 +91,7 @@ body {
     .heading {
         color: var(--primary-color-text);
         text-shadow: 0 10px 10px var(--color-black);
-        font-size: 7rem;
+        font-size: 48px;
         text-align: center;
         letter-spacing: 2dvw;
         font-family: Georgia, 'Times New Roman', Times, serif;
@@ -240,10 +240,8 @@ fieldset {
     }
 }
 
-.lists {
-    .list-item {
-        min-width: 300px;
-    }
+.m\:v\:2 {
+    margin: 2rem 0;
 }
 
 .ta\:l {
@@ -252,7 +250,6 @@ fieldset {
     .flex & {
         justify-content: flex-start;
     }
-
 }
 
 .ta\:r {
@@ -295,6 +292,14 @@ fieldset {
     width: 40%;
 }
 
+.border {
+    border: 2px solid var(--color-black);
+
+    &.b\:1 {
+        border-width: 1px;
+    }
+}
+
 .grid {
     display: grid;
 
@@ -305,11 +310,48 @@ fieldset {
 
 @media (max-width: 600px) {
     body {
-        max-width: 60rem;
+        max-width: 600px;
+        width: 100vw;
     }
 
     .flex {
+        display: flex;
         flex-direction: column;
+
+        &.f\:ac\:l {
+            align-content: center;
+            justify-content: center;
+        }
+    }
+
+    .ta\:l {
+        text-align: center;
+
+        .flex & {
+            justify-content: center;
+        }
+    }
+
+    .ta\:r {
+        text-align: center;
+
+        .flex & {
+            justify-content: center;
+        }
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+
+        &.grid\:3 {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .heading {
+        font-size: 2rem;
+        letter-spacing: 0;
     }
 
     a {
