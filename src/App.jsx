@@ -50,7 +50,7 @@ function App() {
 
                     <div id="companies" className="container">
                         <div className="container-item">
-                            <div className="subheading">Companies</div>
+                            <div className="subheading tt:u">Companies</div>
                             <div className="flex">
                                 {companies.map((co, index) => (
                                     <Box key={`company-${index}-${co.split(" ")[0]}`} name={co} klass="medium company" />
@@ -60,7 +60,7 @@ function App() {
                     </div>
                     {/* <div className="container">
                 <div className="container-item">
-                    <div className="subheading">Stacks</div>
+                    <div className="subheading tt:u">Stacks</div>
                     <div className="flex">
                         <Stack name="tech" stack={techStack} />
                         <Stack name="tool" stack={toolStack} />
@@ -69,7 +69,7 @@ function App() {
             </div> */}
                     <div id="techstack" className="container">
                         <div className="container-item">
-                            <div className="subheading">Tech stack</div>
+                            <div className="subheading tt:u">Tech stack</div>
                             <NamedRowTable name="tech" data={tableData} />
 
                         </div>
@@ -77,7 +77,7 @@ function App() {
                     <div id="webapps" className="container">
                         <div className="container-item">
                             <div>
-                                <div className="subheading">Web Applications</div>
+                                <div className="subheading tt:u">Web Applications</div>
                                 <div className="near-heading">2010-current</div>
                             </div>
                             <div className="flex f:reverse">
@@ -117,7 +117,7 @@ function App() {
                     <div id="cliapps" className="container">
                         <div className="container-item">
                             <div>
-                                <div className="subheading">CLI Applications</div>
+                                <div className="subheading tt:u">CLI Applications</div>
                                 <div className="near-heading">2013-current</div>
                             </div>
 
@@ -159,7 +159,7 @@ function App() {
                     <div id="services" className="container">
                         <div className="container-item">
                             <div>
-                                <div className="subheading">Services</div>
+                                <div className="subheading tt:u">Services</div>
                                 <div className="near-heading">2016-current</div>
                             </div>
                             <div className="flex">
@@ -199,7 +199,7 @@ function App() {
                     <div id="libraries" className="container">
                         <div className="container-item">
                             <div>
-                                <div className="subheading">Libraries</div>
+                                <div className="subheading tt:u">Libraries</div>
                                 <div className="near-heading">2020-current</div>
                             </div>
                             <div className="flex">
@@ -265,7 +265,7 @@ function App() {
                         <div className="container-item">
                             <div>
                                 <div>
-                                    <div className="subheading">Old projects</div>
+                                    <div className="subheading tt:u">Old projects</div>
                                     <div className="near-heading">2006-2015</div>
                                 </div>
                                 <ul>
