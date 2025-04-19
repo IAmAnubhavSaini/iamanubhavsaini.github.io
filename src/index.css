@@ -71,7 +71,6 @@
 
 body {
     padding: 1rem 0;
-    /* margin: 20vh 2vw; */
 
     font-family: monospace;
     font-size: 1.2em;
@@ -294,6 +293,14 @@ fieldset {
     width: 40%;
 }
 
+.margin\:1 {
+    margin: 1rem;
+}
+
+.padding\:1 {
+    padding: 1rem;
+}
+
 .border {
     border: 2px solid var(--color-black);
 
@@ -305,8 +312,70 @@ fieldset {
 .grid {
     display: grid;
 
+    &.g\:2 {
+        grid-template-columns: auto auto;
+    }
+
     &.grid\:3 {
         grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.height {
+    &.h\:100d {
+        height: 100dvh;
+    }
+
+    &.h\:96d {
+        height: 96dvh;
+    }
+
+    &.h\:2r {
+        height: 2rem;
+    }
+}
+
+.width {
+    &.w\:20d {
+        width: 20dvw;
+    }
+
+    &.w\:80d {
+        width: 80dvw;
+    }
+
+    &.w\:50d {
+        width: 50dvw;
+    }
+
+    &.w\:20p {
+        width: 20%;
+    }
+
+    &.w\:80p {
+        width: 80%;
+    }
+
+    &.w\:50p {
+        width: 50%;
+    }
+
+}
+
+.scroll\:y {
+    overflow-y: auto;
+}
+
+.sticky {
+
+    position: sticky;
+
+    &.s\:t0 {
+        top: 0;
+    }
+
+    &.s\:l0 {
+        left: 0;
     }
 }
 
@@ -344,16 +413,25 @@ fieldset {
 
     .grid {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
+        justify-items: center;
+
+        &.g\:2 {
+            grid-template-columns: 1fr !important;
+        }
 
         &.grid\:3 {
-            grid-template-columns: 1fr;
+            grid-template-columns: 1fr !important;
         }
     }
 
     .heading {
         font-size: 2rem;
         letter-spacing: 0;
+    }
+
+    .clock {
+        width: 10rem !important;
     }
 
     a {

@@ -1,4 +1,6 @@
 .clock {
+    width: 100%;
+
     & .analog {
         height: 5rem;
         width: 5rem;
