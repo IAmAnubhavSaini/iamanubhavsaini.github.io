@@ -78,7 +78,7 @@ body {
     background-color: var(--primary-color-background);
 
     .container {
-        padding: 10vw 2vw;
+        padding: 2vw;
         width: 100%;
         min-height: 100dvh;
     }
@@ -91,7 +91,7 @@ body {
     .heading {
         color: var(--primary-color-text);
         text-shadow: 0 10px 10px var(--color-black);
-        font-size: 48px;
+        font-size: 5rem;
         text-align: center;
         letter-spacing: 2dvw;
         font-family: Georgia, 'Times New Roman', Times, serif;
@@ -362,6 +362,14 @@ fieldset {
 
 }
 
+.ontop {
+    background-color: var(--primary-color-background);
+
+    &.z\:100 {
+        z-index: 100;
+    }
+}
+
 .scroll\:y {
     overflow-y: auto;
 }
@@ -381,13 +389,14 @@ fieldset {
 
 @media (max-width: 600px) {
     body {
+        min-width: 450px;
         max-width: 600px;
         width: 100vw;
     }
 
     .flex {
         display: flex;
-        flex-direction: column;
+        flex-direction: column !important;
 
         &.f\:ac\:l {
             align-content: center;
@@ -434,8 +443,45 @@ fieldset {
         width: 10rem !important;
     }
 
+    .width {
+        &.w\:20d {
+            width: 100dvw;
+        }
+
+        &.w\:80d {
+            width: 100dvw;
+        }
+
+        &.w\:50d {
+            width: 100dvw;
+        }
+
+        &.w\:20p {
+            width: 100%;
+        }
+
+        &.w\:80p {
+            width: 100%;
+        }
+
+        &.w\:50p {
+            width: 100%;
+        }
+    }
+
+    .margin\:1 {
+        margin: 1rem 0;
+    }
+
+    .padding\:1 {
+        padding: 1rem 0;
+    }
+
+    .sticky {
+        position: inherit;
+    }
+
     a {
-        background-color: var(--primary-color-background);
         color: var(--primary-color-text);
         text-decoration: underline;
     }

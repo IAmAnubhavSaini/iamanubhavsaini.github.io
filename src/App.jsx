@@ -22,11 +22,11 @@ function App() {
     return (
         <>
             <div className="grid g:2">
-                <div className="height h:96d sticky s:t0 s:tl width w:20d scroll:y">
-                    <div className="width w:80p flex f:v gap:2 margin:1 padding:1">
+                <div className="height h:96d sticky s:t0 s:tl width w:100p scroll:y">
+                    <div className="width flex f:v gap:2 margin:1 padding:1">
                         <Clock />
 
-                        <div className="width w:80p flex f:v">
+                        <div className="width  flex f:v ta:r">
                             <a href="#heading">top</a>
                             <a href="#companies">companies</a>
                             <a href="#techstack">tech stack</a>
