@@ -71,7 +71,7 @@
 
 body {
     padding: 1rem 0;
-    margin: 20vh 2vw;
+    /* margin: 20vh 2vw; */
 
     font-family: monospace;
     font-size: 1.2em;
@@ -97,6 +97,7 @@ body {
         letter-spacing: 2dvw;
         font-family: Georgia, 'Times New Roman', Times, serif;
         font-weight: 900;
+        align-content: center;
 
         @media (prefers-color-scheme: light) {
             text-shadow: none;
