@@ -81,6 +81,7 @@ body {
     .container {
         padding: 10vw 2vw;
         width: 100%;
+        min-height: 100dvh;
     }
 
     & div,
