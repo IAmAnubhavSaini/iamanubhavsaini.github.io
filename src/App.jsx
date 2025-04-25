@@ -3,6 +3,7 @@ import "./App.css";
 import { ExternalAnchor } from "./components/Anchor";
 import { Box } from "./components/Box";
 import Clock from "./components/Clock";
+import { FizzBuzz } from "./components/FizzBuzz";
 import { NamedRowTable } from "./components/Table";
 import { Tags } from "./components/Tag";
 import {
@@ -35,6 +36,7 @@ function App() {
                             <a href="#services">services</a>
                             <a href="#libraries">libraries</a>
                             <a href="#oldprojects">old projects</a>
+                            <a href="#cssfizzbuzz">css fizzbuzz</a>
 
                         </div>
 
@@ -90,8 +92,8 @@ function App() {
                                         />
                                         {app.tags && (
                                             <div className="tags">
-                                                {app.tags.map((tag) => (
-                                                    <div className={`tag ${tag}`}>{tag}</div>
+                                                {app.tags.map((tag, tagIndex) => (
+                                                    <div className={`tag ${tag}`} key={`webapp-${index}-tag-${tagIndex}`}>{tag}</div>
                                                 ))}
                                             </div>
                                         )}
@@ -106,7 +108,7 @@ function App() {
                                         <div><a href={app.url} target="_blank" rel="nofollow">{app.url}</a></div>
                                         <div>
                                             {
-                                                app.tags && app.tags.map((tag) => <span className="tag">{tag}</span>)
+                                                app.tags && app.tags.map((tag, tagIndex) => <span key={`webapp-list-${index}-tag-${tagIndex}`} className="tag">{tag}</span>)
                                             }
                                         </div>
                                     </div>
@@ -131,8 +133,8 @@ function App() {
                                         />
                                         {app.tags && (
                                             <div className="tags">
-                                                {app.tags.map((tag) => (
-                                                    <div className={`tag ${tag}`}>{tag}</div>
+                                                {app.tags.map((tag, tagIndex) => (
+                                                    <div key={`cliapp-${index}-tag-${tagIndex}`} className={`tag ${tag}`}>{tag}</div>
                                                 ))}
                                             </div>
                                         )}
@@ -147,7 +149,7 @@ function App() {
                                         <div><a href={app.url} target="_blank" rel="nofollow">{app.url}</a></div>
                                         <div>
                                             {
-                                                app.tags && app.tags.map((tag) => <span className="tag">{tag}</span>)
+                                                app.tags && app.tags.map((tag, tagIndex) => <span key={`cliapps-list-${index}-tag-${tagIndex}`} className="tag">{tag}</span>)
                                             }
                                         </div>
                                     </div>
@@ -172,8 +174,8 @@ function App() {
                                         />
                                         {app.tags && (
                                             <div className="tags">
-                                                {app.tags.map((tag) => (
-                                                    <div className={`tag ${tag}`}>{tag}</div>
+                                                {app.tags.map((tag, tagIndex) => (
+                                                    <div key={`service-${index}-tag-${tagIndex}`} className={`tag ${tag}`}>{tag}</div>
                                                 ))}
                                             </div>
                                         )}
@@ -188,7 +190,7 @@ function App() {
                                         <div><a href={app.url} target="_blank" rel="nofollow">{app.url}</a></div>
                                         <div>
                                             {
-                                                app.tags && app.tags.map((tag) => <span className="tag">{tag}</span>)
+                                                app.tags && app.tags.map((tag, tagIndex) => <span key={`service-list-${index}-tag-${tagIndex}`} className="tag">{tag}</span>)
                                             }
                                         </div>
                                     </div>
@@ -224,8 +226,8 @@ function App() {
                                             <div>
                                                 {app.tags && (
                                                     <div className="tags">
-                                                        {app.tags.map((tag) => (
-                                                            <div className={`tag ${tag}`}>{tag}</div>
+                                                        {app.tags.map((tag, tagIndex) => (
+                                                            <div key={`library-${index}-tag-${tagIndex}`} className={`tag ${tag}`}>{tag}</div>
                                                         ))}
                                                     </div>
                                                 )}
@@ -285,6 +287,11 @@ function App() {
                                     <li>SocialClone: A clone of facebook in lamp stack.</li>
                                 </ul>
                             </div>
+                        </div>
+                    </div>
+                    <div id="cssfizzbuzz" className="container">
+                        <div className="container-item">
+                            <FizzBuzz />
                         </div>
                     </div>
                 </div>

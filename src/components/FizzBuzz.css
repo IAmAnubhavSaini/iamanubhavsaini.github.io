@@ -1,0 +1,28 @@
+#fizzbuzz {
+    counter-reset: fizzbuzz;
+    user-select: none;
+
+    .fizzbuzz {
+        counter-increment: fizzbuzz;
+
+        &::after {
+            content: counter(fizzbuzz);
+            display: block;
+            height: 5rem;
+            width: 10rem;
+        }
+
+        &:nth-child(5n)::after {
+            content: "buzz";
+        }
+
+        &:nth-child(3n)::after {
+            content: "fizz"
+        }
+
+        &:nth-child(15n)::after {
+            content: "fizzbuzz";
+        }
+    }
+
+}
