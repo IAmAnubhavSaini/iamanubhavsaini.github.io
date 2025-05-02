@@ -39,6 +39,12 @@ const tableData = [
 
 const webapps = [
     {
+        url: "https://github.com/IAmAnubhavSaini/simple-app",
+        title: "simple-app",
+        highlight: 1,
+        tags: ["node", "postgres", "ollama", "docker", "vite", "react"]
+    },
+    {
         url: "https://iamanubhavsaini.github.io/jspaint/index.html",
         title: "jspaint",
         highlight: 1,
