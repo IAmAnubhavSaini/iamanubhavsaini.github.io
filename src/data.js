@@ -28,13 +28,83 @@ const toolStack = [
 //  * @var { name: String, data: Array<{ name: String, value: Array<string> }} tableData
 //  */
 const tableData = [
-    { name: "web", value: ["html", "css", "dom", "react", "redux", "vite", "solidjs"] },
-    { name: "operating systems", value: ["debian", "kali", "ubuntu", "raspbian", "windows 11 pro", "mac"] },
-    { name: "editors", value: ["vs code", "vscodium", "webstorm", "goland", "rust rover"] },
-    { name: "languages", value: ["JS", "TS", "Go", "bash"] },
-    { name: "database", value: ["postgres", "mongodb", "sqlite"] },
-    { name: "virtualization", value: ["docker", "virtualbox"] },
-
+    {
+        name: "web", value: [
+            { name: "vite" },
+            { name: "solidjs" },
+            { name: "redux" },
+            { name: "react" },
+            { name: "jsx", highlight: 3 },
+            { name: "html", highlight: 1 },
+            { name: "dom", highlight: 1 },
+            { name: "css", highlight: 1 },
+        ]
+    },
+    {
+        name: "operating systems", value: [
+            { name: "windows 11 pro" },
+            { name: "ubuntu" },
+            { name: "raspbian" },
+            { name: "mac" },
+            { name: "kali", highlight: 3 },
+            { name: "debian", highlight: 1 },
+        ]
+    },
+    {
+        name: "editors", value: [
+            { name: "webstorm" },
+            { name: "vs code" },
+            { name: "rust rover" },
+            { name: "goland" },
+            { name: "vim", highlight: 3 },
+            { name: "vscodium", highlight: 1 },
+        ]
+    },
+    {
+        name: "languages", value: [
+            { name: "go" },
+            { name: "bash" },
+            { name: "typescript", highlight: 3 },
+            { name: "javascript", highlight: 1 },
+        ]
+    },
+    {
+        name: "database", value: [
+            { name: "mongodb" },
+            { name: "sqlite" },
+            { name: "postgres", highlight: 1 },
+        ]
+    },
+    {
+        name: "virtualization", value: [
+            { name: "virtualbox" },
+            { name: "docker", highlight: 1 },
+        ]
+    },
+    {
+        name: "terminals", value: [
+            { name: "konsole" },
+        ]
+    },
+    {
+        name: "desktop environments", value: [
+            { name: "kde" },
+        ]
+    },
+    {
+        name: "window managers", value: [
+            { name: "kwin" },
+            { name: "i3", highlight: 1, },
+        ]
+    },
+    {
+        name: "programming paradigms", value: [
+            { name: "functional" },
+            { name: "procedural" },
+            { name: "object oriented" },
+            { name: "event based" },
+        ]
+    }
 ]
 
 const webapps = [
@@ -56,10 +126,15 @@ const webapps = [
     {
         url: "https://github.com/IAmAnubhavSaini/simple-app",
         title: "simple-app",
-        highlight: 1,
-        tags: ["node", "postgres", "ollama", "docker", "vite", "react"]
+        highlight: 2,
+        tags: ["node", "postgres", "ollama", "docker", "2024"]
     },
-
+    {
+        url: "https://github.com/localserve/yaoui",
+        title: "yaoui",
+        highlight: 2,
+        tags: ["apache2", "docker", "web-components", "2024"]
+    },
 ];
 
 const webappsList = [

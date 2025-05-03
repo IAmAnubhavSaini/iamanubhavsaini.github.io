@@ -4,8 +4,7 @@
     }
 
     .col {
-        width: 10rem;
-        max-width: 200px;
+        width: 15rem;
     }
 
     @media (max-width:600px) {
@@ -20,6 +19,4 @@
             max-width: unset;
         }
     }
-
-
 }
