@@ -1,18 +1,20 @@
+@import url('./color.css');
+
 :root {
     color-scheme: dark light;
     --base-font-size: 10px;
     font-size: calc(var(--base-font-size) * 1);
-    --primary-color-accent: orange;
-    --color-black: #000;
-    --color-white: #fff;
+    --primary-color-accent: var(--orange-9);
+    --color-black: var(--black-2);
+    --color-white: var(--white-8);
     --color-border: hsl(240 5.9% 70%);
-    --color-gray: grey;
-    --color-accent-1: orange;
-    --color-accent-2: teal;
-    --color-accent-3: hotpink;
-    --color-accent-4: firebrick;
-    --color-tag-1: rgb(0, 63, 0);
-    --color-tag-2: rgb(0, 0, 63);
+    --color-gray: var(--gray-5);
+    --color-accent-1: var(--orange-9);
+    --color-accent-2: var(--burgundy-9);
+    --color-accent-3: var(--magenta-9);
+    --color-accent-4: var(--red-9);
+    --color-tag-1: var(--green-9);
+    --color-tag-2: var(--navy-9);
 
     --color-slate-100: oklch(96.8% 0.007 247.896);
     --color-slate-400: oklch(70.4% 0.04 256.788);
@@ -25,8 +27,8 @@
     --color-stone-800: oklch(26.8% 0.007 34.298);
     --color-stone-900: oklch(21.6% 0.006 56.043);
 
-    --color-dim-dark: var(--color-stone-700);
-    --color-dim-light: var(--color-slate-400);
+    --color-dim-dark: var(--gray-5);
+    --color-dim-light: var(--gray-5);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -47,7 +49,7 @@
 
 @media (prefers-color-scheme: light) {
     :root {
-        --primary-color-background: #a16388dc;
+        --primary-color-background: var(--white-0);
         --primary-color-heading-background: #da4a75;
         --primary-color-text: #000000dc;
     }
