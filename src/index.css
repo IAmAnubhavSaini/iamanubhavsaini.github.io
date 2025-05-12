@@ -1,5 +1,3 @@
-@import url('./color.css');
-
 :root {
     color-scheme: dark light;
     --base-font-size: 10px;
