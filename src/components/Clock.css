@@ -5,7 +5,7 @@
         height: 5rem;
         width: 5rem;
         border-radius: 10px;
-        box-shadow: 1px 1px 11px var(--color-black);
+        box-shadow: 1px 1px 3px var(--scheme-text);
     }
 
     .analog.hours,
@@ -13,12 +13,12 @@
     .analog.seconds {
         filter: contrast(1);
         transform: scale(1);
-        background: conic-gradient(from 0deg, var(--color-black), 360deg, var(--color-white));
+        background: conic-gradient(from 0deg, var(--scheme-text), 360deg, var(--scheme-background));
     }
 
     @media (prefers-color-scheme: light) {
         & .analog {
-            box-shadow: 1px 1px 1px var(--color-black);
+            box-shadow: 1px 1px 1px var(--scheme-text);
         }
     }
 

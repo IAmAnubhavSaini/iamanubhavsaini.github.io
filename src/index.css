@@ -48,6 +48,7 @@ body {
         padding: 2vw;
         width: 100%;
         min-height: 100dvh;
+        margin-bottom: 50vh;
     }
 
     & div,
@@ -127,8 +128,8 @@ body {
         color: var(--primary-color-text);
 
         &:hover {
-            background-color: var(--color-accent-1);
-            color: var(--color-black);
+            background-color: var(--scheme-text);
+            color: var(--scheme-background);
             text-decoration: wavy;
 
             & * {
@@ -354,7 +355,39 @@ fieldset {
     }
 }
 
-.button {cursor: pointer;}
+.button {
+    cursor: pointer;
+
+    &.color-button {
+        font-size: 8px;
+        height: 2rem;
+        /* width: 2rem; */
+        display: block;
+        border: 2px solid var(--gray-5);
+        color: var(--white-5);
+
+        &.cb\:light {
+            background-color: var(--white-0);
+            color: var(--black-3);
+        }
+
+        &.cb\:dark {
+            background-color: var(--black-3);
+        }
+
+        &.cb\:teal {
+            background-color: var(--teal-5);
+        }
+
+        &.cb\:pink {
+            background-color: var(--magenta-5);
+        }
+
+        &.cb\:gray {
+            background-color: var(--gray-5);
+        }
+    }
+}
 
 @media (max-width: 600px) {
     body {
@@ -451,7 +484,7 @@ fieldset {
     }
 
     a {
-        color: var(--primary-color-text);
+        color: var(--scheme-text);
         text-decoration: underline;
     }
 }

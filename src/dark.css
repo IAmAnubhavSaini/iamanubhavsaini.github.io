@@ -1,15 +1,21 @@
-:root[data-theme="dark"] {
-    --primary-color-background: var(--navy-2);
-    --primary-color-heading-background: var(--blue-2);
-    --primary-color-text: var(--white-8);
+:root[data-scheme="dark"] {
+    --scheme-background: var(--black-2);
+    --scheme-text: var(--white-8);
+    --scheme-heading: var(--white-2);
+    --scheme-accent: var(--white-4);
+    --scheme-border: var(--black-4);
+    --scheme-hover: var(--white-6);
 }
 
-html[data-theme="dark"] {
+html[data-scheme="dark"] {
+    background-color: var(--scheme-background);
+    color: var(--scheme-text);
+
     .\:hc\:accent:hover {
-        color: var(--color-accent-4);
+        color: var(--scheme-hover);
     }
 
     .t\:dim {
-        color: var(--color-dim-dark);
+        color: var(--gray-7);
     }
 } 

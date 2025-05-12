@@ -7,7 +7,7 @@ import "./Table.css";
  * @returns
  */
 function NamedRowTable({ name, data }) {
-    return <div className={`nmr ${name} flex vflex`}>
+    return <div className={`nmr ${name} flex f:v`}>
         {
             data.map((datum, index) => {
                 return <div key={`nmr-row-${index}`} className="row flex">

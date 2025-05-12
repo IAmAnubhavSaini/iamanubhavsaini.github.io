@@ -1,15 +1,21 @@
-:root[data-theme="light"] {
-    --primary-color-background: var(--white-0);
-    --primary-color-heading-background: var(--magenta-8);
-    --primary-color-text: var(--black-2);
+:root[data-scheme="light"] {
+    --scheme-background: var(--white-8);
+    --scheme-text: var(--black-2);
+    --scheme-heading: var(--black-8);
+    --scheme-accent: var(--black-6);
+    --scheme-border: var(--gray-2);
+    --scheme-hover: var(--black-4);
 }
 
-html[data-theme="light"] {
+html[data-scheme="light"] {
+    background-color: var(--scheme-background);
+    color: var(--scheme-text);
+
     .\:hc\:accent:hover {
-        color: var(--red-7);
+        color: var(--scheme-hover);
     }
 
     .t\:dim {
-        color: var(--color-dim-light);
+        color: var(--gray-5);
     }
 } 

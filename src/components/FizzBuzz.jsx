@@ -3,10 +3,14 @@ import "./FizzBuzz.css";
 
 function FizzBuzz() {
     const [count, setCount] = useState(100);
-    const [items, setItems] = useState(new Array(count).fill(0).map((_, i) => <div key={`fizzbuzz-${i}`} className="fizzbuzz">&nbsp;</div>));
+    const [items, setItems] = useState(new Array(count)
+        .fill(0)
+        .map((_, i) => <div key={`fizzbuzz-${i}`} className="fizzbuzz">&nbsp;</div>));
 
     useEffect(() => {
-        setItems(new Array(count).fill(0).map((_, i) => <div key={`fizzbuzz-${i}`} className="fizzbuzz"></div>));
+        setItems(new Array(count)
+            .fill(0)
+            .map((_, i) => <div key={`fizzbuzz-${i}`} className="fizzbuzz"></div>));
     }, [count]);
 
     return (

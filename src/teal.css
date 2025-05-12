@@ -1,20 +1,30 @@
 :root[data-theme="teal"] {
-    --primary-color-background: var(--teal-1);
-    --primary-color-heading-background: var(--teal-7);
-    --primary-color-text: var(--teal-9);
-    --primary-color-accent: var(--teal-6);
-    --color-black: var(--teal-10);
-    --color-white: var(--teal-0);
-    --color-border: var(--teal-4);
-    --color-gray: var(--gray-5);
-    --color-accent-1: var(--teal-8);
-    --color-accent-2: var(--teal-7);
-    --color-accent-3: var(--teal-6);
-    --color-accent-4: var(--teal-5);
-    --color-tag-1: var(--teal-7);
-    --color-tag-2: var(--teal-8);
-    --color-dim-light: var(--teal-3);
-    --color-dim-dark: var(--teal-8);
+    --theme-primary: var(--teal-5);
+    --theme-light: var(--teal-8);
+    --theme-dark: var(--teal-2);
+    --theme-accent: var(--teal-6);
+    --theme-border: var(--teal-4);
+    --theme-hover: var(--teal-7);
+}
+
+/* Light scheme + teal theme */
+html[data-scheme="light"][data-theme="teal"] {
+    --scheme-background: var(--theme-light);
+    --scheme-text: var(--theme-dark);
+    --scheme-heading: var(--theme-primary);
+    --scheme-accent: var(--theme-accent);
+    --scheme-border: var(--theme-border);
+    --scheme-hover: var(--theme-hover);
+}
+
+/* Dark scheme + teal theme */
+html[data-scheme="dark"][data-theme="teal"] {
+    --scheme-background: var(--theme-dark);
+    --scheme-text: var(--theme-light);
+    --scheme-heading: var(--theme-primary);
+    --scheme-accent: var(--theme-accent);
+    --scheme-border: var(--theme-border);
+    --scheme-hover: var(--theme-hover);
 }
 
 html[data-theme="teal"] {

@@ -7,3 +7,76 @@
         }
     }
 }
+
+.scheme-button, .theme-button, .font-button {
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+}
+
+.scheme-button, .theme-button {
+    padding-right: 2.5rem;
+}
+
+.font-button {
+    min-width: 3rem;
+    text-align: center;
+    background-color: var(--scheme-border);
+}
+
+.font-button:hover {
+    background-color: var(--scheme-accent);
+    color: var(--scheme-background);
+    transform: translateY(-1px);
+}
+
+.scheme-button.active::after, .theme-button.active::after {
+    content: "✓";
+    position: absolute;
+    right: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.scheme-button.active, .theme-button.active {
+    box-shadow: 0 0 0 2px var(--scheme-text);
+    font-weight: bold;
+}
+
+/* Specific active states for schemes */
+.sb\:light.active {
+    background-color: var(--white-8);
+    color: var(--black-2);
+}
+
+.sb\:dark.active {
+    background-color: var(--black-2);
+    color: var(--white-8);
+}
+
+/* Specific active states for themes */
+.tb\:teal.active {
+    background-color: var(--teal-5);
+    color: var(--white-0);
+}
+
+.tb\:magenta.active {
+    background-color: var(--magenta-5);
+    color: var(--white-0);
+}
+
+.tb\:gray.active {
+    background-color: var(--gray-5);
+    color: var(--white-0);
+}
+
+/* Hover effects for non-active buttons */
+.scheme-button:not(.active):hover,
+.theme-button:not(.active):hover {
+    background-color: var(--scheme-border);
+    transform: translateY(-1px);
+}

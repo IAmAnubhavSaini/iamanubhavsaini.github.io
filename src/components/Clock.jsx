@@ -13,7 +13,7 @@ function Clock() {
     }, []);
 
     function background(angle) {
-        return `conic-gradient(from ${angle}deg, var(--primary-color-background), var(--primary-color-text))`;
+        return `conic-gradient(from ${angle}deg, var(--scheme-text), var(--scheme-background))`;
     }
 
     function everysecond(date) {

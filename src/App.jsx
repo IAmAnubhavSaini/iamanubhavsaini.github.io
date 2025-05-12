@@ -1,4 +1,5 @@
 import { objectToKeyValueArray as o2kva } from "otoa";
+import { useEffect, useState } from "react";
 import "./App.css";
 import { ExternalAnchor } from "./components/Anchor";
 import { Box } from "./components/Box";
@@ -7,6 +8,7 @@ import { FizzBuzz } from "./components/FizzBuzz";
 import { NamedRowTable } from "./components/Table";
 import { Tags } from "./components/Tag";
 
+import "./dark.css";
 import {
     cliapps,
     cliappsList,
@@ -21,11 +23,58 @@ import {
 } from './data';
 import "./gray.css";
 import "./light.css";
-import "./pink.css";
+import "./magenta.css";
 import "./teal.css";
-import "./dark.css";
 
 function App() {
+    const [activeScheme, setActiveScheme] = useState('dark');
+    const [activeTheme, setActiveTheme] = useState('gray');
+    const [fontSize, setFontSize] = useState(10);
+
+    const setScheme = (scheme) => {
+        document.documentElement.setAttribute('data-scheme', scheme);
+        localStorage.setItem('preferred-scheme', scheme);
+        setActiveScheme(scheme);
+    };
+
+    const setTheme = (theme) => {
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem('preferred-theme', theme);
+        setActiveTheme(theme);
+    };
+
+    const changeFontSize = (action) => {
+        let newSize;
+        switch (action) {
+            case 'increase':
+                newSize = Math.min(fontSize + 2, 24); // max 24px
+                break;
+            case 'decrease':
+                newSize = Math.max(fontSize - 2, 8); // min 8
+                break;
+            case 'reset':
+                newSize = 10; // default size
+                break;
+            default:
+                return;
+        }
+        document.documentElement.style.fontSize = `${newSize}px`;
+        localStorage.setItem('preferred-font-size', newSize.toString());
+        setFontSize(newSize);
+    };
+
+    useEffect(() => {
+        // Load saved preferences or set defaults
+        const savedScheme = localStorage.getItem('preferred-scheme') || 'dark';
+        const savedTheme = localStorage.getItem('preferred-theme') || 'gray';
+        const savedFontSize = parseInt(localStorage.getItem('preferred-font-size')) || 16;
+
+        setScheme(savedScheme);
+        setTheme(savedTheme);
+        document.documentElement.style.fontSize = `${savedFontSize}px`;
+        setFontSize(savedFontSize);
+    }, []);
+
     return (
         <>
             <div className="grid g:2">
@@ -35,11 +84,21 @@ function App() {
 
                         <div className="width  flex f:v ta:r">
                             <div className="flex gap:1 ta:r">
-                                <a onClick={() => document.documentElement.setAttribute('data-theme', 'light')} className="button">Light</a>
-                                <a onClick={() => document.documentElement.setAttribute('data-theme', 'dark')} className="button">Dark</a>
-                                <a onClick={() => document.documentElement.setAttribute('data-theme', 'teal')} className="button">Teal</a>
-                                <a onClick={() => document.documentElement.setAttribute('data-theme', 'pink')} className="button">Pink</a>
-                                <a onClick={() => document.documentElement.setAttribute('data-theme', 'gray')} className="button">Gray</a>
+                                <div className="flex gap:1 ta:r f:v">
+                                    <div>{fontSize}px</div>
+                                    <a onClick={() => changeFontSize('decrease')} className="button font-button" title="Decrease font size">-A</a>
+                                    <a onClick={() => changeFontSize('reset')} className="button font-button" title="Reset font size">=A=</a>
+                                    <a onClick={() => changeFontSize('increase')} className="button font-button" title="Increase font size">A+</a>
+                                </div>
+                                <div className="flex gap:1 ta:r f:v">
+                                    <a onClick={() => setScheme('light')} className={`button scheme-button sb:light ${activeScheme === 'light' ? 'active' : ''}`}>Light</a>
+                                    <a onClick={() => setScheme('dark')} className={`button scheme-button sb:dark ${activeScheme === 'dark' ? 'active' : ''}`}>Dark</a>
+                                </div>
+                                <div className="flex gap:1 ta:r f:v">
+                                    <a onClick={() => setTheme('teal')} className={`button theme-button tb:teal ${activeTheme === 'teal' ? 'active' : ''}`}>Teal</a>
+                                    <a onClick={() => setTheme('magenta')} className={`button theme-button tb:magenta ${activeTheme === 'magenta' ? 'active' : ''}`}>Magenta</a>
+                                    <a onClick={() => setTheme('gray')} className={`button theme-button tb:gray ${activeTheme === 'gray' ? 'active' : ''}`}>Gray</a>
+                                </div>
                             </div>
                             <a href="#heading">top</a>
                             <a href="#companies">companies</a>

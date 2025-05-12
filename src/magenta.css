@@ -1,14 +1,14 @@
-:root[data-theme="gray"] {
-    --theme-primary: var(--gray-5);
-    --theme-light: var(--gray-8);
-    --theme-dark: var(--black-2);
-    --theme-accent: var(--gray-6);
-    --theme-border: var(--gray-4);
-    --theme-hover: var(--gray-7);
+:root[data-theme="magenta"] {
+    --theme-primary: var(--magenta-5);
+    --theme-light: var(--magenta-9);
+    --theme-dark: var(--magenta-2);
+    --theme-accent: var(--magenta-6);
+    --theme-border: var(--magenta-4);
+    --theme-hover: var(--magenta-7);
 }
 
-/* Light scheme + gray theme */
-html[data-scheme="light"][data-theme="gray"] {
+/* Light scheme + magenta theme */
+html[data-scheme="light"][data-theme="magenta"] {
     --scheme-background: var(--theme-light);
     --scheme-text: var(--theme-dark);
     --scheme-heading: var(--theme-primary);
@@ -17,8 +17,8 @@ html[data-scheme="light"][data-theme="gray"] {
     --scheme-hover: var(--theme-hover);
 }
 
-/* Dark scheme + gray theme */
-html[data-scheme="dark"][data-theme="gray"] {
+/* Dark scheme + magenta theme */
+html[data-scheme="dark"][data-theme="magenta"] {
     --scheme-background: var(--theme-dark);
     --scheme-text: var(--theme-light);
     --scheme-heading: var(--theme-primary);
@@ -27,7 +27,7 @@ html[data-scheme="dark"][data-theme="gray"] {
     --scheme-hover: var(--theme-hover);
 }
 
-html[data-theme="gray"] {
+html[data-theme="magenta"] {
     .\:hc\:accent:hover {
         color: var(--color-accent-4);
     }
