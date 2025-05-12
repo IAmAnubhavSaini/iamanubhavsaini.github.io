@@ -1,0 +1,15 @@
+:root[data-theme="light"] {
+    --primary-color-background: var(--white-0);
+    --primary-color-heading-background: var(--magenta-8);
+    --primary-color-text: var(--black-2);
+}
+
+html[data-theme="light"] {
+    .\:hc\:accent:hover {
+        color: var(--red-7);
+    }
+
+    .t\:dim {
+        color: var(--color-dim-light);
+    }
+} 

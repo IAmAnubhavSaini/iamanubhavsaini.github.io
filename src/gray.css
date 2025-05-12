@@ -1,0 +1,28 @@
+:root[data-theme="gray"] {
+    --primary-color-background: var(--white-1);
+    --primary-color-heading-background: var(--gray-7);
+    --primary-color-text: var(--black-2);
+    --primary-color-accent: var(--gray-6);
+    --color-black: var(--black-3);
+    --color-white: var(--white-0);
+    --color-border: var(--gray-4);
+    --color-gray: var(--gray-5);
+    --color-accent-1: var(--gray-8);
+    --color-accent-2: var(--gray-7);
+    --color-accent-3: var(--gray-6);
+    --color-accent-4: var(--gray-5);
+    --color-tag-1: var(--gray-7);
+    --color-tag-2: var(--gray-8);
+    --color-dim-light: var(--gray-3);
+    --color-dim-dark: var(--gray-8);
+}
+
+html[data-theme="gray"] {
+    .\:hc\:accent:hover {
+        color: var(--color-accent-4);
+    }
+
+    .t\:dim {
+        color: var(--color-dim-dark);
+    }
+}

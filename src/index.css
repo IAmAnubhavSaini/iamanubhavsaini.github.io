@@ -1,5 +1,5 @@
 :root {
-    color-scheme: dark light;
+    color-scheme: light dark;
     --base-font-size: 10px;
     font-size: calc(var(--base-font-size) * 1);
     --primary-color-accent: var(--orange-9);
@@ -27,39 +27,6 @@
 
     --color-dim-dark: var(--gray-5);
     --color-dim-light: var(--gray-5);
-}
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        --primary-color-background: var(--navy-2);
-        --primary-color-heading-background: var(--blue-2);
-        --primary-color-text: var(--white-8);
-    }
-
-    .\:hc\:accent:hover {
-        color: var(--color-accent-4);
-    }
-
-    .t\:dim {
-        color: var(--color-dim-dark);
-    }
-}
-
-@media (prefers-color-scheme: light) {
-    :root {
-        --primary-color-background: var(--white-0);
-        --primary-color-heading-background: var(--magenta-8);
-        --primary-color-text: var(--black-2);
-    }
-
-    .\:hc\:accent:hover {
-        color: var(--orange-10);
-    }
-
-    .t\:dim {
-        color: var(--color-dim-light);
-    }
-
 }
 
 * {
@@ -157,6 +124,7 @@ body {
         padding: .1rem;
         transition: all 0.3s ease-in-out;
         text-decoration: none;
+        color: var(--primary-color-text);
 
         &:hover {
             background-color: var(--color-accent-1);
@@ -385,6 +353,8 @@ fieldset {
         left: 0;
     }
 }
+
+.button {cursor: pointer;}
 
 @media (max-width: 600px) {
     body {

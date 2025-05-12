@@ -6,6 +6,7 @@ import Clock from "./components/Clock";
 import { FizzBuzz } from "./components/FizzBuzz";
 import { NamedRowTable } from "./components/Table";
 import { Tags } from "./components/Tag";
+
 import {
     cliapps,
     cliappsList,
@@ -18,6 +19,11 @@ import {
     webapps,
     webappsList
 } from './data';
+import "./gray.css";
+import "./light.css";
+import "./pink.css";
+import "./teal.css";
+import "./dark.css";
 
 function App() {
     return (
@@ -28,6 +34,13 @@ function App() {
                         <Clock />
 
                         <div className="width  flex f:v ta:r">
+                            <div className="flex gap:1 ta:r">
+                                <a onClick={() => document.documentElement.setAttribute('data-theme', 'light')} className="button">Light</a>
+                                <a onClick={() => document.documentElement.setAttribute('data-theme', 'dark')} className="button">Dark</a>
+                                <a onClick={() => document.documentElement.setAttribute('data-theme', 'teal')} className="button">Teal</a>
+                                <a onClick={() => document.documentElement.setAttribute('data-theme', 'pink')} className="button">Pink</a>
+                                <a onClick={() => document.documentElement.setAttribute('data-theme', 'gray')} className="button">Gray</a>
+                            </div>
                             <a href="#heading">top</a>
                             <a href="#companies">companies</a>
                             <a href="#techstack">tech stack</a>

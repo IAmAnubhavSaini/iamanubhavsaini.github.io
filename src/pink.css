@@ -1,0 +1,28 @@
+:root[data-theme="pink"] {
+    --primary-color-background: var(--pink-1);
+    --primary-color-heading-background: var(--magenta-7);
+    --primary-color-text: var(--magenta-9);
+    --primary-color-accent: var(--pink-6);
+    --color-black: var(--magenta-10);
+    --color-white: var(--pink-0);
+    --color-border: var(--pink-4);
+    --color-gray: var(--gray-5);
+    --color-accent-1: var(--magenta-8);
+    --color-accent-2: var(--magenta-7);
+    --color-accent-3: var(--pink-6);
+    --color-accent-4: var(--pink-5);
+    --color-tag-1: var(--magenta-7);
+    --color-tag-2: var(--pink-8);
+    --color-dim-light: var(--pink-3);
+    --color-dim-dark: var(--magenta-8);
+}
+
+html[data-theme="pink"] {
+    .\:hc\:accent:hover {
+        color: var(--color-accent-4);
+    }
+
+    .t\:dim {
+        color: var(--color-dim-dark);
+    }
+} 

@@ -1,0 +1,15 @@
+:root[data-theme="dark"] {
+    --primary-color-background: var(--navy-2);
+    --primary-color-heading-background: var(--blue-2);
+    --primary-color-text: var(--white-8);
+}
+
+html[data-theme="dark"] {
+    .\:hc\:accent:hover {
+        color: var(--color-accent-4);
+    }
+
+    .t\:dim {
+        color: var(--color-dim-dark);
+    }
+} 

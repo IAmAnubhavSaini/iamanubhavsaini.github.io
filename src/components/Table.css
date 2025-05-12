@@ -1,6 +1,6 @@
 .nmr {
     .row>.col:first-child {
-        flex: 1 1 auto;
+        flex: 0 1 auto;
     }
 
     .col {
