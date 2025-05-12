@@ -33,9 +33,9 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --primary-color-background: #1e0a5d;
-        --primary-color-heading-background: #33033a;
-        --primary-color-text: #ffffffdc;
+        --primary-color-background: var(--navy-2);
+        --primary-color-heading-background: var(--blue-2);
+        --primary-color-text: var(--white-8);
     }
 
     .\:hc\:accent:hover {
@@ -50,12 +50,12 @@
 @media (prefers-color-scheme: light) {
     :root {
         --primary-color-background: var(--white-0);
-        --primary-color-heading-background: #da4a75;
-        --primary-color-text: #000000dc;
+        --primary-color-heading-background: var(--magenta-8);
+        --primary-color-text: var(--black-2);
     }
 
     .\:hc\:accent:hover {
-        color: var(--color-accent-1);
+        color: var(--orange-10);
     }
 
     .t\:dim {
