@@ -1,38 +1,99 @@
 :root[data-theme="magenta"] {
     --theme-primary: var(--magenta-5);
-    --theme-light: var(--magenta-9);
-    --theme-dark: var(--magenta-2);
-    --theme-accent: var(--magenta-6);
+    --theme-light: var(--magenta-8);
+    --theme-dark: var(--magenta-0);
+    --theme-accent-dark: var(--magenta-0);
+    --theme-accent-light: var(--magenta-10);
     --theme-border: var(--magenta-4);
     --theme-hover: var(--magenta-7);
+    --theme-tag: var(--magenta-3);
+    --theme-accent-hover: var(--black-2);
 }
 
 /* Light scheme + magenta theme */
 html[data-scheme="light"][data-theme="magenta"] {
     --scheme-background: var(--theme-light);
-    --scheme-text: var(--theme-dark);
+    --scheme-text: var(--black-4);
     --scheme-heading: var(--theme-primary);
-    --scheme-accent: var(--theme-accent);
+    --scheme-accent: var(--theme-accent-light);
     --scheme-border: var(--theme-border);
     --scheme-hover: var(--theme-hover);
+    --primary-color-text: var(--black-4);
+    --primary-color-background: var(--theme-light);
+    --primary-color-accent: var(--theme-accent-light);
+    --theme-tag: var(--magenta-4);
 }
 
 /* Dark scheme + magenta theme */
 html[data-scheme="dark"][data-theme="magenta"] {
     --scheme-background: var(--theme-dark);
-    --scheme-text: var(--theme-light);
+    --scheme-text: var(--white-4);
     --scheme-heading: var(--theme-primary);
-    --scheme-accent: var(--theme-accent);
+    --scheme-accent: var(--theme-accent-dark);
     --scheme-border: var(--theme-border);
     --scheme-hover: var(--theme-hover);
+    --primary-color-text: var(--white-4);
+    --primary-color-background: var(--theme-dark);
+    --primary-color-accent: var(--theme-accent-dark);
+    --theme-tag: var(--magenta-5);
 }
 
 html[data-theme="magenta"] {
     .\:hc\:accent:hover {
-        color: var(--color-accent-4);
+        color: var(--theme-accent-hover);
     }
 
     .t\:dim {
-        color: var(--color-dim-dark);
+        color: var(--theme-border);
     }
+    
+    span.tag, .tag {
+        background-color: var(--theme-border);
+        color: var(--scheme-text);
+    }
+    
+    *:hover span.tag, *:hover .tag {
+        background-color: var(--theme-accent-hover);
+        color: var(--scheme-text);
+    }
+    
+    ul li:hover {
+        border-left: 2px solid var(--theme-accent-hover);
+    }
+
+    .near-heading {
+        color: var(--magenta-6);
+    }
+}
+
+html[data-scheme="light"][data-theme="magenta"] span.tag, 
+html[data-scheme="light"][data-theme="magenta"] .tag {
+    background-color: var(--magenta-3);
+    color: var(--white-9);
+}
+
+html[data-scheme="light"][data-theme="magenta"] *:hover span.tag,
+html[data-scheme="light"][data-theme="magenta"] *:hover .tag {
+    background-color: var(--magenta-2);
+    color: var(--white-9);
+}
+
+html[data-scheme="dark"][data-theme="magenta"] span.tag,
+html[data-scheme="dark"][data-theme="magenta"] .tag {
+    background-color: var(--theme-tag);
+    color: var(--white-0);
+}
+
+html[data-scheme="dark"][data-theme="magenta"] *:hover span.tag,
+html[data-scheme="dark"][data-theme="magenta"] *:hover .tag {
+    background-color: var(--theme-accent-hover);
+    color: var(--white-0);
+}
+
+html[data-scheme="light"][data-theme="magenta"] .near-heading {
+    color: var(--magenta-5);
+}
+
+html[data-scheme="dark"][data-theme="magenta"] .near-heading {
+    color: var(--magenta-6);
 }

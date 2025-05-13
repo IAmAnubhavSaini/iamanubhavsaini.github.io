@@ -1,10 +1,14 @@
 :root[data-scheme="light"] {
     --scheme-background: var(--white-8);
-    --scheme-text: var(--black-2);
-    --scheme-heading: var(--black-8);
-    --scheme-accent: var(--black-6);
-    --scheme-border: var(--gray-2);
-    --scheme-hover: var(--black-4);
+    --scheme-text: var(--black-4);
+    --scheme-heading: var(--black-2);
+    --scheme-accent: var(--black-4);
+    --scheme-border: var(--gray-4);
+    --scheme-hover: var(--black-6);
+    --primary-color-text: var(--black-4);
+    --primary-color-background: var(--white-8);
+    --primary-color-accent: var(--black-4);
+    --theme-tag: var(--gray-3);
 }
 
 html[data-scheme="light"] {
@@ -18,4 +22,25 @@ html[data-scheme="light"] {
     .t\:dim {
         color: var(--gray-5);
     }
+    
+    span.tag, .tag {
+        background-color: var(--scheme-border);
+        color: var(--scheme-text);
+    }
+}
+
+html[data-scheme="light"] .near-heading {
+    color: var(--gray-5);
+}
+
+html[data-scheme="light"] span.tag,
+html[data-scheme="light"] .tag {
+    background-color: var(--black-3);
+    color: var(--white-9);
+}
+
+html[data-scheme="light"] *:hover span.tag,
+html[data-scheme="light"] *:hover .tag {
+    background-color: var(--black-2);
+    color: var(--white-9);
 } 

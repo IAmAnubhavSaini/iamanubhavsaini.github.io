@@ -1,10 +1,17 @@
 :root[data-scheme="dark"] {
     --scheme-background: var(--black-2);
-    --scheme-text: var(--white-8);
-    --scheme-heading: var(--white-2);
-    --scheme-accent: var(--white-4);
-    --scheme-border: var(--black-4);
-    --scheme-hover: var(--white-6);
+    --scheme-text: var(--white-4);
+    --scheme-heading: var(--white-4);
+    --scheme-accent-light: var(--white-5);
+    --scheme-accent-dark: var(--white-2);
+    --scheme-accent-hover: var(--white-7);
+    --scheme-border: var(--black-3);
+    --scheme-hover: var(--white-7);
+    --primary-color-text: var(--white-4);
+    --primary-color-background: var(--black-2);
+    --primary-color-accent: var(--white-6);
+    --theme-tag: var(--black-4);
+    --scheme-accent: var(--scheme-accent-dark);
 }
 
 html[data-scheme="dark"] {
@@ -17,5 +24,14 @@ html[data-scheme="dark"] {
 
     .t\:dim {
         color: var(--gray-7);
+    }
+    
+    span.tag, .tag {
+        background-color: var(--scheme-border);
+        color: var(--scheme-text);
+    }
+
+    .near-heading {
+        color: var(--white-5);
     }
 } 

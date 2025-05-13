@@ -1,4 +1,5 @@
 const companies = [
+    "Looking for a new job",
     "Ackret Solutions",
     "Appsmith",
     "PayPal",
@@ -30,55 +31,47 @@ const toolStack = [
 const tableData = [
     {
         name: "web", value: [
+            { name: "jsx", highlight: 3 },
+            { name: "css", highlight: 1 },
+            { name: "react" },
+            { name: "html" },
+            { name: "dom" },
             { name: "vite" },
             { name: "solidjs" },
             { name: "redux" },
-            { name: "react" },
-            { name: "jsx", highlight: 3 },
-            { name: "html", highlight: 1 },
-            { name: "dom", highlight: 1 },
-            { name: "css", highlight: 1 },
         ]
     },
     {
         name: "operating systems", value: [
-            { name: "windows 11 pro" },
-            { name: "ubuntu" },
-            { name: "raspbian" },
-            { name: "mac" },
-            { name: "kali", highlight: 3 },
             { name: "debian", highlight: 1 },
         ]
     },
     {
         name: "editors", value: [
-            { name: "webstorm" },
-            { name: "vs code" },
-            { name: "rust rover" },
-            { name: "goland" },
-            { name: "vim", highlight: 3 },
-            { name: "vscodium", highlight: 1 },
+            { name: "codium", highlight: 1 },
+            { name: "code" },
+            { name: "cursor" },
         ]
     },
     {
         name: "languages", value: [
-            { name: "go" },
-            { name: "bash" },
             { name: "typescript", highlight: 3 },
             { name: "javascript", highlight: 1 },
+            { name: "go" },
+            { name: "bash" },
         ]
     },
     {
         name: "database", value: [
+            { name: "postgres", highlight: 1 },
             { name: "mongodb" },
             { name: "sqlite" },
-            { name: "postgres", highlight: 1 },
         ]
     },
     {
         name: "virtualization", value: [
-            { name: "virtualbox" },
             { name: "docker", highlight: 1 },
+            { name: "virtualbox" },
         ]
     },
     {
@@ -93,18 +86,10 @@ const tableData = [
     },
     {
         name: "window managers", value: [
-            { name: "kwin" },
             { name: "i3", highlight: 1, },
+            { name: "kwin" },
         ]
     },
-    {
-        name: "programming paradigms", value: [
-            { name: "functional" },
-            { name: "procedural" },
-            { name: "object oriented" },
-            { name: "event based" },
-        ]
-    }
 ]
 
 const webapps = [
@@ -115,14 +100,12 @@ const webapps = [
         tags: ["jquery", "canvas", "2015"],
     },
     {
-        url: "https://iamanubhavsaini.github.io/TopGit/topgit.html",
-        title: "top git",
-        highlight: 0,
-        tags: ["github", "api", "2016"],
+        url: "https://github.com/IAmAnubhavSaini/hashtags",
+        title: "hashtags",
+        highlight: 1,
+        tags: ["d3", "html", "2025", "go"],
     },
-    { url: "https://iamanubhavsaini.github.io/ShowCase-Hotel/", title: "hotel", highlight: 4, tags: ["2015"] },
     { url: "https://iamanubhavsaini.github.io/infinite-scroll", title: "infinite-scroll", highlight: 0, tags: ["flickr", "api", "2021"] },
-    { url: "https://f0c1s.github.io/tic-tac-toe-in-react/", title: "TicTacToe", highlight: 0, tags: ["game"] },
     {
         url: "https://github.com/IAmAnubhavSaini/simple-app",
         title: "simple-app",
@@ -135,9 +118,19 @@ const webapps = [
         highlight: 2,
         tags: ["apache2", "docker", "web-components", "2024"]
     },
+    
+    
 ];
 
 const webappsList = [
+    {
+        url: "https://iamanubhavsaini.github.io/TopGit/topgit.html",
+        title: "top git",
+        highlight: 0,
+        tags: ["github", "api", "2016"],
+    },
+    { url: "https://iamanubhavsaini.github.io/ShowCase-Hotel/", title: "hotel", highlight: 4, tags: ["2015"] },
+    { url: "https://f0c1s.github.io/tic-tac-toe-in-react/", title: "TicTacToe", highlight: 0, tags: ["game"] },
     { url: "https://github.com/localserve/react-cpu-monitor", title: "CPU monitor", tags: ["react", "2021"] },
     { url: "https://iamanubhavsaini.github.io/strings-app/", title: "strings", highlight: 0 },
     { url: "https://iamanubhavsaini.github.io/json-visualiser", title: "json visualiser", highlight: 0 },
@@ -162,12 +155,22 @@ const webappsList = [
 
 const cliapps = [
     {
+        url: "https://github.com/IAmAnubhavSaini/ask-interviewers",
+        klass: "wide",
+        title: "ask interviewers",
+        tags: ["node", "cli", "2025"], highlight: 1
+    },
+    {
         url: "https://github.com/localserve/tt",
         klass: "wide",
         title: "typing tutor",
         tags: ["go", "docker", "maintained-fork", "2024"], highlight: 1
     },
     { url: "https://github.com/IAmAnubhavSaini/c_2048", title: "2048 game", tags: ["c", "game", "2014"] },
+    
+];
+
+const cliappsList = [
     {
         url: "https://github.com/IAmAnubhavSaini/todo",
         title: "todo app",
@@ -176,10 +179,7 @@ const cliapps = [
     },
     { url: "https://github.com/IAmAnubhavSaini/cdb", title: "database", tags: ["c", "database", "2023"] },
     { url: "https://github.com/m1yh3m/cpu.info.node.sh", title: "cpu info", tags: ["node", "2019"], highlight: 2 },
-    { url: "https://github.com/m1yh3m/worldclock.node.sh", title: "world clock", tags: ["node", "2020"] }
-];
-
-const cliappsList = [
+    { url: "https://github.com/m1yh3m/worldclock.node.sh", title: "world clock", tags: ["node", "2020"] },
     { url: "https://github.com/IAmAnubhavSaini/rock-paper-scissors-c", "title": "rock-paper-scissors", tags: ["c", "game", "2013"] },
     { url: "https://github.com/IAmAnubhavSaini/tic-tac-toe", "title": "Tic Tac Toe", tags: ["c", "game", "2013"] },
     { url: "https://github.com/IAmAnubhavSaini/node-security-rot.sh", title: "ROT cipher", tags: ["node", "2021"] },
