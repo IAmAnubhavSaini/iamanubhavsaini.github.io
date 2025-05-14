@@ -1,9 +1,9 @@
 :root[data-theme="magenta"] {
     --theme-primary: var(--magenta-5);
     --theme-light: var(--magenta-8);
-    --theme-dark: var(--magenta-0);
+    --theme-dark: var(--magenta-1);
     --theme-accent-dark: var(--magenta-0);
-    --theme-accent-light: var(--magenta-10);
+    --theme-accent-light: var(--magenta-7);
     --theme-border: var(--magenta-4);
     --theme-hover: var(--magenta-7);
     --theme-tag: var(--magenta-3);
@@ -46,17 +46,19 @@ html[data-theme="magenta"] {
     .t\:dim {
         color: var(--theme-border);
     }
-    
-    span.tag, .tag {
+
+    span.tag,
+    .tag {
         background-color: var(--theme-border);
         color: var(--scheme-text);
     }
-    
-    *:hover span.tag, *:hover .tag {
+
+    *:hover span.tag,
+    *:hover .tag {
         background-color: var(--theme-accent-hover);
         color: var(--scheme-text);
     }
-    
+
     ul li:hover {
         border-left: 2px solid var(--theme-accent-hover);
     }
@@ -66,7 +68,7 @@ html[data-theme="magenta"] {
     }
 }
 
-html[data-scheme="light"][data-theme="magenta"] span.tag, 
+html[data-scheme="light"][data-theme="magenta"] span.tag,
 html[data-scheme="light"][data-theme="magenta"] .tag {
     background-color: var(--magenta-3);
     color: var(--white-9);
