@@ -21,20 +21,6 @@
     padding-right: 2.5rem;
 }
 
-.font-button {
-    min-width: 3rem;
-    text-align: center;
-    background-color: var(--scheme-border);
-    color: var(--scheme-text);
-}
-
-.font-button:hover {
-    background-color: var(--scheme-accent);
-    color: var(--scheme-background);
-    transform: translateY(-1px);
-    border-color: var(--scheme-accent);
-}
-
 .scheme-button.active::after, .theme-button.active::after {
     content: "✓";
     position: absolute;
@@ -78,12 +64,4 @@
     background-color: var(--gray-5);
     color: var(--white-9);
     border-color: var(--gray-3);
-}
-
-/* Hover effects for non-active buttons */
-.scheme-button:not(.active):hover,
-.theme-button:not(.active):hover {
-    background-color: var(--scheme-border);
-    transform: translateY(-1px);
-    border-color: var(--scheme-accent);
 }

@@ -1,5 +1,5 @@
 const companies = [
-    "Looking for a new job",
+    "your company?",
     "Ackret Solutions",
     "Appsmith",
     "PayPal",
@@ -30,53 +30,54 @@ const toolStack = [
 //  */
 const tableData = [
     {
-        name: "web", value: [
-            { name: "jsx", highlight: 3 },
-            { name: "css", highlight: 1 },
+        name: "react", value: [
             { name: "react" },
-            { name: "html" },
-            { name: "dom" },
-            { name: "vite" },
-            { name: "solidjs" },
             { name: "redux" },
+            { name: "jsx" },
+        ]
+    },
+    {
+        name: "web", value: [
+            { name: "html" },
+            { name: "css" },
+            { name: "dom" },
         ]
     },
     {
         name: "operating systems", value: [
-            { name: "debian", highlight: 1 },
+            { name: "debian" },
+            { name: "kali" },
         ]
     },
     {
         name: "editors", value: [
-            { name: "codium", highlight: 1 },
-            { name: "code" },
-            { name: "cursor" },
+            { name: "codium" },
+            { name: "vim" },
         ]
     },
     {
         name: "languages", value: [
-            { name: "typescript", highlight: 3 },
-            { name: "javascript", highlight: 1 },
-            { name: "go" },
+            { name: "typescript" },
+            { name: "javascript" },
             { name: "bash" },
         ]
     },
     {
         name: "database", value: [
-            { name: "postgres", highlight: 1 },
-            { name: "mongodb" },
-            { name: "sqlite" },
+            { name: "postgres" },
+            { name: "sql" },
         ]
     },
     {
         name: "virtualization", value: [
-            { name: "docker", highlight: 1 },
+            { name: "docker" },
             { name: "virtualbox" },
         ]
     },
     {
         name: "terminals", value: [
             { name: "konsole" },
+            { name: "yakuake" },
         ]
     },
     {
@@ -86,7 +87,7 @@ const tableData = [
     },
     {
         name: "window managers", value: [
-            { name: "i3", highlight: 1, },
+            { name: "i3", },
             { name: "kwin" },
         ]
     },
@@ -118,8 +119,8 @@ const webapps = [
         highlight: 2,
         tags: ["apache2", "docker", "web-components", "2024"]
     },
-    
-    
+
+
 ];
 
 const webappsList = [
@@ -167,7 +168,7 @@ const cliapps = [
         tags: ["go", "docker", "maintained-fork", "2024"], highlight: 1
     },
     { url: "https://github.com/IAmAnubhavSaini/c_2048", title: "2048 game", tags: ["c", "game", "2014"] },
-    
+
 ];
 
 const cliappsList = [

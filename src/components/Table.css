@@ -4,7 +4,7 @@
     }
 
     .col {
-        width: 15rem;
+        min-width: 15rem;
     }
 
     @media (max-width:600px) {

@@ -29,7 +29,7 @@ import "./teal.css";
 function App() {
     const [activeScheme, setActiveScheme] = useState('dark');
     const [activeTheme, setActiveTheme] = useState('gray');
-    const [fontSize, setFontSize] = useState(10);
+    const [fontSize, setFontSize] = useState(13);
 
     const setScheme = (scheme) => {
         document.documentElement.setAttribute('data-scheme', scheme);
@@ -47,13 +47,13 @@ function App() {
         let newSize;
         switch (action) {
             case 'increase':
-                newSize = Math.min(fontSize + 2, 24); // max 24px
+                newSize = Math.min(fontSize + 2, 25); // max 24px
                 break;
             case 'decrease':
-                newSize = Math.max(fontSize - 2, 8); // min 8
+                newSize = Math.max(fontSize - 2, 9); // min 8
                 break;
             case 'reset':
-                newSize = 10; // default size
+                newSize = 13; // default size
                 break;
             default:
                 return;
@@ -114,7 +114,7 @@ function App() {
 
                     </div>
                 </div>
-                <div className="width w:80d">
+                <div className="width w:70d">
 
                     <div id="heading" className="container heading">
                         <div className="container-item">

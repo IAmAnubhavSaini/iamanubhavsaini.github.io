@@ -1,8 +1,7 @@
 :root {
-    color-scheme: light dark;
-    --base-font-size: 10px;
+    color-scheme: dark light;
+    --base-font-size: 13px;
     font-size: calc(var(--base-font-size) * 1);
-    --primary-color-accent: var(--scheme-accent, var(--orange-9));
     --color-black: var(--black-2);
     --color-white: var(--white-8);
     --color-border: hsl(240 5.9% 70%);
@@ -24,9 +23,6 @@
     --color-stone-700: oklch(37.4% 0.01 67.558);
     --color-stone-800: oklch(26.8% 0.007 34.298);
     --color-stone-900: oklch(21.6% 0.006 56.043);
-
-    --color-dim-dark: var(--gray-5);
-    --color-dim-light: var(--gray-5);
 }
 
 * {
@@ -41,8 +37,8 @@ body {
 
     font-family: monospace;
     font-size: 1.2em;
-    color: var(--primary-color-text);
-    background-color: var(--primary-color-background);
+    color: var(--scheme-text);
+    background-color: var(--scheme-background);
 
     .container {
         padding: 2vw;
@@ -57,7 +53,7 @@ body {
     }
 
     .heading {
-        color: var(--primary-color-text);
+        color: var(--scheme-text);
         text-shadow: 0 10px 10px var(--color-black);
         font-size: 5rem;
         text-align: center;
@@ -93,7 +89,7 @@ body {
     .near-heading {
         position: relative;
         top: -1rem;
-        color: var(--theme-border, silver);
+        color: var(--scheme-text);
         opacity: 0.8;
         font-style: italic;
     }
@@ -103,18 +99,8 @@ body {
 
         li {
             border-left: 2px solid transparent;
-
             padding: 4px 8px;
-
-            &:hover {
-                border-left: 2px solid var(--primary-color-accent);
-            }
         }
-    }
-
-    button {
-        cursor: pointer;
-        padding: 4px;
     }
 
     a {
@@ -123,17 +109,8 @@ body {
         padding: .1rem;
         transition: all 0.3s ease-in-out;
         text-decoration: none;
-        color: var(--scheme-text, var(--primary-color-text));
+        color: var(--scheme-text);
 
-        &:hover {
-            background-color: var(--scheme-text);
-            color: var(--scheme-background);
-            text-decoration: wavy;
-
-            & * {
-                background-color: var(--scheme-accent, var(--color-accent-4));
-            }
-        }
     }
 
     .tags {
@@ -143,15 +120,9 @@ body {
 
         .tag {
             padding: 0.3rem 0.5rem;
-            background-color: var(--theme-tag, var(--scheme-border));
             color: var(--scheme-text);
             border-radius: 3px;
             margin: 0 0.2rem;
-
-            *:hover & {
-                background-color: var(--theme-accent-hover, var(--scheme-hover));
-                color: var(--scheme-text);
-            }
         }
 
         &.a\:l {
@@ -163,16 +134,10 @@ body {
 span.tag {
     padding: 0.1rem 0.3rem;
     margin: 0 .1rem;
-    background-color: var(--theme-tag, var(--scheme-border));
     color: var(--scheme-text);
     transition: all 0.2s ease-in-out;
     border-radius: 3px;
     display: inline-block;
-
-    *:hover & {
-        background-color: var(--theme-accent-hover, var(--scheme-hover));
-        color: var(--scheme-text);
-    }
 }
 
 fieldset {
@@ -239,6 +204,10 @@ fieldset {
     .flex & {
         justify-content: flex-end;
     }
+}
+
+.t\:dim {
+    font-size: x-small;
 }
 
 .tt\:u {
@@ -324,6 +293,10 @@ fieldset {
         width: 80dvw;
     }
 
+    &.w\:70d {
+        width: 70dvw;
+    }
+
     &.w\:50d {
         width: 50dvw;
     }
@@ -340,14 +313,6 @@ fieldset {
         width: 50%;
     }
 
-}
-
-.ontop {
-    background-color: var(--primary-color-background);
-
-    &.z\:100 {
-        z-index: 100;
-    }
 }
 
 .scroll\:y {
@@ -367,38 +332,9 @@ fieldset {
     }
 }
 
-.button {
+.button,
+button {
     cursor: pointer;
-
-    &.color-button {
-        font-size: 8px;
-        height: 2rem;
-        /* width: 2rem; */
-        display: block;
-        border: 2px solid var(--gray-5);
-        color: var(--white-5);
-
-        &.cb\:light {
-            background-color: var(--white-0);
-            color: var(--black-3);
-        }
-
-        &.cb\:dark {
-            background-color: var(--black-3);
-        }
-
-        &.cb\:teal {
-            background-color: var(--teal-5);
-        }
-
-        &.cb\:pink {
-            background-color: var(--magenta-5);
-        }
-
-        &.cb\:gray {
-            background-color: var(--gray-5);
-        }
-    }
 }
 
 @media (max-width: 600px) {
@@ -463,6 +399,10 @@ fieldset {
         }
 
         &.w\:80d {
+            width: 100dvw;
+        }
+
+        &.w\:70d {
             width: 100dvw;
         }
 

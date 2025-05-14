@@ -10,14 +10,14 @@ function NamedRowTable({ name, data }) {
     return <div className={`nmr ${name} flex f:v`}>
         {
             data.map((datum, index) => {
-                return <div key={`nmr-row-${index}`} className="row flex">
-                    <Box name={datum.name} key={`nmr-row-${index}-name-0`} klass={`col name t:dim tt:u ta:l`} />
+                return <div key={`nmr-row-${index}`} className="row flex f:v">
+                    <div name={datum.name} key={`nmr-row-${index}-name-0`} className={`col name tt:u`} >{datum.name}</div>
                     <div className="flex f:ac:l f:shrink">
                         {
                             datum.value.map((item, itemIndex) =>
                                 <Box name={item.name}
                                     key={`nmr-col-${itemIndex}`}
-                                    klass={`col :hc:accent ${item.highlight ? "highlight h:" + item.highlight : ""}`} />
+                                    klass={`col ${item.highlight ? "highlight h:" + item.highlight : ""}`} />
                             )
                         }
                     </div>

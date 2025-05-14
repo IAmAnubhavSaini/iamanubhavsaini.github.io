@@ -1,99 +1,34 @@
 :root[data-theme="teal"] {
     --theme-primary: var(--teal-5);
-    --theme-light: var(--teal-8);
+    --theme-light: var(--teal-7);
     --theme-dark: var(--teal-2);
     --theme-accent-dark: var(--teal-0);
     --theme-accent-light: var(--teal-10);
     --theme-border: var(--teal-4);
-    --theme-hover: var(--teal-7);
+    --theme-text-background-dark: var(teal-0);
+    --theme-text-background-light: var(teal-10);
     --theme-tag: var(--teal-5);
-    --theme-accent-hover: var(--black-2);
 }
 
 /* Light scheme + teal theme */
 html[data-scheme="light"][data-theme="teal"] {
     --scheme-background: var(--theme-light);
-    --scheme-text: var(--black-4);
+    --scheme-text: var(--black-0);
     --scheme-heading: var(--theme-primary);
     --scheme-accent: var(--theme-accent-light);
     --scheme-border: var(--theme-border);
-    --scheme-hover: var(--theme-hover);
-    --primary-color-text: var(--black-4);
-    --primary-color-background: var(--theme-light);
-    --primary-color-accent: var(--theme-accent-light);
     --theme-tag: var(--teal-4);
+
+    --scheme-text-background: var(--theme-text-background-light);
 }
 
 /* Dark scheme + teal theme */
 html[data-scheme="dark"][data-theme="teal"] {
     --scheme-background: var(--theme-dark);
-    --scheme-text: var(--white-4);
+    --scheme-text: var(--white-9);
     --scheme-heading: var(--theme-primary);
     --scheme-accent: var(--theme-accent-dark);
     --scheme-border: var(--theme-border);
-    --scheme-hover: var(--theme-hover);
-    --primary-color-text: var(--white-4);
-    --primary-color-background: var(--theme-dark);
-    --primary-color-accent: var(--theme-accent-dark);
     --theme-tag: var(--teal-5);
+    --scheme-text-background: var(--theme-text-background-dark);
 }
-
-html[data-theme="teal"] {
-    .\:hc\:accent:hover {
-        color: var(--theme-accent-hover);
-    }
-
-    .t\:dim {
-        color: var(--theme-border);
-    }
-    
-    span.tag, .tag {
-        background-color: var(--theme-border);
-        color: var(--scheme-text);
-    }
-    
-    *:hover span.tag, *:hover .tag {
-        background-color: var(--theme-accent-hover);
-        color: var(--scheme-text);
-    }
-    
-    ul li:hover {
-        border-left: 2px solid var(--theme-accent-hover);
-    }
-
-    .near-heading {
-        color: var(--teal-6);
-    }
-}
-
-html[data-scheme="light"][data-theme="teal"] span.tag, 
-html[data-scheme="light"][data-theme="teal"] .tag {
-    background-color: var(--teal-3);
-    color: var(--white-9);
-}
-
-html[data-scheme="light"][data-theme="teal"] *:hover span.tag,
-html[data-scheme="light"][data-theme="teal"] *:hover .tag {
-    background-color: var(--teal-2);
-    color: var(--white-9);
-}
-
-html[data-scheme="dark"][data-theme="teal"] span.tag,
-html[data-scheme="dark"][data-theme="teal"] .tag {
-    background-color: var(--theme-tag);
-    color: var(--white-0);
-}
-
-html[data-scheme="dark"][data-theme="teal"] *:hover span.tag,
-html[data-scheme="dark"][data-theme="teal"] *:hover .tag {
-    background-color: var(--theme-accent-hover);
-    color: var(--white-0);
-}
-
-html[data-scheme="light"][data-theme="teal"] .near-heading {
-    color: var(--teal-5);
-}
-
-html[data-scheme="dark"][data-theme="teal"] .near-heading {
-    color: var(--teal-6);
-} 

@@ -1,13 +1,12 @@
 :root[data-theme="gray"] {
-    --theme-primary: var(--gray-5);
+    --theme-primary: var(--gray-0);
     --theme-light: var(--gray-8);
     --theme-dark: var(--black-2);
     --theme-accent-dark: var(--black-1);
     --theme-accent-light: var(--white-4);
     --theme-border: var(--gray-4);
-    --theme-hover: var(--gray-7);
     --theme-tag: var(--gray-5);
-    --theme-accent-hover: var(--black-2);
+
 }
 
 /* Light scheme + gray theme */
@@ -17,10 +16,6 @@ html[data-scheme="light"][data-theme="gray"] {
     --scheme-heading: var(--theme-primary);
     --scheme-accent: var(--theme-accent-light);
     --scheme-border: var(--theme-border);
-    --scheme-hover: var(--theme-hover);
-    --primary-color-text: var(--black-4);
-    --primary-color-background: var(--theme-light);
-    --primary-color-accent: var(--theme-accent-light);
     --theme-tag: var(--gray-5);
 }
 
@@ -31,69 +26,5 @@ html[data-scheme="dark"][data-theme="gray"] {
     --scheme-heading: var(--theme-primary);
     --scheme-accent: var(--theme-accent-dark);
     --scheme-border: var(--theme-border);
-    --scheme-hover: var(--theme-hover);
-    --primary-color-text: var(--white-4);
-    --primary-color-background: var(--theme-dark);
-    --primary-color-accent: var(--theme-accent-dark);
     --theme-tag: var(--gray-6);
-}
-
-html[data-theme="gray"] {
-    .\:hc\:accent:hover {
-        color: var(--theme-accent-hover);
-    }
-
-    .t\:dim {
-        color: var(--theme-border);
-    }
-    
-    span.tag, .tag {
-        background-color: var(--theme-border);
-        color: var(--scheme-text);
-    }
-    
-    *:hover span.tag, *:hover .tag {
-        background-color: var(--theme-accent-hover);
-        color: var(--scheme-text);
-    }
-    
-    ul li:hover {
-        border-left: 2px solid var(--theme-accent-hover);
-    }
-
-    .near-heading {
-        color: var(--gray-6);
-    }
-}
-
-html[data-scheme="light"][data-theme="gray"] span.tag, 
-html[data-scheme="light"][data-theme="gray"] .tag {
-    background-color: var(--gray-3);
-    color: var(--white-9);
-}
-
-html[data-scheme="light"][data-theme="gray"] *:hover span.tag,
-html[data-scheme="light"][data-theme="gray"] *:hover .tag {
-    background-color: var(--gray-2);
-    color: var(--white-9);
-}
-
-html[data-scheme="dark"][data-theme="gray"] span.tag,
-html[data-scheme="dark"][data-theme="gray"] .tag {
-    background-color: var(--theme-tag);
-    color: var(--white-0);
-}
-
-html[data-scheme="dark"][data-theme="gray"] *:hover span.tag,
-html[data-scheme="dark"][data-theme="gray"] *:hover .tag {
-    background-color: var(--theme-accent-hover);
-    color: var(--white-0);
-}
-
-html[data-scheme="light"][data-theme="gray"] .near-heading {
-    color: var(--gray-5);
-}
-
-html[data-scheme="dark"][data-theme="gray"] .near-heading {
-    color: var(--gray-6);
 }
