@@ -2,28 +2,32 @@
     color-scheme: dark light;
     --base-font-size: 13px;
     font-size: calc(var(--base-font-size) * 1);
-    --color-black: var(--black-2);
-    --color-white: var(--white-8);
-    --color-border: hsl(240 5.9% 70%);
-    --color-gray: var(--gray-5);
-    --color-accent-1: var(--scheme-accent, var(--orange-9));
-    --color-accent-2: var(--scheme-accent, var(--burgundy-9));
-    --color-accent-3: var(--scheme-accent, var(--magenta-9));
-    --color-accent-4: var(--scheme-accent, var(--red-9));
-    --color-tag-1: var(--scheme-accent, var(--green-9));
-    --color-tag-2: var(--scheme-accent, var(--navy-9));
-
-    --color-slate-100: oklch(96.8% 0.007 247.896);
-    --color-slate-400: oklch(70.4% 0.04 256.788);
-    --color-slate-500: oklch(55.4% 0.046 257.417);
-
-    --color-stone-400: oklch(70.9% 0.01 56.259);
-    --color-stone-500: oklch(55.3% 0.013 58.071);
-    --color-stone-600: oklch(44.4% 0.011 73.639);
-    --color-stone-700: oklch(37.4% 0.01 67.558);
-    --color-stone-800: oklch(26.8% 0.007 34.298);
-    --color-stone-900: oklch(21.6% 0.006 56.043);
 }
+
+:root[data-scheme="dark"] {
+    --scheme-background: var(--black-0);
+    --scheme-text: var(--white-10);
+    --scheme-heading: var(--white-10);
+    --scheme-accent: var(--white-10);
+    --scheme-border: var(--black-0);
+    --theme-tag: var(--black-0);
+
+    background-color: var(--scheme-background);
+    color: var(--scheme-text);
+}
+
+:root[data-scheme="light"] {
+    --scheme-background: var(--white-10);
+    --scheme-text: var(--black-0);
+    --scheme-heading: var(--black-0);
+    --scheme-accent: var(--black-0);
+    --scheme-border: var(--black-0);
+    --theme-tag: var(--black-0);
+
+    background-color: var(--scheme-background);
+    color: var(--scheme-text);
+}
+
 
 * {
     box-sizing: border-box;
@@ -54,10 +58,12 @@ body {
 
     .heading {
         color: var(--scheme-text);
-        text-shadow: 0 10px 10px var(--color-black);
-        font-size: 5rem;
+        text-shadow: 0 0 10px var(--scheme-text), 0 0 3px var(--scheme-text);
+        font-size: 10rem;
+
         text-align: center;
-        letter-spacing: 2dvw;
+        word-spacing: 1rem;
+        letter-spacing: -0.71dvw;
         font-family: Georgia, 'Times New Roman', Times, serif;
         font-weight: 900;
         align-content: center;
@@ -74,7 +80,7 @@ body {
 
         @media (prefers-color-scheme: dark) {
             & {
-                text-shadow: 1px 1px 1px var(--color-black);
+                text-shadow: 1px 1px 1px var(--scheme-background);
             }
         }
     }
@@ -104,7 +110,7 @@ body {
     }
 
     a {
-        text-shadow: 0 0 1px var(--color-black);
+        text-shadow: 0 0 1px var(--scheme-background);
         font-weight: 500;
         padding: .1rem;
         transition: all 0.3s ease-in-out;
@@ -251,7 +257,7 @@ fieldset {
 }
 
 .border {
-    border: 2px solid var(--scheme-border, var(--color-black));
+    border: 2px solid var(--scheme-border, var(--scheme-background));
 
     &.b\:1 {
         border-width: 1px;

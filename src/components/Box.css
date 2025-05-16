@@ -35,31 +35,31 @@
     &.company:first-child,
     &.highlight,
     &.highlight * {
-        background-color: var(--scheme-accent, var(--color-accent-1));
+        background-color: var(--scheme-background, var(--color-accent-1));
         color: var(--scheme-text);
 
         &.h\:1,
         &.h\:1 * {
-            background-color: var(--scheme-accent, var(--color-accent-1));
+            background-color: var(--scheme-background, var(--color-accent-1));
         }
 
         &.h\:2,
         &.h\:2 * {
-            background-color: var(--scheme-accent, var(--color-accent-2));
+            background-color: var(--scheme-background, var(--color-accent-2));
         }
 
         &.h\:3,
         &.h\:3 * {
-            background-color: var(--scheme-accent, var(--color-accent-3));
+            background-color: var(--scheme-background, var(--color-accent-3));
         }
 
         &.h\:4,
         &.h\:4 * {
-            background-color: var(--scheme-accent, var(--color-accent-4));
+            background-color: var(--scheme-background, var(--color-accent-4));
         }
     }
 
-    border: 1px solid var(--scheme-accent);
+    border: 1px solid var(--scheme-text);
 
     @media (max-width: 600px) {
 

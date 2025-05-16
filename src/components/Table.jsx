@@ -17,7 +17,7 @@ function NamedRowTable({ name, data }) {
                             datum.value.map((item, itemIndex) =>
                                 <Box name={item.name}
                                     key={`nmr-col-${itemIndex}`}
-                                    klass={`col ${item.highlight ? "highlight h:" + item.highlight : ""}`} />
+                                    klass={`thin col ${item.highlight ? "highlight h:" + item.highlight : ""}`} />
                             )
                         }
                     </div>

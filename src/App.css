@@ -1,3 +1,9 @@
+* > .either:not(:hover) {
+    opacity: 0.2;
+    transition: opacity 0.3s ease-in-out;
+}
+
+
 .list {
     grid-template-columns: minmax(15rem, 1fr) 4fr 1fr;
 
