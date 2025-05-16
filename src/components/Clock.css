@@ -1,3 +1,6 @@
+.clock-container {
+    height: 5rem;
+}
 .clock {
     justify-content: right;
 
@@ -26,5 +29,12 @@
         & .analog {
             width: 100%;
         }
+    }
+
+    & .digital {
+        font-size: 4.4rem;
+        text-align: center;
+        color: var(--scheme-text);
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
 }

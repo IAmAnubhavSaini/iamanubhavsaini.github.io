@@ -1,7 +1,7 @@
 import './Clock.css'
 import { useState, useEffect } from 'react';
 
-function Clock() {
+function AnalogClock() {
     const [time, setTime] = useState(new Date());
 
     useEffect(() => {
@@ -45,6 +45,45 @@ function Clock() {
                 title="seconds"
                 style={{ background: background(secondsAngle) }}
             ></div>
+        </div>
+    );
+}
+
+function DigitalClock() {
+    const [time, setTime] = useState(new Date());
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setTime(new Date());
+        }, 1000);
+
+        return () => clearInterval(interval);
+    }, []);
+    const hours = time.getHours().toString().padStart(2, '0');
+    const minutes = time.getMinutes().toString().padStart(2, '0');
+    const seconds = time.getSeconds().toString().padStart(2, '0');
+
+
+    return (
+        <div className="flex clock gap:0">
+            <div className="digital hours" title="hours">
+                {hours}:
+            </div>
+            <div className="digital minutes" title="minutes">
+                {minutes}:
+            </div>
+            <div className="digital seconds" title="seconds">
+                {seconds}
+            </div>
+        </div>
+    );
+}
+
+function Clock({ type }) {
+    return (
+        <div className="clock-container">
+            {type === "analog" && <AnalogClock />}
+            {type !== "analog" && <DigitalClock />}
         </div>
     );
 }

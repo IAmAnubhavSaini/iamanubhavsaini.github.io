@@ -1,0 +1,9 @@
+.company {
+    width: 25rem;
+    min-height: 20rem;
+    border: 1px solid var(--scheme-text);
+    padding: 1rem;
+    box-shadow: 4px 4px 5px var(--scheme-border);
+    border-radius: 4px;
+    justify-content: space-around;
+}

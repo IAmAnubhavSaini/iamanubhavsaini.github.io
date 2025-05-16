@@ -1,12 +1,15 @@
 const companies = [
-    "your company?",
-    "Ackret Solutions",
-    "Appsmith",
-    "PayPal",
-    "Experis",
-    "Altimetrik",
-    "ThoghtWorks",
-    "eKasba"
+    { skills: [""], role: "Developer/ Manager/ CoFounder", name: "Available", duration: "available" },
+    { skills: ["JS", "TS", "React"], role: "Founder", name: "Ackret Solutions", duration: "2023-2025" },
+    { skills: [""], role: "Developer", name: "startup x3", duration: "2024-2024" },
+    { skills: ["JS", "TS", "React"], role: "Senior FrontEnd Developer", name: "Appsmith", duration: "2022-2023" },
+    { skills: [""], role: "", name: "freelance", duration: "2021-2021" },
+    { skills: ["JS", "TS", "React"], role: "Senior Software Developer", name: "PayPal", duration: "2019-2020" },
+    { skills: ["JS", "React", "Node"], role: "Senior Software Developer", name: "Experis", duration: "2017-2018" },
+    { skills: ["JS", "Angular"], role: "Senior Software Developer", name: "Altimetrik", duration: "2016-2017" },
+    { skills: ["C#", "JS", "Node"], role: "Consultant", name: "freelance", duration: "2015-2015" },
+    { skills: ["C#", ".NET", "Silverlight"], role: "Associate Engineer", name: "ThoughtWorks", duration: "2014-2015" },
+    { skills: ["C#", "ASP.NET", "T-SQL"], role: "Engineer", name: "eKasba", duration: "2010-2013" },
 ];
 
 const techStack = [
