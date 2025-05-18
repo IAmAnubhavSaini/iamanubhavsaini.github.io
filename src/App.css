@@ -1,6 +1,13 @@
 * > .either:not(:hover) {
     opacity: 0.2;
     transition: opacity 0.3s ease-in-out;
+
+    @media (pointer: coarse) {
+        & {
+            opacity: 1;
+            transition: none;
+        }
+    }
 }
 
 

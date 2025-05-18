@@ -1,5 +1,5 @@
 .clock-container {
-    height: 5rem;
+    min-height: 5rem;
 }
 .clock {
     justify-content: right;

@@ -123,7 +123,7 @@ function App() {
 
                 </div>
             </div>
-            <div className="width w:70d either">
+            <div className="width w:70p either">
                 <div className="container">
                     <div className="container-item">
                         <div className="flex f:v ta:c gap:2">
@@ -199,7 +199,7 @@ function App() {
                             ))}
                         </div>
                         <div className="vspacer"></div>
-                        <div className="flex vflex gap:4">
+                        <div className="flex f:v gap:4">
                             {webappsList.map((app, index) => (
                                 <div key={`webapp-list-${index}`} className="flex f:v list">
                                     <div className="tt:u fw:b">{app.title}</div>
@@ -240,9 +240,9 @@ function App() {
                             ))}
                         </div>
                         <div className="vspacer"></div>
-                        <div className="flex vflex gap:4">
+                        <div className="flex f:v gap:4">
                             {cliappsList.map((app, index) => (
-                                <div key={`cliapps-list-${index}`} className="vflex list">
+                                <div key={`cliapps-list-${index}`} className="flex f:v list">
                                     <div className="tt:u fw:b">{app.title}</div>
                                     <div><a href={app.url} target="_blank" rel="nofollow">{app.url}</a></div>
                                     <div className="tags">
@@ -281,9 +281,9 @@ function App() {
                             ))}
                         </div>
                         <div className="vspacer"></div>
-                        <div className="flex vflex">
+                        <div className="flex f:v">
                             {servicesList.map((app, index) => (
-                                <div key={`service-list-${index}`} className="vflex list">
+                                <div key={`service-list-${index}`} className="flex f:v list">
                                     <div className="tt:u fw:b">{app.title}</div>
                                     <div><a href={app.url} target="_blank" rel="nofollow">{app.url}</a></div>
                                     <div className="tags">
@@ -306,11 +306,11 @@ function App() {
                             {libraries.map((app, index) => (
                                 <Box
                                     key={`library-${index}`}
-                                    klass={`flex vflex large light ${app.highlight ? "highlight h:" + app.highlight : ""} ${app.klass ? app.klass : ""
+                                    klass={`flex f:v large light ${app.highlight ? "highlight h:" + app.highlight : ""} ${app.klass ? app.klass : ""
                                         }`}
                                     name={app.title}
                                 >
-                                    <div className="flex vflex">
+                                    <div className="flex f:v">
                                         <div>
                                             {o2kva(app.url)
                                                 .map(([name, value], urlIndex) => {
