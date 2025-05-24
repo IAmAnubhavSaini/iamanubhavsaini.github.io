@@ -17,7 +17,7 @@ function FizzBuzz() {
         <div className="flex f:v">
             <div id="cssfizzbuzz" className="subheading tt:u">CSS based FizzBuzz</div>
             <div className="flex">
-                <label htmlFor="fizzbuzz-count"> upto: {count}</label>
+                <label htmlFor="fizzbuzz-count"> Up to: {count}</label>
                 <input
                     type="range"
                     min={0}

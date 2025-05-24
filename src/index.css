@@ -98,7 +98,8 @@ body {
         font-style: italic;
     }
 
-    ol, ul {
+    ol,
+    ul {
         list-style: none;
 
         li {
@@ -137,6 +138,10 @@ fieldset {
         flex-direction: column;
     }
 
+    &.f\:center {
+        align-content: center;
+        justify-content: center;
+    }
     &.f\:ac\:l {
         align-content: flex-start;
         justify-content: flex-start;
@@ -227,6 +232,10 @@ fieldset {
 
 .hspacer {
     width: 4rem;
+}
+
+.gap\:page {
+    gap: 100dvh;
 }
 
 .gap\:0 {

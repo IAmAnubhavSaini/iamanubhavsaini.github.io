@@ -4,10 +4,10 @@ const workExperiences = [
         responsibilities: ["any and all"],
         tags: [""],
         location: ["Remote", "IN"],
-        skills: [""],
+        skills: ["design", "development", "testing", "hiring", "mentoring", "leadership"],
         role: "Developer/ Manager/ Founder",
         name: "Available",
-        duration: "right now",
+        duration: "now",
     },
     {
         projects: [{
