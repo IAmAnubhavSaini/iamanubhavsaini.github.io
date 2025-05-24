@@ -333,6 +333,14 @@ button {
     cursor: pointer;
 }
 
+:target::before {
+    content: '➤';
+    display: inline-block;
+    height: 4rem;
+    margin: -4rem 1rem 0;
+}
+
+
 @media (max-width: 600px) {
     body {
         min-width: 450px;
