@@ -16,12 +16,12 @@
     }
 
     &.wide {
-        width: 250px;
+        width: 350px;
     }
 
     &.large {
-        width: 300px;
-        height: 200px;
+        width: 350px;
+        height: 300px;
     }
 
     font-size: 1.6rem;
@@ -32,32 +32,6 @@
     justify-content: center;
     padding: 1rem;
 
-    &.company:first-child,
-    &.highlight,
-    &.highlight * {
-        background-color: var(--scheme-background, var(--color-accent-1));
-        color: var(--scheme-text);
-
-        &.h\:1,
-        &.h\:1 * {
-            background-color: var(--scheme-background, var(--color-accent-1));
-        }
-
-        &.h\:2,
-        &.h\:2 * {
-            background-color: var(--scheme-background, var(--color-accent-2));
-        }
-
-        &.h\:3,
-        &.h\:3 * {
-            background-color: var(--scheme-background, var(--color-accent-3));
-        }
-
-        &.h\:4,
-        &.h\:4 * {
-            background-color: var(--scheme-background, var(--color-accent-4));
-        }
-    }
 
     border: 1px solid var(--scheme-text);
 

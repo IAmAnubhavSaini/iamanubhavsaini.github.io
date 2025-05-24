@@ -28,11 +28,10 @@
     color: var(--scheme-text);
 }
 
-
 * {
     box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+    padding: 1px;
+    margin: 1px;
     background-color: transparent;
 }
 
@@ -64,7 +63,7 @@ body {
         text-align: center;
         word-spacing: 1rem;
         letter-spacing: -0.81dvw;
-        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-family: Georgia, "Times New Roman", Times, serif;
         font-weight: 900;
         align-content: center;
 
@@ -86,7 +85,6 @@ body {
     }
 
     .minorheading {
-
         padding: 0.5rem 0;
         font-size: 1.5rem;
         font-weight: 500;
@@ -100,23 +98,22 @@ body {
         font-style: italic;
     }
 
-    ul {
+    ol, ul {
         list-style: none;
 
         li {
             border-left: 2px solid transparent;
-            padding: 4px 8px;
+            padding: 4px 0;
         }
     }
 
     a {
         text-shadow: 0 0 1px var(--scheme-background);
         font-weight: 500;
-        padding: .1rem;
+        padding: 0.1rem;
         transition: all 0.3s ease-in-out;
         text-decoration: none;
         color: var(--scheme-text);
-
     }
 }
 
@@ -161,12 +158,19 @@ fieldset {
         }
     }
 
+    &.f\:sa {
+        justify-content: space-around;
+    }
     &.f\:sb {
         justify-content: space-between;
     }
 
     &.fw\:w {
         flex-wrap: wrap;
+    }
+
+    &.ai\:b {
+        align-items: baseline;
     }
 }
 
@@ -206,6 +210,13 @@ fieldset {
     }
 }
 
+.fs\:i {
+    font-style: italic;
+}
+.fs\:o {
+    font-style: oblique;
+}
+
 .fw\:b {
     font-weight: 900;
 }
@@ -232,6 +243,10 @@ fieldset {
 
 .gap\:4 {
     gap: 4rem;
+}
+
+.gap\:8 {
+    gap: 8rem;
 }
 
 .w\:40p {
@@ -308,7 +323,6 @@ fieldset {
     &.w\:50p {
         width: 50%;
     }
-
 }
 
 .scroll\:y {
@@ -316,7 +330,6 @@ fieldset {
 }
 
 .sticky {
-
     position: sticky;
 
     &.s\:t0 {
@@ -334,12 +347,11 @@ button {
 }
 
 :target::before {
-    content: '➤';
+    content: "➤";
     display: inline-block;
     height: 4rem;
     margin: -4rem 1rem 0;
 }
-
 
 @media (max-width: 600px) {
     body {
@@ -355,6 +367,17 @@ button {
         &.f\:ac\:l {
             align-content: center;
             justify-content: center;
+        }
+
+        &.ai\:b {
+            align-items: baseline;
+        }
+    }
+
+    .ta\:b {
+        text-align: baseline;
+        .flex & {
+            justify-content: baseline;
         }
     }
 

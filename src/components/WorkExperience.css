@@ -1,0 +1,15 @@
+.work-experience {
+    min-width: 35rem;
+    width: 33%;
+    flex: 1 1 auto;
+    height: min-content;
+    border: 1px solid var(--scheme-text);
+    padding: 1rem;
+    box-shadow: 4px 4px 5px var(--scheme-border);
+    border-radius: 4px;
+
+    .location {
+        border-bottom: 1px solid var(--scheme-text);
+        padding: 0.5rem;
+    }
+}

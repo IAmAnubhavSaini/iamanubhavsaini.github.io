@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import { ExternalAnchor } from "./components/Anchor";
 import { Box } from "./components/Box";
-import { Company } from "./components/Company";
+import { WorkExperienceList } from "./components/WorkExperience";
 
 import Clock from "./components/Clock";
 import { FizzBuzz } from "./components/FizzBuzz";
@@ -12,7 +12,7 @@ import { Tags } from "./components/Tag";
 import {
     cliapps,
     cliappsList,
-    companies,
+    workExperiences,
     libraries,
     librariesList,
     services,
@@ -82,7 +82,7 @@ function App() {
     }, []);
 
     return (
-        <div className="grid g:2" id="app">
+        <div className="grid g:2 gap:8" id="app">
             <div className="height h:96d sticky s:t0 s:tl width w:100p scroll:y either">
                 <div className="width flex f:v gap:2 margin:1 padding:1">
                     <div
@@ -166,7 +166,7 @@ function App() {
                         </div>
                         <nav role="navigation" className="flex gap:1 ta:r f:v either">
                             <a href="#top">top</a>
-                            <a href="#companies">companies</a>
+                            <a href="#workExperiences">work experiences</a>
                             <a href="#techstack">tech stack</a>
                             <a href="#webapps">web apps</a>
                             <a href="#cliapps">cli apps</a>
@@ -182,8 +182,11 @@ function App() {
                 <div className="container">
                     <div className="container-item">
                         <div id="top" className="flex f:v ta:c gap:2">
-                            <div className="heading tt:u fw:b">Anubhav Saini</div>
-                            <div className="subheading tt:u ta:c">Software Development / Design</div>
+                            <div className="flex f:v gap:0">
+                                <div className="heading tt:u fw:b">Anubhav Saini</div>
+                                <div className="subheading tt:u ta:c fs:i">Software Development / Design</div>
+                                <div className="minorheading ta:c ff:libre-bodoni fs:i">India / Remote</div>
+                            </div>
                             <div className="social flex gap:2 ta:c">
                                 <a
                                     href="https://github.com/iamanubhavsaini/"
@@ -230,17 +233,13 @@ function App() {
                 <div className="container">
                     <div className="container-item">
                         <div>
-                            <div id="companies" className="subheading tt:u">
-                                Companies
+                            <div id="workExperiences" className="subheading tt:u">
+                                Work Experiences
                             </div>
                             <div className="near-heading">2011-current</div>
                         </div>
-                        <div className="flex gap:4">
-                            {companies.map((co, index) => (
-                                <Company key={`company-${index}`} company={co} />
-                                // <Box key={`company-${index}-${co.split(" ")[0]}`} name={co} klass="medium company" />
-                            ))}
-                        </div>
+
+                        <WorkExperienceList experiences={workExperiences} klass="flex f:v" />
                     </div>
                 </div>
                 {/* <div className="container">
@@ -268,7 +267,7 @@ function App() {
                             </div>
                             <div className="near-heading">2011-current</div>
                         </div>
-                        <div className="flex f:reverse">
+                        <div className="flex f:reverse gap:4">
                             {webapps.map((app, index) => (
                                 <a href={app.url} key={`webapp-${index}`} target="_blank" rel="nofollow">
                                     <Box
@@ -290,9 +289,9 @@ function App() {
                             ))}
                         </div>
                         <div className="vspacer"></div>
-                        <div className="flex f:v gap:4">
+                        <div className="flex f:v gap:8">
                             {webappsList.map((app, index) => (
-                                <div key={`webapp-list-${index}`} className="flex f:v list">
+                                <div key={`webapp-list-${index}`} className="flex f:v list gap:0">
                                     <div className="tt:u fw:b">{app.title}</div>
                                     <div>
                                         <a href={app.url} target="_blank" rel="nofollow">
@@ -321,7 +320,7 @@ function App() {
                             <div className="near-heading">2013-current</div>
                         </div>
 
-                        <div className="flex f:reverse ">
+                        <div className="flex f:reverse gap:4">
                             {cliapps.map((app, index) => (
                                 <a href={app.url} key={`cliapp-${index}`} target="_blank" rel="nofollow">
                                     <Box
@@ -343,9 +342,9 @@ function App() {
                             ))}
                         </div>
                         <div className="vspacer"></div>
-                        <div className="flex f:v gap:4">
+                        <div className="flex f:v gap:8">
                             {cliappsList.map((app, index) => (
-                                <div key={`cliapps-list-${index}`} className="flex f:v list">
+                                <div key={`cliapps-list-${index}`} className="flex f:v list gap:0">
                                     <div className="tt:u fw:b">{app.title}</div>
                                     <div>
                                         <a href={app.url} target="_blank" rel="nofollow">
@@ -395,9 +394,9 @@ function App() {
                             ))}
                         </div>
                         <div className="vspacer"></div>
-                        <div className="flex f:v">
+                        <div className="flex f:v gap:4">
                             {servicesList.map((app, index) => (
-                                <div key={`service-list-${index}`} className="flex f:v list">
+                                <div key={`service-list-${index}`} className="flex f:v list gap:0">
                                     <div className="tt:u fw:b">{app.title}</div>
                                     <div>
                                         <a href={app.url} target="_blank" rel="nofollow">
@@ -470,8 +469,8 @@ function App() {
                         <div className="vspacer"></div>
                         <div className="flex gap:4">
                             {librariesList.map((app, index) => (
-                                <div key={`library-list-${index}`} className="flex f:v width w:20d">
-                                    <div className="minorheading ">{app.title}</div>
+                                <div key={`library-list-${index}`} className="flex f:v width w:20d gap:0">
+                                    <div className="minorheading tt:u">{app.title}</div>
                                     <div className="flex f:v gap:0">
                                         {o2kva(app.url).map(([name, value], urlIndex) => {
                                             const title = `${name}/${

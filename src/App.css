@@ -1,3 +1,16 @@
+@font-face {
+    font-family: "LibreBodoniRegular";
+    src: url("assets/LibreBodoni-Regular.ttf") format("ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.ff\:libre-bodoni {
+    font-family: "LibreBodoniRegular", serif;
+}
+
+/*
+
 * > .either:not(:hover) {
     opacity: 0.2;
     transition: opacity 0.3s ease-in-out;
@@ -7,7 +20,7 @@
         transition: opacity 0.3s ease-in-out;
     }
 
-    /* for touch/mobile devices */
+    /* for touch/mobile devices
     @media (pointer: coarse) {
         & {
             opacity: 1;
@@ -16,31 +29,40 @@
     }
 }
 
+*/
 
 .list {
     grid-template-columns: minmax(15rem, 1fr) 4fr 1fr;
 
-    @media (max-width:600px) {
+    @media (max-width: 600px) {
         & {
             grid-template-columns: 1fr;
         }
     }
 }
 
-.scheme-button, .theme-button, .font-button {
+.button,
+.scheme-button,
+.theme-button,
+.font-button {
     cursor: pointer;
     padding: 0.5rem 1rem;
     border-radius: 0.25rem;
     transition: all 0.2s ease-in-out;
     position: relative;
     border: 1px solid var(--scheme-border);
+    background-color: var(--scheme-background);
+    color: var(--scheme-text);
+    font-size: 1.1em;
 }
 
-.scheme-button, .theme-button {
+.scheme-button,
+.theme-button {
     padding-right: 2.5rem;
 }
 
-.scheme-button.active::after, .theme-button.active::after {
+.scheme-button.active::after,
+.theme-button.active::after {
     content: "✓";
     position: absolute;
     right: 0.75rem;
@@ -50,7 +72,8 @@
     font-size: 1.1em;
 }
 
-.scheme-button.active, .theme-button.active {
+.scheme-button.active,
+.theme-button.active {
     box-shadow: 0 0 0 2px var(--scheme-text);
     font-weight: bold;
 }
@@ -85,10 +108,11 @@
     border-color: var(--gray-3);
 }
 
-
 .tags {
-    font-size: small;
+    padding: 2px;
+    font-size: 0.95rem;
     display: block;
+
     & .tag {
         display: block;
     }
