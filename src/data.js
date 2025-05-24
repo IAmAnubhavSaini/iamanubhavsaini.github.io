@@ -1,5 +1,5 @@
 const companies = [
-    { skills: [""], role: "Developer/ Manager/ CoFounder", name: "Available", duration: "available" },
+    { skills: [""], role: "Developer/ Manager/ CoFounder", name: "Available for hire", duration: "available right now" },
     { skills: ["JS", "TS", "React"], role: "Founder", name: "Ackret Solutions", duration: "2023-2025" },
     { skills: [""], role: "Developer", name: "startup x3", duration: "2024-2024" },
     { skills: ["JS", "TS", "React"], role: "Senior FrontEnd Developer", name: "Appsmith", duration: "2022-2023" },
@@ -9,7 +9,7 @@ const companies = [
     { skills: ["JS", "Angular"], role: "Senior Software Developer", name: "Altimetrik", duration: "2016-2017" },
     { skills: ["C#", "JS", "Node"], role: "Consultant", name: "freelance", duration: "2015-2015" },
     { skills: ["C#", ".NET", "Silverlight"], role: "Associate Engineer", name: "ThoughtWorks", duration: "2014-2015" },
-    { skills: ["C#", "ASP.NET", "T-SQL"], role: "Engineer", name: "eKasba", duration: "2010-2013" },
+    { skills: ["C#", "ASP.NET", "T-SQL"], role: "Engineer", name: "eKasba", duration: "2011-2013" },
 ];
 
 const techStack = [

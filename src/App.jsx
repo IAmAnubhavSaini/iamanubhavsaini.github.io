@@ -165,7 +165,7 @@ function App() {
                             )}
                         </div>
                         <nav role="navigation" className="flex gap:1 ta:r f:v either">
-                            <a href="#heading">top</a>
+                            <a href="#top">top</a>
                             <a href="#companies">companies</a>
                             <a href="#techstack">tech stack</a>
                             <a href="#webapps">web apps</a>
@@ -181,7 +181,7 @@ function App() {
             <div className="width w:70p either">
                 <div className="container">
                     <div className="container-item">
-                        <div id="heading" className="flex f:v ta:c gap:2">
+                        <div id="top" className="flex f:v ta:c gap:2">
                             <div className="heading tt:u fw:b">Anubhav Saini</div>
                             <div className="subheading tt:u ta:c">Software Development / Design</div>
                             <div className="social flex gap:2 ta:c">
@@ -229,8 +229,11 @@ function App() {
 
                 <div className="container">
                     <div className="container-item">
-                        <div id="companies" className="subheading tt:u">
-                            Companies
+                        <div>
+                            <div id="companies" className="subheading tt:u">
+                                Companies
+                            </div>
+                            <div className="near-heading">2011-current</div>
                         </div>
                         <div className="flex gap:4">
                             {companies.map((co, index) => (
@@ -260,8 +263,10 @@ function App() {
                 <div className="container">
                     <div className="container-item">
                         <div>
-                            <div id="webapps" className="subheading tt:u">Web Applications</div>
-                            <div className="near-heading">2010-current</div>
+                            <div id="webapps" className="subheading tt:u">
+                                Web Applications
+                            </div>
+                            <div className="near-heading">2011-current</div>
                         </div>
                         <div className="flex f:reverse">
                             {webapps.map((app, index) => (
@@ -493,7 +498,9 @@ function App() {
                     <div className="container-item">
                         <div>
                             <div>
-                                <div id="oldprojects" className="subheading tt:u">Old projects</div>
+                                <div id="oldprojects" className="subheading tt:u">
+                                    Old projects
+                                </div>
                                 <div className="near-heading">2006-2015</div>
                             </div>
                             <ul>
