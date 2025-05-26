@@ -14,7 +14,7 @@
         }
 
         .col {
-            width: 100%;
+            width: calc(100% - 8rem);
             height: 50%;
             max-width: unset;
         }

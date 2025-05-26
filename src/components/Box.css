@@ -32,16 +32,13 @@
     justify-content: center;
     padding: 1rem;
 
-
     border: 1px solid var(--scheme-text);
-
-    @media (max-width: 600px) {
-
-        &,
-        &.medium,
-        &.wide,
-        &.thin {
-            width: 100%;
-        }
+}
+@media (max-width: 600px) {
+    .box,
+    .box.medium,
+    .box.wide,
+    .box.thin {
+        width: calc(100%);
     }
 }

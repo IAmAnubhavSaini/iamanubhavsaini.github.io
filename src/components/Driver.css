@@ -1,0 +1,24 @@
+.driver-container {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+
+    &:not(:hover) {
+        opacity: 0.1;
+        transition: opacity 1s ease-in-out;
+    }
+
+    .driver {
+        background-color: var(--scheme-background);
+        padding: 1rem 2rem;
+        border-radius: 4px;
+
+        .driver-button {
+            background-color: var(--gray-5);
+        }
+    }
+}

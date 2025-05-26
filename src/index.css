@@ -32,8 +32,8 @@
 
 * {
     box-sizing: border-box;
-    padding: 1px;
-    margin: 1px;
+    padding: 0;
+    margin: 0;
     background-color: transparent;
 }
 
@@ -389,24 +389,40 @@ fieldset {
 
     body {
         font-size: var(--base-font-size);
-        min-width: 450px;
-        max-width: 600px;
-        width: 100vw;
+        min-width: 400px;
+        max-width: 480px;
+        width: calc(100dvw - 4rem);
+        margin: 0 auto;
+    }
+
+    fieldset {
+        padding: 0;
+        margin: 0;
+        border: none;
+        legend {
+            margin: 0;
+            padding: 0;
+            display: none;
+        }
+    }
+
+    .w\:100p {
+        height: 100vh !important;
     }
 
     .flex {
         display: flex;
-        flex-direction: column !important;
-
-        &.f\:ac\:l {
-            align-content: center;
-            justify-content: center;
-        }
-
-        &.ai\:b {
-            align-items: baseline;
-        }
+        flex-direction: column;
     }
+
+    /* header,
+    header *,
+    .clock, .clock *,
+    .w\:100p{
+        display: none;
+        height: 0;
+        width: 0;
+    } */
 
     .ta\:b {
         text-align: baseline;

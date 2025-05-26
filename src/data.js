@@ -2,11 +2,11 @@ const workExperiences = [
     {
         projects: [],
         responsibilities: ["any and all"],
-        tags: [""],
+        tags: [],
         location: ["Remote", "IN"],
         skills: ["design", "development", "testing", "hiring", "mentoring", "leadership"],
         role: "Developer/ Manager/ Founder",
-        name: "Available",
+        name: "🟢 Available",
         duration: "now",
     },
     {
@@ -247,7 +247,7 @@ const webapps = [
         url: "https://github.com/IAmAnubhavSaini/hashtags",
         title: "hashtags",
         highlight: 1,
-        tags: ["d3", "html", "2025", "go"],
+        tags: ["d3", "html", "go", "2025",],
     },
     {
         url: "https://iamanubhavsaini.github.io/infinite-scroll",

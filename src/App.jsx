@@ -4,6 +4,7 @@ import "./App.css";
 import { ExternalAnchor } from "./components/Anchor";
 import { Box } from "./components/Box";
 import { WorkExperienceList } from "./components/WorkExperience";
+import { Driver } from "./components/Driver";
 
 import Clock from "./components/Clock";
 import { FizzBuzz } from "./components/FizzBuzz";
@@ -36,6 +37,17 @@ function App() {
     const [fontSize, setFontSize] = useState(defaultFontSize);
     const [clockType, setClockType] = useState(defaultClockType);
     const [shouldDisplayColorThemes, $shouldDisplayColorThemes] = useState(false);
+
+    const anchors = [
+        { href: "#top", text: "top" },
+        { href: "#workExperiences", text: "work" },
+        { href: "#techstack", text: "tech-stack" },
+        { href: "#webapps", text: "web-apps" },
+        { href: "#cliapps", text: "cli-apps" },
+        { href: "#microservices", text: "microservices" },
+        { href: "#libraries", text: "libraries" },
+        { href: "#oldprojects", text: "old-projects" },
+    ];
 
     const setScheme = (scheme) => {
         document.documentElement.setAttribute("data-scheme", scheme);
@@ -81,15 +93,44 @@ function App() {
         setFontSize(savedFontSize);
     }, []);
 
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                for (const entry of entries) {
+                    if (entry.isIntersecting) {
+                        const id = entry.target.id;
+                        const hash = `#${id}`;
+                        const index = anchors.findIndex((a) => a.href === hash);
+                        if (index >= 0 && hash !== window.location.hash) {
+                            window.history.replaceState(null, "", hash);
+                        }
+                        break;
+                    }
+                }
+            },
+            { rootMargin: "0px 0px -80% 0px", threshold: 0 }
+        );
+
+        anchors.forEach((a) => {
+            const el = document.getElementById(a.href.slice(1));
+            if (el) observer.observe(el);
+        });
+
+        return () => observer.disconnect();
+    }, [anchors]);
+
     return (
         <div className="flex f:v gap:page" id="top">
-            <div className="hero flex f:v gap:0 f:sb ff:bodoni-moda">
+            {/* <div className="hero flex f:v gap:0 f:sb ff:bodoni-moda">
                 <div className="type:massive">DESIGN</div>
                 <div className="type:massive tt:u">Develop</div>
                 <div className="type:massive tt:u">Deploy</div>
-            </div>
+            </div> */}
             <div className="flex gap:8" id="app">
-                <div className="width w:100p sticky s:t0 s:l0 scroll:y z:100 flex f:center">
+                <header
+                    className="width w:100p sticky s:t0 s:l0 scroll:y z:100 flex f:center"
+                    style={{ height: `calc(${fontSize}px * 6)` }}
+                >
                     <div className="flex">
                         <div
                             className="flex"
@@ -99,7 +140,7 @@ function App() {
                         </div>
 
                         <div className="flex">
-                            <fieldset className="flex gap:0">
+                            <fieldset className="flex gap:1">
                                 <legend className="">Settings</legend>
                                 <div className="flex gap:0 f:center">
                                     <a
@@ -124,7 +165,7 @@ function App() {
                                         {fontSize + 1}
                                     </a>
                                 </div>
-                                <div className="flex gap:1 ta:r f:center">
+                                <div className="flex gap:0 ta:r f:center">
                                     <a
                                         onClick={() => setScheme("light")}
                                         className={`button scheme-button sb:light ${
@@ -174,14 +215,17 @@ function App() {
                             <fieldset className="flex f:center">
                                 <legend>navigation</legend>
                                 <nav role="navigation" className="flex gap:2 ta:c f:center">
-                                    <a href="#top">top</a>
-                                    <a href="#workExperiences">work experiences</a>
-                                    <a href="#techstack">tech stack</a>
-                                    <a href="#webapps">web apps</a>
-                                    <a href="#cliapps">cli apps</a>
-                                    <a href="#microservices">microservices</a>
-                                    <a href="#libraries">libraries</a>
-                                    <a href="#oldprojects">old projects</a>
+                                    {anchors.map((anchor, index) => (
+                                        <a
+                                            key={`nav-${index}`}
+                                            className="tt:u"
+                                            title={anchor.text}
+                                            href={anchor.href}
+                                            target="_self"
+                                        >
+                                            {anchor.text}
+                                        </a>
+                                    ))}
 
                                     {/* <a href="#cssfizzbuzz">css fizzbuzz</a> */}
                                 </nav>
@@ -230,7 +274,7 @@ function App() {
                             </fieldset>
                         </div>
                     </div>
-                </div>
+                </header>
                 <div className="flex f:v gap:0">
                     <div className="container">
                         <div className="container-item">
@@ -243,12 +287,10 @@ function App() {
                             </div>
                         </div>
                     </div>
-                    <div className="container">
+                    <div id="workExperiences" className="container">
                         <div className="container-item">
                             <div>
-                                <div id="workExperiences" className="subheading tt:u">
-                                    Work Experiences
-                                </div>
+                                <div className="subheading tt:u">Work Experiences</div>
                                 <div className="near-heading">2011-current</div>
                             </div>
 
@@ -264,10 +306,10 @@ function App() {
                     </div>
                 </div>
             </div> */}
-                    <div className="container">
+                    <div id="techstack" className="container">
                         <div className="container-item">
-                            <div id="techstack" className="subheading tt:u">
-                                Tech stack
+                            <div>
+                                <div className="subheading tt:u">Tech stack</div>
                             </div>
                             <NamedRowTable name="tech" data={tableData} />
                         </div>
@@ -278,12 +320,10 @@ function App() {
                         <div className="parallax one z:100 sticky">
                             <div className="titled">WEB</div>
                         </div>
-                        <div className="container">
+                        <div id="webapps" className="container">
                             <div className="container-item">
                                 <div>
-                                    <div id="webapps" className="subheading tt:u">
-                                        Web Applications
-                                    </div>
+                                    <div className="subheading tt:u">Web Applications</div>
                                     <div className="near-heading">2011-current</div>
                                 </div>
                                 <div className="flex f:reverse gap:4">
@@ -341,12 +381,10 @@ function App() {
                             <div className="titled">CLI</div>
                         </div>
 
-                        <div className="container">
+                        <div id="cliapps" className="container">
                             <div className="container-item">
                                 <div>
-                                    <div id="cliapps" className="subheading tt:u">
-                                        CLI Applications
-                                    </div>
+                                    <div className="subheading tt:u">CLI Applications</div>
                                     <div className="near-heading">2013-current</div>
                                 </div>
 
@@ -400,12 +438,10 @@ function App() {
                                 </div>
                             </div>
                         </div>
-                        <div className="container">
+                        <div id="microservices" className="container">
                             <div className="container-item">
                                 <div>
-                                    <div id="microservices" className="subheading tt:u">
-                                        Microservices
-                                    </div>
+                                    <div className="subheading tt:u">Microservices</div>
                                     <div className="near-heading">2016-current</div>
                                 </div>
                                 <div className="flex">
@@ -462,12 +498,10 @@ function App() {
                         <div className="parallax one z:100 sticky">
                             <div className="titled">LIB</div>
                         </div>
-                        <div className="container">
+                        <div id="libraries" className="container">
                             <div className="container-item">
                                 <div>
-                                    <div id="libraries" className="subheading tt:u">
-                                        Libraries
-                                    </div>
+                                    <div className="subheading tt:u">Libraries</div>
                                     <div className="near-heading">2020-current</div>
                                 </div>
                                 <div className="flex">
@@ -539,35 +573,31 @@ function App() {
                                 </div>
                             </div>
                         </div>
-                        <div className="container">
+                        <div id="oldprojects" className="container">
                             <div className="container-item">
                                 <div>
-                                    <div>
-                                        <div id="oldprojects" className="subheading tt:u">
-                                            Old projects
-                                        </div>
-                                        <div className="near-heading">2006-2015</div>
-                                    </div>
-                                    <ul>
-                                        <li>
-                                            Traffoon: A web application for traffic road signs, markings, and rules
-                                            education.
-                                        </li>
-                                        <li>BlogRocker: A minimal blogging engine.</li>
-                                        <li>
-                                            ShareWatch: A desktop application for tracking and analysis of stocks and
-                                            commodity prices.
-                                        </li>
-                                        <li>Contactr: A windows desktop application for managing contacts.</li>
-                                        <li>Imagr: A windows desktop application for editing images.</li>
-                                        <li>Mailr: A windows desktop application for emailing.</li>
-                                        <li>
-                                            Platform For Organized Student Activities & Communication: A college degree
-                                            project web application.
-                                        </li>
-                                        <li>SocialClone: A clone of facebook in lamp stack.</li>
-                                    </ul>
+                                    <div className="subheading tt:u">Old projects</div>
+                                    <div className="near-heading">2006-2015</div>
                                 </div>
+                                <ul>
+                                    <li>
+                                        Traffoon: A web application for traffic road signs, markings, and rules
+                                        education.
+                                    </li>
+                                    <li>BlogRocker: A minimal blogging engine.</li>
+                                    <li>
+                                        ShareWatch: A desktop application for tracking and analysis of stocks and
+                                        commodity prices.
+                                    </li>
+                                    <li>Contactr: A windows desktop application for managing contacts.</li>
+                                    <li>Imagr: A windows desktop application for editing images.</li>
+                                    <li>Mailr: A windows desktop application for emailing.</li>
+                                    <li>
+                                        Platform For Organized Student Activities & Communication: A college degree
+                                        project web application.
+                                    </li>
+                                    <li>SocialClone: A clone of facebook in lamp stack.</li>
+                                </ul>
                             </div>
                         </div>
                         {/* <div className="container">
@@ -579,23 +609,23 @@ function App() {
                     </div> */}
                     </fieldset>
                 </div>
-
             </div>
-             <div className="footer flex f:v gap:2 width">
-                    <div className="flex f:v gap:2">
-                        <div className="subheading  type:small">
-                            <span className="tt:u">Anubhav Saini</span> &copy; {new Date().getFullYear()}
-                        </div>
-                        <div className="type:small">
-                            <span className="tt:u">Last updated:</span> {new Date().toLocaleDateString()}
-                        </div>
+            <div className="footer flex f:v gap:2 width">
+                <div className="flex f:v gap:2">
+                    <div className="subheading  type:small">
+                        <span className="tt:u">Anubhav Saini</span> &copy; {new Date().getFullYear()}
                     </div>
-                    <div className="flex f:v gap:2">
-                        <a href="#top" className="type:small tt:u">
-                            Back to top
-                        </a>
+                    <div className="type:small">
+                        <span className="tt:u">Last updated:</span> {new Date().toLocaleDateString()}
                     </div>
                 </div>
+                <div className="flex f:v gap:2">
+                    <a href="#top" className="type:small tt:u">
+                        Back to top
+                    </a>
+                </div>
+            </div>
+            {/* <Driver anchors={anchors} /> */}
         </div>
     );
 }

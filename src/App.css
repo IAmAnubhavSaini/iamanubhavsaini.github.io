@@ -34,7 +34,7 @@
 }
 
 .container{
-    padding: 8dvw 2vw 2vw;
+    padding: 10vh 2vw;
     min-height: 100dvh;
     margin-bottom: 50vh;
 }
@@ -179,7 +179,7 @@
     grid-template-rows: 1fr;
     place-items: center center;
     height: 120dvh;
-    width: calc(100dvw - 4dvw);
+    width: calc(100% - 2rem);
 
     & + & {
         margin-top: -2rem;
