@@ -4,7 +4,7 @@
     flex: 1 1 auto;
     height: min-content;
     border: 1px solid var(--scheme-text);
-    padding: 1rem;
+    padding: 2rem;
     box-shadow: 4px 4px 5px var(--scheme-border);
     border-radius: 4px;
 

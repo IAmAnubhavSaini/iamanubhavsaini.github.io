@@ -2,6 +2,8 @@
     color-scheme: dark light;
     --base-font-size: 13px;
     font-size: calc(var(--base-font-size) * 1);
+
+    --font-optical-sizing: none;
 }
 
 :root[data-scheme="dark"] {
@@ -38,8 +40,9 @@
 body {
     padding: 1rem 0;
 
+    font-optical-sizing: var(--font-optical-sizing);
     font-family: monospace;
-    font-size: 1.2em;
+    font-size: var(--base-font-size);
     color: var(--scheme-text);
     background-color: var(--scheme-background);
 
@@ -58,7 +61,6 @@ body {
     .heading {
         color: var(--scheme-text);
         text-shadow: 1px 2px 3px var(--scheme-text);
-        font-size: 10rem;
 
         text-align: center;
         word-spacing: 1rem;
@@ -115,17 +117,6 @@ body {
         transition: all 0.3s ease-in-out;
         text-decoration: none;
         color: var(--scheme-text);
-    }
-}
-
-fieldset {
-    width: clamp(300px, 100%, 800px);
-    padding: 2rem;
-    margin: 2rem 0;
-
-    & & {
-        width: clamp(250px, 100%, 700px);
-        margin: 2rem auto;
     }
 }
 
@@ -246,16 +237,32 @@ fieldset {
     gap: 1rem;
 }
 
+.gap\:1d {
+    gap: 1dvw;
+}
+
 .gap\:2 {
     gap: 2rem;
+}
+
+.gap\:2d {
+    gap: 2dvw;
 }
 
 .gap\:4 {
     gap: 4rem;
 }
 
+.gap\:4d {
+    gap: 4dvw;
+}
+
 .gap\:8 {
     gap: 8rem;
+}
+
+.gap\:8d {
+    gap: 8dvw;
 }
 
 .w\:40p {
@@ -291,6 +298,8 @@ fieldset {
 }
 
 .height {
+    min-height: 1000px;
+
     &.h\:100d {
         height: 100dvh;
     }
@@ -332,6 +341,10 @@ fieldset {
     &.w\:50p {
         width: 50%;
     }
+
+    &.w\:100p {
+        width: 100%;
+    }
 }
 
 .scroll\:y {
@@ -340,6 +353,7 @@ fieldset {
 
 .sticky {
     position: sticky;
+    margin: 0 auto 2rem;
 
     &.s\:t0 {
         top: 0;
@@ -355,15 +369,27 @@ button {
     cursor: pointer;
 }
 
-:target::before {
-    content: "➤";
-    display: inline-block;
-    height: 4rem;
-    margin: -4rem 1rem 0;
+.z\:1 {
+    z-index: 1;
+}
+
+.z\:10 {
+    z-index: 10;
+}
+
+.z\:100 {
+    z-index: 100;
+    background-color: var(--scheme-background);
 }
 
 @media (max-width: 600px) {
+    :root {
+        --base-font-size: 20px;
+        font-size: calc(var(--base-font-size) * 1);
+    }
+
     body {
+        font-size: var(--base-font-size);
         min-width: 450px;
         max-width: 600px;
         width: 100vw;
@@ -421,7 +447,6 @@ button {
     }
 
     .heading {
-        font-size: 2rem;
         letter-spacing: 0;
     }
 
@@ -450,11 +475,15 @@ button {
             width: 100%;
         }
 
-        &.w\:80p {
+        &.w\:50p {
             width: 100%;
         }
 
-        &.w\:50p {
+        &.w\:70p {
+            width: 100%;
+        }
+
+        &.w\:80p {
             width: 100%;
         }
     }
@@ -474,5 +503,9 @@ button {
     a {
         color: var(--scheme-text);
         text-decoration: underline;
+    }
+
+    .scroll\:y {
+        overflow-y: none;
     }
 }

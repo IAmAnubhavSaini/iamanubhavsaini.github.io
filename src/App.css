@@ -1,12 +1,32 @@
 @font-face {
     font-family: "LibreBodoniRegular";
-    src: url("assets/LibreBodoni-Regular.ttf") format("ttf");
-    font-weight: normal;
-    font-style: normal;
+    src: url("assets/LibreBodoni-Regular.ttf") format("truetype");
+    font-optical-sizing: auto;
+}
+
+@font-face {
+    font-family: "BodoniModa-Variable";
+    src: url("assets/BodoniModa-Variable.ttf") format("truetype");
+    font-optical-sizing: auto;
+}
+
+@font-face {
+    font-family: "NotoSansDisplay-Regular";
+    src: url("assets/NotoSansDisplay-Regular.ttf") format("truetype");
+    font-optical-sizing: auto;
 }
 
 .ff\:libre-bodoni {
-    font-family: "LibreBodoniRegular", serif;
+    font-family: "LibreBodoniRegular", serif !important;
+}
+
+.ff\:bodoni-moda {
+    font-family: "BodoniModa-Variable", serif !important;
+    font-weight: 300;
+}
+
+.ff\:noto-sans-display {
+    font-family: "NotoSansDisplay-Regular", sans-serif !important;
 }
 
 /*
@@ -119,39 +139,31 @@
 }
 
 .logo {
-    display: inline-block;
     height: 32px;
-    margin: 0.5rem;
+    /* margin: 0.5rem; */
     filter: grayscale(80%);
 }
 
-.special-style-1 {
-    font-family: "LibreBodoniRegular", serif;
-    font-size: 4rem;
-    color: var(--scheme-heading);
-    text-shadow: 1px 1px 2px var(--scheme-text);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    & > * {
-        margin: -3rem;
-    }
-
-    & .delivered {
-        font-style: italic;
-        font-weight: 300;
-    }
-}
 
 .type\:massive {
-    font-size: 20rem;
+    font-size: 13rem;
     font-weight: bold;
     letter-spacing: -1rem;
 }
 
 .type\:huge {
-    font-size: 12rem;
+    font-size: 10rem;
     font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .type\:massive {
+        font-size: 21dvw;
+        font-weight: bold;
+    }
+
+    .type\:huge {
+        font-size: 15dvw;
+        font-weight: bold;
+    }
 }

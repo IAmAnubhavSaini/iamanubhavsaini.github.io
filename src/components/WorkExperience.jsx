@@ -33,7 +33,7 @@ function WorkExperience({ klass, experience, showDetails = false, toggleDetails 
                         </div>
                     )}
 
-                    <div className="flex gap:2 f:sa">
+                    <div className="flex gap:2 f:sb">
                         {experience.responsibilities.length > 0 && (
                             <div className="flex f:v gap:0">
                                 {experience.responsibilities.length > 0 && (
@@ -99,7 +99,7 @@ function WorkExperienceList({ klass, experiences }) {
                     {showDetails ? "hide details" : "show details"}
                 </button>
             </div>
-            <div className="flex gap:4 ">
+            <div className="flex gap:8">
                 {experiences.map((experience, index) => (
                     <WorkExperience
                         showDetails={showDetails}

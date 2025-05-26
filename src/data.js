@@ -52,8 +52,8 @@ const workExperiences = [
         tags: ["startup", "security"],
         location: ["Remote", "IN"],
         skills: ["kali", "bash", "python", "nmap", "sqlmap", "owasp-zap", "mitmproxy"],
-        role: "",
-        name: "freelance",
+        role: "developer",
+        name: "startup",
         duration: "2021-2021",
     },
     {
@@ -141,8 +141,8 @@ const workExperiences = [
         tags: ["startup", "supply-chain"],
         location: ["Delhi, IN"],
         skills: ["C#", "JS", "Node"],
-        role: "Consultant",
-        name: "freelance",
+        role: "developer",
+        name: "startup",
         duration: "2015-2015",
     },
     {
