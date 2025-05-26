@@ -15,8 +15,8 @@ import {
     workExperiences,
     libraries,
     librariesList,
-    services,
-    servicesList,
+    microservices,
+    microservicesList,
     tableData,
     webapps,
     webappsList,
@@ -171,15 +171,15 @@ function App() {
                                     </div>
                                 )}
                             </fieldset>
-                            <fieldset>
-                                <legend>nav</legend>
+                            <fieldset className="flex f:center">
+                                <legend>navigation</legend>
                                 <nav role="navigation" className="flex gap:2 ta:c f:center">
                                     <a href="#top">top</a>
                                     <a href="#workExperiences">work experiences</a>
                                     <a href="#techstack">tech stack</a>
                                     <a href="#webapps">web apps</a>
                                     <a href="#cliapps">cli apps</a>
-                                    <a href="#services">services</a>
+                                    <a href="#microservices">microservices</a>
                                     <a href="#libraries">libraries</a>
                                     <a href="#oldprojects">old projects</a>
 
@@ -231,7 +231,7 @@ function App() {
                         </div>
                     </div>
                 </div>
-                <div>
+                <div className="flex f:v gap:0">
                     <div className="container">
                         <div className="container-item">
                             <div className="flex f:v ta:c gap:2">
@@ -274,6 +274,10 @@ function App() {
                     </div>
                     <fieldset>
                         <legend className="tt:u">Code</legend>
+                        <div className="parallax web z:100 sticky"></div>
+                        <div className="parallax one z:100 sticky">
+                            <div className="titled">WEB</div>
+                        </div>
                         <div className="container">
                             <div className="container-item">
                                 <div>
@@ -332,6 +336,11 @@ function App() {
                                 </div>
                             </div>
                         </div>
+                        <div className="parallax terminal z:100 sticky"></div>
+                        <div className="parallax one z:100 sticky">
+                            <div className="titled">CLI</div>
+                        </div>
+
                         <div className="container">
                             <div className="container-item">
                                 <div>
@@ -394,13 +403,13 @@ function App() {
                         <div className="container">
                             <div className="container-item">
                                 <div>
-                                    <div id="services" className="subheading tt:u">
-                                        Services
+                                    <div id="microservices" className="subheading tt:u">
+                                        Microservices
                                     </div>
                                     <div className="near-heading">2016-current</div>
                                 </div>
                                 <div className="flex">
-                                    {services.map((app, index) => (
+                                    {microservices.map((app, index) => (
                                         <a href={app.url} key={`service-${index}`} target="_blank" rel="nofollow">
                                             <Box
                                                 klass={`thin wide ${
@@ -425,7 +434,7 @@ function App() {
                                 </div>
                                 <div className="vspacer"></div>
                                 <div className="flex f:v gap:4">
-                                    {servicesList.map((app, index) => (
+                                    {microservicesList.map((app, index) => (
                                         <div key={`service-list-${index}`} className="flex f:v list gap:0">
                                             <div className="tt:u fw:b">{app.title}</div>
                                             <div>
@@ -448,6 +457,10 @@ function App() {
                                     ))}
                                 </div>
                             </div>
+                        </div>
+                        <div className="parallax lib z:100 sticky"></div>
+                        <div className="parallax one z:100 sticky">
+                            <div className="titled">LIB</div>
                         </div>
                         <div className="container">
                             <div className="container-item">
@@ -566,7 +579,23 @@ function App() {
                     </div> */}
                     </fieldset>
                 </div>
+
             </div>
+             <div className="footer flex f:v gap:2 width">
+                    <div className="flex f:v gap:2">
+                        <div className="subheading  type:small">
+                            <span className="tt:u">Anubhav Saini</span> &copy; {new Date().getFullYear()}
+                        </div>
+                        <div className="type:small">
+                            <span className="tt:u">Last updated:</span> {new Date().toLocaleDateString()}
+                        </div>
+                    </div>
+                    <div className="flex f:v gap:2">
+                        <a href="#top" className="type:small tt:u">
+                            Back to top
+                        </a>
+                    </div>
+                </div>
         </div>
     );
 }

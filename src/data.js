@@ -342,9 +342,9 @@ const cliappsList = [
         tags: ["node", "2021"],
     },
 ];
-const services = [];
+const microservices = [];
 
-const servicesList = [
+const microservicesList = [
     { url: "https://github.com/localserve/markdown.service", title: "markdown", tags: ["go", "microservice"] },
     {
         url: "https://github.com/IAmAnubhavSaini/node-deprofane-service",
@@ -456,8 +456,8 @@ export {
     cliappsList,
     libraries,
     librariesList,
-    services,
-    servicesList,
+    microservices,
+    microservicesList,
     tableData,
     techStack,
     toolStack,

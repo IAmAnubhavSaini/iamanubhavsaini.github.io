@@ -46,13 +46,6 @@ body {
     color: var(--scheme-text);
     background-color: var(--scheme-background);
 
-    .container {
-        padding: 2vw;
-        width: 100%;
-        min-height: 100dvh;
-        margin-bottom: 50vh;
-    }
-
     & div,
     & section {
         display: block;
@@ -380,6 +373,12 @@ button {
 .z\:100 {
     z-index: 100;
     background-color: var(--scheme-background);
+}
+
+fieldset {
+    padding: 0;
+    margin: 0;
+    border: none;
 }
 
 @media (max-width: 600px) {
