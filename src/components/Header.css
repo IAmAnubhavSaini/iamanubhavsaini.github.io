@@ -1,0 +1,27 @@
+.header {
+    backdrop-filter: blur(calc(var(--base-font-size) * 1));
+
+    padding: 20px;
+    height: min-content;
+    display: flex;
+    column-gap: var(--base-font-size);
+    row-gap: calc(var(--base-font-size) / 2);
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+@media (max-width: 600px) {
+    .header {
+        position: static;
+
+        flex-direction: column;
+
+        .flex {
+            flex-direction: row;
+        }
+    }
+}

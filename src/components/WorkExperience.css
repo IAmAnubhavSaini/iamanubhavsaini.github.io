@@ -1,5 +1,5 @@
 .work-experience {
-    width: calc(25% - 2rem);
+    width: calc(33% - 2rem);
     min-height: 500px;
     /* flex: 1 1 auto; */
     border: 1px solid var(--scheme-text);
@@ -15,7 +15,7 @@
 }
 @media (max-width: 600px) {
     .work-experience {
-        width: calc(100% - 4rem);
-        min-height: 300px;
+        width: 400px;
+        padding: 5px;
     }
 }

@@ -4,10 +4,7 @@ import "./App.css";
 import { ExternalAnchor } from "./components/Anchor";
 import { Box } from "./components/Box";
 import { WorkExperienceList } from "./components/WorkExperience";
-import { Driver } from "./components/Driver";
 
-import Clock from "./components/Clock";
-import { FizzBuzz } from "./components/FizzBuzz";
 import { NamedRowTable } from "./components/Table";
 import { Tags } from "./components/Tag";
 import {
@@ -28,6 +25,15 @@ import githubLightLogo from "./assets/github-mark-white.svg";
 import linkedinLogo from "./assets/linkedin.svg";
 import npmLogo from "./assets/npm.svg";
 import mediumLogo from "./assets/medium.png";
+import { Header } from "./components/Header";
+
+const LOGOS = {
+    githubDarkLogo,
+    githubLightLogo,
+    linkedinLogo,
+    npmLogo,
+    mediumLogo,
+};
 
 function App() {
     const defaultFontSize = 13;
@@ -76,8 +82,11 @@ function App() {
             default:
                 return;
         }
-        document.documentElement.style.fontSize = `${newSize}px`;
+        document.documentElement.style.setProperty("--base-font-size", `${newSize}px`);
+        document.documentElement.style.setProperty("font-size", `${newSize}px`);
+        document.body.style.fontSize = `${newSize}px`;
         localStorage.setItem("preferred-font-size", newSize.toString());
+
         setFontSize(newSize);
     };
 
@@ -120,161 +129,26 @@ function App() {
     }, [anchors]);
 
     return (
-        <div className="flex f:v gap:page" id="top">
+        <div className="flex f:v gap:8" id="top">
             {/* <div className="hero flex f:v gap:0 f:sb ff:bodoni-moda">
                 <div className="type:massive">DESIGN</div>
                 <div className="type:massive tt:u">Develop</div>
                 <div className="type:massive tt:u">Deploy</div>
             </div> */}
+            <Header
+                setClockType={setClockType}
+                clockType={clockType}
+                fontSize={fontSize}
+                setScheme={setScheme}
+                activeScheme={activeScheme}
+                setTheme={setTheme}
+                activeTheme={activeTheme}
+                anchors={anchors}
+                shouldDisplayColorThemes={shouldDisplayColorThemes}
+                changeFontSize={changeFontSize}
+                logos={LOGOS}
+            />
             <div className="flex gap:8" id="app">
-                <header
-                    className="width w:100p sticky s:t0 s:l0 scroll:y z:100 flex f:center"
-                    style={{ height: `calc(${fontSize}px * 6)` }}
-                >
-                    <div className="flex gap:4">
-                        <div
-                            className="flex"
-                            onClick={() => setClockType(clockType === "analog" ? "digital" : "analog")}
-                        >
-                            <Clock type={clockType} />
-                        </div>
-
-                        <div className="flex gap:4">
-                            <fieldset className="flex gap:1">
-                                <legend className="">Settings</legend>
-                                <div className="flex gap:0 f:center">
-                                    <a
-                                        onClick={() => changeFontSize("decrease")}
-                                        className="button font-button"
-                                        title="Decrease font size"
-                                    >
-                                        {fontSize - 1}
-                                    </a>
-                                    <a
-                                        onClick={() => changeFontSize("reset")}
-                                        className="button font-button"
-                                        title="Reset font size"
-                                    >
-                                        reset
-                                    </a>
-                                    <a
-                                        onClick={() => changeFontSize("increase")}
-                                        className="button font-button"
-                                        title="Increase font size"
-                                    >
-                                        {fontSize + 1}
-                                    </a>
-                                </div>
-                                <div className="flex gap:0 ta:r f:center">
-                                    <a
-                                        onClick={() => setScheme("light")}
-                                        className={`button scheme-button sb:light ${
-                                            activeScheme === "light" ? "active" : ""
-                                        }`}
-                                    >
-                                        Light
-                                    </a>
-                                    <a
-                                        onClick={() => setScheme("dark")}
-                                        className={`button scheme-button sb:dark ${
-                                            activeScheme === "dark" ? "active" : ""
-                                        }`}
-                                    >
-                                        Dark
-                                    </a>
-                                </div>
-                                {shouldDisplayColorThemes && (
-                                    <div className="flex gap:1 ta:r f:v">
-                                        <a
-                                            onClick={() => setTheme("teal")}
-                                            className={`button theme-button tb:teal ${
-                                                activeTheme === "teal" ? "active" : ""
-                                            }`}
-                                        >
-                                            Teal
-                                        </a>
-                                        <a
-                                            onClick={() => setTheme("magenta")}
-                                            className={`button theme-button tb:magenta ${
-                                                activeTheme === "magenta" ? "active" : ""
-                                            }`}
-                                        >
-                                            Magenta
-                                        </a>
-                                        <a
-                                            onClick={() => setTheme("gray")}
-                                            className={`button theme-button tb:gray ${
-                                                activeTheme === "gray" ? "active" : ""
-                                            }`}
-                                        >
-                                            Gray
-                                        </a>
-                                    </div>
-                                )}
-                            </fieldset>
-                            <fieldset className="flex f:center">
-                                <legend>navigation</legend>
-                                <nav role="navigation" className="flex gap:2 ta:c f:center">
-                                    {anchors.map((anchor, index) => (
-                                        <a
-                                            key={`nav-${index}`}
-                                            className="tt:u"
-                                            title={anchor.text}
-                                            href={anchor.href}
-                                            target="_self"
-                                        >
-                                            {anchor.text}
-                                        </a>
-                                    ))}
-
-                                    {/* <a href="#cssfizzbuzz">css fizzbuzz</a> */}
-                                </nav>
-                            </fieldset>
-                            <fieldset>
-                                <legend>social</legend>
-                                <div className="social flex gap:0 ta:c f:center">
-                                    <a
-                                        href="https://github.com/iamanubhavsaini/"
-                                        target="_blank"
-                                        rel="nofollow"
-                                        title="Github"
-                                    >
-                                        {activeScheme === "dark" && (
-                                            <img className="logo" src={githubLightLogo} alt="github" />
-                                        )}
-                                        {activeScheme === "light" && (
-                                            <img className="logo" src={githubDarkLogo} alt="github" />
-                                        )}
-                                    </a>
-                                    <a
-                                        href="https://www.linkedin.com/in/anubhavsaini-com/"
-                                        target="_blank"
-                                        rel="nofollow"
-                                        title="LinkedIn"
-                                    >
-                                        <img className="logo" src={linkedinLogo} alt="linkedin" />
-                                    </a>
-                                    <a
-                                        href="https://www.npmjs.com/~iamanubhavsaini"
-                                        target="_blank"
-                                        rel="nofollow"
-                                        title="NPM"
-                                    >
-                                        <img className="logo" src={npmLogo} alt="npm" />
-                                    </a>
-                                    <a
-                                        href="https://medium.com/@anubhavsaini.com"
-                                        target="_blank"
-                                        rel="nofollow"
-                                        title="Medium"
-                                    >
-                                        <img className="logo" src={mediumLogo} alt="medium" />
-                                    </a>
-                                </div>
-                            </fieldset>
-                        </div>
-                    </div>
-                </header>
                 <div className="flex f:v gap:0">
                     <div className="container">
                         <div className="container-item">
@@ -610,7 +484,7 @@ function App() {
                     </fieldset>
                 </div>
             </div>
-            <div className="footer flex f:v gap:2 width">
+            <div className="container footer flex f:v gap:2 width">
                 <div className="flex f:v gap:2">
                     <div className="subheading  type:small">
                         <span className="tt:u">Anubhav Saini</span> &copy; {new Date().getFullYear()}

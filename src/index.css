@@ -42,7 +42,7 @@ body {
 
     font-optical-sizing: var(--font-optical-sizing);
     font-family: monospace;
-    font-size: var(--base-font-size);
+    font-size: var(--base-font-size) px;
     color: var(--scheme-text);
     background-color: var(--scheme-background);
 
@@ -56,8 +56,8 @@ body {
         text-shadow: 1px 2px 3px var(--scheme-text);
 
         text-align: center;
-        word-spacing: 1rem;
-        letter-spacing: -0.81dvw;
+        word-spacing: calc(var(--base-font-size) * 1);
+        letter-spacing: calc(var(--base-font-size) * 1 * -1);
         font-family: Georgia, "Times New Roman", Times, serif;
         font-weight: 900;
         align-content: center;
@@ -104,12 +104,13 @@ body {
     }
 
     a {
+        background-color: var(--scheme-background);
+        color: var(--scheme-text);
         text-shadow: 0 0 1px var(--scheme-background);
         font-weight: 500;
         padding: 0.1rem;
         transition: all 0.3s ease-in-out;
         text-decoration: none;
-        color: var(--scheme-text);
     }
 }
 
@@ -145,6 +146,10 @@ body {
         &.f\:reverse {
             flex-direction: column-reverse;
         }
+    }
+
+    &.rg\:0 {
+        row-gap: 0;
     }
 
     &.f\:sa {
@@ -383,17 +388,18 @@ fieldset {
 
 @media (max-width: 600px) {
     :root {
-        --base-font-size: 20px;
         font-size: calc(var(--base-font-size) * 1);
     }
 
-    body {
+    html, body, div, fieldset, a {
         font-size: var(--base-font-size);
-        width: 400px;
-        margin: 0 auto;
+        max-width: 400px;
+        margin: 0;
+        padding: 0;
     }
 
     fieldset {
+        max-width: 400px;
         padding: 0;
         margin: 0;
         border: none;
@@ -460,11 +466,8 @@ fieldset {
     }
 
     .heading {
-        letter-spacing: 0;
-    }
-
-    .clock {
-        width: 10rem !important;
+        width: inherit;
+        overflow: hidden;
     }
 
     .width {

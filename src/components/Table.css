@@ -1,21 +1,20 @@
 .nmr {
-    .row>.col:first-child {
+    .row > .col:first-child {
         flex: 0 1 auto;
     }
 
     .col {
-        min-width: 15rem;
+        width: 200px;
     }
 
-    @media (max-width:600px) {
-
+    @media (max-width: 600px) {
         .row {
             margin: 2rem 0;
         }
 
         .col {
-            width: calc(100% - 8rem);
-            height: 50%;
+            /* width: calc(100% - 8rem); */
+            /* height: 50%; */
             max-width: unset;
         }
     }

@@ -1,12 +1,15 @@
-.clock-container {
-    min-height: 5rem;
-}
 .clock {
-    justify-content: right;
+    max-width: 360px;
+    display: flex;
+    gap: 0;
+
+    .analog & {
+        gap: 1rem;
+    }
 
     & .analog {
-        height: 5rem;
-        width: 5rem;
+        height: 65px;
+        width: 65px;
         border-radius: 10px;
         box-shadow: 1px 1px 3px var(--scheme-text);
     }
@@ -19,22 +22,19 @@
         background: conic-gradient(from 0deg, var(--scheme-text), 360deg, var(--scheme-background));
     }
 
-    @media (prefers-color-scheme: light) {
-        & .analog {
-            box-shadow: 1px 1px 1px var(--scheme-text);
-        }
-    }
-
-    @media (max-width: 600px) {
-        & .analog {
-            width: 100%;
-        }
-    }
-
     & .digital {
-        font-size: 4.4rem;
+        font-size: calc(var(--base-font-size) * 5);
         text-align: center;
         color: var(--scheme-text);
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    }
+}
+
+@media (max-width: 600px) {
+}
+
+@media (prefers-color-scheme: light) {
+    .clock .analog {
+        box-shadow: 1px 1px 1px var(--scheme-text);
     }
 }

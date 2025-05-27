@@ -1,5 +1,5 @@
-import './Clock.css'
-import { useState, useEffect } from 'react';
+import "./Clock.css";
+import { useState, useEffect } from "react";
 
 function AnalogClock() {
     const [time, setTime] = useState(new Date());
@@ -26,25 +26,12 @@ function AnalogClock() {
     const { hoursAngle, minutesAngle, secondsAngle } = everysecond(time);
 
     return (
-        <div className="flex clock">
+        <div className="clock">
+            <div className="analog hours" title="hours" style={{ background: background(hoursAngle) }}></div>
 
-            <div
-                className="analog hours"
-                title="hours"
-                style={{ background: background(hoursAngle) }}
-            ></div>
+            <div className="analog minutes" title="minutes" style={{ background: background(minutesAngle) }}></div>
 
-            <div
-                className="analog minutes"
-                title="minutes"
-                style={{ background: background(minutesAngle) }}
-            ></div>
-
-            <div
-                className="analog seconds"
-                title="seconds"
-                style={{ background: background(secondsAngle) }}
-            ></div>
+            <div className="analog seconds" title="seconds" style={{ background: background(secondsAngle) }}></div>
         </div>
     );
 }
@@ -59,13 +46,12 @@ function DigitalClock() {
 
         return () => clearInterval(interval);
     }, []);
-    const hours = time.getHours().toString().padStart(2, '0');
-    const minutes = time.getMinutes().toString().padStart(2, '0');
-    const seconds = time.getSeconds().toString().padStart(2, '0');
-
+    const hours = time.getHours().toString().padStart(2, "0");
+    const minutes = time.getMinutes().toString().padStart(2, "0");
+    const seconds = time.getSeconds().toString().padStart(2, "0");
 
     return (
-        <div className="flex clock gap:0">
+        <div className="clock">
             <div className="digital hours" title="hours">
                 {hours}:
             </div>
@@ -81,11 +67,11 @@ function DigitalClock() {
 
 function Clock({ type }) {
     return (
-        <div className="clock-container">
+        <div className={`clock-container ${type}`}>
             {type === "analog" && <AnalogClock />}
             {type !== "analog" && <DigitalClock />}
         </div>
     );
 }
 
-export default Clock;
+export { Clock };
