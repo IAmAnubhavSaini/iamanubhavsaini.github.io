@@ -26,6 +26,7 @@ import linkedinLogo from "./assets/linkedin.svg";
 import npmLogo from "./assets/npm.svg";
 import mediumLogo from "./assets/medium.png";
 import { Header } from "./components/Header";
+import { Footer } from "./components/Footer";
 
 const LOGOS = {
     githubDarkLogo,
@@ -36,13 +37,11 @@ const LOGOS = {
 };
 
 function App() {
-    const defaultFontSize = 13;
+    const defaultFontSize = 10;
     const defaultClockType = "analog";
     const [activeScheme, setActiveScheme] = useState("dark");
-    const [activeTheme, setActiveTheme] = useState("gray");
     const [fontSize, setFontSize] = useState(defaultFontSize);
     const [clockType, setClockType] = useState(defaultClockType);
-    const [shouldDisplayColorThemes, $shouldDisplayColorThemes] = useState(false);
 
     const anchors = [
         { href: "#top", text: "top" },
@@ -53,18 +52,13 @@ function App() {
         { href: "#microservices", text: "microservices" },
         { href: "#libraries", text: "libraries" },
         { href: "#oldprojects", text: "old-projects" },
+        { href: "#end", text: "end" },
     ];
 
     const setScheme = (scheme) => {
         document.documentElement.setAttribute("data-scheme", scheme);
         localStorage.setItem("preferred-scheme", scheme);
         setActiveScheme(scheme);
-    };
-
-    const setTheme = (theme) => {
-        document.documentElement.setAttribute("data-theme", theme);
-        localStorage.setItem("preferred-theme", theme);
-        setActiveTheme(theme);
     };
 
     const changeFontSize = (action) => {
@@ -74,10 +68,10 @@ function App() {
                 newSize = Math.min(fontSize + 1, 25); // max 24px
                 break;
             case "decrease":
-                newSize = Math.max(fontSize - 1, 9); // min 8
+                newSize = Math.max(fontSize - 1, 8); // min 8
                 break;
             case "reset":
-                newSize = 13; // default size
+                newSize = defaultFontSize; // default size
                 break;
             default:
                 return;
@@ -90,14 +84,11 @@ function App() {
         setFontSize(newSize);
     };
 
-    useEffect(() => {
-        // Load saved preferences or set defaults
+    useEffect(function loadLocallyStoredValues() {
         const savedScheme = localStorage.getItem("preferred-scheme") || "dark";
-        const savedTheme = localStorage.getItem("preferred-theme") || "gray";
         const savedFontSize = parseInt(localStorage.getItem("preferred-font-size")) || 13;
 
         setScheme(savedScheme);
-        setTheme(savedTheme);
         document.documentElement.style.fontSize = `${savedFontSize}px`;
         setFontSize(savedFontSize);
     }, []);
@@ -141,10 +132,7 @@ function App() {
                 fontSize={fontSize}
                 setScheme={setScheme}
                 activeScheme={activeScheme}
-                setTheme={setTheme}
-                activeTheme={activeTheme}
                 anchors={anchors}
-                shouldDisplayColorThemes={shouldDisplayColorThemes}
                 changeFontSize={changeFontSize}
                 logos={LOGOS}
             />
@@ -190,10 +178,10 @@ function App() {
                     </div>
                     <fieldset>
                         <legend className="tt:u">Code</legend>
-                        <div className="parallax web z:100 sticky"></div>
+                        {/* <div className="parallax web z:100 sticky"></div>
                         <div className="parallax one z:100 sticky">
                             <div className="titled">WEB</div>
-                        </div>
+                        </div> */}
                         <div id="webapps" className="container">
                             <div className="container-item">
                                 <div>
@@ -250,10 +238,10 @@ function App() {
                                 </div>
                             </div>
                         </div>
-                        <div className="parallax terminal z:100 sticky"></div>
+                        {/* <div className="parallax terminal z:100 sticky"></div>
                         <div className="parallax one z:100 sticky">
                             <div className="titled">CLI</div>
-                        </div>
+                        </div> */}
 
                         <div id="cliapps" className="container">
                             <div className="container-item">
@@ -368,10 +356,10 @@ function App() {
                                 </div>
                             </div>
                         </div>
-                        <div className="parallax lib z:100 sticky"></div>
+                        {/* <div className="parallax lib z:100 sticky"></div>
                         <div className="parallax one z:100 sticky">
                             <div className="titled">LIB</div>
-                        </div>
+                        </div> */}
                         <div id="libraries" className="container">
                             <div className="container-item">
                                 <div>
@@ -484,22 +472,10 @@ function App() {
                     </fieldset>
                 </div>
             </div>
-            <div className="container footer flex f:v gap:2 width">
-                <div className="flex f:v gap:2">
-                    <div className="subheading  type:small">
-                        <span className="tt:u">Anubhav Saini</span> &copy; {new Date().getFullYear()}
-                    </div>
-                    <div className="type:small">
-                        <span className="tt:u">Last updated:</span> {new Date().toLocaleDateString()}
-                    </div>
-                </div>
-                <div className="flex f:v gap:2">
-                    <a href="#top" className="type:small tt:u">
-                        Back to top
-                    </a>
-                </div>
-            </div>
+            <Footer />
             {/* <Driver anchors={anchors} /> */}
+
+            <div id="end"></div>
         </div>
     );
 }

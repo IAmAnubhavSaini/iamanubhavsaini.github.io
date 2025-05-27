@@ -6,16 +6,23 @@
     .col {
         width: 200px;
     }
+}
 
-    @media (max-width: 600px) {
-        .row {
-            margin: 2rem 0;
+@media (max-width: 600px) {
+    .nmr {
+        .flex {
+            display: flex;
+            flex-direction: row;
+            gap: 0.5rem;
         }
-
+        .box {
+            width: fit-content;
+            height: fit-content;
+            padding: 1rem;
+        }
         .col {
-            /* width: calc(100% - 8rem); */
-            /* height: 50%; */
-            max-width: unset;
+            /* width: 100%; */
+            max-width: 100px;
         }
     }
 }

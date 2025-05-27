@@ -24,13 +24,10 @@
         height: 300px;
     }
 
-    font-size: 1.6rem;
-    font-weight: bold;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1rem;
 
     border: 1px solid var(--scheme-text);
 }
@@ -39,6 +36,6 @@
     .box.medium,
     .box.wide,
     .box.thin {
-        width: 400px
+        max-width: 400px;
     }
 }

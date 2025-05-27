@@ -1,9 +1,15 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./WorkExperience.css";
 
-function WorkExperience({ klass, experience, showDetails = false, toggleDetails }) {
+function WorkExperience({ klass, experience, showDetails }) {
+    const [expand, $expand] = useState(showDetails);
+
+    useEffect(() => {
+        $expand(showDetails);
+    }, [showDetails]);
+
     return (
-        <div onClick={toggleDetails} className={`work-experience ${klass ?? ""} padding:1`}>
+        <div onClick={() => $expand(!expand)} className={`work-experience ${klass ?? ""} padding:1`}>
             <div className="flex f:v ai:b gap:0">
                 {experience.logo && (
                     <div>
@@ -15,7 +21,7 @@ function WorkExperience({ klass, experience, showDetails = false, toggleDetails 
                 <div>{experience.location && experience.location.join("; ")}</div>
             </div>
             <div className="flex f:v tt:u fw:b">{experience.role}</div>
-            {showDetails && (
+            {expand && (
                 <div className="flex f:v gap:0">
                     {experience.projects.length > 0 && (
                         <div className="flex f:v gap:0">
@@ -88,25 +94,26 @@ function WorkExperience({ klass, experience, showDetails = false, toggleDetails 
 }
 
 function WorkExperienceList({ klass, experiences }) {
-    const [showDetails, setShowDetails] = useState(false);
+    const [expandAll, $expandAll] = useState(false);
     const toggleDetails = () => {
-        setShowDetails(!showDetails);
+        $expandAll(!expandAll);
     };
     return (
         <>
-            <div>
-                <button className="button" onClick={toggleDetails}>
-                    {showDetails ? "hide details" : "show details"}
-                </button>
+            <div className="flex f:v gap:2">
+                <div>
+                    <button className="button" onClick={toggleDetails}>
+                        {expandAll ? "close all" : "expand all"}
+                    </button>
+                </div>
             </div>
             <div className="flex">
                 {experiences.map((experience, index) => (
                     <WorkExperience
-                        showDetails={showDetails}
+                        showDetails={expandAll}
                         key={`work-experience-${index}`}
                         klass={"flex f:v"}
                         experience={experience}
-                        toggleDetails={toggleDetails}
                     />
                 ))}
             </div>

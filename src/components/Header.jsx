@@ -7,10 +7,7 @@ function Header({
     fontSize,
     setScheme,
     activeScheme,
-    setTheme,
-    activeTheme,
     anchors,
-    shouldDisplayColorThemes,
     changeFontSize,
     logos,
 }) {
@@ -55,28 +52,6 @@ function Header({
                         Dark
                     </a>
                 </div>
-                {shouldDisplayColorThemes && (
-                    <div className="flex gap:1 ta:r f:v">
-                        <a
-                            onClick={() => setTheme("teal")}
-                            className={`button theme-button tb:teal ${activeTheme === "teal" ? "active" : ""}`}
-                        >
-                            Teal
-                        </a>
-                        <a
-                            onClick={() => setTheme("magenta")}
-                            className={`button theme-button tb:magenta ${activeTheme === "magenta" ? "active" : ""}`}
-                        >
-                            Magenta
-                        </a>
-                        <a
-                            onClick={() => setTheme("gray")}
-                            className={`button theme-button tb:gray ${activeTheme === "gray" ? "active" : ""}`}
-                        >
-                            Gray
-                        </a>
-                    </div>
-                )}
             </fieldset>
             <fieldset className="flex f:center">
                 <legend>navigation</legend>
@@ -86,8 +61,6 @@ function Header({
                             {anchor.text}
                         </a>
                     ))}
-
-                    {/* <a href="#cssfizzbuzz">css fizzbuzz</a> */}
                 </nav>
             </fieldset>
             <fieldset>

@@ -1,6 +1,6 @@
 :root {
     color-scheme: dark light;
-    --base-font-size: 13px;
+    --base-font-size: 10px;
     font-size: calc(var(--base-font-size) * 1);
 
     --font-optical-sizing: none;
@@ -387,15 +387,19 @@ fieldset {
 }
 
 @media (max-width: 600px) {
-    :root {
-        font-size: calc(var(--base-font-size) * 1);
-    }
-
-    html, body, div, fieldset, a {
+    body,
+    div,
+    fieldset {
         font-size: var(--base-font-size);
         max-width: 400px;
         margin: 0;
         padding: 0;
+    }
+
+    a {
+        display: inline-block;
+        padding: 4px;
+        margin: 4px;
     }
 
     fieldset {

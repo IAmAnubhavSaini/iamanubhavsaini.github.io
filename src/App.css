@@ -118,25 +118,6 @@
     color: var(--white-8);
 }
 
-/* Specific active states for themes */
-.tb\:teal.active {
-    background-color: var(--teal-5);
-    color: var(--white-9);
-    border-color: var(--teal-3);
-}
-
-.tb\:magenta.active {
-    background-color: var(--magenta-5);
-    color: var(--white-9);
-    border-color: var(--magenta-3);
-}
-
-.tb\:gray.active {
-    background-color: var(--gray-5);
-    color: var(--white-9);
-    border-color: var(--gray-3);
-}
-
 .tags {
     padding: 2px;
     font-size: 0.95rem;
@@ -203,16 +184,12 @@
     }
 }
 
-.footer {
-    margin-top: 10dvw;
-    border-top: thin solid var(--scheme-border);
-}
-
 @media (max-width: 600px) {
     .container {
-        width: 400px;
+        max-width: 400px;
         padding: 50px 2px;
         min-height: unset;
+        margin: 0 auto;
     }
 
     .type\:massive {
