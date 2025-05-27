@@ -150,10 +150,10 @@
 .logo {
     display: block;
     height: 32px;
-    margin: 1px;
-    padding: 1px;
+    margin: 2px;
+    padding: 2px;
     /* margin: 0.5rem; */
-    filter: grayscale(80%);
+    filter: grayscale(100%);
 }
 
 .type\:massive {
@@ -183,7 +183,7 @@
     }
 
     &.one {
-        background-image: url("assets/one.svg");
+        background-image: url("assets/one.jpg");
     }
     &.web {
         background-image: url("assets/web.jpg");
