@@ -177,7 +177,6 @@ function App() {
                         </div>
                     </div>
                     <fieldset>
-                        <legend className="tt:u">Code</legend>
                         {/* <div className="parallax web z:100 sticky"></div>
                         <div className="parallax one z:100 sticky">
                             <div className="titled">WEB</div>
