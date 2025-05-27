@@ -131,7 +131,7 @@ function App() {
                     className="width w:100p sticky s:t0 s:l0 scroll:y z:100 flex f:center"
                     style={{ height: `calc(${fontSize}px * 6)` }}
                 >
-                    <div className="flex">
+                    <div className="flex gap:4">
                         <div
                             className="flex"
                             onClick={() => setClockType(clockType === "analog" ? "digital" : "analog")}
@@ -139,7 +139,7 @@ function App() {
                             <Clock type={clockType} />
                         </div>
 
-                        <div className="flex">
+                        <div className="flex gap:4">
                             <fieldset className="flex gap:1">
                                 <legend className="">Settings</legend>
                                 <div className="flex gap:0 f:center">

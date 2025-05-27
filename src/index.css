@@ -389,9 +389,7 @@ fieldset {
 
     body {
         font-size: var(--base-font-size);
-        min-width: 400px;
-        max-width: 480px;
-        width: calc(100dvw - 4rem);
+        width: 400px;
         margin: 0 auto;
     }
 

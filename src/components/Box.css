@@ -39,6 +39,6 @@
     .box.medium,
     .box.wide,
     .box.thin {
-        width: calc(100%);
+        width: 400px
     }
 }
