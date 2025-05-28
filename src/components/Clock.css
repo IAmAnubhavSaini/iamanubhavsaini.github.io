@@ -8,10 +8,14 @@
     }
 
     & .analog {
-        height: 65px;
-        width: 65px;
-        border-radius: 10px;
+        height: 60px;
+        width: 60px;
+        border-radius: 1rem 2rem;
         box-shadow: 1px 1px 3px var(--scheme-text);
+    }
+
+    .analog.minutes {
+        border-radius: 2rem 1rem;
     }
 
     .analog.hours,

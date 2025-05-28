@@ -1,17 +1,21 @@
 .work-experience {
-
-    max-width: 360px;
+    width: clamp(250px, calc(20% - 2rem), 360px);
+    /* max-width: 360px; */
     /* min-height: 500px; */
     /* flex: 1 1 auto; */
     border: 1px solid var(--scheme-text);
     padding: calc(var(--base-font-size) * 1);
     /* box-shadow: 4px 4px 5px var(--scheme-border); */
-    border-radius: 4px 4px 16px 4px;
+    border-radius: 4px 4px 4px 16px;
     /* overflow-y: scroll; */
 
     .location {
         border-bottom: 1px solid var(--scheme-text);
         padding: 0.5rem;
+    }
+
+    &:nth-child(2n + 1) {
+        border-radius: 4px 4px 16px 4px;
     }
 }
 @media (max-width: 600px) {
