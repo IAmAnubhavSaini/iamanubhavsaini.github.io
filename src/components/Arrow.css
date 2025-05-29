@@ -1,0 +1,17 @@
+:root {
+    --img-arrow-dark: url(../assets/arrow-dark.svg);
+    --img-arrow-light: url(../assets/arrow-light.svg);
+}
+:root[data-scheme="dark"] {
+    --img-arrow: var(--img-arrow-dark);
+}
+
+:root[data-scheme="light"] {
+    --img-arrow: var(--img-arrow-light);
+}
+
+.arrow {
+    height: 32px;
+    width: 72px;
+    background: var(--img-arrow) no-repeat fixed;
+}

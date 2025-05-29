@@ -1,19 +1,14 @@
+import { Arrow } from "./Arrow.jsx";
 import { Clock } from "./Clock.jsx";
 import "./Header.css";
 
-function Header({
-    setClockType,
-    clockType,
-    fontSize,
-    setScheme,
-    activeScheme,
-    anchors,
-    changeFontSize,
-    logos,
-}) {
+function Header({ setClockType, clockType, fontSize, setScheme, activeScheme, anchors, changeFontSize, logos }) {
     const { githubLightLogo, githubDarkLogo, linkedinLogo, npmLogo, mediumLogo } = logos;
     return (
         <header className="header">
+            <div>
+                <Arrow />
+            </div>
             <div onClick={() => setClockType(clockType === "analog" ? "digital" : "analog")}>
                 <Clock type={clockType} />
             </div>
@@ -57,7 +52,13 @@ function Header({
                 <legend>navigation</legend>
                 <nav role="navigation" className="flex gap:2 ta:c f:center rg:0">
                     {anchors.map((anchor, index) => (
-                        <a key={`nav-${index}`} className="anchor tt:u" title={anchor.text} href={anchor.href} target="_self">
+                        <a
+                            key={`nav-${index}`}
+                            className="anchor tt:u"
+                            title={anchor.text}
+                            href={anchor.href}
+                            target="_self"
+                        >
                             {anchor.text}
                         </a>
                     ))}

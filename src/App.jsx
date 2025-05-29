@@ -27,6 +27,7 @@ import npmLogo from "./assets/npm.svg";
 import mediumLogo from "./assets/medium.png";
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
+import { Arrow } from "./components/Arrow";
 
 const LOGOS = {
     githubDarkLogo,
