@@ -42,7 +42,7 @@ body {
 
     font-optical-sizing: var(--font-optical-sizing);
     font-family: monospace;
-    font-size: var(--base-font-size) px;
+    font-size: var(--base-font-size);
     color: var(--scheme-text);
     background-color: var(--scheme-background);
 
