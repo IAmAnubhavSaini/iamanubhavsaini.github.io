@@ -277,7 +277,7 @@ const webappsList = [
         tags: ["github", "api", "2016"],
     },
     { url: "https://iamanubhavsaini.github.io/ShowCase-Hotel/", title: "hotel", highlight: 4, tags: ["2015"] },
-    { url: "https://f0c1s.github.io/tic-tac-toe-in-react/", title: "TicTacToe", highlight: 0, tags: ["game"] },
+    { url: "https://f0c1s.github.io/tic-tac-toe-in-react/", title: "tic-tac-toe", highlight: 0, tags: ["game"] },
     { url: "https://github.com/localserve/react-cpu-monitor", title: "CPU monitor", tags: ["react", "2021"] },
     { url: "https://iamanubhavsaini.github.io/strings-app/", title: "strings", highlight: 0 },
     { url: "https://iamanubhavsaini.github.io/json-visualiser", title: "json visualiser", highlight: 0 },

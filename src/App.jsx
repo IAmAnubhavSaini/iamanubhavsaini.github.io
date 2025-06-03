@@ -38,7 +38,7 @@ const LOGOS = {
 };
 
 function App() {
-    const defaultFontSize = 10;
+    const defaultFontSize = 13;
     const defaultClockType = "analog";
     const [activeScheme, setActiveScheme] = useState("dark");
     const [fontSize, setFontSize] = useState(defaultFontSize);
@@ -160,28 +160,25 @@ function App() {
                             <WorkExperienceList experiences={workExperiences} klass="flex f:v" />
                         </div>
                     </div>
-                    {/* <div className="container">
-                <div className="container-item">
-                    <div className="subheading tt:u">Stacks</div>
-                    <div className="flex">
-                        <Stack name="tech" stack={techStack} />
-                        <Stack name="tool" stack={toolStack} />
-                    </div>
-                </div>
-            </div> */}
                     <div id="techstack" className="container">
                         <div className="container-item">
                             <div>
                                 <div className="subheading tt:u">Tech stack</div>
                             </div>
-                            <NamedRowTable name="tech" data={tableData} />
+                            {tableData.map((data, index) => {
+                                return (
+                                    <div key={`techstack-${index}`} className="flex">
+                                        <h3>{data.name}</h3>
+
+                                        {data.value.map((value, vi) => {
+                                            return <div key={`vi-${vi}`}>{value.name}</div>;
+                                        })}
+                                    </div>
+                                );
+                            })}
                         </div>
                     </div>
                     <fieldset>
-                        {/* <div className="parallax web z:100 sticky"></div>
-                        <div className="parallax one z:100 sticky">
-                            <div className="titled">WEB</div>
-                        </div> */}
                         <div id="webapps" className="container">
                             <div className="container-item">
                                 <div>

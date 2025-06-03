@@ -22,7 +22,7 @@ function WorkExperience({ klass, experience, showDetails }) {
             </div>
             <div className="flex f:v tt:u fw:b">{experience.role}</div>
             {expand && (
-                <div className="flex f:v gap:0">
+                <div className="flex f:v">
                     {experience.projects.length > 0 && (
                         <div className="flex f:v gap:0">
                             {experience.projects.length > 0 && <div className="tt:u fw:b fs:i">projects</div>}
@@ -39,14 +39,14 @@ function WorkExperience({ klass, experience, showDetails }) {
                         </div>
                     )}
 
-                    <div className="flex f:v f:sb">
+                    <div className="flex f:v f:sb ">
                         {experience.responsibilities.length > 0 && (
-                            <div className="flex">
+                            <div className="flex f:v">
                                 {experience.responsibilities.length > 0 && (
                                     <div className="tt:u fw:b fs:i">responsibilities</div>
                                 )}
                                 {experience.responsibilities.length > 0 && (
-                                    <div className="flex f:v">
+                                    <div className="flex">
                                         {experience.responsibilities.map((r, index) => (
                                             <div key={`work-experience-responsibility-${index}`} className="fs:i">
                                                 {r}
@@ -58,10 +58,10 @@ function WorkExperience({ klass, experience, showDetails }) {
                         )}
 
                         {experience.skills.length > 0 && (
-                            <div className="flex">
+                            <div className="flex f:v">
                                 {experience.skills.length > 0 && <div className="tt:u fw:b fs:i">skills</div>}
                                 {experience.skills.length > 0 && (
-                                    <div className="flex f:v">
+                                    <div className="flex">
                                         {experience.skills.map((s, index) => (
                                             <div key={`work-experience-skill-${index}`} className="fs:i">
                                                 {s}
@@ -73,10 +73,10 @@ function WorkExperience({ klass, experience, showDetails }) {
                         )}
 
                         {experience.tags.length > 0 && (
-                            <div className="flex">
+                            <div className="flex f:v">
                                 {experience.tags.length > 0 && <div className="tt:u fw:b fs:i">tags</div>}
                                 {experience.tags.length > 0 && (
-                                    <div className="flex f:v">
+                                    <div className="flex">
                                         {experience.tags.map((t, index) => (
                                             <div key={`work-experience-tag-${index}`} className="fs:i">
                                                 {t}
@@ -106,16 +106,16 @@ function WorkExperienceList({ klass, experiences }) {
                         {expandAll ? "close all" : "expand all"}
                     </button>
                 </div>
-            </div>
-            <div className="flex">
-                {experiences.map((experience, index) => (
-                    <WorkExperience
-                        showDetails={expandAll}
-                        key={`work-experience-${index}`}
-                        klass={"flex f:v"}
-                        experience={experience}
-                    />
-                ))}
+                <div className="flex">
+                    {experiences.map((experience, index) => (
+                        <WorkExperience
+                            showDetails={expandAll}
+                            key={`work-experience-${index}`}
+                            klass={"flex f:v gap:2"}
+                            experience={experience}
+                        />
+                    ))}
+                </div>
             </div>
         </>
     );

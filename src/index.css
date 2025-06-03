@@ -1,6 +1,6 @@
 :root {
     color-scheme: dark light;
-    --base-font-size: 10px;
+    --base-font-size: 13px;
     font-size: calc(var(--base-font-size) * 1);
 
     --font-optical-sizing: none;

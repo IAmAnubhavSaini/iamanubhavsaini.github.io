@@ -1,13 +1,22 @@
+:root[data-scheme="dark"] {
+    --we-background-color: var(--black-8);
+}
+
+:root[data-scheme="light"] {
+    --we-background-color: var(--white-7);
+}
+
 .work-experience {
-    width: clamp(250px, calc(20% - 2rem), 360px);
+    width: clamp(250px, calc(25% - 2rem), 600px);
     /* max-width: 360px; */
     /* min-height: 500px; */
     /* flex: 1 1 auto; */
-    border: 1px solid var(--scheme-text);
+    /* border: 1px solid var(--scheme-text); */
     padding: calc(var(--base-font-size) * 1);
     /* box-shadow: 4px 4px 5px var(--scheme-border); */
     border-radius: 4px 4px 4px 16px;
     /* overflow-y: scroll; */
+    background-color: var(--we-background-color);
 
     .location {
         border-bottom: 1px solid var(--scheme-text);
