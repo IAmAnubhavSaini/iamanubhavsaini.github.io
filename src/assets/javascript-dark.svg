@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="131.23888mm"
+   height="131.03996mm"
+   viewBox="0 0 131.23888 131.03996"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <filter
+       style="color-interpolation-filters:sRGB"
+       id="filter31-4"
+       x="-0.05441067"
+       y="-0.048460333"
+       width="1.1088213"
+       height="1.0969207">
+      <feColorMatrix
+         type="hueRotate"
+         values="180"
+         result="color1"
+         id="feColorMatrix30-8" />
+      <feColorMatrix
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 -0.21 -0.72 -0.07 1.83155 0 "
+         result="color2"
+         id="feColorMatrix31-0" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       id="filter7"
+       x="-0.05441067"
+       y="-0.048460335"
+       width="1.1088213"
+       height="1.0969207">
+      <feColorMatrix
+         type="hueRotate"
+         values="180"
+         result="color1"
+         id="feColorMatrix6" />
+      <feColorMatrix
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 -0.21 -0.72 -0.07 1.83155 0 "
+         result="color2"
+         id="feColorMatrix7" />
+    </filter>
+  </defs>
+  <g
+     id="layer1"
+     transform="translate(-43.915379,-79.399738)">
+    <g
+       id="g31"
+       transform="translate(11.563224,-49.512698)"
+       style="filter:url(#filter7)">
+      <rect
+         style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:10;stroke-linecap:round;stroke-dasharray:none;filter:url(#filter31-4)"
+         id="rect14"
+         width="118.35891"
+         height="119.46164"
+         x="38.792149"
+         y="134.70158"
+         ry="13.232673"
+         rx="11.394802" />
+      <text
+         xml:space="preserve"
+         style="font-size:71.4564px;line-height:0px;font-family:'DejaVu Serif';-inkscape-font-specification:'DejaVu Serif';text-align:end;letter-spacing:0.575px;writing-mode:lr-tb;direction:ltr;text-anchor:end;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:6.33;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter31-4)"
+         x="121.74445"
+         y="231.51472"
+         id="text14"><tspan
+           id="tspan14"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Noto Sans Display';-inkscape-font-specification:'Noto Sans Display';text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:6.33;stroke-dasharray:none;stroke-opacity:1"
+           x="122.03195"
+           y="231.51472">JS</tspan></text>
+    </g>
+  </g>
+</svg>

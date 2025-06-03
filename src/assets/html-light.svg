@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="119.32708mm"
+   height="135.46669mm"
+   viewBox="0 0 119.32708 135.46669"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="layer1"
+     transform="translate(-45.508332,-80.697929)">
+    <title
+       id="title1">HTML5 Logo Badge</title>
+    <path
+       fill="#e34f26"
+       d="M 56.35625,202.40625 45.508333,80.697917 H 164.83541 L 153.9875,202.40625 105.03958,216.16459"
+       id="path1"
+       style="fill:#000000;fill-opacity:1;stroke-width:0.264583" />
+    <path
+       fill="#ef652a"
+       d="M 105.30417,205.58125 144.72708,194.73334 153.9875,90.4875 h -48.68333"
+       id="path2"
+       style="fill:#3e3e3e;fill-opacity:1;stroke-width:0.264583" />
+    <path
+       fill="#ebebeb"
+       d="M 105.30417,135.73125 H 85.460416 L 84.1375,120.38542 h 21.16667 v -14.81667 h -0.26459 -37.306247 l 0.264583,3.96875 3.704167,41.275 h 33.602087 z m 0,38.89375 h -0.26459 L 88.370833,170.12708 87.3125,158.22083 H 79.375 72.495833 l 1.852083,23.54792 30.691664,8.46667 h 0.26459 z"
+       id="path3"
+       style="stroke-width:0.264583" />
+    <path
+       fill="#ffffff"
+       d="m 105.03958,135.73125 v 15.08125 h 18.52084 l -1.85209,19.31458 -16.66875,4.49792 v 15.61042 l 30.69167,-8.46667 0.26458,-2.64583 3.43958,-39.42292 0.52917,-3.96875 h -4.23333 z m 0,-30.1625 v 9.26042 5.55625 0 h 36.24792 v 0 0 l 0.26458,-3.175 0.79375,-7.67292 0.26458,-3.96875 z"
+       id="path4"
+       style="stroke-width:0.264583" />
+  </g>
+</svg>

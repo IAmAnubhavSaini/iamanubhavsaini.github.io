@@ -1,11 +1,3 @@
-:root[data-scheme="dark"] {
-    --we-background-color: var(--black-8);
-}
-
-:root[data-scheme="light"] {
-    --we-background-color: var(--white-7);
-}
-
 .work-experience {
     width: clamp(250px, calc(25% - 2rem), 600px);
     /* max-width: 360px; */
@@ -16,7 +8,7 @@
     /* box-shadow: 4px 4px 5px var(--scheme-border); */
     border-radius: 4px 4px 4px 16px;
     /* overflow-y: scroll; */
-    background-color: var(--we-background-color);
+    background-color: var(--scheme-background-accent);
 
     .location {
         border-bottom: 1px solid var(--scheme-text);

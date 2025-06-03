@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="119.32708mm"
+   height="135.46669mm"
+   viewBox="0 0 119.32708 135.46669"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="layer1"
+     transform="translate(-33.456456,-80.325279)">
+    <path
+       fill="#e34f26"
+       d="M 44.304374,202.0336 33.456457,80.325271 H 152.78354 L 141.93563,202.0336 92.98771,215.79194"
+       id="path1"
+       style="fill:#e4e4e4;fill-opacity:1;stroke-width:0.264583" />
+    <path
+       fill="#ef652a"
+       d="m 93.2523,205.2086 39.42291,-10.84791 9.26042,-104.245839 H 93.2523"
+       id="path2"
+       style="fill:#ffffff;fill-opacity:1;stroke-width:0.264583" />
+    <text
+       xml:space="preserve"
+       style="font-size:33.8667px;line-height:0px;font-family:'Bodoni Moda';-inkscape-font-specification:'Bodoni Moda';text-align:end;letter-spacing:0.272521px;writing-mode:lr-tb;direction:ltr;text-anchor:end;fill:#8e8e8e;fill-opacity:1;stroke:#222222;stroke-width:3;stroke-linecap:square;stroke-linejoin:miter;stroke-opacity:1"
+       x="92.344032"
+       y="153.30058"
+       id="text3"><tspan
+         id="tspan3"
+         style="font-size:33.8667px;fill:#8e8e8e;fill-opacity:1;stroke:#222222;stroke-width:3;stroke-opacity:1"
+         x="92.616554"
+         y="153.30058">CS</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:33.8667px;line-height:0px;font-family:'Bodoni Moda';-inkscape-font-specification:'Bodoni Moda';text-align:end;letter-spacing:0.272521px;writing-mode:lr-tb;direction:ltr;text-anchor:end;fill:#000000;fill-opacity:1;stroke:#343434;stroke-width:3;stroke-linecap:square;stroke-linejoin:miter;stroke-opacity:1"
+       x="129.9554"
+       y="153.31172"
+       id="text5"><tspan
+         id="tspan5"
+         style="font-size:33.8667px;fill:#000000;fill-opacity:1;stroke:#343434;stroke-width:3;stroke-opacity:1"
+         x="130.22792"
+         y="153.31172">S3</tspan></text>
+  </g>
+</svg>

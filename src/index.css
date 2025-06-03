@@ -13,7 +13,7 @@
     --scheme-accent: var(--white-10);
     --scheme-border: var(--white-10);
     --theme-tag: var(--black-0);
-
+    --scheme-background-accent: var(--black-1);
     background-color: var(--scheme-background);
     color: var(--scheme-text);
 }
@@ -25,7 +25,7 @@
     --scheme-accent: var(--black-0);
     --scheme-border: var(--black-0);
     --theme-tag: var(--black-0);
-
+    --scheme-background-accent: var(--white-9);
     background-color: var(--scheme-background);
     color: var(--scheme-text);
 }

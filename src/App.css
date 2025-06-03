@@ -38,27 +38,13 @@
     min-height: 100dvh;
 }
 
-/*
-
-* > .either:not(:hover) {
-    opacity: 0.2;
-    transition: opacity 0.3s ease-in-out;
-
-    &:has(* :target) {
-        opacity: 1;
-        transition: opacity 0.3s ease-in-out;
-    }
-
-    /* for touch/mobile devices
-    @media (pointer: coarse) {
-        & {
-            opacity: 1;
-            transition: none;
-        }
+.tech-stack {
+    .tech-stack-item {
+        width: 180px;
+        height: 100px;
+        background-color: var(--scheme-background-accent);
     }
 }
-
-*/
 
 .list {
     grid-template-columns: minmax(15rem, 1fr) 4fr 1fr;
@@ -128,15 +114,6 @@
     }
 }
 
-.logo {
-    display: block;
-    height: 32px;
-    margin: 2px;
-    padding: 2px;
-    /* margin: 0.5rem; */
-    filter: grayscale(100%);
-}
-
 .type\:massive {
     font-size: calc(var(--base-font-size) * 20);
     font-weight: bold;
@@ -145,6 +122,106 @@
 .type\:huge {
     font-size: calc(var(--base-font-size) * 12);
     font-weight: bold;
+}
+
+:root[data-scheme="dark"] {
+    --logo-react-url: url(assets/react-dark.svg);
+    --logo-redux-url: url(assets/redux-dark.svg);
+    --logo-jsx-url: url(assets/jsx-dark.svg);
+    --logo-html-url: url(assets/html-dark.svg);
+    --logo-css-url: url(assets/css-dark.svg);
+    --logo-dom-url: url(assets/dom-dark.svg);
+    --logo-vim-url: url(assets/vim-dark.svg);
+    --logo-debian-url: url(assets/debian-dark.svg);
+    --logo-kali-url: url(assets/kali-dark.svg);
+    --logo-codium-url: url(assets/codium-dark.svg);
+    --logo-typescript-url: url(assets/typescript-dark.svg);
+    --logo-javascript-url: url(assets/javascript-dark.svg);
+}
+
+:root[data-scheme="light"] {
+    --logo-react-url: url(assets/react-light.svg);
+    --logo-redux-url: url(assets/redux-light.svg);
+    --logo-jsx-url: url(assets/jsx-light.svg);
+    --logo-html-url: url(assets/html-light.svg);
+    --logo-css-url: url(assets/css-light.svg);
+    --logo-dom-url: url(assets/dom-light.svg);
+    --logo-vim-url: url(assets/vim-light.svg);
+    --logo-debian-url: url(assets/debian-light.svg);
+    --logo-kali-url: url(assets/kali-light.svg);
+    --logo-codium-url: url(assets/codium-light.svg);
+    --logo-typescript-url: url(assets/typescript-light.svg);
+    --logo-javascript-url: url(assets/javascript-light.svg);
+}
+
+.logo {
+    display: block;
+    height: 32px;
+    margin: 2px;
+    padding: 2px;
+    filter: grayscale(100%);
+    background-size: contain;
+    background-repeat: no-repeat;
+    &.react {
+        height: 32px;
+        width: 35px;
+        background-image: var(--logo-react-url);
+    }
+    &.redux {
+        height: 32px;
+        width: 35px;
+        background-image: var(--logo-redux-url);
+    }
+    &.jsx {
+        height: 32px;
+        width: 35px;
+        background-image: var(--logo-jsx-url);
+    }
+    &.html {
+        height: 32px;
+        width: 35px;
+        background-image: var(--logo-html-url);
+    }
+    &.css {
+        height: 32px;
+        width: 35px;
+        background-image: var(--logo-css-url);
+    }
+    &.dom {
+        height: 42px;
+        width: 35px;
+        background-image: var(--logo-dom-url);
+    }
+    &.vim {
+        height: 42px;
+        width: 35px;
+        background-image: var(--logo-vim-url);
+    }
+    &.debian {
+        height: 32px;
+        width: 35px;
+        background-image: var(--logo-debian-url);
+    }
+    &.kali {
+        height: 32px;
+        width: 45px;
+        background-image: var(--logo-kali-url);
+    }
+    &.codium {
+        height: 32px;
+        width: 45px;
+        background-image: var(--logo-codium-url);
+    }
+    &.typescript {
+        height: 32px;
+        width: 45px;
+        background-image: var(--logo-typescript-url);
+    }
+    &.javascript {
+        height: 32px;
+        width: 45px;
+        background-image: var(--logo-javascript-url);
+    }
 }
 
 .parallax {

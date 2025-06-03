@@ -4,8 +4,6 @@ import "./App.css";
 import { ExternalAnchor } from "./components/Anchor";
 import { Box } from "./components/Box";
 import { WorkExperienceList } from "./components/WorkExperience";
-
-import { NamedRowTable } from "./components/Table";
 import { Tags } from "./components/Tag";
 import {
     cliapps,
@@ -165,17 +163,20 @@ function App() {
                             <div>
                                 <div className="subheading tt:u">Tech stack</div>
                             </div>
-                            {tableData.map((data, index) => {
-                                return (
-                                    <div key={`techstack-${index}`} className="flex">
-                                        <h3>{data.name}</h3>
-
-                                        {data.value.map((value, vi) => {
-                                            return <div key={`vi-${vi}`}>{value.name}</div>;
-                                        })}
-                                    </div>
-                                );
-                            })}
+                            <div className="flex tech-stack">
+                                {tableData
+                                    .reduce((acc, data) => acc.concat(data.value), [])
+                                    .map((data, vi) => {
+                                        return (
+                                            <div key={`vi-${vi}`} className={`flex f:v f:center tech-stack-item`}>
+                                                <div className="flex f:center">
+                                                    <div className={`ta:c logo ${data.name}`}></div>
+                                                </div>
+                                                <div>{data.name}</div>
+                                            </div>
+                                        );
+                                    })}
+                            </div>
                         </div>
                     </div>
                     <fieldset>
