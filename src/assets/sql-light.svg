@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="87.133011mm"
+   height="127.56364mm"
+   viewBox="0 0 87.133011 127.56364"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="layer1"
+     transform="translate(-53.530591,-75.585058)">
+    <g
+       id="g2"
+       transform="matrix(1.0056346,0,0,1.0056346,-0.30445823,-0.42872698)">
+      <ellipse
+         style="fill:#000000;fill-opacity:0.999916;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-dasharray:none"
+         id="path1"
+         cx="96.855812"
+         cy="92.350235"
+         rx="42.822399"
+         ry="16.262356" />
+      <ellipse
+         style="fill:#030303;fill-opacity:0.999916;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-dasharray:none"
+         id="path1-4"
+         cx="96.855812"
+         cy="185.67441"
+         rx="42.822399"
+         ry="16.262356" />
+      <path
+         style="fill:#000000;fill-opacity:0.999916;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-dasharray:none"
+         d="M 54.033411,185.67441 V 92.350234 h 85.644799 v 93.324176 z"
+         id="path2" />
+    </g>
+    <g
+       id="g2-8"
+       transform="matrix(0.93897235,0,0,0.96766473,6.1450166,4.4163312)"
+       style="fill:#ffffff;fill-opacity:0.999916;stroke:#ffffff;stroke-width:1.00046;stroke-dasharray:none;stroke-opacity:1">
+      <ellipse
+         style="fill:#ffffff;fill-opacity:0.999916;stroke:#ffffff;stroke-width:1.00046;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+         id="path1-6"
+         cx="96.855812"
+         cy="92.350235"
+         rx="42.822399"
+         ry="16.262356" />
+      <ellipse
+         style="fill:#ffffff;fill-opacity:0.999916;stroke:#ffffff;stroke-width:1.00046;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+         id="path1-4-2"
+         cx="96.855812"
+         cy="185.67441"
+         rx="42.822399"
+         ry="16.262356" />
+      <path
+         style="fill:#ffffff;fill-opacity:0.999916;stroke:#ffffff;stroke-width:1.00046;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+         d="M 54.033411,185.67441 V 92.350234 h 85.644799 v 93.324176 z"
+         id="path2-8" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:18.0431px;line-height:0px;font-family:Sans;-inkscape-font-specification:Sans;text-align:center;letter-spacing:0.580765px;writing-mode:lr-tb;direction:ltr;text-orientation:upright;text-anchor:middle;fill:#000000;fill-opacity:0.999916;stroke:#000000;stroke-width:2;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+       x="115.33496"
+       y="186.79471"
+       id="text2"><tspan
+         id="tspan2"
+         style="writing-mode:lr-tb;fill:#000000;fill-opacity:0.999916;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
+         x="115.62534"
+         y="186.79471">SQL</tspan></text>
+    <path
+       style="fill:#ffffff;fill-opacity:0.999916;stroke:#000000;stroke-width:2;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+       d="m 56.880896,93.780395 c 13.405401,5.005152 26.810533,10.010205 40.213818,10.010205 13.403286,0 26.803646,-5.005053 40.204276,-10.010204"
+       id="path3" />
+  </g>
+</svg>

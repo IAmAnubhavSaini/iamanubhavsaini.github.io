@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="162.54332mm"
+   height="151.5161mm"
+   viewBox="0 0 162.54332 151.5161"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="layer1"
+     transform="translate(-21.356499,-61.418774)">
+    <rect
+       style="fill:none;fill-opacity:0.999936;stroke:#ffffff;stroke-width:10;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1"
+       width="152.54332"
+       height="141.51608"
+       x="26.356499"
+       y="66.41877"
+       rx="6.6163406"
+       ry="3.6757426" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:54.8102px;line-height:0px;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';text-align:center;letter-spacing:1.76421px;writing-mode:lr-tb;direction:ltr;text-orientation:upright;text-anchor:middle;fill:none;fill-opacity:0.999936;stroke:#ffffff;stroke-width:4.83527;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+       x="72.593613"
+       y="142.12561"
+       id="text1"
+       transform="scale(0.72425193,1.380735)"><tspan
+         id="tspan1"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';stroke:#ffffff;stroke-width:4.83527;stroke-dasharray:none;stroke-opacity:1"
+         x="73.475716"
+         y="142.12561">&gt;</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:65.3539px;line-height:0px;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';text-align:center;letter-spacing:2.10358px;writing-mode:lr-tb;direction:ltr;text-orientation:upright;text-anchor:middle;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:8.99169;stroke-linecap:square;stroke-dasharray:none"
+       x="145.84435"
+       y="126.62595"
+       id="text2"><tspan
+         id="tspan2"
+         style="fill:none;fill-opacity:1;stroke-width:8.99169;stroke-dasharray:none"
+         x="146.89613"
+         y="126.62595">Y</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="174.26218mm"
+   height="144.77921mm"
+   viewBox="0 0 174.26218 144.77921"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="layer1"
+     transform="translate(-22.283932,-82.726739)">
+    <g
+       id="g21">
+      <rect
+         style="fill:none;stroke:#000000;stroke-width:10;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:0.975843"
+         id="rect12"
+         width="164.26218"
+         height="134.77921"
+         x="27.283932"
+         y="87.72673"
+         rx="18.652479"
+         ry="21.660946" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:28.9307px;line-height:0px;font-family:FreeSans;-inkscape-font-specification:FreeSans;text-align:center;letter-spacing:0.931206px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+         x="170.82928"
+         y="156.76376"
+         id="text18"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Monospace;-inkscape-font-specification:Monospace;text-align:center;writing-mode:tb-rl;direction:rtl;text-orientation:upright;baseline-shift:baseline;text-anchor:middle;fill:#000000;fill-opacity:1;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+           x="170.82928"
+           y="157.22937"
+           id="tspan19">BASH</tspan></text>
+      <rect
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1.107;stroke-linecap:square;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:0.975843"
+         id="rect20"
+         width="109.06224"
+         height="109.06224"
+         x="42.692272"
+         y="101.13657"
+         rx="12.384356"
+         ry="14.928671" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.0393px;line-height:0px;font-family:Monospace;-inkscape-font-specification:Monospace;text-align:center;letter-spacing:0.645013px;writing-mode:lr-tb;direction:ltr;text-orientation:upright;text-anchor:middle;fill:#1ef403;fill-opacity:1;stroke:#000000;stroke-width:0.624117;stroke-linecap:square;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:0.975843"
+         x="56.380981"
+         y="198.3763"
+         id="text20"><tspan
+           id="tspan20"
+           style="writing-mode:lr-tb;direction:ltr;fill:#1ef403;fill-opacity:1;stroke:#0c9f00;stroke-width:0.624117;stroke-dasharray:none;stroke-opacity:0.975843"
+           x="56.703487"
+           y="198.3763">$</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;line-height:0px;font-family:Monospace;-inkscape-font-specification:Monospace;text-align:center;letter-spacing:0.272521px;writing-mode:lr-tb;direction:ltr;text-orientation:upright;text-anchor:middle;fill:#00ff00;fill-opacity:1;stroke:#0c9f00;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:0.975843"
+         x="70.986214"
+         y="196.12306"
+         id="text21"><tspan
+           id="tspan21"
+           style="fill:#00ff00;stroke-width:1"
+           x="71.122475"
+           y="196.12306">_</tspan></text>
+    </g>
+  </g>
+</svg>

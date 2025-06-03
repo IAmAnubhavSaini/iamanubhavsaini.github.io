@@ -230,10 +230,10 @@ const tableData = [
         name: "desktop environments",
         value: [{ name: "kde" }],
     },
-    {
-        name: "window managers",
-        value: [{ name: "i3" }, { name: "kwin" }],
-    },
+    // {
+    //     name: "window managers",
+    //     value: [{ name: "i3" }, { name: "kwin" }],
+    // },
 ];
 
 const webapps = [

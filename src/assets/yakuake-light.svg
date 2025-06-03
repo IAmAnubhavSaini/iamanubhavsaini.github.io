@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="162.54332mm"
+   height="151.5161mm"
+   viewBox="0 0 162.54332 151.5161"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <filter
+       style="color-interpolation-filters:sRGB"
+       id="filter3"
+       x="-0.032777574"
+       y="-0.035331673"
+       width="1.0655551"
+       height="1.0706633">
+      <feColorMatrix
+         type="hueRotate"
+         values="180"
+         result="color1"
+         id="feColorMatrix2" />
+      <feColorMatrix
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 -0.21 -0.72 -0.07 1.83155 0 "
+         result="color2"
+         id="feColorMatrix3" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       id="filter5"
+       x="-0.070464645"
+       y="-0.082423061"
+       width="1.1409293"
+       height="1.1648461">
+      <feColorMatrix
+         type="hueRotate"
+         values="180"
+         result="color1"
+         id="feColorMatrix4" />
+      <feColorMatrix
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 -0.21 -0.72 -0.07 1.83155 0 "
+         result="color2"
+         id="feColorMatrix5" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       id="filter7"
+       x="-0.1119036"
+       y="-0.094364788"
+       width="1.2238072"
+       height="1.1887296">
+      <feColorMatrix
+         type="hueRotate"
+         values="180"
+         result="color1"
+         id="feColorMatrix6" />
+      <feColorMatrix
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 -0.21 -0.72 -0.07 1.83155 0 "
+         result="color2"
+         id="feColorMatrix7" />
+    </filter>
+  </defs>
+  <g
+     id="layer1"
+     transform="translate(-21.3565,-61.418774)">
+    <rect
+       style="fill:none;fill-opacity:0.999936;stroke:#ffffff;stroke-width:10;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter3)"
+       id="rect1"
+       width="152.54332"
+       height="141.51608"
+       x="26.356499"
+       y="66.41877"
+       rx="6.6163406"
+       ry="3.6757426" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:54.8102px;line-height:0px;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';text-align:center;letter-spacing:1.76421px;writing-mode:lr-tb;direction:ltr;text-orientation:upright;text-anchor:middle;fill:none;fill-opacity:0.999936;stroke:#ffffff;stroke-width:4.83527;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter5)"
+       x="72.593613"
+       y="142.12561"
+       id="text1"
+       transform="scale(0.72425193,1.380735)"><tspan
+         id="tspan1"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';stroke:#ffffff;stroke-width:4.83527;stroke-dasharray:none;stroke-opacity:1"
+         x="73.475716"
+         y="142.12561">&gt;</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:65.3539px;line-height:0px;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';text-align:center;letter-spacing:2.10358px;writing-mode:lr-tb;direction:ltr;text-orientation:upright;text-anchor:middle;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:8.99169;stroke-linecap:square;stroke-dasharray:none;filter:url(#filter7)"
+       x="145.84435"
+       y="126.62595"
+       id="text2"><tspan
+         id="tspan2"
+         style="fill:none;fill-opacity:1;stroke-width:8.99169;stroke-dasharray:none"
+         x="146.89613"
+         y="126.62595">Y</tspan></text>
+  </g>
+</svg>
