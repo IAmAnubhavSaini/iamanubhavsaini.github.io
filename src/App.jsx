@@ -25,7 +25,6 @@ import npmLogo from "./assets/npm.svg";
 import mediumLogo from "./assets/medium.png";
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
-import { Arrow } from "./components/Arrow";
 
 const LOGOS = {
     githubDarkLogo,
@@ -169,7 +168,7 @@ function App() {
                                     .map((data, vi) => {
                                         return (
                                             <div key={`vi-${vi}`} className={`flex f:v f:center tech-stack-item`}>
-                                                <div className="flex f:center">
+                                                <div className="flex f:center logo-container">
                                                     <div className={`ta:c logo ${data.name}`}></div>
                                                 </div>
                                                 <div>{data.name}</div>

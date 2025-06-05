@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="142.91336mm"
-   height="201.6497mm"
-   viewBox="0 0 142.91336 201.6497"
+   width="150.85086mm"
+   height="241.71204mm"
+   viewBox="0 0 150.85086 241.71204"
    version="1.1"
    id="svg1"
    xmlns="http://www.w3.org/2000/svg"
@@ -13,31 +13,31 @@
      id="defs1" />
   <g
      id="layer1"
-     transform="translate(-22.010225,-52.094911)">
+     transform="translate(-21.251753,-26.648167)">
     <path
-       style="fill:none;stroke:#fbfbfb;stroke-width:9;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:none;stroke:#ffffff;stroke-width:9;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1"
        d="M 81.353159,92.529471 55.020437,138.13909 79.080116,179.81167"
        id="path10"
-       transform="matrix(1.4408046,0,0,1.306172,-51.648492,-22.990664)" />
+       transform="matrix(1.4408046,0,0,1.306172,-52.406964,-45.496815)" />
     <path
-       style="fill:none;stroke:#fbfbfb;stroke-width:9;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:none;stroke:#ffffff;stroke-width:9;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1"
        d="M 81.353159,92.529471 55.020437,138.13909 79.080116,179.81167"
        id="path10-0"
-       transform="matrix(-1.4408046,0,0,-1.306172,238.5823,332.27475)" />
+       transform="matrix(-1.4408046,0,0,-1.306172,245.76136,309.7686)" />
     <path
-       style="fill:#080808;fill-opacity:1;stroke:#fbfbfb;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:240, 10;stroke-dashoffset:0;stroke-opacity:1"
+       style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:240, 10;stroke-dashoffset:0;stroke-opacity:1"
        d="m 123.50495,34.919554 c 0,0 -57.341584,178.273516 -57.341584,178.273516"
        id="path1"
-       transform="translate(0.84356199,22.175354)" />
+       transform="matrix(1.2838345,0,0,1.2838345,-30.317837,-11.763591)" />
     <text
        xml:space="preserve"
-       style="font-size:43.1495px;line-height:0px;font-family:'Bodoni Moda';-inkscape-font-specification:'Bodoni Moda';text-align:end;letter-spacing:0.617279px;writing-mode:lr-tb;direction:ltr;text-anchor:end;fill:#ffffff;fill-opacity:1;stroke:#fbfbfb;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       x="144.37996"
-       y="241.02574"
+       style="font-size:52.2683px;line-height:0px;font-family:'Bodoni Moda';-inkscape-font-specification:'Bodoni Moda';text-align:end;letter-spacing:0.747729px;writing-mode:lr-tb;direction:ltr;text-anchor:end;fill:#ffffff;fill-opacity:0;stroke:#ffffff;stroke-width:3.63399;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       x="162.11029"
+       y="236.32791"
        id="text1"><tspan
          id="tspan1"
-         style="fill:#ffffff;fill-opacity:1;stroke:#fbfbfb;stroke-width:3;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-         x="144.99724"
-         y="241.02574">jsx</tspan></text>
+         style="fill:#ffffff;fill-opacity:0;stroke:#ffffff;stroke-width:3.63399;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         x="162.85802"
+         y="236.32791">jsx</tspan></text>
   </g>
 </svg>

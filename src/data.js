@@ -202,10 +202,10 @@ const tableData = [
         name: "web",
         value: [{ name: "html" }, { name: "css" }, { name: "dom" }],
     },
-    {
-        name: "operating systems",
-        value: [{ name: "debian" }, { name: "kali" }],
-    },
+    // {
+    //     name: "operating systems",
+    //     value: [{ name: "debian" }, { name: "kali" }],
+    // },
     {
         name: "editors",
         value: [{ name: "codium" }, { name: "vim" }],
@@ -218,18 +218,18 @@ const tableData = [
         name: "database",
         value: [{ name: "postgres" }, { name: "sql" }],
     },
-    {
-        name: "virtualization",
-        value: [{ name: "docker" }, { name: "virtualbox" }],
-    },
-    {
-        name: "terminals",
-        value: [{ name: "konsole" }, { name: "yakuake" }],
-    },
-    {
-        name: "desktop environments",
-        value: [{ name: "kde" }],
-    },
+    // {
+    //     name: "virtualization",
+    //     value: [{ name: "docker" }, { name: "virtualbox" }],
+    // },
+    // {
+    //     name: "terminals",
+    //     value: [{ name: "konsole" }, { name: "yakuake" }],
+    // },
+    // {
+    //     name: "desktop environments",
+    //     value: [{ name: "kde" }],
+    // },
     // {
     //     name: "window managers",
     //     value: [{ name: "i3" }, { name: "kwin" }],

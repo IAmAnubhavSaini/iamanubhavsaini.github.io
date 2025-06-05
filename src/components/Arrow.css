@@ -1,6 +1,6 @@
 :root {
-    --img-arrow-dark: url(../assets/arrow-dark.svg);
-    --img-arrow-light: url(../assets/arrow-light.svg);
+    --img-arrow-dark: url(../assets/a-dark.svg);
+    --img-arrow-light: url(../assets/a-light.svg);
 }
 :root[data-scheme="dark"] {
     --img-arrow: var(--img-arrow-dark);
@@ -11,7 +11,7 @@
 }
 
 .arrow {
-    height: 32px;
-    width: 72px;
+    height: 60px;
+    width: 60px;
     background: var(--img-arrow) no-repeat fixed;
 }

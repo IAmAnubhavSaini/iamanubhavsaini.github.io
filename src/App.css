@@ -172,6 +172,14 @@
     --logo-i3-url: url(assets/i3-light.svg);
 }
 
+.logo-container {
+    height: 100%;
+
+    .logo {
+        width: 45px;
+    }
+}
+
 .logo {
     display: block;
     height: 32px;
@@ -181,108 +189,66 @@
     background-size: contain;
     background-repeat: no-repeat;
     &.react {
-        height: 32px;
-        width: 35px;
         background-image: var(--logo-react-url);
     }
     &.redux {
-        height: 32px;
-        width: 35px;
         background-image: var(--logo-redux-url);
     }
     &.jsx {
-        height: 32px;
-        width: 35px;
         background-image: var(--logo-jsx-url);
     }
     &.html {
-        height: 32px;
-        width: 35px;
         background-image: var(--logo-html-url);
     }
     &.css {
-        height: 32px;
-        width: 35px;
         background-image: var(--logo-css-url);
     }
     &.dom {
-        height: 42px;
-        width: 35px;
         background-image: var(--logo-dom-url);
     }
     &.vim {
-        height: 42px;
-        width: 35px;
         background-image: var(--logo-vim-url);
     }
     &.debian {
-        height: 32px;
-        width: 35px;
         background-image: var(--logo-debian-url);
     }
     &.kali {
-        height: 32px;
-        width: 45px;
         background-image: var(--logo-kali-url);
     }
     &.codium {
-        height: 32px;
-        width: 45px;
         background-image: var(--logo-codium-url);
     }
     &.typescript {
-        height: 32px;
-        width: 45px;
         background-image: var(--logo-typescript-url);
     }
     &.javascript {
-        height: 32px;
-        width: 45px;
         background-image: var(--logo-javascript-url);
     }
     &.bash {
-        height: 32px;
-        width: 45px;
         background-image: var(--logo-bash-url);
     }
     &.postgres {
-        height: 32px;
-        width: 45px;
         background-image: var(--logo-postgres-url);
     }
     &.sql {
-        height: 32px;
-        width: 45px;
         background-image: var(--logo-sql-url);
     }
     &.docker {
-        height: 32px;
-        width: 45px;
         background-image: var(--logo-docker-url);
     }
     &.virtualbox {
-        height: 32px;
-        width: 45px;
         background-image: var(--logo-virtualbox-url);
     }
     &.konsole {
-        height: 32px;
-        width: 45px;
         background-image: var(--logo-konsole-url);
     }
     &.yakuake {
-        height: 32px;
-        width: 45px;
         background-image: var(--logo-yakuake-url);
     }
     &.kde {
-        height: 32px;
-        width: 45px;
         background-image: var(--logo-kde-url);
     }
     &.i3 {
-        height: 32px;
-        width: 45px;
         background-image: var(--logo-i3-url);
     }
 }

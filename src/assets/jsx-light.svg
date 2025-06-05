@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="142.91333mm"
-   height="201.6497mm"
-   viewBox="0 0 142.91333 201.6497"
+   width="150.85089mm"
+   height="241.71204mm"
+   viewBox="0 0 150.85089 241.71204"
    version="1.1"
    id="svg1"
    xmlns="http://www.w3.org/2000/svg"
@@ -13,30 +13,31 @@
      id="defs1" />
   <g
      id="layer1"
-     transform="translate(-21.166665,-29.919557)">
+     transform="translate(-16.93333,-26.978962)">
     <path
        style="fill:none;stroke:#000000;stroke-width:9;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1"
        d="M 81.353159,92.529471 55.020437,138.13909 79.080116,179.81167"
        id="path10"
-       transform="matrix(1.4408046,0,0,1.306172,-52.492052,-45.166018)" />
+       transform="matrix(1.4408046,0,0,1.306172,-56.725388,-45.166018)" />
     <path
        style="fill:none;stroke:#000000;stroke-width:9;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1"
        d="M 81.353159,92.529471 55.020437,138.13909 79.080116,179.81167"
        id="path10-0"
-       transform="matrix(-1.4408046,0,0,-1.306172,237.73874,310.09939)" />
+       transform="matrix(-1.4408046,0,0,-1.306172,241.44293,310.09939)" />
     <path
-       style="fill:#080808;fill-opacity:1;stroke:#0d0d0d;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:240, 10;stroke-dashoffset:0;stroke-opacity:1"
+       style="fill:#080808;fill-opacity:1;stroke:#000000;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:240, 10;stroke-dashoffset:0;stroke-opacity:1"
        d="m 123.50495,34.919554 c 0,0 -57.341584,178.273516 -57.341584,178.273516"
-       id="path1" />
+       id="path1"
+       transform="matrix(1.2838345,0,0,1.2838345,-34.636261,-11.432794)" />
     <text
        xml:space="preserve"
-       style="font-size:43.1495px;line-height:0px;font-family:'Bodoni Moda';-inkscape-font-specification:'Bodoni Moda';text-align:end;letter-spacing:0.617279px;writing-mode:lr-tb;direction:ltr;text-anchor:end;fill:#080808;fill-opacity:1;stroke:#0d0d0d;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       x="143.53639"
-       y="218.85039"
+       style="font-size:52.2683px;line-height:0px;font-family:'Bodoni Moda';-inkscape-font-specification:'Bodoni Moda';text-align:end;letter-spacing:0.747729px;writing-mode:lr-tb;direction:ltr;text-anchor:end;fill:#080808;fill-opacity:0;stroke:#000000;stroke-width:3.63399;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       x="157.79187"
+       y="236.65871"
        id="text1"><tspan
          id="tspan1"
-         style="stroke-width:3;stroke-dasharray:none;stroke-dashoffset:0"
-         x="144.15367"
-         y="218.85039">jsx</tspan></text>
+         style="fill:#080808;fill-opacity:0;stroke:#000000;stroke-width:3.63399;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         x="158.5396"
+         y="236.65871">jsx</tspan></text>
   </g>
 </svg>
