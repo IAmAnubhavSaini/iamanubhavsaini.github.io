@@ -11,7 +11,6 @@ function Arrow() {
             const cx = rect.left + rect.width / 2;
             const cy = rect.top + rect.height / 2;
             const rad = Math.atan2(e.clientY - cy, e.clientX - cx);
-            console.log({ rad });
             setAngle((rad * 180) / Math.PI + 90);
         };
         window.addEventListener("mousemove", handleMouseMove);

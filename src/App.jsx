@@ -34,6 +34,18 @@ const LOGOS = {
     mediumLogo,
 };
 
+function Heading() {
+    const shadows = [];
+    for (let i = 1; i < 2000; i += 1) {
+        shadows.push(`${i}px ${i}px 1px var(--gray-5)`);
+    }
+    return (
+        <div className="heading tt:u fw:b type:huge" style={{ textShadow: shadows.join(", ") }}>
+            Anubhav Saini
+        </div>
+    );
+}
+
 function App() {
     const defaultFontSize = 13;
     const defaultClockType = "analog";
@@ -140,7 +152,7 @@ function App() {
                         <div className="container-item">
                             <div className="flex f:v ta:c gap:2">
                                 <div className="flex f:v gap:0">
-                                    <div className="heading tt:u fw:b type:huge">Anubhav Saini</div>
+                                    <Heading />
                                     <div className="subheading tt:u ta:c fs:i">Design & Development</div>
                                     <div className="minorheading ta:c ff:libre-bodoni fs:i">India / Remote</div>
                                 </div>
