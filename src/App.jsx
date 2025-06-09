@@ -44,7 +44,7 @@ const LOGOS = {
 
 function Heading() {
     const shadows = [];
-    for (let i = 1; i < 2000; i += 1) {
+    for (let i = 1; i < 2; i += 1) {
         shadows.push(`${i}px ${i}px 1px var(--gray-5)`);
     }
     return (

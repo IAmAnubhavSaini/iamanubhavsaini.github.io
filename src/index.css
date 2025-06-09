@@ -391,7 +391,7 @@ fieldset {
     div,
     fieldset {
         font-size: var(--base-font-size);
-        max-width: 400px;
+        max-width: 450px;
         margin: 0;
         padding: 0;
     }
