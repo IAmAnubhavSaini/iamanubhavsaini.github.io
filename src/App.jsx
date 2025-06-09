@@ -20,6 +20,10 @@ import {
 
 import githubDarkLogo from "./assets/github-mark.svg";
 import githubLightLogo from "./assets/github-mark-white.svg";
+import jsfiddleLightLogo from "./assets/jsfiddle-light.svg";
+import jsfiddleDarkLogo from "./assets/jsfiddle-dark.svg";
+import codepenLightLogo from "./assets/codepen-light.svg";
+import codepenDarkLogo from "./assets/codepen-dark.svg";
 import linkedinLogo from "./assets/linkedin.svg";
 import npmLogo from "./assets/npm.svg";
 import mediumLogo from "./assets/medium.png";
@@ -32,6 +36,10 @@ const LOGOS = {
     linkedinLogo,
     npmLogo,
     mediumLogo,
+    jsfiddleLightLogo,
+    jsfiddleDarkLogo,
+    codepenLightLogo,
+    codepenDarkLogo,
 };
 
 function Heading() {

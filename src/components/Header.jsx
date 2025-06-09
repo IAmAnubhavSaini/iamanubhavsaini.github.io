@@ -3,7 +3,17 @@ import { Clock } from "./Clock.jsx";
 import "./Header.css";
 
 function Header({ setClockType, clockType, fontSize, setScheme, activeScheme, anchors, changeFontSize, logos }) {
-    const { githubLightLogo, githubDarkLogo, linkedinLogo, npmLogo, mediumLogo } = logos;
+    const {
+        codepenDarkLogo,
+        codepenLightLogo,
+        githubDarkLogo,
+        githubLightLogo,
+        jsfiddleDarkLogo,
+        jsfiddleLightLogo,
+        linkedinLogo,
+        mediumLogo,
+        npmLogo,
+    } = logos;
     return (
         <header className="header">
             <div>
@@ -84,6 +94,14 @@ function Header({ setClockType, clockType, fontSize, setScheme, activeScheme, an
                     </a>
                     <a href="https://medium.com/@anubhavsaini.com" target="_blank" rel="nofollow" title="Medium">
                         <img className="logo" src={mediumLogo} alt="medium" />
+                    </a>
+                    <a href="https://codepen.io/IAmAnubhavSaini" target="_blank" rel="nofollow" title="CodePen">
+                        {activeScheme === "dark" && <img className="logo" src={codepenDarkLogo} alt="codepen" />}
+                        {activeScheme === "light" && <img className="logo" src={codepenLightLogo} alt="codepen" />}
+                    </a>
+                    <a href="https://jsfiddle.net/u/jshacker/fiddles/" target="_blank" rel="nofollow" title="jsfiddle">
+                        {activeScheme === "dark" && <img className="logo" src={jsfiddleDarkLogo} alt="jsfiddle" />}
+                        {activeScheme === "light" && <img className="logo" src={jsfiddleLightLogo} alt="jsfiddle" />}
                     </a>
                 </div>
             </fieldset>
